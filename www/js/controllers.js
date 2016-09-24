@@ -5,9 +5,6 @@ angular.module('starter.controllers', [])
   .success(function(data) {
     $scope.content = data;
   })
-  .then(function(result){
-    things = content.data;
-  });
 });
 
 // .controller('DashCtrl', function($scope) {})
