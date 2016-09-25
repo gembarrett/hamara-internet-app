@@ -1,7 +1,10 @@
 <ion-view view-title="Hamara Internet">
   <ion-content>
     <div collection-repeat="object in content">
-      <button ui-sref="online" ui-sref-active="active">{{object.categoryName}}</button>
+      {{object.categoryId}}
+      <button ui-sref="online"
+      ui-sref-active="active">
+        {{object.categoryName}}</button>
     </div>
   </ion-content>
 </ion-view>
