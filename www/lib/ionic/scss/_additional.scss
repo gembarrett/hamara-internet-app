@@ -1,0 +1,36 @@
+.green-with-buttons {
+  background-color: $green;
+  button {
+    background-color: $blue;
+    color: #fff;
+    border:0;
+    width:50%;
+    max-width:140px;
+    min-height:40px;
+    box-sizing: border-box;
+    font-size: 1em;
+    padding:0.5em;
+    display:inline-block;
+    // TODO: get rid of this
+    &:first-child {
+      float:left;
+    }
+    &:last-child {
+      float:right;
+    }
+    .small {
+      font-size:0.8em;
+      display: block;
+    }
+  }
+}
+
+.button-container {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+ion-content {
+  margin:1em;
+}

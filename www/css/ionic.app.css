@@ -9814,3 +9814,32 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.green-with-buttons {
+  background-color: #7DC240; }
+  .green-with-buttons button {
+    background-color: #97CCCC;
+    color: #fff;
+    border: 0;
+    width: 50%;
+    max-width: 140px;
+    min-height: 40px;
+    box-sizing: border-box;
+    font-size: 1em;
+    padding: 0.5em;
+    display: inline-block; }
+    .green-with-buttons button:first-child {
+      float: left; }
+    .green-with-buttons button:last-child {
+      float: right; }
+    .green-with-buttons button .small {
+      font-size: 0.8em;
+      display: block; }
+
+.button-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+ion-content {
+  margin: 1em; }
