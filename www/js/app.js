@@ -27,118 +27,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   $stateProvider
 
-  .state('splash', {
+  .state('app',{
     url: '/',
     templateUrl: 'templates/splash.html'
   })
 
-  .state('main', {
-    url: '/main',
-    templateUrl: 'templates/category-display.html',
-    controller: 'DataCtrl'
+  .state('categories',{
+    url: '/categories',
+    templateUrl: 'templates/categories.html',
+    controller: "CatsCtrl"
   })
 
-  .state('tab', {
-    url: '/main/tab',
-    templateUrl: 'templates/tabs.html',
-    abstract: true
-  })
-
-  .state('tab.problem', {
-    url: '/main/{categoryId}/problem',
-    views: {
-      'tab-problem': {
-        templateUrl: 'templates/tab-problem.html'
-      }
-    }
-  })
-
-  .state('tab.solution', {
-      url: '/main/{categoryId}/solution',
-      views: {
-        'tab-solution': {
-          templateUrl: 'templates/tab-solution.html'
-        }
-      }
-    })
-    .state('tab.tips', {
-      url: '/main/{categoryId}/tips',
-      views: {
-        'tab-tips': {
-          templateUrl: 'templates/tab-tips.html'
-        }
-      }
-    })
-
-    .state('tab.resources', {
-      url: '/main/{categoryId}/resources',
-      views: {
-        'tab-resources': {
-          templateUrl: 'templates/tab-resources.html'
-        }
-      }
-    })
-
-    // TODO: find a better way of doing this
-    .state('content.subcat', {
-      url: '/main/online',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('online', {
-      url: '/main/online',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('devices', {
-      url: '/main/devices',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('identity', {
-      url: '/main/identity',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('comms', {
-      url: '/main/comms',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('space', {
-      url: '/main/space',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('report', {
-      url: '/main/report',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('tips', {
-      url: '/main/tips',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('about', {
-      url: '/main/about',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
-
-    .state('support', {
-      url: '/main/support',
-      templateUrl: 'templates/subcategory-display.html',
-      controller: 'SubCatCtrl'
-    })
+  .state('app.subcategories',{
+    url: '/:categoryId',
+    templateUrl: 'templates/subcategories.html',
+    controller: 'SubcatsCtrl'
+  });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');

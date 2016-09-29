@@ -9818,7 +9818,7 @@ a.button {
 .green-with-buttons {
   background-color: #7DC240; }
   .green-with-buttons ion-content {
-    margin-top: 3em; }
+    padding-top: 3em; }
   .green-with-buttons img {
     height: 240px;
     width: auto;
@@ -9845,9 +9845,12 @@ a.button {
       font-size: 0.8em;
       display: block; }
 
+.orgs a {
+  width: 30%;
+  margin: 0 8px; }
+
 .orgs img {
   max-width: 80px;
-  width: 30%;
   height: auto;
   display: inline-block;
   border: 1px solid #97CCCC; }
@@ -9866,3 +9869,18 @@ a.button {
 ion-content {
   margin: 1em;
   padding-top: 2em; }
+
+ion-view[state="main"] {
+  background: #7DC240;
+  /* The Fallback */
+  background: rgba(125, 194, 64, 0.1); }
+
+ion-header-bar {
+  background-color: #7DC240; }
+
+[nav-view-transition="ios"][nav-view-direction="forward"], [nav-view-transition="ios"][nav-view-direction="back"] {
+  background-color: #fff; }
+
+.category-menu button {
+  background-color: #97CCCC;
+  color: #fff; }

@@ -1,7 +1,7 @@
 .green-with-buttons {
   background-color: $green;
   ion-content {
-    margin-top:3em;
+    padding-top:3em;
   }
   img {
      height:240px;
@@ -36,12 +36,17 @@
   }
 }
 
-.orgs img {
-    max-width:80px;
+.orgs {
+  a {
     width:30%;
+    margin: 0 8px;
+  }
+  img {
+    max-width:80px;
     height:auto;
     display:inline-block;
     border:1px solid $blue;
+  }
 }
 
 .button-container {
@@ -60,4 +65,23 @@
 ion-content {
   margin:1em;
   padding-top:2em;
+}
+
+ion-view[state="main"] {
+  @include background-opacity($green, 0.1);
+}
+
+ion-header-bar {
+  background-color: $green;
+}
+
+[nav-view-transition="ios"][nav-view-direction="forward"], [nav-view-transition="ios"][nav-view-direction="back"] {
+  background-color: #fff;
+}
+
+.category-menu {
+  button {
+    background-color: $blue;
+    color: #fff;
+  }
 }
