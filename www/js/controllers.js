@@ -5,5 +5,5 @@ angular.module('starter.controllers', ['starter.services'])
 })
 
 .controller('SubcatsCtrl', function($scope, $stateParams, Content) {
-    $scope.subcats = Session.get({categoryId: $stateParams.categoryId});
+    $scope.subcats = Content.get({cId: $stateParams.cId});
 });

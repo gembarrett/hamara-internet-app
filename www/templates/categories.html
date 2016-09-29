@@ -1,10 +1,10 @@
 <ion-view view-title="Hamara Internet" class="category-menu">
   <ion-content>
       <button ng-repeat="category in categories"
-            href="#/main/categories/{{category.cId}}">{{category.cTitle}}
+            ui-sref="subcategories">{{category.cTitle}}
       </button>
-    <!-- <button collection-repeat="object in content" ui-sref="online"
-    ui-sref-active="active">
-      {{object.categoryName}}</button> -->
+      <!-- <button ng-repeat="category in categories"
+            href="#/main/categories/{{category.cId}}">{{category.cTitle}}
+      </button> -->
   </ion-content>
 </ion-view>

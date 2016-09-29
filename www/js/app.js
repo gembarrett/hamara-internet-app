@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: "CatsCtrl"
   })
 
-  .state('app.subcategories',{
+  .state('subcategories',{
     url: '/:categoryId',
     templateUrl: 'templates/subcategories.html',
     controller: 'SubcatsCtrl'
