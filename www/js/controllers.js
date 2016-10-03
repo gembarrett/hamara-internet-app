@@ -5,5 +5,6 @@ angular.module('starter.controllers', ['starter.services'])
 })
 
 .controller('SubcatsCtrl', function($scope, $stateParams, Content) {
-    $scope.subcats = Content.get({cId: $stateParams.cId});
+    $scope.subcats = $scope.categories;
+    console.log($scope);
 });
