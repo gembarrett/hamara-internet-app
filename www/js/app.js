@@ -45,49 +45,48 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('4tab', {
-    url: '/menu/:cId/tab/:sId',
+    url: '/menu/:cId/:sId/tab',
     templateUrl: 'templates/tabs.html',
-    abstract: true,
-    controller: 'ContentCtrl'
+    abstract: true
   })
 
-  .state('tab.problem', {
-    url: '/menu/:cId/problem/:sId',
+  .state('4tab.problem', {
+    url: '/menu/:cId/:sId/problem',
     views: {
       'tab-problem': {
-        templateUrl: 'templates/tab-problem.html'
+        templateUrl: 'templates/tab-problem.html',
+        controller: 'ContentCtrl'
       }
     },
-    controller: 'ContentCtrl'
   })
 
-  .state('tab.solution', {
-      url: '/menu/:cId/solution/:sId',
+  .state('4tab.solution', {
+      url: '/menu/:cId/:sId/solution',
       views: {
         'tab-solution': {
-          templateUrl: 'templates/tab-solution.html'
+          templateUrl: 'templates/tab-solution.html',
+          controller: 'ContentCtrl'
         }
       },
-      controller: 'ContentCtrl'
     })
-    .state('tab.tips', {
-      url: '/menu/:cId/tips/:sId',
+    .state('4tab.tips', {
+      url: '/menu/:cId/:sId/tips',
       views: {
         'tab-tips': {
-          templateUrl: 'templates/tab-tips.html'
+          templateUrl: 'templates/tab-tips.html',
+          controller: 'ContentCtrl'
         }
       },
-      controller: 'ContentCtrl'
     })
 
-  .state('tab.resources', {
-    url: '/menu/:cId/resources/:sId',
+  .state('4tab.resources', {
+    url: '/menu/:cId/:sId/resources',
     views: {
       'tab-resources': {
-        templateUrl: 'templates/tab-resources.html'
+        templateUrl: 'templates/tab-resources.html',
+        controller: 'ContentCtrl'
       }
     },
-    controller: 'ContentCtrl'
   })
 
   ;
