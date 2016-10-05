@@ -11,8 +11,5 @@ angular.module('starter.controllers', ['starter.services'])
 // })
 
 .controller('SubcatsCtrl', function($scope, $stateParams, Content) {
-  console.log('called');
-  $scope.cats = Content.get($stateParams.id);
-    // $scope.subcats = Content.query();
-    // console.log($scope.subcats);
+  $scope.cats = Content.get($stateParams.cId);
 });

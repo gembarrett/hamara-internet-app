@@ -39,7 +39,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('subcategories', {
-    url: '/menu/:id',
+    url: '/menu/:cId',
     templateUrl: 'templates/subcategories.html',
     controller: 'SubcatsCtrl'
   })
