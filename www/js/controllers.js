@@ -1,21 +1,36 @@
 angular.module('starter.controllers', ['starter.services'])
-
-// list the categories
-.controller('CatsCtrl', function($scope, Content){
-  $scope.cats = Content.all();
-  // $scope.categories = Content.query();
+.run(function($rootScope){
+  $rootScope.cats;
 })
 
-// .controller('CatsCtrl', function($scope, Content) {
-//     $scope.subcats = Content.query();
-// })
+// list the categories
+.controller('CatsCtrl', function($scope, $rootScope, Content){
+  Content.all().then(function(cats){
+    $rootScope.cats = cats.data;
+    $scope.cats = cats.data;
+  });
+})
 
 // find the subcategories
-.controller('SubcatsCtrl', function($scope, $stateParams, Content) {
-  // $scope.cats = Content.getCats($stateParams.cId);
-    $scope.subcats = Content.getSubcats($stateParams.cId);
-});
+.controller('SubcatsCtrl', function($scope, $rootScope, $state, $stateParams, Content) {
+  if ($rootScope.cats != undefined) {
+    var cats = $rootScope.cats;
+    var subcats = [];
+    for (var i = 0; i < cats.length; i++) {
+      // if the category matches the one we're looking for
+      if (cats[i].cId === $stateParams.cId){
+        $scope.subcats = cats[i].subcats;
+        console.log(subcats);
+        // return that category object
+        return $scope.subcats;
+      }
+    }
+  } else {
+    Content.all().then(function(cats){
+      $rootScope.cats = cats.data;
+      $scope.cats = cats.data;
+      $state.go('categories');
+    });
+  }
 
-// .controller('getSubcatsCtrl', function($scope, $stateParams, Content){
-//   $scope.content = Content.getSubcats($stateParams.cId);
-// })
+});
