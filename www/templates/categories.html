@@ -1,9 +1,9 @@
 <ion-view view-title="Hamara Internet" class="category-menu">
   <ion-content>
-      <button ng-repeat="cat in cats"
+      <a ng-repeat="cat in cats"
             href="#/menu/{{cat.id}}">
             {{cat.cTitle}}
-      </button>
+      </a>
       <!-- <button ng-repeat="category in categories"
             href="#/main/categories/{{category.cId}}">{{category.cTitle}}
       </button> -->
