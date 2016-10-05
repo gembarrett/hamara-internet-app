@@ -33,13 +33,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('categories',{
-    url: '/categories',
+    url: '/menu',
     templateUrl: 'templates/categories.html',
     controller: "CatsCtrl"
   })
 
-  .state('subcategories',{
-    url: '/subcategories',
+  .state('subcategories', {
+    url: '/menu/:id',
     templateUrl: 'templates/subcategories.html',
     controller: 'SubcatsCtrl'
   })
@@ -83,7 +83,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         templateUrl: 'templates/tab-resources.html'
       }
     }
-  });
+  })
+
+
+  // TODO: this is all kinds of wrong. You know it and I know it. Fix it.
+  // .state('online', {
+  //   url: '/online',
+  //   views: {
+  //     'tab-resources': {
+  //       templateUrl: 'templates/tab-resources.html'
+  //     }
+  //   }
+  // })
+
+
+
+  ;
+
 
 
   // if none of the above states are matched, use this as the fallback
