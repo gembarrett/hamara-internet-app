@@ -1,7 +1,7 @@
-<ion-view view-title="Add title" class="subcategory-menu">
+<ion-view view-title="{{cats[0].cTitle}}" class="subcategory-menu">
   <ion-content>
     <a ng-repeat="subcat in subcats"
-          href="#/menu/problem/{{subcat.sId}}">
+          href="#/menu/{{cId}}/problem/{{subcat.sId}}">
           {{subcat.sTitle}}
     </a>
   </ion-content>

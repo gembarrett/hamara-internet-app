@@ -44,59 +44,51 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'SubcatsCtrl'
   })
 
-  .state('tab', {
-    url: '/tab',
+  .state('4tab', {
+    url: '/menu/:cId/tab/:sId',
     templateUrl: 'templates/tabs.html',
-    abstract: true
+    abstract: true,
+    controller: 'ContentCtrl'
   })
 
   .state('tab.problem', {
-    url: '/problem',
+    url: '/menu/:cId/problem/:sId',
     views: {
       'tab-problem': {
         templateUrl: 'templates/tab-problem.html'
       }
-    }
+    },
+    controller: 'ContentCtrl'
   })
 
   .state('tab.solution', {
-      url: '/solution',
+      url: '/menu/:cId/solution/:sId',
       views: {
         'tab-solution': {
           templateUrl: 'templates/tab-solution.html'
         }
-      }
+      },
+      controller: 'ContentCtrl'
     })
     .state('tab.tips', {
-      url: '/tips',
+      url: '/menu/:cId/tips/:sId',
       views: {
         'tab-tips': {
           templateUrl: 'templates/tab-tips.html'
         }
-      }
+      },
+      controller: 'ContentCtrl'
     })
 
   .state('tab.resources', {
-    url: '/resources',
+    url: '/menu/:cId/resources/:sId',
     views: {
       'tab-resources': {
         templateUrl: 'templates/tab-resources.html'
       }
-    }
+    },
+    controller: 'ContentCtrl'
   })
-
-
-  // TODO: this is all kinds of wrong. You know it and I know it. Fix it.
-  // .state('online', {
-  //   url: '/online',
-  //   views: {
-  //     'tab-resources': {
-  //       templateUrl: 'templates/tab-resources.html'
-  //     }
-  //   }
-  // })
-
-
 
   ;
 
