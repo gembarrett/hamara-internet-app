@@ -39,10 +39,52 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('subcategories',{
-    url: '/:categoryId',
+    url: '/subcategories',
     templateUrl: 'templates/subcategories.html',
     controller: 'SubcatsCtrl'
+  })
+
+  .state('tab', {
+    url: '/tab',
+    templateUrl: 'templates/tabs.html',
+    abstract: true
+  })
+
+  .state('tab.problem', {
+    url: '/problem',
+    views: {
+      'tab-problem': {
+        templateUrl: 'templates/tab-problem.html'
+      }
+    }
+  })
+
+  .state('tab.solution', {
+      url: '/solution',
+      views: {
+        'tab-solution': {
+          templateUrl: 'templates/tab-solution.html'
+        }
+      }
+    })
+    .state('tab.tips', {
+      url: '/tips',
+      views: {
+        'tab-tips': {
+          templateUrl: 'templates/tab-tips.html'
+        }
+      }
+    })
+
+  .state('tab.resources', {
+    url: '/resources',
+    views: {
+      'tab-resources': {
+        templateUrl: 'templates/tab-resources.html'
+      }
+    }
   });
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/');
