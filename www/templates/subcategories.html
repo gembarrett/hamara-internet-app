@@ -1,6 +1,6 @@
 <ion-view view-title="{{cats[0].cTitle}}" class="subcategory-menu">
   <ion-content>
-    <a ng-repeat="subcat in subcats" ui-sref="4tab.problem" ui-sref-active="active">
+    <a ng-repeat="subcat in subcats" ui-sref="4tab.problem({catid: cats[0].cId, subcatid: subcat.sId})" ui-sref-active="active">
           {{subcat.sTitle}}
     </a>
   </ion-content>

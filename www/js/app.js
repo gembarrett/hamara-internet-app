@@ -45,52 +45,52 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('4tab', {
-    url: '/menu/:cId/:sId/tab',
+    url: '/menu/:catid/:subcatid/tab',
     templateUrl: 'templates/tabs.html',
     abstract: true
   })
 
   .state('4tab.problem', {
-    url: '/menu/:cId/:sId/problem',
+    url: '/menu/:catid/:subcatid/problem',
     views: {
       'tab-problem': {
         templateUrl: 'templates/tab-problem.html',
         controller: 'ContentCtrl'
       }
-    },
+    }
   })
 
   .state('4tab.solution', {
       cache: false,
-      url: '/menu/:cId/:sId/solution',
+      url: '/menu/:catid/:subcatid/solution',
       views: {
         'tab-solution': {
           templateUrl: 'templates/tab-solution.html',
           controller: 'ContentCtrl'
         }
-      },
+      }
     })
 
     .state('4tab.tips', {
       cache: false,
-      url: '/menu/:cId/:sId/tips',
+      url: '/menu/:catid/:subcatid/tips',
       views: {
         'tab-tips': {
           templateUrl: 'templates/tab-tips.html',
           controller: 'ContentCtrl'
         }
-      },
+      }
     })
 
   .state('4tab.resources', {
     cache: false,
-    url: '/menu/:cId/:sId/resources',
+    url: '/menu/:catid/:subcatid/resources',
     views: {
       'tab-resources': {
         templateUrl: 'templates/tab-resources.html',
         controller: 'ContentCtrl'
       }
-    },
+    }
   })
 
   ;
