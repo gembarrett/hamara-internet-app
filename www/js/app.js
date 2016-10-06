@@ -45,13 +45,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('4tab', {
-    url: '/menu/:catid/:subcatid/tab',
+    url: '/tab',
     templateUrl: 'templates/tabs.html',
     abstract: true
   })
 
   .state('4tab.problem', {
-    url: '/menu/:catid/:subcatid/problem',
+    url: '/:subcatid/problem',
     views: {
       'tab-problem': {
         templateUrl: 'templates/tab-problem.html',
@@ -61,8 +61,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('4tab.solution', {
-      cache: false,
-      url: '/menu/:catid/:subcatid/solution',
+      url: '/:subcatid/solution',
       views: {
         'tab-solution': {
           templateUrl: 'templates/tab-solution.html',
@@ -72,8 +71,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
     .state('4tab.tips', {
-      cache: false,
-      url: '/menu/:catid/:subcatid/tips',
+      url: '/:subcatid/tips',
       views: {
         'tab-tips': {
           templateUrl: 'templates/tab-tips.html',
@@ -83,8 +81,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
   .state('4tab.resources', {
-    cache: false,
-    url: '/menu/:catid/:subcatid/resources',
+    url: '/:subcatid/resources',
     views: {
       'tab-resources': {
         templateUrl: 'templates/tab-resources.html',
