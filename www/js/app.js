@@ -45,9 +45,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('4tab', {
-    url: '/tab',
+    url: '/menu/:catid/tab',
     templateUrl: 'templates/tabs.html',
-    abstract: true
+    abstract: true,
+    controller: 'ContentCtrl'
   })
 
   .state('4tab.problem', {

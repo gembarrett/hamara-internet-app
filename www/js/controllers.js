@@ -2,6 +2,8 @@ angular.module('starter.controllers', ['starter.services'])
 .run(function($rootScope){
   $rootScope.cats;
   $rootScope.subcats;
+  $rootScope.chosenCat;
+  $rootScope.chosenSubcat;
 })
 
 // list the categories
@@ -17,6 +19,7 @@ angular.module('starter.controllers', ['starter.services'])
   if ($rootScope.cats != undefined) {
     var cats = $rootScope.cats;
     var subcats = [];
+    $rootScope.chosenCat = $stateParams.cId;
     $scope.cId = $stateParams.cId;
     for (var i = 0; i < cats.length; i++) {
       // if the category matches the one we're looking for
@@ -39,7 +42,12 @@ angular.module('starter.controllers', ['starter.services'])
 
 // find the subcategories
 .controller('ContentCtrl', function($scope, $rootScope, $state, $stateParams, Content) {
-  console.log($rootScope.cats);
+  if ($state.params.subcatid != '' && $state.params.subcatid != undefined) {
+    $rootScope.chosenSubcat = $state.params.subcatid;
+  }
+  $scope.subcatid = $rootScope.chosenSubcat;
+
+  // console.log($rootScope.cats);
   // if ($rootScope.cats != undefined) {
   //   var subcats = $rootScope.subcats;
   //   console.log(subcats);
