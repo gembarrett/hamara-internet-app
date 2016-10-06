@@ -63,8 +63,8 @@ angular.module('starter.controllers', ['starter.services'])
         case '4tab.tips':
           $scope.content = $rootScope.subcats[i].tips;
           break;
-        case '4tab.problem':
-          $scope.resources = $rootScope.subcats[i].resources;
+        case '4tab.resources':
+          $scope.content = $rootScope.subcats[i].resources;
           break;
         default:
           console.log('idk wtf is going on');
