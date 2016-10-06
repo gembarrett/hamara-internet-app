@@ -61,6 +61,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('4tab.solution', {
+      cache: false,
       url: '/menu/:cId/:sId/solution',
       views: {
         'tab-solution': {
@@ -69,7 +70,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       },
     })
+
     .state('4tab.tips', {
+      cache: false,
       url: '/menu/:cId/:sId/tips',
       views: {
         'tab-tips': {
@@ -80,6 +83,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     })
 
   .state('4tab.resources', {
+    cache: false,
     url: '/menu/:cId/:sId/resources',
     views: {
       'tab-resources': {
