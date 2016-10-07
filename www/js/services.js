@@ -1,7 +1,7 @@
 angular.module('starter.services', ['ngResource'])
 
 .factory('Content', function ($http) {
-  var content = '../data.json';
+  var content = 'appdata/data.json';
   return {
     all: function() {
       return $http({

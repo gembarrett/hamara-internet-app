@@ -92,4 +92,4 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 
-/www/data.json
+/www/appdata/
