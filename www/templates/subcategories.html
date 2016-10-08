@@ -1,4 +1,4 @@
-<ion-view view-title="{{cTitle}}" class="subcategory-menu">
+<ion-view view-title="{{cTitle}}{{cId}}" class="subcategory-menu">
   <ion-content>
     <div ng-repeat="subcat in subcats" ng-switch on="cId">
       <a ng-switch-when="report" ui-sref="2tab.how-who({catid: cId, subcatid: subcat.sId})"

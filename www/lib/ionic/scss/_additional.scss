@@ -71,12 +71,15 @@ ion-view[state="main"] {
   @include background-opacity($green, 0.1);
 }
 
-ion-header-bar {
+ion-header-bar.bar-header.bar {
   background-color: $green;
 }
 
 .bar {
     background-size: 100% 0px;
+}
+.bar.bar-stable .title {
+  color:white;
 }
 
 [nav-view-transition="ios"][nav-view-direction="forward"], [nav-view-transition="ios"][nav-view-direction="back"] {
@@ -84,8 +87,27 @@ ion-header-bar {
 }
 
 .category-menu {
-  button {
+  background-color: rgba($green, 0.2);
+  a {
+    &:first-child, &:nth-child(2) {
+      margin-top:20px;
+    }
     background-color: $blue;
     color: #fff;
+    width:45%;
+    min-height:60px;
+    text-decoration: none;
+    display:inline-block;
+    padding:10px;
+    margin:10px 2.5%;
+    text-align: center;
+    font-size:0.75em;
+    &:last-child {
+      width:95%;
+    }
+    span {
+      display:block;
+      font-size: 1.3em;
+    }
   }
 }
