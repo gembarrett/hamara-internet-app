@@ -67,12 +67,18 @@ ion-content {
   padding-top:2em;
 }
 
-ion-view[state="main"] {
-  @include background-opacity($green, 0.1);
+ion-view[state="categories"], ion-view[state="subcategories"] {
+  background-color: rgba($green, 0.2);
 }
 
 ion-header-bar.bar-header.bar {
   background-color: $green;
+}
+.bar-stable .button.button-clear {
+  color:white;
+  span.back-text {
+    display:none;
+  }
 }
 
 .bar {
@@ -87,10 +93,16 @@ ion-header-bar.bar-header.bar {
 }
 
 .category-menu {
-  background-color: rgba($green, 0.2);
   a {
     &:first-child, &:nth-child(2) {
       margin-top:20px;
+    }
+    &:nth-last-child(3), &:nth-last-child(3) span,
+    &:nth-last-child(2), &:nth-last-child(2) span,
+    &:nth-last-child(1), &:nth-last-child(1) span, {
+      font-size: inherit;
+      display: inline-block;
+      vertical-align: middle;
     }
     background-color: $blue;
     color: #fff;

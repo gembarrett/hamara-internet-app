@@ -9870,13 +9870,16 @@ ion-content {
   margin: 1em;
   padding-top: 2em; }
 
-ion-view[state="main"] {
-  background: #7DC240;
-  /* The Fallback */
-  background: rgba(125, 194, 64, 0.1); }
+ion-view[state="categories"], ion-view[state="subcategories"] {
+  background-color: rgba(125, 194, 64, 0.2); }
 
 ion-header-bar.bar-header.bar {
   background-color: #7DC240; }
+
+.bar-stable .button.button-clear {
+  color: white; }
+  .bar-stable .button.button-clear span.back-text {
+    display: none; }
 
 .bar {
   background-size: 100% 0px; }
@@ -9887,23 +9890,25 @@ ion-header-bar.bar-header.bar {
 [nav-view-transition="ios"][nav-view-direction="forward"], [nav-view-transition="ios"][nav-view-direction="back"] {
   background-color: #fff; }
 
-.category-menu {
-  background-color: rgba(125, 194, 64, 0.2); }
-  .category-menu a {
-    background-color: #97CCCC;
-    color: #fff;
-    width: 45%;
-    min-height: 60px;
-    text-decoration: none;
+.category-menu a {
+  background-color: #97CCCC;
+  color: #fff;
+  width: 45%;
+  min-height: 60px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 2.5%;
+  text-align: center;
+  font-size: 0.75em; }
+  .category-menu a:first-child, .category-menu a:nth-child(2) {
+    margin-top: 20px; }
+  .category-menu a:nth-last-child(3), .category-menu a:nth-last-child(3) span, .category-menu a:nth-last-child(2), .category-menu a:nth-last-child(2) span, .category-menu a:nth-last-child(1), .category-menu a:nth-last-child(1) span {
+    font-size: inherit;
     display: inline-block;
-    padding: 10px;
-    margin: 10px 2.5%;
-    text-align: center;
-    font-size: 0.75em; }
-    .category-menu a:first-child, .category-menu a:nth-child(2) {
-      margin-top: 20px; }
-    .category-menu a:last-child {
-      width: 95%; }
-    .category-menu a span {
-      display: block;
-      font-size: 1.3em; }
+    vertical-align: middle; }
+  .category-menu a:last-child {
+    width: 95%; }
+  .category-menu a span {
+    display: block;
+    font-size: 1.3em; }
