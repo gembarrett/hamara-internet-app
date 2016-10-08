@@ -9817,8 +9817,6 @@ a.button {
 
 .green-with-buttons {
   background-color: #7DC240; }
-  .green-with-buttons ion-content {
-    padding-top: 3em; }
   .green-with-buttons img {
     height: 240px;
     width: auto;
@@ -9845,8 +9843,10 @@ a.button {
       font-size: 0.8em;
       display: block; }
 
+.test {
+  background-color: #7DC240; }
+
 .orgs a {
-  width: 30%;
   margin: 0 8px; }
 
 .orgs img {
@@ -9856,7 +9856,7 @@ a.button {
   border: 1px solid #97CCCC; }
 
 .button-container {
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 .flex-those-boxes {
   display: flex;
@@ -9877,6 +9877,9 @@ ion-view[state="main"] {
 
 ion-header-bar {
   background-color: #7DC240; }
+
+.bar {
+  background-size: 100% 0px; }
 
 [nav-view-transition="ios"][nav-view-direction="forward"], [nav-view-transition="ios"][nav-view-direction="back"] {
   background-color: #fff; }

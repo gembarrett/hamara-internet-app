@@ -1,8 +1,5 @@
 .green-with-buttons {
   background-color: $green;
-  ion-content {
-    padding-top:3em;
-  }
   img {
      height:240px;
      width:auto;
@@ -36,9 +33,12 @@
   }
 }
 
+.test {
+  background-color: $green;
+}
+
 .orgs {
   a {
-    width:30%;
     margin: 0 8px;
   }
   img {
@@ -50,7 +50,7 @@
 }
 
 .button-container {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .flex-those-boxes {
@@ -73,6 +73,10 @@ ion-view[state="main"] {
 
 ion-header-bar {
   background-color: $green;
+}
+
+.bar {
+    background-size: 100% 0px;
 }
 
 [nav-view-transition="ios"][nav-view-direction="forward"], [nav-view-transition="ios"][nav-view-direction="back"] {
