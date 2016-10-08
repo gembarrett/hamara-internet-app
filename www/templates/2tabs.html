@@ -1,0 +1,11 @@
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+  <ion-tab title="How" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" ui-sref="2tab.problem({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
+    <ion-nav-view name="tab-how-who"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Where" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" ui-sref="2tab.solution({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
+    <ion-nav-view name="tab-where-contact"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
