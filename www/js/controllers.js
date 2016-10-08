@@ -52,27 +52,43 @@ angular.module('starter.controllers', ['starter.services'])
   $scope.subcatid = $rootScope.chosenSubcat;
   $scope.currentTab = $state.current.name;
   console.log($rootScope.subcats);
-  for (var i=0; i<$rootScope.subcats.length; i++){
-    if ($rootScope.subcats[i].sId === $scope.subcatid){
-      switch ($scope.currentTab) {
-        case '4tab.problem':
-          $scope.content = $rootScope.subcats[i].problem;
-          break;
-        case '4tab.solution':
-          $scope.content = $rootScope.subcats[i].solution;
-          break;
-        case '4tab.tips':
-          $scope.content = $rootScope.subcats[i].tips;
-          break;
-        case '4tab.resources':
-          $scope.content = $rootScope.subcats[i].resources;
-          break;
-        default:
-          console.log('idk wtf is going on');
+  if ($rootScope.chosenCat === 'report') {
+    for (var i=0; i<$rootScope.subcats.length; i++){
+      if ($rootScope.subcats[i].sId === $scope.subcatid){
+        switch ($scope.currentTab) {
+          case '2tab.how-who':
+            $scope.content = $rootScope.subcats[i].how;
+            break;
+          case '2tab.where-contact':
+            $scope.content = $rootScope.subcats[i].where;
+            break;
+          default:
+            console.log('idk wtf is going on');
+        }
+      }
+    }
+  } else {
+    for (var i=0; i<$rootScope.subcats.length; i++){
+      if ($rootScope.subcats[i].sId === $scope.subcatid){
+        switch ($scope.currentTab) {
+          case '4tab.problem':
+            $scope.content = $rootScope.subcats[i].problem;
+            break;
+          case '4tab.solution':
+            $scope.content = $rootScope.subcats[i].solution;
+            break;
+          case '4tab.tips':
+            $scope.content = $rootScope.subcats[i].tips;
+            break;
+          case '4tab.resources':
+            $scope.content = $rootScope.subcats[i].resources;
+            break;
+          default:
+            console.log('idk wtf is going on');
+        }
       }
     }
   }
-
   // console.log($rootScope.cats);
   // if ($rootScope.cats != undefined) {
   //   var subcats = $rootScope.subcats;
