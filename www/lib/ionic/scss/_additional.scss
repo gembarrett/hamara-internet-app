@@ -102,7 +102,6 @@ ion-header-bar.bar-header.bar {
     &:nth-last-child(1), &:nth-last-child(1) span, {
       font-size: inherit;
       display: inline-block;
-      vertical-align: middle;
     }
     background-color: $blue;
     color: #fff;
@@ -120,6 +119,32 @@ ion-header-bar.bar-header.bar {
     span {
       display:block;
       font-size: 1.3em;
+    }
+  }
+}
+
+.subcategory-menu {
+  a {
+    width:95%;
+    background-color: $blue;
+    color: #fff;
+    min-height:80px;
+    text-decoration: none;
+    display:block;
+    padding:1.2em;
+    margin:2em 2.5%;
+    .title {
+      font-size:1.3em;
+      display:block;
+      line-height: 2em;
+    }
+    .intro {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 1.5em;
     }
   }
 }

@@ -9912,3 +9912,24 @@ ion-header-bar.bar-header.bar {
   .category-menu a span {
     display: block;
     font-size: 1.3em; }
+
+.subcategory-menu a {
+  width: 95%;
+  background-color: #97CCCC;
+  color: #fff;
+  min-height: 80px;
+  text-decoration: none;
+  display: block;
+  padding: 1.2em;
+  margin: 2em 2.5%; }
+  .subcategory-menu a .title {
+    font-size: 1.3em;
+    display: block;
+    line-height: 2em; }
+  .subcategory-menu a .intro {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.5em; }
