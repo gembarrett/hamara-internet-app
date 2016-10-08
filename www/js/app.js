@@ -108,7 +108,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('2tab.where-cotact', {
+  .state('2tab.where-contact', {
     url: '/:subcatid/where-contact',
     views: {
       'tab-where-contact': {

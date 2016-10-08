@@ -1,7 +1,14 @@
-<ion-view view-title="{{cats[0].cTitle}}" class="subcategory-menu">
+<ion-view view-title="{{cTitle}}" class="subcategory-menu">
   <ion-content>
-    <a ng-repeat="subcat in subcats" ui-sref="4tab.problem({catid: cats[0].cId, subcatid: subcat.sId})" ui-sref-active="active">
-          {{subcat.sTitle}}
-    </a>
+    <div ng-repeat="subcat in subcats" ng-switch on="cId">
+      <a ng-switch-when="report" ui-sref="2tab.how-who({catid: cId, subcatid: subcat.sId})"
+      ui-sref-active="active">
+            {{subcat.sTitle}}
+      </a>
+      <a ng-switch-default ui-sref="4tab.problem({catid: cId, subcatid: subcat.sId})"
+      ui-sref-active="active">
+            {{subcat.sTitle}}
+      </a>
+  </div>
   </ion-content>
 </ion-view>

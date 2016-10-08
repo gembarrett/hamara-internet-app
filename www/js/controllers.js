@@ -24,6 +24,7 @@ angular.module('starter.controllers', ['starter.services'])
     for (var i = 0; i < cats.length; i++) {
       // if the category matches the one we're looking for
       if (cats[i].cId === $stateParams.cId){
+        $scope.cTitle = cats[i].cTitle;
         $scope.subcats = cats[i].subcats;
         $rootScope.subcats = $scope.subcats;
         // return that category object
