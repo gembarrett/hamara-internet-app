@@ -67,7 +67,7 @@ angular.module('starter.controllers', ['starter.services'])
         }
       }
     }
-  } else if ($rootScope.chosenCat === 'tips') {
+  } else if ($rootScope.chosenCat === 'tips' || $rootScope.chosenCat === 'app') {
     // for every subcat
     for (var i=0; i<$rootScope.subcats.length; i++){
       // if the subcat matches the selected one

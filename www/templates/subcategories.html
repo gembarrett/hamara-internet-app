@@ -11,6 +11,11 @@
             <span class="title">{{subcat.sTitle}}</span>
             <span class="intro" ng-bind-html="subcat.text">{{subcat.text}}</span>
       </a>
+      <a ng-switch-when="app" ui-sref="text-content({catid: cId, subcatid: subcat.sId})"
+      ui-sref-active="active" class="text-content-links">
+            <span class="title">{{subcat.sTitle}}</span>
+            <span class="intro" ng-bind-html="subcat.text">{{subcat.text}}</span>
+      </a>
       <a ng-switch-default ui-sref="4tab.problem({catid: cId, subcatid: subcat.sId})"
       ui-sref-active="active">
             <span class="title">{{subcat.sTitle}}</span>
