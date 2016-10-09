@@ -9958,7 +9958,7 @@ hr {
 ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
   color: white; }
 
-.tips-tab, .how-who-tab {
+.tips-tab, .how-who-tab, .text-content {
   background-color: rgba(125, 194, 64, 0.2); }
 
 .problem-tab {

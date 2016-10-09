@@ -117,6 +117,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'ContentCtrl'
       }
     }
+  })
+
+  .state('text-content', {
+    url: '/:subcatid/content',
+    templateUrl:'templates/text-content.html',
+    controller: 'ContentCtrl'
   });
 
 

@@ -67,6 +67,16 @@ angular.module('starter.controllers', ['starter.services'])
         }
       }
     }
+  } else if ($rootScope.chosenCat === 'tips') {
+    // for every subcat
+    for (var i=0; i<$rootScope.subcats.length; i++){
+      // if the subcat matches the selected one
+      if ($rootScope.subcats[i].sId === $scope.subcatid){
+        // save title and content to variables
+        $scope.thisSubcat = $rootScope.subcats[i].sTitle;
+        $scope.content = $rootScope.subcats[i].text;
+      }
+    }
   } else {
     for (var i=0; i<$rootScope.subcats.length; i++){
       if ($rootScope.subcats[i].sId === $scope.subcatid){
@@ -90,29 +100,4 @@ angular.module('starter.controllers', ['starter.services'])
       }
     }
   }
-  // console.log($rootScope.cats);
-  // if ($rootScope.cats != undefined) {
-  //   var subcats = $rootScope.subcats;
-  //   console.log(subcats);
-  //   // for (var i = 0; i < subcats.length; i++) {
-  //   //   // if the category matches the one we're looking for
-  //   //   if (cats[i].cId === $stateParams.cId){
-  //   //     $scope.subcats = cats[i].subcats;
-  //   //     console.log(subcats);
-  //   //     // return that category object
-  //   //     return $scope.subcats;
-  //   //   }
-  //   // }
-  // } else {
-  //   Content.all().then(function(cats){
-  //     $rootScope.cats = cats.data;
-  //     $scope.cats = cats.data;
-  //     $state.go('categories');
-  //   });
-  // }
-
-})
-
-
-
-;
+});

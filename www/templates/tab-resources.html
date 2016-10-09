@@ -1,5 +1,6 @@
 <ion-pane class="resources-tab" view-title="Resources">
   <ion-content>
+    <h1>{{thisSubcat}} <span>- resources</span></h1>
     <div ng-repeat="resource in resources">
       <a href="{{resource.resourceUrl}}">
             {{resource.resourceText}}
