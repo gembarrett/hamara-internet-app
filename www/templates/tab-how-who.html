@@ -1,5 +1,6 @@
-<ion-pane view-title="How">
+<ion-pane class="how-who-tab" view-title="How">
   <ion-content>
-    {{content}}
+    <h1>{{thisSubcat}} <span>- how</span></h1>
+    <p ng-bind-html="content">{{content}}</p>
   </ion-content>
 </ion-pane>

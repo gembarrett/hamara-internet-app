@@ -54,12 +54,13 @@ angular.module('starter.controllers', ['starter.services'])
   if ($rootScope.chosenCat === 'report') {
     for (var i=0; i<$rootScope.subcats.length; i++){
       if ($rootScope.subcats[i].sId === $scope.subcatid){
+        $scope.thisSubcat = $rootScope.subcats[i].sTitle;
         switch ($scope.currentTab) {
           case '2tab.how-who':
             $scope.content = $rootScope.subcats[i].how;
             break;
           case '2tab.where-contact':
-            $scope.content = $rootScope.subcats[i].where;
+            $scope.resources = $rootScope.subcats[i].where;
             break;
           default:
             console.log('idk wtf is going on');
@@ -82,7 +83,6 @@ angular.module('starter.controllers', ['starter.services'])
             break;
           case '4tab.resources':
             $scope.resources = $rootScope.subcats[i].resources;
-            console.log($scope.resources);
             break;
           default:
             console.log('idk wtf is going on');

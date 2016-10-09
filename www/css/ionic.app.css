@@ -9933,9 +9933,9 @@ ion-header-bar.bar-header.bar {
     -webkit-box-orient: vertical;
     line-height: 1.5em; }
 
-.resources-tab {
+.resources-tab, .where-contact-tab {
   background-color: rgba(151, 204, 204, 0.2); }
-  .resources-tab a {
+  .resources-tab a, .where-contact-tab a {
     width: 95%;
     background-color: #97CCCC;
     color: #fff;
@@ -9952,10 +9952,13 @@ ul {
 .tab-nav.tabs {
   background-color: #7DC240; }
 
+hr {
+  color: white; }
+
 ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
   color: white; }
 
-.tips-tab {
+.tips-tab, .how-who-tab {
   background-color: rgba(125, 194, 64, 0.2); }
 
 .problem-tab {
@@ -9963,3 +9966,7 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-col
 
 .solution-tab {
   background-color: rgba(254, 205, 4, 0.2); }
+
+h1:first-child {
+  font-size: 1.5em;
+  margin-top: 0.5em; }

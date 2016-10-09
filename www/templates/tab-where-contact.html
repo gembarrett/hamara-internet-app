@@ -1,5 +1,10 @@
-<ion-pane view-title="Where">
+<ion-pane class="where-contact-tab" view-title="Where">
   <ion-content>
-    {{content}}
+    <h1>{{thisSubcat}} <span>- where</span></h1>
+    <div ng-repeat="resource in resources">
+      <a href="{{resource.resourceUrl}}">
+            {{resource.resourceText}}
+      </a>
+    </div>
   </ion-content>
 </ion-pane>

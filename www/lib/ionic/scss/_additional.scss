@@ -149,7 +149,7 @@ ion-header-bar.bar-header.bar {
   }
 }
 
-.resources-tab {
+.resources-tab, .where-contact-tab {
   background-color:rgba($blue, 0.2);
   a {
     width:95%;
@@ -172,11 +172,15 @@ ul {
   background-color:$green;
 }
 
+hr {
+  color:white;
+}
+
 ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
   color: white;
 }
 
-.tips-tab {
+.tips-tab, .how-who-tab {
   background-color:rgba($green, 0.2);
 }
 .problem-tab {
@@ -184,4 +188,9 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-col
 }
 .solution-tab {
   background-color:rgba($yellow, 0.2);
+}
+
+h1:first-child {
+  font-size: 1.5em;
+  margin-top:0.5em;
 }
