@@ -150,6 +150,7 @@ ion-header-bar.bar-header.bar {
 }
 
 .resources-tab {
+  background-color:rgba($blue, 0.2);
   a {
     width:95%;
     background-color: $blue;
@@ -163,4 +164,24 @@ ion-header-bar.bar-header.bar {
 
 ul {
   list-style-type: disc;
+  display:list-item;
+  margin: 1em;
+}
+
+.tab-nav.tabs {
+  background-color:$green;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+  color: white;
+}
+
+.tips-tab {
+  background-color:rgba($green, 0.2);
+}
+.problem-tab {
+  background-color:rgba($pink, 0.2);
+}
+.solution-tab {
+  background-color:rgba($yellow, 0.2);
 }

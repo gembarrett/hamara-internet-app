@@ -1,11 +1,9 @@
 <ion-pane class="resources-tab" view-title="Resources">
   <ion-content>
-    <ul>
-      <li ng-repeat="resource in resources">
-        <a href="{{resource.resourceUrl}}">
-              {{resource.resourceText}}
-        </a>
-      </li>
-    </ul>
+    <div ng-repeat="resource in resources">
+      <a href="{{resource.resourceUrl}}">
+            {{resource.resourceText}}
+      </a>
+    </div>
   </ion-content>
 </ion-pane>
