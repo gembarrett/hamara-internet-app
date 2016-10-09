@@ -9905,8 +9905,7 @@ ion-header-bar.bar-header.bar {
     margin-top: 20px; }
   .category-menu a:nth-last-child(3), .category-menu a:nth-last-child(3) span, .category-menu a:nth-last-child(2), .category-menu a:nth-last-child(2) span, .category-menu a:nth-last-child(1), .category-menu a:nth-last-child(1) span {
     font-size: inherit;
-    display: inline-block;
-    vertical-align: middle; }
+    display: inline-block; }
   .category-menu a:last-child {
     width: 95%; }
   .category-menu a span {
@@ -9933,3 +9932,15 @@ ion-header-bar.bar-header.bar {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     line-height: 1.5em; }
+
+.resources-tab a {
+  width: 95%;
+  background-color: #97CCCC;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 1.2em;
+  margin: 2em 2.5%; }
+
+ul {
+  list-style-type: disc; }

@@ -51,7 +51,6 @@ angular.module('starter.controllers', ['starter.services'])
   }
   $scope.subcatid = $rootScope.chosenSubcat;
   $scope.currentTab = $state.current.name;
-  console.log($rootScope.subcats);
   if ($rootScope.chosenCat === 'report') {
     for (var i=0; i<$rootScope.subcats.length; i++){
       if ($rootScope.subcats[i].sId === $scope.subcatid){
@@ -70,6 +69,7 @@ angular.module('starter.controllers', ['starter.services'])
   } else {
     for (var i=0; i<$rootScope.subcats.length; i++){
       if ($rootScope.subcats[i].sId === $scope.subcatid){
+        $scope.thisSubcat = $rootScope.subcats[i].sTitle;
         switch ($scope.currentTab) {
           case '4tab.problem':
             $scope.content = $rootScope.subcats[i].problem;
@@ -81,7 +81,8 @@ angular.module('starter.controllers', ['starter.services'])
             $scope.content = $rootScope.subcats[i].tips;
             break;
           case '4tab.resources':
-            $scope.content = $rootScope.subcats[i].resources;
+            $scope.resources = $rootScope.subcats[i].resources;
+            console.log($scope.resources);
             break;
           default:
             console.log('idk wtf is going on');

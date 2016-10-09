@@ -23,7 +23,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  $ionicConfigProvider.tabs.position('bottom');
 
   $stateProvider
 
@@ -46,7 +47,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('4tab', {
     url: '/menu/:catid/4tab',
-    templateUrl: 'templates/4tabs.html',
+    templateUrl: 'templates/tabs.html',
     abstract: true,
     controller: 'ContentCtrl'
   })
