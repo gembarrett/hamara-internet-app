@@ -146,7 +146,7 @@ ion-header-bar.bar-header.bar {
       -webkit-box-orient: vertical;
       line-height: 1.5em;
       display: -webkit-box;
-      p,ul {
+      p,ul,div {
         display:none;
       }
       p:first-child {
@@ -155,18 +155,20 @@ ion-header-bar.bar-header.bar {
     }
   }
 }
-
-.resources-tab, .where-contact-tab {
-  background-color:rgba($blue, 0.2);
-  a {
-    width:95%;
-    background-color: $blue;
-    color: #fff;
-    text-decoration: none;
-    display:block;
-    padding:1.2em;
-    margin:2em 2.5%;
+.text-content, .tabbed-content {
+  div > a {
+      width:95%;
+      background-color: $blue;
+      color: #fff;
+      text-decoration: none;
+      display:block;
+      padding:1.2em;
+      margin:2em 2.5%;
   }
+}
+
+.resources-tab {
+  background-color:rgba($blue, 0.2);
 }
 
 ul {
@@ -183,16 +185,12 @@ hr {
   color:white;
 }
 
-ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated,
-ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated, ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
   color: white;
+  border-color: white;
 }
 
-// a.text-content-links .title {
-//   font-size: 1em;
-// }
-
-.tips-tab, .how-who-tab, .text-content {
+.tips-tab, .text-content {
   background-color:rgba($green, 0.2);
 }
 .problem-tab {
