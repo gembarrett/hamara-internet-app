@@ -112,7 +112,7 @@ ion-header-bar.bar-header.bar {
     padding:10px;
     margin:10px 2.5%;
     text-align: center;
-    font-size:0.75em;
+    font-size:0.85em;
     &:last-child {
       width:95%;
     }
@@ -141,10 +141,16 @@ ion-header-bar.bar-header.bar {
     .intro {
       overflow: hidden;
       text-overflow: ellipsis;
-      display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       line-height: 1.5em;
+      display: -webkit-box;
+      p,ul {
+        display:none;
+      }
+      p:first-child {
+        display:initial;
+      }
     }
   }
 }
@@ -180,9 +186,9 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-col
   color: white;
 }
 
-a.text-content-links .title {
-  font-size: 1em;
-}
+// a.text-content-links .title {
+//   font-size: 1em;
+// }
 
 .tips-tab, .how-who-tab, .text-content {
   background-color:rgba($green, 0.2);
