@@ -51,27 +51,28 @@ angular.module('starter.controllers', ['starter.services'])
   }
   $scope.subcatid = $rootScope.chosenSubcat;
   $scope.currentTab = $state.current.name;
-  if ($rootScope.chosenCat === 'report' || $rootScope.chosenCat === 'support') {
-    for (var i=0; i<$rootScope.subcats.length; i++){
-      if ($rootScope.subcats[i].sId === $scope.subcatid){
-        $scope.thisSubcat = $rootScope.subcats[i].sTitle;
-        $scope.thisCat = $rootScope.chosenCat;
-        if ($scope.currentTab === '2tab.how-who'){
-          if ($rootScope.chosenCat === 'report'){
-            $scope.content = $rootScope.subcats[i].how;
-          } else {
-            $scope.content = $rootScope.subcats[i].who;
-          }
-        } else {
-          if ($rootScope.chosenCat === 'report'){
-            $scope.resources = $rootScope.subcats[i].where;
-          } else {
-            $scope.resources = $rootScope.subcats[i].contact;
-          }
-        }
-      }
-    }
-  } else if ($rootScope.chosenCat === 'tips' || $rootScope.chosenCat === 'app') {
+  // if ($rootScope.chosenCat === 'report' || $rootScope.chosenCat === 'support') {
+  //   for (var i=0; i<$rootScope.subcats.length; i++){
+  //     if ($rootScope.subcats[i].sId === $scope.subcatid){
+  //       $scope.thisSubcat = $rootScope.subcats[i].sTitle;
+  //       $scope.thisCat = $rootScope.chosenCat;
+  //       if ($scope.currentTab === '2tab.how-who'){
+  //         if ($rootScope.chosenCat === 'report'){
+  //           $scope.content = $rootScope.subcats[i].how;
+  //         } else {
+  //           $scope.content = $rootScope.subcats[i].who;
+  //         }
+  //       } else {
+  //         if ($rootScope.chosenCat === 'report'){
+  //           $scope.resources = $rootScope.subcats[i].where;
+  //         } else {
+  //           $scope.resources = $rootScope.subcats[i].contact;
+  //         }
+  //       }
+  //     }
+  //   }
+  // } else
+  if ($rootScope.chosenCat === 'tips' || $rootScope.chosenCat === 'app' || $rootScope.chosenCat === 'report' || $rootScope.chosenCat === 'support') {
     // for every subcat
     for (var i=0; i<$rootScope.subcats.length; i++){
       // if the subcat matches the selected one
@@ -79,6 +80,7 @@ angular.module('starter.controllers', ['starter.services'])
         // save title and content to variables
         $scope.thisSubcat = $rootScope.subcats[i].sTitle;
         $scope.content = $rootScope.subcats[i].text;
+        $scope.resources = $rootScope.subcats[i].resources;
       }
     }
   } else {

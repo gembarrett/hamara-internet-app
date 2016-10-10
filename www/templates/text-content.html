@@ -2,5 +2,12 @@
   <ion-content>
     <h1>{{thisSubcat}}</h1>
     <p ng-bind-html="content">{{content}}</p>
+
+    <div ng-repeat="resource in resources">
+      <a href="{{resource.resourceUrl}}">
+          {{resource.resourceText}}
+      </a>
+    </div>
+
   </ion-content>
 </ion-view>

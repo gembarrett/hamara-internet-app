@@ -92,33 +92,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('2tab', {
-    url: '/menu/:catid/2tab',
-    templateUrl: 'templates/2tabs.html',
-    abstract: true,
-    controller: 'ContentCtrl'
-  })
-
-  .state('2tab.how-who', {
-    url: '/:subcatid/how-who',
-    views: {
-      'tab-how-who': {
-        templateUrl: 'templates/tab-how-who.html',
-        controller: 'ContentCtrl'
-      }
-    }
-  })
-
-  .state('2tab.where-contact', {
-    url: '/:subcatid/where-contact',
-    views: {
-      'tab-where-contact': {
-        templateUrl: 'templates/tab-where-contact.html',
-        controller: 'ContentCtrl'
-      }
-    }
-  })
-
   .state('text-content', {
     url: '/:subcatid/content',
     templateUrl:'templates/text-content.html',

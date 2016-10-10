@@ -1,18 +1,11 @@
 <ion-pane class="where-contact-tab" view-title="Where">
 <ion-content>
     <h1>{{thisSubcat}}</h1>
-
-    <div ng-if="thisCat==='report'">
+{{content}}{{resources}}
     <div ng-repeat="resource in resources">
-      <a href="{{resource.resourceUrl}}">
-          {{resource.resourceText}}
-      </a>
+      <!-- <a href="{{resource.resourceUrl}}">
+          {{resource}}
+      </a> -->
     </div>
-  </div>
-    <div ng-if="thisCat==='support'">
-    <div ng-bind-html="resources">
-      {{resources}}
-    </div>
-  </div>
   </ion-content>
 </ion-pane>
