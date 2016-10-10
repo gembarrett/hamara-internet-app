@@ -19,7 +19,7 @@
       <a ng-switch-when="support" ui-sref="2tab.how-who({catid: cId, subcatid: subcat.sId})"
       ui-sref-active="active" class="text-content-links">
             <span class="title">{{subcat.sTitle}}</span>
-            <span class="intro" ng-bind-html="subcat.text">{{subcat.contact}}</span>
+            <span class="intro" ng-bind-html="subcat.contact">{{subcat.contact}}</span>
       </a>
       <a ng-switch-default ui-sref="4tab.problem({catid: cId, subcatid: subcat.sId})"
       ui-sref-active="active">

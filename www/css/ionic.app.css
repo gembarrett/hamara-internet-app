@@ -9974,3 +9974,7 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-col
 h1:first-child {
   font-size: 1.5em;
   margin-top: 0.5em; }
+
+.subcategory-menu p > a {
+  margin: initial;
+  padding: initial; }

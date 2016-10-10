@@ -51,19 +51,23 @@ angular.module('starter.controllers', ['starter.services'])
   }
   $scope.subcatid = $rootScope.chosenSubcat;
   $scope.currentTab = $state.current.name;
-  if ($rootScope.chosenCat === 'report') {
+  if ($rootScope.chosenCat === 'report' || $rootScope.chosenCat === 'support') {
     for (var i=0; i<$rootScope.subcats.length; i++){
       if ($rootScope.subcats[i].sId === $scope.subcatid){
         $scope.thisSubcat = $rootScope.subcats[i].sTitle;
-        switch ($scope.currentTab) {
-          case '2tab.how-who':
+        $scope.thisCat = $rootScope.chosenCat;
+        if ($scope.currentTab === '2tab.how-who'){
+          if ($rootScope.chosenCat === 'report'){
             $scope.content = $rootScope.subcats[i].how;
-            break;
-          case '2tab.where-contact':
+          } else {
+            $scope.content = $rootScope.subcats[i].who;
+          }
+        } else {
+          if ($rootScope.chosenCat === 'report'){
             $scope.resources = $rootScope.subcats[i].where;
-            break;
-          default:
-            console.log('idk wtf is going on');
+          } else {
+            $scope.resources = $rootScope.subcats[i].contact;
+          }
         }
       }
     }
