@@ -1,6 +1,15 @@
 <ion-view view-title="{{cTitle}} {{cId}}" class="subcategory-menu">
   <ion-content>
-    <div ng-repeat="subcat in subcats" ng-switch on="cId">
+    <div ng-if="cId === 'support'" class="support">
+      <p ng-bind-html="content">{{content}}</p>
+      <div ng-repeat="resource in resources">
+        <a href="{{resource.resourceUrl}}">
+            {{resource.resourceText}}
+        </a>
+      </div>
+    </div>
+
+    <div ng-if="cId != support" ng-repeat="subcat in subcats" ng-switch on="cId">
       <a ng-switch-when="report" ui-sref="text-content({catid: cId, subcatid: subcat.sId})"
       ui-sref-active="active">
             <span class="title">{{subcat.sTitle}}</span>
@@ -12,11 +21,6 @@
             <span class="intro" ng-bind-html="subcat.text">{{subcat.text}}</span>
       </a>
       <a ng-switch-when="app" ui-sref="text-content({catid: cId, subcatid: subcat.sId})"
-      ui-sref-active="active" class="text-content-links">
-            <span class="title">{{subcat.sTitle}}</span>
-            <span class="intro" ng-bind-html="subcat.text">{{subcat.text}}</span>
-      </a>
-      <a ng-switch-when="support" ui-sref="text-content({catid: cId, subcatid: subcat.sId})"
       ui-sref-active="active" class="text-content-links">
             <span class="title">{{subcat.sTitle}}</span>
             <span class="intro" ng-bind-html="subcat.text">{{subcat.text}}</span>

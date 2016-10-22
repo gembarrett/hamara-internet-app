@@ -102,6 +102,7 @@ ion-header-bar.bar-header.bar {
     &:nth-last-child(1), &:nth-last-child(1) span, {
       font-size: inherit;
       display: inline-block;
+      line-height: 40px;
     }
     background-color: $blue;
     color: #fff;
@@ -208,4 +209,14 @@ h1:first-child {
 .subcategory-menu p > a {
   margin: initial;
   padding: initial;
+}
+
+ion-pane > ion-content {
+  padding:2em;
+  line-height: 1.5em;
+  font-size:1.25em;
+}
+
+.subcategory-menu .support a{
+  min-height: 30px;
 }

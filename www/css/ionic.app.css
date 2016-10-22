@@ -9905,7 +9905,8 @@ ion-header-bar.bar-header.bar {
     margin-top: 20px; }
   .category-menu a:nth-last-child(3), .category-menu a:nth-last-child(3) span, .category-menu a:nth-last-child(2), .category-menu a:nth-last-child(2) span, .category-menu a:nth-last-child(1), .category-menu a:nth-last-child(1) span {
     font-size: inherit;
-    display: inline-block; }
+    display: inline-block;
+    line-height: 40px; }
   .category-menu a:last-child {
     width: 95%; }
   .category-menu a span {
@@ -9980,3 +9981,11 @@ h1:first-child {
 .subcategory-menu p > a {
   margin: initial;
   padding: initial; }
+
+ion-pane > ion-content {
+  padding: 2em;
+  line-height: 1.5em;
+  font-size: 1.25em; }
+
+.subcategory-menu .support a {
+  min-height: 30px; }

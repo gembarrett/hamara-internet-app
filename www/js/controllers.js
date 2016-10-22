@@ -24,14 +24,20 @@ angular.module('starter.controllers', ['starter.services'])
     for (var i = 0; i < cats.length; i++) {
       // if the category matches the one we're looking for
       if (cats[i].cId === $stateParams.cId){
-        $scope.cTitle = cats[i].cTitle;
-        $scope.subcats = cats[i].subcats;
-        $rootScope.subcats = $scope.subcats;
-        // return that category object
-        return $scope.subcats;
+        if ($stateParams.cId === 'support') {
+          $scope.cTitle = cats[i].cTitle;
+          $scope.content = cats[i].text;
+        } else {
+          $scope.cTitle = cats[i].cTitle;
+          $scope.subcats = cats[i].subcats;
+          $rootScope.subcats = $scope.subcats;
+          // return that category object
+          return $scope.subcats;
+        }
       }
     }
-  } else {
+  }
+  else {
     Content.all().then(function(cats){
       $rootScope.cats = cats.data;
       $scope.cats = cats.data;
@@ -51,28 +57,8 @@ angular.module('starter.controllers', ['starter.services'])
   }
   $scope.subcatid = $rootScope.chosenSubcat;
   $scope.currentTab = $state.current.name;
-  // if ($rootScope.chosenCat === 'report' || $rootScope.chosenCat === 'support') {
-  //   for (var i=0; i<$rootScope.subcats.length; i++){
-  //     if ($rootScope.subcats[i].sId === $scope.subcatid){
-  //       $scope.thisSubcat = $rootScope.subcats[i].sTitle;
-  //       $scope.thisCat = $rootScope.chosenCat;
-  //       if ($scope.currentTab === '2tab.how-who'){
-  //         if ($rootScope.chosenCat === 'report'){
-  //           $scope.content = $rootScope.subcats[i].how;
-  //         } else {
-  //           $scope.content = $rootScope.subcats[i].who;
-  //         }
-  //       } else {
-  //         if ($rootScope.chosenCat === 'report'){
-  //           $scope.resources = $rootScope.subcats[i].where;
-  //         } else {
-  //           $scope.resources = $rootScope.subcats[i].contact;
-  //         }
-  //       }
-  //     }
-  //   }
-  // } else
-  if ($rootScope.chosenCat === 'tips' || $rootScope.chosenCat === 'app' || $rootScope.chosenCat === 'report' || $rootScope.chosenCat === 'support') {
+  if ($rootScope.chosenCat === 'tips' || $rootScope.chosenCat === 'app' || $rootScope.chosenCat === 'report') {
+    console.log('here too');
     // for every subcat
     for (var i=0; i<$rootScope.subcats.length; i++){
       // if the subcat matches the selected one
@@ -83,7 +69,16 @@ angular.module('starter.controllers', ['starter.services'])
         $scope.resources = $rootScope.subcats[i].resources;
       }
     }
+  }
+  else if ($rootScope.chosenCat === 'support') {
+    console.log('here');
+    // if ($stateParams.cId === 'support') {
+    //   console.log($stateParams.cId);
+    //   $scope.content = $stateParams.text;
+    // } else {
+    //
   } else {
+
     for (var i=0; i<$rootScope.subcats.length; i++){
       if ($rootScope.subcats[i].sId === $scope.subcatid){
         $scope.thisSubcat = $rootScope.subcats[i].sTitle;

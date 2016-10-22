@@ -96,7 +96,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/:subcatid/content',
     templateUrl:'templates/text-content.html',
     controller: 'ContentCtrl'
-  });
+  })  ;
 
 
 
