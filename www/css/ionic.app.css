@@ -9988,4 +9988,5 @@ ion-pane > ion-content {
   font-size: 1.25em; }
 
 .subcategory-menu .support a {
-  min-height: 30px; }
+  min-height: 30px;
+  text-align: center; }

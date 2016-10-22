@@ -27,6 +27,7 @@ angular.module('starter.controllers', ['starter.services'])
         if ($stateParams.cId === 'support') {
           $scope.cTitle = cats[i].cTitle;
           $scope.content = cats[i].text;
+          $scope.resources = cats[i].resources;
         } else {
           $scope.cTitle = cats[i].cTitle;
           $scope.subcats = cats[i].subcats;

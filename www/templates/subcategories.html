@@ -1,12 +1,12 @@
 <ion-view view-title="{{cTitle}} {{cId}}" class="subcategory-menu">
   <ion-content>
     <div ng-if="cId === 'support'" class="support">
-      <p ng-bind-html="content">{{content}}</p>
       <div ng-repeat="resource in resources">
         <a href="{{resource.resourceUrl}}">
             {{resource.resourceText}}
         </a>
       </div>
+      <p ng-bind-html="content">{{content}}</p>
     </div>
 
     <div ng-if="cId != support" ng-repeat="subcat in subcats" ng-switch on="cId">
