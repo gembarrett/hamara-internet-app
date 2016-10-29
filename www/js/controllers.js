@@ -15,7 +15,7 @@ angular.module('starter.controllers', ['starter.services'])
 })
 
 // find the subcategories
-.controller('SubcatsCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams, Content) {
+.controller('SubcatsCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
   if ($rootScope.cats != undefined) {
     var cats = $rootScope.cats;
     var subcats = [];
@@ -49,7 +49,7 @@ angular.module('starter.controllers', ['starter.services'])
 })
 
 // find the subcategories
-.controller('ContentCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams, Content) {
+.controller('ContentCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
   if ($rootScope.subcats === '' || $rootScope.subcats === undefined) {
     $ionicHistory.clearCache().then(function(){ $state.go('app') });
   }
