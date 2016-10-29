@@ -4,7 +4,7 @@
     <p ng-bind-html="content">{{content}}</p>
 
     <div ng-repeat="resource in resources">
-      <a href="{{resource.resourceUrl}}">
+      <a ng-href="{{resource.resourceUrl}}" onclick="window.open(this.href, '_blank', 'location=yes'); return false;">
           {{resource.resourceText}}
       </a>
     </div>
