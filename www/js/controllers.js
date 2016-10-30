@@ -7,11 +7,21 @@ angular.module('starter.controllers', ['starter.services'])
 })
 
 // list the categories
-.controller('CatsCtrl', function($scope, $ionicHistory, $rootScope, Content, $state, $stateParams){
+.controller('CatsCtrlEN', function($scope, $ionicHistory, $rootScope, ContentEN, $state, $stateParams){
   $scope.$on('$ionicView.beforeEnter', function() {
     checkForHome($ionicHistory.currentStateName());
   });
-  Content.all().then(function(cats){
+  ContentEN.all().then(function(cats){
+    $rootScope.cats = cats.data;
+    $scope.cats = cats.data;
+  });
+})
+
+.controller('CatsCtrlPK', function($scope, $ionicHistory, $rootScope, ContentPK, $state, $stateParams){
+  $scope.$on('$ionicView.beforeEnter', function() {
+    checkForHome($ionicHistory.currentStateName());
+  });
+  ContentPK.all().then(function(cats){
     $rootScope.cats = cats.data;
     $scope.cats = cats.data;
   });

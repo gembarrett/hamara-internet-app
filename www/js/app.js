@@ -33,10 +33,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/splash.html'
   })
 
-  .state('categories',{
+  .state('categories-pk',{
     url: '/menu',
     templateUrl: 'templates/categories.html',
-    controller: "CatsCtrl"
+    controller: "CatsCtrlPK"
+  })
+
+  .state('categories-en',{
+    url: '/menu',
+    templateUrl: 'templates/categories.html',
+    controller: "CatsCtrlEN"
   })
 
   .state('subcategories', {
