@@ -7,21 +7,22 @@ angular.module('starter.controllers', ['starter.services'])
 })
 
 // list the categories
-.controller('CatsCtrl', function($scope, $rootScope, Content){
+.controller('CatsCtrl', function($scope, $ionicHistory, $rootScope, Content, $state, $stateParams){
+  $scope.$on('$ionicView.beforeEnter', function() {
+    checkForHome($ionicHistory.currentStateName());
+  });
   Content.all().then(function(cats){
     $rootScope.cats = cats.data;
     $scope.cats = cats.data;
-    // button = document.getElementById('home-button');
-    // button.removeAttribute('disabled');
   });
 })
 
 // find the subcategories
 .controller('SubcatsCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
   if ($rootScope.cats != undefined) {
-    // typeof $state === 'undefined'
-    // button = document.getElementById('home-button');
-    // button.removeAttribute('disabled');
+    $scope.$on('$ionicView.beforeEnter', function() {
+      checkForHome($ionicHistory.currentStateName());
+    });
     var cats = $rootScope.cats;
     var subcats = [];
     $rootScope.chosenCat = $stateParams.cId;
@@ -55,18 +56,9 @@ angular.module('starter.controllers', ['starter.services'])
 
 // find the subcategories
 .controller('ContentCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
-
-  try {
-    console.log($state.current.name);
-  } catch(e) {
-    console.log(e);
-  }
-
-  // button = document.getElementById('home-button');
-  // button.setAttribute('disabled', 'true');
-
-  button = document.getElementById('home-button');
-  button.removeAttribute('disabled');
+  $scope.$on('$ionicView.beforeEnter', function() {
+    checkForHome($ionicHistory.currentStateName());
+  });
   if ($rootScope.subcats === '' || $rootScope.subcats === undefined) {
     $ionicHistory.clearCache().then(function(){ $state.go('app') });
   }
@@ -120,3 +112,18 @@ angular.module('starter.controllers', ['starter.services'])
     }
   }
 });
+
+function checkForHome(name){
+  if (name === 'categories'){
+    buttons = document.getElementsByClassName('home-button');
+    for (var i = 0; i<buttons.length; i++){
+      buttons[i].setAttribute('disabled', 'true');
+    }
+  } else {
+    buttons = document.getElementsByClassName('home-button');
+    for (var i = 0; i<buttons.length; i++){
+      buttons[i].removeAttribute('disabled');
+      console.log(buttons[i].attributes);
+    }
+  }
+}
