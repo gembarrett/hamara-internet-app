@@ -9820,7 +9820,7 @@ a.button {
   .green-with-buttons img {
     height: 240px;
     width: auto;
-    margin: 0 auto;
+    margin: 44px auto;
     display: block;
     margin-bottom: 1em; }
   .green-with-buttons button {
@@ -9844,7 +9844,8 @@ a.button {
       display: block; }
 
 .test {
-  background-color: #7DC240; }
+  background-color: #7DC240;
+  color: #7DC240; }
 
 .orgs a {
   margin: 0 8px; }

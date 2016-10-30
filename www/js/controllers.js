@@ -114,16 +114,15 @@ angular.module('starter.controllers', ['starter.services'])
 });
 
 function checkForHome(name){
-  if (name === 'categories'){
+  if (name != 'categories'){
     buttons = document.getElementsByClassName('home-button');
     for (var i = 0; i<buttons.length; i++){
-      buttons[i].setAttribute('disabled', 'true');
+      buttons[i].removeAttribute('disabled');
     }
   } else {
     buttons = document.getElementsByClassName('home-button');
     for (var i = 0; i<buttons.length; i++){
-      buttons[i].removeAttribute('disabled');
-      console.log(buttons[i].attributes);
+      buttons[i].setAttribute('disabled', 'true');
     }
   }
 }
