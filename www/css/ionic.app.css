@@ -9990,3 +9990,14 @@ ion-pane > ion-content {
 .subcategory-menu .support a {
   min-height: 30px;
   text-align: center; }
+
+#home-button {
+  background-image: url("../img/logo.png");
+  width: 28px;
+  height: 36px;
+  background-size: cover;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5em; }
+  #home-button:disabled {
+    opacity: 0; }

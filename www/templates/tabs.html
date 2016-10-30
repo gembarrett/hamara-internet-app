@@ -1,20 +1,23 @@
-<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+<ion-view>
 
-    <ion-tab title="Problem" icon-off="ion-android-alert" icon-on="ion-android-alert" ui-sref="4tab.problem({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
-      <ion-nav-view name="tab-problem"></ion-nav-view>
-    </ion-tab>
+  <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
-    <ion-tab title="Solution" icon-off="ion-android-bulb" icon-on="ion-android-bulb" ui-sref="4tab.solution({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
-      <ion-nav-view name="tab-solution"></ion-nav-view>
-    </ion-tab>
+      <ion-tab title="Problem" icon-off="ion-android-alert" icon-on="ion-android-alert" ui-sref="4tab.problem({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
+        <ion-nav-view name="tab-problem"></ion-nav-view>
+      </ion-tab>
 
-    <ion-tab title="Tips" icon-off="ion-android-list" icon-on="ion-android-list" ui-sref="4tab.tips({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
-      <ion-nav-view name="tab-tips"></ion-nav-view>
-    </ion-tab>
+      <ion-tab title="Solution" icon-off="ion-android-bulb" icon-on="ion-android-bulb" ui-sref="4tab.solution({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
+        <ion-nav-view name="tab-solution"></ion-nav-view>
+      </ion-tab>
 
-    <ion-tab title="Resources" icon-off="ion-android-bookmark" icon-on="ion-android-bookmark" ui-sref="4tab.resources({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
-      <ion-nav-view name="tab-resources"></ion-nav-view>
-    </ion-tab>
+      <ion-tab title="Tips" icon-off="ion-android-list" icon-on="ion-android-list" ui-sref="4tab.tips({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
+        <ion-nav-view name="tab-tips"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Resources" icon-off="ion-android-bookmark" icon-on="ion-android-bookmark" ui-sref="4tab.resources({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
+        <ion-nav-view name="tab-resources"></ion-nav-view>
+      </ion-tab>
 
 
-</ion-tabs>
+  </ion-tabs>
+</ion-view>

@@ -11,12 +11,17 @@ angular.module('starter.controllers', ['starter.services'])
   Content.all().then(function(cats){
     $rootScope.cats = cats.data;
     $scope.cats = cats.data;
+    // button = document.getElementById('home-button');
+    // button.removeAttribute('disabled');
   });
 })
 
 // find the subcategories
 .controller('SubcatsCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
   if ($rootScope.cats != undefined) {
+    // typeof $state === 'undefined'
+    // button = document.getElementById('home-button');
+    // button.removeAttribute('disabled');
     var cats = $rootScope.cats;
     var subcats = [];
     $rootScope.chosenCat = $stateParams.cId;
@@ -50,6 +55,18 @@ angular.module('starter.controllers', ['starter.services'])
 
 // find the subcategories
 .controller('ContentCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
+
+  try {
+    console.log($state.current.name);
+  } catch(e) {
+    console.log(e);
+  }
+
+  // button = document.getElementById('home-button');
+  // button.setAttribute('disabled', 'true');
+
+  button = document.getElementById('home-button');
+  button.removeAttribute('disabled');
   if ($rootScope.subcats === '' || $rootScope.subcats === undefined) {
     $ionicHistory.clearCache().then(function(){ $state.go('app') });
   }
