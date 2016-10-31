@@ -1,31 +1,28 @@
+var language = 'pk';
+
 angular.module('starter.controllers', ['starter.services'])
 .run(function($rootScope){
+  $rootScope.lang = language;
   $rootScope.cats;
   $rootScope.subcats;
   $rootScope.chosenCat;
   $rootScope.chosenSubcat;
 })
 
+
 // list the categories
-.controller('CatsCtrlEN', function($scope, $ionicHistory, $rootScope, ContentEN, $state, $stateParams){
+.controller('CatsCtrl', function($scope, $ionicHistory, $rootScope, Content, $state, $stateParams){
   $scope.$on('$ionicView.beforeEnter', function() {
     checkForHome($ionicHistory.currentStateName());
   });
-  ContentEN.all().then(function(cats){
-    $rootScope.cats = cats.data;
-    $scope.cats = cats.data;
+  $scope.$on('$ionicView.enter', function() {
+    Content.all().then(function(cats){
+      $rootScope.cats = cats.data;
+      $scope.cats = cats.data;
+    });
   });
 })
 
-.controller('CatsCtrlPK', function($scope, $ionicHistory, $rootScope, ContentPK, $state, $stateParams){
-  $scope.$on('$ionicView.beforeEnter', function() {
-    checkForHome($ionicHistory.currentStateName());
-  });
-  ContentPK.all().then(function(cats){
-    $rootScope.cats = cats.data;
-    $scope.cats = cats.data;
-  });
-})
 
 // find the subcategories
 .controller('SubcatsCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
@@ -135,4 +132,8 @@ function checkForHome(name){
       buttons[i].setAttribute('disabled', 'true');
     }
   }
+}
+
+function setLang(lang) {
+  language = lang;
 }

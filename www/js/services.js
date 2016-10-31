@@ -1,22 +1,14 @@
 angular.module('starter.services', ['ngResource'])
 
-.factory('ContentEN', function ($http) {
-  // var content = 'appdata/data-pk.json';
-  var content = 'appdata/data-en.json';
+.factory('Content', function ($http) {
   return {
     all: function() {
-      return $http({
-        url: content,
-        method: 'GET'
-      });
-    },
-  }
-})
-
-.factory('ContentPK', function ($http) {
-  var content = 'appdata/data-pk.json';
-  return {
-    all: function() {
+      var content;
+      if (language === 'en') {
+        content = 'appdata/data-en.json';
+      } else {
+        content = 'appdata/data-pk.json';
+      }
       return $http({
         url: content,
         method: 'GET'
