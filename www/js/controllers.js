@@ -39,10 +39,12 @@ angular.module('starter.controllers', ['starter.services'])
       if (cats[i].cId === $stateParams.cId){
         if ($stateParams.cId === 'support') {
           $scope.cTitle = cats[i].cTitle;
+          $scope.cTitle2 = cats[i].cTitle2;
           $scope.content = cats[i].text;
           $scope.resources = cats[i].resources;
         } else {
           $scope.cTitle = cats[i].cTitle;
+          $scope.cTitle2 = cats[i].cTitle2;
           $scope.subcats = cats[i].subcats;
           $rootScope.subcats = $scope.subcats;
           // return that category object

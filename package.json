@@ -1,7 +1,7 @@
 {
-  "name": "hamara-app",
+  "name": "Hamara Internet",
   "version": "1.1.1",
-  "description": "hamara-app: An Ionic project",
+  "description": "Hamara Internet: digital security training",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",

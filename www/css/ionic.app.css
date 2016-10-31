@@ -9843,10 +9843,6 @@ a.button {
       font-size: 0.8em;
       display: block; }
 
-.test {
-  background-color: #7DC240;
-  color: #7DC240; }
-
 .orgs a {
   margin: 0 8px; }
 
@@ -10002,3 +9998,6 @@ ion-pane > ion-content {
   border-radius: 0.5em; }
   .home-button:disabled {
     opacity: 0; }
+
+.pk-lang .category-menu span {
+  display: none; }
