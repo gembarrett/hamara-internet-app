@@ -139,3 +139,18 @@ function checkForHome(name){
 function setLang(lang) {
   language = lang;
 }
+
+function addLangToBody(content){
+  if (language === 'en') {
+    content = 'appdata/data-en.json';
+    var bdy = document.getElementsByTagName('body');
+    bdy[0].classList.remove("pk-lang");
+    bdy[0].classList.toggle("en-lang");
+  } else {
+    content = 'appdata/data-pk.json';
+    var bdy = document.getElementsByTagName('body');
+    bdy[0].classList.remove("en-lang");
+    bdy[0].classList.toggle("pk-lang");
+  }
+  return content;
+}

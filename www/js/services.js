@@ -4,21 +4,9 @@ angular.module('starter.services', ['ngResource'])
   return {
     all: function() {
       var content;
-      if (language === 'en') {
-        content = 'appdata/data-en.json';
-        var bdy = document.getElementsByTagName('body');
-        console.log(bdy[0]);
-        bdy[0].classList.remove("pk-lang");
-        bdy[0].classList.toggle("en-lang");
-      } else {
-        content = 'appdata/data-pk.json';
-        var bdy = document.getElementsByTagName('body');
-        console.log(bdy[0]);
-        bdy[0].classList.remove("en-lang");
-        bdy[0].classList.toggle("pk-lang");
-      }
+      // addLangToBody(content);
       return $http({
-        url: content,
+        url: addLangToBody(content),
         method: 'GET'
       });
     },

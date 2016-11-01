@@ -9999,5 +9999,14 @@ ion-pane > ion-content {
   .home-button:disabled {
     opacity: 0; }
 
-.pk-lang .category-menu span {
-  display: none; }
+.pk-lang {
+  direction: rtl; }
+  .pk-lang .buttons-right {
+    right: unset !important;
+    left: 5px; }
+  .pk-lang .back-button {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); }
+  .pk-lang .category-menu span {
+    display: none; }

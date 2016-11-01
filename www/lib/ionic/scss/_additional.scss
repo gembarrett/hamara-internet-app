@@ -231,6 +231,16 @@ ion-pane > ion-content {
 }
 
 .pk-lang {
+  direction:rtl;
+  .buttons-right {
+    right:unset !important;
+    left:5px;
+  }
+  .back-button {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+  }
   .category-menu span {
     display:none;
   }
