@@ -4,7 +4,7 @@ angular.module('starter.services', ['ngResource'])
   return {
     all: function() {
       var content;
-      // addLangToBody(content);
+      console.log('content call');
       return $http({
         url: setContent(content),
         method: 'GET'

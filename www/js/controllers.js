@@ -9,14 +9,22 @@ angular.module('starter.controllers', ['starter.services'])
   $rootScope.chosenSubcat;
 })
 
+.controller('SplashCtrl', function($scope){
+  $scope.$on('$ionicView.enter', function() {
+    var bdy = document.getElementsByTagName('body');
+    bdy[0].classList.remove("pk-lang", "en-lang");
+  });
+})
 
 // list the categories
 .controller('CatsCtrl', function($scope, $ionicHistory, $rootScope, Content, $state, $stateParams){
-  $scope.$on('$ionicView.beforeEnter', function() {
+  // $scope.$on('$ionicView.beforeEnter', function() {
+  //   addLangToBody(language);
+  //   checkForHome($ionicHistory.currentStateName());
+  // });
+  $scope.$on('$ionicView.enter', function() {
     addLangToBody(language);
     checkForHome($ionicHistory.currentStateName());
-  });
-  $scope.$on('$ionicView.enter', function() {
     Content.all().then(function(cats){
       $rootScope.cats = cats.data;
       $scope.cats = cats.data;
@@ -28,7 +36,7 @@ angular.module('starter.controllers', ['starter.services'])
 // find the subcategories
 .controller('SubcatsCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
   if ($rootScope.cats != undefined) {
-    $scope.$on('$ionicView.beforeEnter', function() {
+    $scope.$on('$ionicView.enter', function() {
       checkForHome($ionicHistory.currentStateName());
     });
     var cats = $rootScope.cats;
@@ -66,7 +74,7 @@ angular.module('starter.controllers', ['starter.services'])
 
 // find the subcategories
 .controller('ContentCtrl', function($scope, $ionicHistory, $rootScope, $state, $stateParams) {
-  $scope.$on('$ionicView.beforeEnter', function() {
+  $scope.$on('$ionicView.enter', function() {
     checkForHome($ionicHistory.currentStateName());
   });
   if ($rootScope.subcats === '' || $rootScope.subcats === undefined) {
@@ -145,25 +153,26 @@ function setContent(content) {
   if (language === 'en') {
     content = 'appdata/data-en.json';
     addLangToBody(language);
-    console.log(language + 'in setContent EN');
   } else {
     content = 'appdata/data-pk.json';
     addLangToBody(language);
-    console.log(language + 'in setContent PK');
   }
   return content;
 }
 
 function addLangToBody(language){
+  var bdy = document.getElementsByTagName('body');
+  // if english is selected
   if (language === 'en') {
-    console.log(language + 'in addLangToBody EN');
-    var bdy = document.getElementsByTagName('body');
-    bdy[0].classList.remove("pk-lang");
-    bdy[0].classList.add("en-lang");
+    if (!(bdy[0].classList.contains("en-lang"))) {
+      // attach it
+      bdy[0].classList.remove("pk-lang");
+      bdy[0].classList.add("en-lang");
+    }
   } else {
-    console.log(language + 'in addLangToBody PK');
-    var bdy = document.getElementsByTagName('body');
-    bdy[0].classList.remove("en-lang");
-    bdy[0].classList.add("pk-lang");
+    if (!(bdy[0].classList.contains("pk-lang"))) {
+      bdy[0].classList.remove("en-lang");
+      bdy[0].classList.add("pk-lang");
+    }
   }
 }

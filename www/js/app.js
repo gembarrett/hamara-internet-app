@@ -31,6 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('app',{
     url: '/',
     templateUrl: 'templates/splash.html',
+    controller: 'SplashCtrl'
   })
 
   .state('categories',{
