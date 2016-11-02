@@ -6,7 +6,7 @@ angular.module('starter.services', ['ngResource'])
       var content;
       // addLangToBody(content);
       return $http({
-        url: addLangToBody(content),
+        url: setContent(content),
         method: 'GET'
       });
     },

@@ -13,6 +13,7 @@ angular.module('starter.controllers', ['starter.services'])
 // list the categories
 .controller('CatsCtrl', function($scope, $ionicHistory, $rootScope, Content, $state, $stateParams){
   $scope.$on('$ionicView.beforeEnter', function() {
+    addLangToBody(language);
     checkForHome($ionicHistory.currentStateName());
   });
   $scope.$on('$ionicView.enter', function() {
@@ -140,17 +141,29 @@ function setLang(lang) {
   language = lang;
 }
 
-function addLangToBody(content){
+function setContent(content) {
   if (language === 'en') {
     content = 'appdata/data-en.json';
-    var bdy = document.getElementsByTagName('body');
-    bdy[0].classList.remove("pk-lang");
-    bdy[0].classList.toggle("en-lang");
+    addLangToBody(language);
+    console.log(language + 'in setContent EN');
   } else {
     content = 'appdata/data-pk.json';
-    var bdy = document.getElementsByTagName('body');
-    bdy[0].classList.remove("en-lang");
-    bdy[0].classList.toggle("pk-lang");
+    addLangToBody(language);
+    console.log(language + 'in setContent PK');
   }
   return content;
+}
+
+function addLangToBody(language){
+  if (language === 'en') {
+    console.log(language + 'in addLangToBody EN');
+    var bdy = document.getElementsByTagName('body');
+    bdy[0].classList.remove("pk-lang");
+    bdy[0].classList.add("en-lang");
+  } else {
+    console.log(language + 'in addLangToBody PK');
+    var bdy = document.getElementsByTagName('body');
+    bdy[0].classList.remove("en-lang");
+    bdy[0].classList.add("pk-lang");
+  }
 }
