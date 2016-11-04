@@ -1,8 +1,8 @@
-var language = 'pk';
+var language;
 
 angular.module('starter.controllers', ['starter.services'])
 .run(function($rootScope){
-  $rootScope.lang = language;
+  $rootScope.lang;
   $rootScope.cats;
   $rootScope.subcats;
   $rootScope.chosenCat;
@@ -24,6 +24,7 @@ angular.module('starter.controllers', ['starter.services'])
   // });
   $scope.$on('$ionicView.enter', function() {
     addLangToBody(language);
+    $rootScope.lang = language;
     checkForHome($ionicHistory.currentStateName());
     Content.all().then(function(cats){
       $rootScope.cats = cats.data;

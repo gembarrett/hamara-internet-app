@@ -2,7 +2,8 @@
   <ion-content class="flex-those-boxes">
       <a ng-repeat="cat in cats"
             href="#/menu/{{cat.cId}}">
-            {{cat.cTitle}} <span>{{cat.cTitle2}}</span>
+            {{cat.cTitle}}
+            <span ng-if="lang === 'en'">{{cat.cTitle2}}</span>
       </a>
   </ion-content>
 </ion-view>
