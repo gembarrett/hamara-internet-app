@@ -4,7 +4,10 @@
     <div ng-bind-html="content"></div>
     <div ng-if="thisSubcat === 'Doxing'">
       <hr />
-      <a ng-href="https://www.DuckDuckGo.com" onclick="window.open(this.href, '_blank', 'location=yes'); return false;">Tap here to search for your digital shadow.</a>
+      <a ng-if="lang === 'en'" ng-href="https://www.DuckDuckGo.com" onclick="window.open(this.href, '_blank', 'location=yes'); return false;">Tap here to search for your digital shadow.</a>
+      <a ng-if="lang === 'pk'" ng-href="https://www.DuckDuckGo.com" onclick="window.open(this.href, '_blank', 'location=yes'); return false;">اپنا ڈیجیٹل شیڈو جاننے کیلئے یہاں دیکھئے
+        </a>
+
     </div>
   </ion-content>
 </ion-pane>
