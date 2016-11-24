@@ -2,5 +2,9 @@
   <ion-content>
     <h1>{{thisSubcat}} <span>- solution</span></h1>
     <div ng-bind-html="content"></div>
+    <div ng-if="thisSubcat === 'Doxing'">
+      <hr />
+      <a ng-href="https://www.DuckDuckGo.com" onclick="window.open(this.href, '_blank', 'location=yes'); return false;">Tap here to search for your digital shadow.</a>
+    </div>
   </ion-content>
 </ion-pane>
