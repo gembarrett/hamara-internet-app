@@ -9880,6 +9880,8 @@ ion-header-bar.bar-header.bar {
 
 .bar {
   background-size: 100% 0px; }
+  .bar.bar-stable {
+    border: 0; }
 
 .bar.bar-stable .title {
   color: white; }
@@ -10010,3 +10012,6 @@ ion-pane > ion-content {
     -webkit-transform: scaleX(-1); }
   .pk-lang .category-menu span {
     display: none; }
+
+.en-lang {
+  direction: ltr; }

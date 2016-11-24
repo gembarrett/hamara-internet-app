@@ -79,6 +79,9 @@ ion-header-bar.bar-header.bar {
 
 .bar {
     background-size: 100% 0px;
+    &.bar-stable{
+      border:0;
+    }
 }
 .bar.bar-stable .title {
   color:white;
@@ -244,4 +247,8 @@ ion-pane > ion-content {
   .category-menu span {
     display:none;
   }
+}
+
+.en-lang {
+  direction: ltr;
 }

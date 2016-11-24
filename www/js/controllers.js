@@ -87,7 +87,6 @@ angular.module('starter.controllers', ['starter.services'])
   $scope.subcatid = $rootScope.chosenSubcat;
   $scope.currentTab = $state.current.name;
   if ($rootScope.chosenCat === 'tips' || $rootScope.chosenCat === 'app' || $rootScope.chosenCat === 'report') {
-    console.log('here too');
     // for every subcat
     for (var i=0; i<$rootScope.subcats.length; i++){
       // if the subcat matches the selected one
