@@ -14,7 +14,7 @@
         <ion-nav-view name="tab-tips"></ion-nav-view>
       </ion-tab>
 
-      <ion-tab title="Resources" icon-off="ion-android-bookmark" icon-on="ion-android-bookmark" ui-sref="4tab.resources({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
+      <ion-tab ng-if="thisSubcat != 'USB drives' && thisSubcat != 'Cyberbullying'" title="Resources" icon-off="ion-android-bookmark" icon-on="ion-android-bookmark" ui-sref="4tab.resources({catid: $rootScope.chosenCat, subcatid: $rootScope.chosenSubcat})" ui-sref-active="active">
         <ion-nav-view name="tab-resources"></ion-nav-view>
       </ion-tab>
 
