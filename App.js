@@ -2,14 +2,19 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import MenuScreen from './components/menu';
+import { prefs } from './routes/prefs.js'
 
 class SplashScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Home',
+  goToMenu(lang) {
+    prefs.language = lang;
+    this.props.navigation.navigate('Menu');
   }
   render() {
     return (
-      <Button onPress={() => this.props.navigation.navigate('Menu')} title="Go to menu" />
+      <View>
+        <Button onPress={() => this.goToMenu('pk')} title="Urdu" />
+        <Button onPress={() => this.goToMenu('en')} title="English" />
+      </View>
     );
   }
 }
@@ -17,9 +22,6 @@ class SplashScreen extends React.Component {
 const App = StackNavigator({
   Splash: {
     screen: SplashScreen,
-    navigationOptions: {
-      headerTitle: 'Splash',
-    },
   },
   Menu: {
     screen: MenuScreen,
