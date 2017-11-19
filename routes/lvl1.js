@@ -1,5 +1,4 @@
-
-const lvl1 = [
+const lvl1Nav = [
   {
     id: 1,
     text: 'Protecting yourself online'
@@ -41,3 +40,5 @@ const lvl1 = [
     text:'I need support'
   }
 ];
+
+export {lvl1Nav};
