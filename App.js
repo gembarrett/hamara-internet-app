@@ -3,13 +3,16 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import MenuScreen from './components/menu';
 
-const SplashScreen = ({ navigation }) => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Home Screen</Text>
-    <Button onPress={() => navigation.navigate('Menu')} title="Go to details" />
-  </View>
-);
-
+class SplashScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Home',
+  }
+  render() {
+    return (
+      <Button onPress={() => this.props.navigation.navigate('Menu')} title="Go to menu" />
+    );
+  }
+}
 
 const App = StackNavigator({
   Splash: {
