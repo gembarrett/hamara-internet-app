@@ -1,25 +1,29 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import FourTab from './components/four-tab';
+import { StyleSheet, Text, View, Button } from 'react-native';
+import { StackNavigator } from 'react-navigation';
+import MenuScreen from './components/menu';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-        <FourTab />
-      </View>
-    );
-  }
-}
+const SplashScreen = ({ navigation }) => (
+  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <Text>Home Screen</Text>
+    <Button onPress={() => navigation.navigate('Menu')} title="Go to details" />
+  </View>
+);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+
+const App = StackNavigator({
+  Splash: {
+    screen: SplashScreen,
+    navigationOptions: {
+      headerTitle: 'Splash',
+    },
+  },
+  Menu: {
+    screen: MenuScreen,
+    navigationOptions: {
+      headerTitle: 'Menu',
+    },
   },
 });
+
+export default App;
