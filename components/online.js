@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import {online} from '../routes/lvl2.js';
+import { online } from '../routes/lvl2.js';
 
 export default class OnlineScreen extends React.Component {
   get buttons() {
