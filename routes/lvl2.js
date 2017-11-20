@@ -1,52 +1,72 @@
 const online = [
   {
     id: 1,
-    text: 'Google yourself'
+    route: "Search",
+    textEN: "Google yourself",
+    textPK: "Google yourself"
   },
   {
     id: 2,
-    text: 'Browsers'
+    route: "Browsers",
+    textEN: "Browsers",
+    textPK: "براوزرز"
   },
   {
     id: 3,
-    text: 'Hiding your location'
+    route: "Location",
+    textEN: "Hiding your location",
+    textPK: "اپنے مقام کو چھپانا"
   }
 ];
 
 const devices = [
   {
     id: 1,
-    text: 'Backups'
+    route: "Backups",
+    textEN: "Backups",
+    textPK: "محفوظ وسائل"
   },
   {
     id: 2,
-    text: 'Viruses and malware'
+    route: "Viruses",
+    textEN: "Viruses and malware",
+    textPK: "وائرس اور مالویئر"
   },
   {
     id: 3,
-    text: 'USB devices'
+    route: "USBs",
+    textEN: "USB devices",
+    textPK: "ڈرائیوزUSB"
   }
 ];
 
 const comms = [
   {
     id: 1,
-    text: 'Social media'
+    route: "Social",
+    textEN: "Social media",
+    textPK: "سوشل میڈیا"
   },
   {
     id: 2,
-    text: 'Chat apps'
+    route: "Chat",
+    textEN: "Chat apps",
+    textPK: "چیٹ ایپس"
   }
 ];
 
 const space = [
   {
     id: 1,
-    text: 'Harassment'
+    route: "Harassment",
+    textEN: "Harassment",
+    textPK: "ہراسانی"
   },
   {
     id: 2,
-    text: 'Cyber bullying'
+    route: "Cyber",
+    textEN: "Cyber bullying",
+    textPK: "سائبر بلنگ"
   }
 ];
 

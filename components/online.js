@@ -1,31 +1,34 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import { StackNavigator } from 'react-navigation';
 import { online } from '../routes/lvl2.js';
+import { prefs } from '../routes/prefs.js';
 
 export default class OnlineScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Protecting yourself online',
+  }
+
   get buttons() {
-    console.log(online);
-    // var buttonsListArr = [];
-    // for (let i = 0; i < lvl1Nav.length; i++){
-    //   buttonsListArr.push(
-    //     <View key = {lvl1Nav[i].id}>
-    //       <Button
-    //         title={lvl1Nav[i].text}
-    //         onPress={() => navigate('Menu')}>
-    //           {lvl1Nav[i].text}
-    //       </Button>
-    //     </View>
-    //   )
-    // }
-    // return buttonsListArr;
-  };
+    var buttonsListArr = [];
+    for (let i = 0; i < online.length; i++){
+      const route = online[i].route;
+      const text = prefs.language === 'pk' && online[i].textPK ? online[i].textPK : online[i].textEN;
+      buttonsListArr.push(
+        <View key = {online[i].id}>
+          <Button
+            title={text}
+            onPress={() => this.props.navigation.navigate(online[i].route)} />
+        </View>
+      )
+    }
+    return buttonsListArr;
+  }
 
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Online Screen</Text>
+      <View>
+        {this.buttons}
       </View>
     );
   }
-};
+}
