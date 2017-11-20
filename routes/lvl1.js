@@ -4,7 +4,8 @@ const lvl1Nav = [
   {
     id: 1,
     route: 'Online',
-    text: 'Protecting yourself online'
+    text: 'Protecting yourself online',
+    textPK: 'اپنی آن لائن حفاظت کرنا'
   },
   {
     id: 2,

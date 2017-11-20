@@ -13,14 +13,12 @@ export default class MenuScreen extends React.Component {
     var buttonsListArr = [];
     for (let i = 0; i < lvl1Nav.length; i++){
       const route = lvl1Nav[i].route;
-      console.log(route);
+      const text = prefs.language === 'pk' && lvl1Nav[i].textPK ? lvl1Nav[i].textPK : lvl1Nav[i].text;
       buttonsListArr.push(
         <View key = {lvl1Nav[i].id}>
           <Button
-            title={lvl1Nav[i].text}
-            onPress={() => this.props.navigation.navigate(lvl1Nav[i].route)}>
-              {lvl1Nav[i].text}
-          </Button>
+            title={text}
+            onPress={() => this.props.navigation.navigate(lvl1Nav[i].route)} />
         </View>
       )
     }
