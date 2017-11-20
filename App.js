@@ -11,8 +11,18 @@ import SpaceScreen from './components/space.js';
 import ReportScreen from './components/report.js';
 import DidYouKnowScreen from './components/didyouknow.js';
 import HelplineScreen from './components/helpline.js';
-import AboutScreen from './components/about.js';
 import SupportScreen from './components/support.js';
+import AboutScreen from './components/four/about.js';
+import BackupsScreen from './components/four/backups.js';
+import ChatScreen from './components/four/chat.js';
+import CyberScreen from './components/four/cyber.js';
+import HarassmentScreen from './components/four/harassment.js';
+import LocationScreen from './components/four/location.js';
+import SearchScreen from './components/four/search.js';
+import SocialScreen from './components/four/social.js';
+import USBScreen from './components/four/usbs.js';
+import VirusScreen from './components/four/virus.js';
+import BrowsersScreen from './components/four/browsers.js';
 
 class SplashScreen extends React.Component {
   goToMenu(lang) {
@@ -68,6 +78,36 @@ const App = StackNavigator({
   },
   Support: {
     screen: SupportScreen,
+  },
+  Cyber: {
+    screen: CyberScreen,
+  },
+  Harassment: {
+    screen: HarassmentScreen,
+  },
+  USBs: {
+    screen: USBScreen,
+  },
+  Virus: {
+    screen: VirusScreen,
+  },
+  Backups: {
+    screen: BackupsScreen,
+  },
+  Location: {
+    screen: LocationScreen,
+  },
+  Social: {
+    screen: SocialScreen,
+  },
+  Chat: {
+    screen: ChatScreen,
+  },
+  Search: {
+    screen: SearchScreen,
+  },
+  Browsers: {
+    screen: BrowsersScreen,
   }
 });
 

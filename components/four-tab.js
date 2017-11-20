@@ -1,12 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
+import ScrollableTabView, { DefaultTabBar, } from 'react-native-scrollable-tab-view';
 
 export default class FourTab extends React.Component {
   render() {
     return (
-      <View>
-        <Text>This is Four Tab calling...</Text>
-      </View>
+      <ScrollableTabView style={{marginTop: 20}} initialPage={0} renderTabBar={() => <DefaultTabBar />} >
+        <Text tabLabel='Problem'>My</Text>
+        <Text tabLabel='Solution'>favorite</Text>
+        <Text tabLabel='Tips'>project</Text>
+        <Text tabLabel='Resources'>favorite</Text>
+      </ScrollableTabView>
     );
   }
-}
+};
