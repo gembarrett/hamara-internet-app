@@ -6,10 +6,10 @@ export default class FourTab extends React.Component {
   render() {
     return (
       <ScrollableTabView style={{marginTop: 20}} initialPage={0} renderTabBar={() => <DefaultTabBar />} >
-        <Text tabLabel='Problem'>My</Text>
-        <Text tabLabel='Solution'>favorite</Text>
-        <Text tabLabel='Tips'>project</Text>
-        <Text tabLabel='Resources'>favorite</Text>
+        <Text tabLabel='Problem'>{this.props.tab1}</Text>
+        <Text tabLabel='Solution'>{this.props.tab2}</Text>
+        <Text tabLabel='Tips'>{this.props.tab3}</Text>
+        <Text tabLabel='Resources'>{this.props.tab4}</Text>
       </ScrollableTabView>
     );
   }
