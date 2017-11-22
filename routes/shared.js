@@ -1,6 +1,6 @@
 import { prefs } from '../routes/prefs.js';
 
-get buttons(array) {
+function buttons(array) {
   var buttonsListArr = [];
   const text = translatedText;
   for (let i = 0; i < array.length; i++){
@@ -16,9 +16,14 @@ get buttons(array) {
   return buttonsListArr;
 };
 
-get translatedText(array) {
+function translatedText(array, i) {
   const text = prefs.language === 'pk' && array[i].textPK ? array[i].textPK : array[i].textEN;
   return text;
 };
 
-export {buttons, translatedText};
+function translatedTitle(array, i) {
+  const title = prefs.language === 'pk' && array[i].titlePK ? array[i].titlePK : array[i].titleEN;
+  return title;
+}
+
+export {buttons, translatedText, translatedTitle};
