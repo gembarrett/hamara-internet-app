@@ -2,11 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { Linking } from 'react-native';
 import { prefs } from '../routes/prefs.js';
+import { StackNavigator } from 'react-navigation';
 
 function buttons(array) {
   var buttonsListArr = [];
-  const text = translatedText;
+  let text = '';
   for (let i = 0; i < array.length; i++){
+    text = translatedText(array, i);
     const route = array[i].route;
     buttonsListArr.push(
       <View key = {array[i].id}>
