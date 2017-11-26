@@ -23,6 +23,8 @@ import SocialScreen from './components/four/social.js';
 import USBScreen from './components/four/usbs.js';
 import VirusScreen from './components/four/virus.js';
 import BrowsersScreen from './components/four/browsers.js';
+import PasswordScreen from './components/four/passwords.js';
+import TwoFAScreen from './components/four/twofa.js';
 
 class SplashScreen extends React.Component {
   goToMenu(lang) {
@@ -108,6 +110,12 @@ const App = StackNavigator({
   },
   Browsers: {
     screen: BrowsersScreen,
+  },
+  Passwords: {
+    screen: PasswordScreen,
+  },
+  TwoFA: {
+    screen: TwoFAScreen,
   }
 });
 

@@ -40,6 +40,21 @@ const devices = [
   }
 ];
 
+const identity = [
+  {
+    id: 1,
+    route: "Passwords",
+    textEN: "Passwords",
+    textPK: "پاس ورڈز"
+  },
+  {
+    id: 2,
+    route: "TwoFA",
+    textEN: "Two-factor authentication",
+    textPK: "دو طرفہ تصدیق"
+  }
+]
+
 const comms = [
   {
     id: 1,
@@ -71,4 +86,4 @@ const space = [
 ];
 
 
-export {online, devices, comms, space};
+export {online, devices, identity, comms, space};
