@@ -16,6 +16,8 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@ercpereda/react-native-accordion": "^2.0.5",
+    "prop-types": "^15.6.0",
     "react": "16.0.0-beta.5",
     "react-native": "^0.49.5",
     "react-native-scrollable-tab-view": "^0.8.0",
