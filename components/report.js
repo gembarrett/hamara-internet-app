@@ -3,12 +3,16 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import Accordion from '@ercpereda/react-native-accordion';
 import { reportTo } from '../content/report.js';
 import { prefs } from '../routes/prefs.js';
+import { translatedTitle, translatedText } from '../routes/shared.js';
 
 export default class ReportScreen extends React.Component {
+  static navigationOptions = {
+    title: translatedTitle(reportTo, 0)
+  };
   get accordion() {
     var accordionArr = [];
-    for (let i = 0; i < reportTo.length; i++){
-      const title = prefs.language === 'pk' && reportTo[i].titlePK ? reportTo[i].titlePK : reportTo[i].titleEN;
+    for (let i = 1; i < reportTo.length; i++){
+      const title = translatedTitle(reportTo, i);
       const Header = ({ isOpen }) =>
         <View style={{
             paddingTop: 15,
@@ -21,7 +25,7 @@ export default class ReportScreen extends React.Component {
           }}>
             <Text>{`${isOpen ? '-' : '+'} ${title}`}</Text>
           </View>;
-      const content = prefs.language === 'pk' && reportTo[i].textPK ? reportTo[i].textPK : reportTo[i].textEN;
+      const text = translatedText(reportTo, i);
       const Content = (
         <View style={{
             display: 'flex',
@@ -34,7 +38,7 @@ export default class ReportScreen extends React.Component {
               paddingLeft: 15,
               color: '#fff',
             }}>
-              {content}
+              {text}
             </Text>
           </View>);
       accordionArr.push(

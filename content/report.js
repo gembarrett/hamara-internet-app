@@ -1,7 +1,11 @@
 const reportTo = [
   {
-    titleEN: "Reporting to FIA",
+    titleEN: "How to make a report",
     titlePK: "رپورٹ کرنا",
+  },
+  {
+    titleEN: "Reporting to FIA",
+    titlePK: "مختار کاروں کو رپورٹ کرنا",
     textEN: "Do not stay quiet if you are being harassed online. Cyber Crimes must be reported to the FIA National Response Center for Cyber Crime. The FIA’s Cyber Crime Wing offices are located in Karachi, Lahore, Quetta, Peshawar, Rawalpindi, Islamabad. The FIA’s helpline is 9911 and they can also be contacted on the following online form: http://www.nr3c.gov.pk/creport.php",
     textPK: "اگر آپ کو آن لائن ہراساں کیا گیا ہے تو چپ نہ بیٹھیں۔ ایف آئی اے کے ادارے کو ان کے آن لائن سائبر کمپلینٹ سروس پر سائبر ہراسانی کی رپورٹ کریں۔ وہاں آپ کو ایک مختصر سا فارم ملے گا جسے آپ کو پر کرنا ہے لیکن اس بات کی تسلی کرلیں کہ جس حد تک آپ کو ہراسانی کا سامنا ہوا ہے اس کے مطابق تفصیلات سے آگاہ کریں۔ آپ کی درج شکایت پر عمل پیرا ہونے میں انہیں 24 گھنٹے کا وقت درکار ہوگا۔"
   },
