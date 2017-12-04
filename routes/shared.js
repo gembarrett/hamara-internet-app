@@ -11,7 +11,7 @@ function buttons(array) {
     text = translatedText(array, i);
     const route = array[i].route;
     buttonsListArr.push(
-      <View key = {array[i].id}>
+      <View key = {array[i].id ? array[i].id : i}>
         <Button
           title={text}
           onPress={() => this.props.navigation.navigate(array[i].route)} />
