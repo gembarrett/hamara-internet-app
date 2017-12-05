@@ -52,7 +52,7 @@ const lvl1Nav = [
   {
     id: 9,
     route: "About",
-    textEN: "About this app",
+    textEN: "Hamara Internet",
     textPK: "متعلق"
   },
   {
