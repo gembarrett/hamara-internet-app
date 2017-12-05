@@ -6,19 +6,19 @@ const harassment = [
   {
     id: 1,
     route: "Problem",
-    textEN: "Digital shadows are made up of the information websites collect about us every time we go online. Other people can use those details maliciously. Doxing is when our private information, such as phone number or address, is made public online in order to harass us.",
+    textEN: "We go online because we have a right to use the internet. However, women aged 18-24 are uniquely likely to experience stalking, sexual harassment and other cyber violence online. Others want us to be silenced, so they attack our words, which are our property. We are then blamed.",
     textPK: "چونکہ ہم انٹرنیٹ استعمال کرنے کا حق رکھتے ہیں لہٰذا ہم آن لائن جاتے ہیں ۔ تاہم بسا اوقات 18 سے 24 سال کی خواتین کو تعاقب، جسمانی ہراسانی اور دیگر آن لائن سائبر تشدد کا سامنا ہوتا ہے۔ دوسرے لوگ ان کی زبان بند کروانے کیلئے وہ ان کے الفاظ پر حملہ کرتے ہیں حالانکہ وہ الفاظ ان کی اپنی ملکیت ہوتے ہیں اور پھر بعد میں انہیں ہی سارا الزام دیا جاتا ہے۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Find out what your digital shadow looks like so you know what can be used against you. To do this, try self-doxing; use a search engine like DuckDuckGo, which protects your privacy, to search for details like your usernames, phone number and email addresses.",
+    textEN: "Ignoring, blocking and deactivating are options but, although they can help temporarily, they are not permanent solutions at all. The key thing to remember is that no one deserves abuse. You have the right to free speech and expression and if someone chose to get angry about your views then any abusive actions they take are their responsibility, not yours. Reporting harassment online can be difficult, and it may not help immediately or in every situation, but it should always be considered.",
     textPK: "بلاک کرنا ، نظر انداز کرنا اورغیر فعال کرنا چند اختیارات تو ہو سکتے ہیں جو وقتی طور پر مدد دے سکتے ہیں لیکن وہ کوئی مستقل حل کے طور پر استعمال نہیں ہو سکتے۔سب سے اہم بات یاد رکھنے والی یہ ہے کہ گالیوں کا کوئی متحمل نہیں ہوتا۔ آزادئ تقریر اور آزادئ رائے آپ کا حق ہے اور اگر کوئی آپ کے نظریات پر آپ کو گالی دیتا ہے یا برا بھلا کہتا ہے تو اس کا ذمہ دار وہ ہوگا نا کہ آپ۔ ہراسانی کی آن لائن رپورٹ کرنا اگرچہ مشکل بھی ہے اور یہ شاید ہر حالات میں یا فوری طور پر آپ کیلئے مفید نہ ہو لیکن اسی کو مدِ نظر رکھنا چاہئے۔"
   },
   {
     id: 3,
     route: "Tips",
-    textEN: "Self-dox regularly. Knowing what your digital shadow looks like can help you to make better decisions about the information you put online. <hr \/>Search for all information that could be used to identify or trace you, including:   all your usernames on active profiles as well as inactive/past online profiles  all email addresses to see where your email has been posted or possibly misused  your phone number(s) including landlines and mobile phones  your home and family addresses  Do a reverse image lookup, using a tool like Google Image Search or TinEye, on your public pictures, such as Facebook profile photos to see if they have been used anywhere else.",
+    textEN: "Some comments should be ignored, but ignoring doesn’t solve problems and it can be necessary to stand up for your opinions - but remember to pick your battles; some aren’t worth your energy. Sometimes blocking trolls can work, but they can always make another profile so while we recommend blocking, we also caution that it’s not always a solution. If you deactivate your account, your bully has won. You have conceded your space and they are further empowered and emboldened to continue harassing you and others.",
     textPK: "۔ بعض کمنٹس کو نظر انداز کر دینا چاہئے لیکن محض نظرانداز کردینے سے مسئلہ حل نہیں ہوتابلکہ اپنی آراء دینا بھی ضروری ہوتا ہے ۔ لیکن اس کیلئے خود کو تیار رکھیں کیونکہ بعض دفعہ ایسا کرنا آپ کو تھکا بھی سکتا ہے اور وہ آپ کے شایانِ شان بھی نہیں ہوتے کہ ان پہ بحث کی جائے۔بعض دفعہ تعاقب کر کے تنگ والوں کو بلاک کرنا کام آ سکتا ہے لیکن وہ ہمیشہ کوئی نیا پروفائل بنا سکتے ہیں اس لئے چاہے ہم آپ کو بلاک کرنے کی تجویز  بھی دیتے ہیں لیکن اس کےساتھ ہم آپ کو خبردار بھی کرتے ہیں کہ ہمیشہ ایسا کرنا ہی کوئی واحد حل نہیں ہوتا۔ اگر آپ اپنا اکاؤنٹ غیر فعال کر بھی دیں تو اس کا مطلب ہے کہ آپ کو ہراساں کرنے والا بازی لے گیا۔ آپ نے ایک طرح سے ہار مان کر انہیں یہ شہ دی ہے کہ وہ آپ کو اور دوسروں کو زیادہ ہراساں کریں۔"
   },
   {
