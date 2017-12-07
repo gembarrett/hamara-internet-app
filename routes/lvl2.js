@@ -28,7 +28,7 @@ const devices = [
   },
   {
     id: 2,
-    route: "Viruses",
+    route: "Virus",
     textEN: "Viruses and malware",
     textPK: "وائرس اور مالویئر"
   },
