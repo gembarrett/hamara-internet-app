@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import MenuScreen from './components/menu.js';
 import { prefs } from './routes/prefs.js'
@@ -25,6 +25,8 @@ import VirusScreen from './components/four/virus.js';
 import BrowsersScreen from './components/four/browsers.js';
 import PasswordScreen from './components/four/passwords.js';
 import TwoFAScreen from './components/four/twofa.js';
+import { globals } from './styles/globals.js';
+import { splashStyles } from './styles/openingpages.js';
 
 class SplashScreen extends React.Component {
   goToMenu(lang) {
@@ -33,9 +35,11 @@ class SplashScreen extends React.Component {
   }
   render() {
     return (
-      <View>
-        <Button onPress={() => this.goToMenu('pk')} title="Urdu" />
-        <Button onPress={() => this.goToMenu('en')} title="English" />
+      <View style={[globals.green, globals.base, splashStyles.base]}>
+        <Image resizeMode="contain" style={splashStyles.logo} source={require('./assets/splash-logo.png')} />
+        <Button style={splashStyles.button} onPress={() => this.goToMenu('pk')} title="Urdu" />
+        <Button style={splashStyles.button} onPress={() => this.goToMenu('en')} title="English" />
+        <Image resizeMode="contain" style={splashStyles.image} source={require('./assets/splash-lady.png')} />
       </View>
     );
   }
@@ -44,12 +48,15 @@ class SplashScreen extends React.Component {
 const App = StackNavigator({
   Splash: {
     screen: SplashScreen,
+    navigationOptions: {
+      header: null,
+    }
   },
   Menu: {
     screen: MenuScreen,
     navigationOptions: {
       headerTitle: 'Menu',
-    },
+    }
   },
   Online: {
     screen: OnlineScreen,
