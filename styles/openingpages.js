@@ -43,10 +43,13 @@ const menuStyles = StyleSheet.create({
   },
   container: {
     flexDirection: 'row',
-    alignItems: 'space-between'
+    alignItems: 'center',
+    width:'100%',
+    justifyContent: 'center'
   },
   logo: {
-    height: 100
+    height: 50,
+    width: 50
   }
 });
 
