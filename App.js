@@ -37,8 +37,10 @@ class SplashScreen extends React.Component {
     return (
       <View style={[globals.green, globals.base, splashStyles.base]}>
         <Image resizeMode="contain" style={splashStyles.logo} source={require('./assets/splash-logo.png')} />
-        <Button style={splashStyles.button} onPress={() => this.goToMenu('pk')} title="Urdu" />
-        <Button style={splashStyles.button} onPress={() => this.goToMenu('en')} title="English" />
+        <View style={splashStyles.buttons}>
+          <Button style={splashStyles.button} onPress={() => this.goToMenu('en')} title="English" />
+          <Button style={splashStyles.button} onPress={() => this.goToMenu('pk')} title="Urdu" />
+        </View>
         <Image resizeMode="contain" style={splashStyles.image} source={require('./assets/splash-lady.png')} />
       </View>
     );
