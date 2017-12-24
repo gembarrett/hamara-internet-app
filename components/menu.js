@@ -20,8 +20,7 @@ export default class MenuScreen extends React.Component {
         <View key = {lvl1Nav[i].id}>
           <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[i].route)}>
           <ImageBackground
-             source={{ uri: file }} style={menuStyles.button}
-             >
+             source={{ uri: './assets/menu-button-1.png' }} style={{width: '100%', height: 50}}>
              <Text>{text}</Text>
           </ImageBackground>
           </TouchableOpacity>
