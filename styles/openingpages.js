@@ -30,26 +30,39 @@ const splashStyles = StyleSheet.create({
 });
 
 const menuStyles = StyleSheet.create({
-  button: {
-    width: '100%'
-  },
-  base: {
+  view: {
     flex: 1,
-    justifyContent: 'space-around',
     alignItems: 'center'
   },
+  base: {
+    width:'75%',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'stretch',
+    marginVertical: 20
+  },
+  button: {
+    flexBasis:45,
+    width: '100%',
+    alignItems: 'flex-start',
+    justifyContent: 'center'
+  },
   text: {
-    width: '100%'
+    textAlign: 'center',
+    paddingLeft: 40,
+    fontSize: 10,
+    color: '#fff'
   },
   container: {
     flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: 'center',
+    alignItems: 'stretch',
     width:'100%',
-    justifyContent: 'center'
   },
   logo: {
     height: 50,
-    width: 50
+    width: 50,
+    flex:1
   }
 });
 

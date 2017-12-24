@@ -38,8 +38,8 @@ export default class MenuScreen extends React.Component {
   render() {
     const logo1 = "../assets/menu-logo-0.png";
     return (
-      <View style={[globals.green, globals.base, menuStyles.base]}>
-
+      <View style={[globals.green, globals.base, menuStyles.view]}>
+      <View style={menuStyles.base}>
         <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
           <ImageBackground
             source={require('../assets/menu-button-0.png')}
@@ -129,7 +129,7 @@ export default class MenuScreen extends React.Component {
              <Text style={menuStyles.text}>{translatedText(lvl1Nav, 9)}</Text>
           </ImageBackground>
         </TouchableOpacity>
-
+        </View>
         <View style={[menuStyles.container]}>
           <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")} style={menuStyles.logo} />
           <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")} style={menuStyles.logo} />
