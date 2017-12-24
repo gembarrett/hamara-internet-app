@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const splashStyles = StyleSheet.create({
   base: {
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     alignItems: 'center',
     flex: 1,
     flexDirection: 'column'
@@ -13,20 +13,26 @@ const splashStyles = StyleSheet.create({
     flexBasis: 250,
   },
   button: {
-    width:'50%',
+    marginLeft: 200,
     // alignSelf: 'flex-end'
   },
   buttons: {
     flexDirection: 'row',
     flexBasis: 'auto',
     paddingBottom: 50,
-    paddingTop: 20
+    paddingTop: 15
   },
   logo: {
     width:'50%',
     flexBasis: 220,
     marginTop: 50
   }
-})
+});
 
-export { splashStyles };
+const menuStyles = StyleSheet.create({
+  button: {
+    width: '100%'
+  }
+});
+
+export { splashStyles, menuStyles };

@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity } from 'react-native';
 import {lvl1Nav} from '../routes/lvl1.js';
 import { prefs } from '../routes/prefs.js';
+import { globals } from '../styles/globals.js';
+import { menuStyles } from '../styles/openingpages.js';
 
 export default class MenuScreen extends React.Component {
   static navigationOptions = {
@@ -13,11 +15,16 @@ export default class MenuScreen extends React.Component {
     for (let i = 0; i < lvl1Nav.length; i++){
       const route = lvl1Nav[i].route;
       const text = prefs.language === 'pk' && lvl1Nav[i].textPK ? lvl1Nav[i].textPK : lvl1Nav[i].textEN;
+      const file = './assets/menu-button-' + i + '.png';
       buttonsListArr.push(
         <View key = {lvl1Nav[i].id}>
-          <Button
-            title={text}
-            onPress={() => this.props.navigation.navigate(lvl1Nav[i].route)} />
+          <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[i].route)}>
+          <ImageBackground
+             source={{ uri: file }} style={menuStyles.button}
+             >
+             <Text>{text}</Text>
+          </ImageBackground>
+          </TouchableOpacity>
         </View>
       )
     }
@@ -26,7 +33,7 @@ export default class MenuScreen extends React.Component {
 
   render() {
     return (
-      <View>
+      <View style={[globals.green, globals.base]}>
         {this.buttons}
       </View>
     );
