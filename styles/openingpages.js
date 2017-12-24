@@ -32,6 +32,21 @@ const splashStyles = StyleSheet.create({
 const menuStyles = StyleSheet.create({
   button: {
     width: '100%'
+  },
+  base: {
+    flex: 1,
+    justifyContent: 'space-around',
+    alignItems: 'center'
+  },
+  text: {
+    width: '100%'
+  },
+  container: {
+    flexDirection: 'row',
+    alignItems: 'space-between'
+  },
+  logo: {
+    height: 100
   }
 });
 
