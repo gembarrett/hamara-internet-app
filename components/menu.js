@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image, ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, ImageBackground, TouchableOpacity, Linking } from 'react-native';
 import {lvl1Nav} from '../routes/lvl1.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
@@ -34,106 +34,115 @@ export default class MenuScreen extends React.Component {
     return buttonsListArr;
   }
 
+  onPressImage(num) {
+    const links=['https://hamarainternet.org/', 'https://digitalrightsfoundation.pk/', 'http://www.makingallvoicescount.org/project/hamara-internet/'];
+    return Linking.openURL(links[num]);
+  }
 
   render() {
-    const logo1 = "../assets/menu-logo-0.png";
     return (
       <View style={[globals.green, globals.base, menuStyles.view]}>
-      <View style={menuStyles.base}>
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-0.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 0)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+        <View style={menuStyles.base}>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-0.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 0)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[1].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-1.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 1)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[1].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-1.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 1)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[2].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-2.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 2)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[2].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-2.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 2)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[3].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-3.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 3)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[3].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-3.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 3)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[4].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-4.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 4)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[4].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-4.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 4)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[5].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-5.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 5)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[5].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-5.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 5)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[6].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-6.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 6)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[6].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-6.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 6)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[7].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-7.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 7)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[7].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-7.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 7)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[8].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-8.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 8)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[8].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-8.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 8)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[9].route)}>
-          <ImageBackground
-            source={require('../assets/menu-button-9.png')}
-            resizeMode="contain"
-            style={menuStyles.button}>
-             <Text style={menuStyles.text}>{translatedText(lvl1Nav, 9)}</Text>
-          </ImageBackground>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[9].route)}>
+              <ImageBackground
+                source={require('../assets/menu-button-9.png')}
+                resizeMode="contain"
+                style={menuStyles.button}>
+                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 9)}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
         </View>
         <View style={[menuStyles.container]}>
-          <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")} style={menuStyles.logo} />
-          <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")} style={menuStyles.logo} />
-          <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")} style={menuStyles.logo} />
+            <TouchableOpacity onPress={() => {this.onPressImage(0)}}>
+              <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")} style={menuStyles.logo} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {this.onPressImage(1)}}>
+              <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")} style={menuStyles.logo} />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {this.onPressImage(2)}}>
+              <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")} style={menuStyles.logo} />
+            </TouchableOpacity>
         </View>
       </View>
     );

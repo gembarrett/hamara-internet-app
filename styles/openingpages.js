@@ -54,15 +54,14 @@ const menuStyles = StyleSheet.create({
     color: '#fff'
   },
   container: {
+    flex:1,
+    width: '75%',
     flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'stretch',
-    width:'100%',
+    justifyContent: 'space-around',
+    alignItems: 'stretch'
   },
   logo: {
-    height: 50,
-    width: 50,
-    flex:1
+    height: 50
   }
 });
 
