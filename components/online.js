@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View, Button } from 'react-native';
 import { online } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
+import { globals } from '../styles/globals.js';
+import { submenuStyles } from '../styles/submenus.js';
 
 export default class OnlineScreen extends React.Component {
   static navigationOptions = {
@@ -14,10 +16,10 @@ export default class OnlineScreen extends React.Component {
       const route = online[i].route;
       const text = prefs.language === 'pk' && online[i].textPK ? online[i].textPK : online[i].textEN;
       buttonsListArr.push(
-        <View key = {online[i].id}>
-          <Button
-            title={text}
-            onPress={() => this.props.navigation.navigate(online[i].route)} />
+        <View key = {online[i].id} style={[globals.orange, submenuStyles.button]}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate(online[i].route)}>
+            <Text style={globals.whiteText}>{text}</Text>
+          </TouchableOpacity>
         </View>
       )
     }
@@ -26,7 +28,7 @@ export default class OnlineScreen extends React.Component {
 
   render() {
     return (
-      <View>
+      <View style={[globals.green, globals.base, submenuStyles.buttons]}>
         {this.buttons}
       </View>
     );
