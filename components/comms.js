@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button } from 'react-native';
 import { comms } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
+import { globals } from '../styles/globals.js';
+import { submenuStyles } from '../styles/submenus.js';
 
 export default class CommsScreen extends React.Component {
   static navigationOptions = {
@@ -15,9 +17,18 @@ export default class CommsScreen extends React.Component {
       const text = prefs.language === 'pk' && comms[i].textPK ? comms[i].textPK : comms[i].textEN;
       buttonsListArr.push(
         <View key = {comms[i].id}>
-          <Button
-            title={text}
-            onPress={() => this.props.navigation.navigate(comms[i].route)} />
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(comms[i].route)}>
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-3-pk.png')}
+                resizeMode="contain"
+                style={submenuStyles.button}><Text style={submenuStyles.text}>{comms[i].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-3-en.png')}
+                resizeMode="contain"
+                style={submenuStyles.button}><Text style={submenuStyles.text}>{comms[i].textEN}</Text></ImageBackground>}
+            </TouchableOpacity>
+
         </View>
       )
     }
@@ -26,8 +37,10 @@ export default class CommsScreen extends React.Component {
 
   render() {
     return (
-      <View>
-        {this.buttons}
+      <View style={[globals.green, globals.base, globals.menu]}>
+        <View style={[submenuStyles.base]}>
+          {this.buttons}
+        </View>
       </View>
     );
   }

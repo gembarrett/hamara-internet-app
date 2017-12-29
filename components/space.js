@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button } from 'react-native';
 import { space } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
+import { globals } from '../styles/globals.js';
+import { submenuStyles } from '../styles/submenus.js';
 
 export default class SpaceScreen extends React.Component {
   static navigationOptions = {
@@ -12,12 +14,19 @@ export default class SpaceScreen extends React.Component {
     var buttonsListArr = [];
     for (let i = 0; i < space.length; i++){
       const route = space[i].route;
-      const text = prefs.language === 'pk' && space[i].textPK ? space[i].textPK : space[i].textEN;
       buttonsListArr.push(
         <View key = {space[i].id}>
-          <Button
-            title={text}
-            onPress={() => this.props.navigation.navigate(space[i].route)} />
+        <TouchableOpacity onPress={() => this.props.navigation.navigate(space[i].route)}>
+        {prefs.language === 'pk'
+          ? <ImageBackground
+            source={require('../assets/menu-button-4-pk.png')}
+            resizeMode="contain"
+            style={submenuStyles.button}><Text style={submenuStyles.text}>{space[i].textPK}</Text></ImageBackground>
+          : <ImageBackground
+            source={require('../assets/menu-button-4-en.png')}
+            resizeMode="contain"
+            style={submenuStyles.button}><Text style={submenuStyles.text}>{space[i].textEN}</Text></ImageBackground>}
+        </TouchableOpacity>
         </View>
       )
     }
@@ -26,8 +35,10 @@ export default class SpaceScreen extends React.Component {
 
   render() {
     return (
-      <View>
-        {this.buttons}
+      <View style={[globals.green, globals.base, globals.menu]}>
+        <View style={[submenuStyles.base]}>
+          {this.buttons}
+        </View>
       </View>
     );
   }

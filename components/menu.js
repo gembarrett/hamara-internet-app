@@ -11,126 +11,135 @@ export default class MenuScreen extends React.Component {
     title: 'Menu',
   }
 
-// TODO: keep fingers crossed that eventually React Native will support dynamic local images
-  get buttons() {
-    var buttonsListArr = [];
-    for (let i = 0; i < lvl1Nav.length; i++){
-      const route = lvl1Nav[i].route;
-      const text = prefs.language === 'pk' && lvl1Nav[i].textPK ? lvl1Nav[i].textPK : lvl1Nav[i].textEN;
-      const file = './assets/menu-button-' + i + '.png';
-      buttonsListArr.push(
-        <View key = {lvl1Nav[i].id}>
-          <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[i].route)}>
-            <ImageBackground
-              source={require('../assets/menu-button-0.png')}
-              resizeMode="contain"
-              style={menuStyles.button}>
-               <Text style={menuStyles.text}>{text}</Text>
-            </ImageBackground>
-          </TouchableOpacity>
-        </View>
-      )
-    }
-    return buttonsListArr;
-  }
 
   onPressImage(num) {
     const links=['https://hamarainternet.org/', 'https://digitalrightsfoundation.pk/', 'http://www.makingallvoicescount.org/project/hamara-internet/'];
     return Linking.openURL(links[num]);
   }
 
+  // TODO: keep fingers crossed that eventually React Native will support dynamic local images
   render() {
     return (
-      <View style={[globals.green, globals.base, menuStyles.view]}>
+      <View style={[globals.green, globals.base, globals.menu]}>
         <View style={menuStyles.base}>
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-0.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-0-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 0)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[0].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-0-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[0].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[1].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-1.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-1-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 1)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[1].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-1-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[1].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[2].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-2.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-2-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 2)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[2].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-2-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[2].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[3].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-3.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-3-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 3)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[3].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-3-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[3].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[4].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-4.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-4-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 4)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[4].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-4-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[4].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[5].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-5.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-5-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 5)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[5].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-5-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[5].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[6].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-6.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-6-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 6)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[6].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-6-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[6].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[7].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-7.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-7-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 7)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[7].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-7-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[7].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[8].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-8.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-8-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 8)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[8].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-8-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[8].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
 
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[9].route)}>
-              <ImageBackground
-                source={require('../assets/menu-button-9.png')}
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-9-pk.png')}
                 resizeMode="contain"
-                style={menuStyles.button}>
-                 <Text style={menuStyles.text}>{translatedText(lvl1Nav, 9)}</Text>
-              </ImageBackground>
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[9].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-9-en.png')}
+                resizeMode="contain"
+                style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[9].textEN}</Text></ImageBackground>}
             </TouchableOpacity>
         </View>
         <View style={[menuStyles.container]}>

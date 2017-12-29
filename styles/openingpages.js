@@ -30,10 +30,6 @@ const splashStyles = StyleSheet.create({
 });
 
 const menuStyles = StyleSheet.create({
-  view: {
-    flex: 1,
-    alignItems: 'center'
-  },
   base: {
     width:'75%',
     flexDirection: 'column',

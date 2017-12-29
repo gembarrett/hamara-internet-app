@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, I18nManager } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import MenuScreen from './components/menu.js';
 import { prefs } from './routes/prefs.js'
@@ -32,6 +32,8 @@ class SplashScreen extends React.Component {
   goToMenu(lang) {
     prefs.language = lang;
     this.props.navigation.navigate('Menu');
+    // is this needed?
+    // I18nManager.allowRTL(lang === 'pk' ? true : false);
   }
   render() {
     return (

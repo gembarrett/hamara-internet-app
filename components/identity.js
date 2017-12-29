@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button } from 'react-native';
 import { identity } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
+import { globals } from '../styles/globals.js';
+import { submenuStyles } from '../styles/submenus.js';
 
 export default class IdentityScreen extends React.Component {
   static navigationOptions = {
@@ -15,9 +17,19 @@ export default class IdentityScreen extends React.Component {
       const text = prefs.language === 'pk' && identity[i].textPK ? identity[i].textPK : identity[i].textEN;
       buttonsListArr.push(
         <View key = {identity[i].id}>
-          <Button
-            title={text}
-            onPress={() => this.props.navigation.navigate(identity[i].route)} />
+
+            <TouchableOpacity onPress={() => this.props.navigation.navigate(identity[i].route)}>
+            {prefs.language === 'pk'
+              ? <ImageBackground
+                source={require('../assets/menu-button-2-pk.png')}
+                resizeMode="contain"
+                style={submenuStyles.button}><Text style={submenuStyles.text}>{identity[i].textPK}</Text></ImageBackground>
+              : <ImageBackground
+                source={require('../assets/menu-button-2-en.png')}
+                resizeMode="contain"
+                style={submenuStyles.button}><Text style={submenuStyles.text}>{identity[i].textEN}</Text></ImageBackground>}
+            </TouchableOpacity>
+
         </View>
       )
     }
@@ -26,8 +38,10 @@ export default class IdentityScreen extends React.Component {
 
   render() {
     return (
-      <View>
-        {this.buttons}
+      <View style={[globals.green, globals.base, globals.menu]}>
+        <View style={[submenuStyles.base]}>
+          {this.buttons}
+        </View>
       </View>
     );
   }
