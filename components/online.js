@@ -38,7 +38,7 @@ export default class OnlineScreen extends React.Component {
 
   render() {
     return (
-      <View style={[globals.green, globals.base]}>
+      <View style={[globals.green, globals.base, globals.menu]}>
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>

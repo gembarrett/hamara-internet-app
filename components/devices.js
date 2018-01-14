@@ -39,7 +39,7 @@ export default class DevicesScreen extends React.Component {
 
   render() {
     return (
-      <View style={[globals.green, globals.base]}>
+      <View style={[globals.green, globals.base, globals.menu]}>
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>

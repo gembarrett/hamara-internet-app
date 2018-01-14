@@ -12,6 +12,15 @@ const globals = StyleSheet.create({
   },
   whiteText: {
     color: '#fff'
+  },
+  menu: {
+    alignItems: 'center'
+  },
+  pk: {
+    direction: 'rtl'
+  },
+  en: {
+    direction: 'ltr'
   }
 })
 
