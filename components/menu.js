@@ -20,7 +20,7 @@ export default class MenuScreen extends React.Component {
   // TODO: keep fingers crossed that eventually React Native will support dynamic local images
   render() {
     return (
-      <View style={[globals.green, globals.base, globals.menu]}>
+      <View style={[globals.green, globals.base]}>
         <View style={menuStyles.base}>
             <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
             {prefs.language === 'pk'
