@@ -2,12 +2,10 @@
 The Hamara Internet app aims to provide digital security training advice for people facing harassment, and is a complement to the workshops of the Digital Rights Foundation. This app will be available on Android in both Urdu and English.
 
 ## Requirements
-The Hamara Internet app is made using React Native, as a result you will need to install Node and React Native CLI. Once cloned locally, cd to project root and run ```npm install```
+The Hamara Internet app is made using React Native, as a result you will need to install Node and React Native CLI. Once cloned locally, cd to project root and run ```npm install```. This app is built to support Android versions from 4 (Kit Kat) upwards, below that is untested and may have issues.
 
 ## Launch Android app
 To run the Hamara Internet app locally, in a Terminal window pointed at the project root type ```react-native run-android``` You will need to have an Android device (version 4+) connected or an emulator open (Genymotion is recommended).
-
-
 
 ### Notes
 #### iOS instructions
