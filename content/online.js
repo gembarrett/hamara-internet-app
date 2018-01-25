@@ -1,7 +1,7 @@
 const search = [
   {
     titleEN: "Google yourself",
-    titlePK: "اپنے آپ کو گوگل",
+    titlePK: "خود کو گوگل کیجئے",
   },
   {
     id: 1,
@@ -67,7 +67,7 @@ const search = [
 const browsers = [
   {
     titleEN: "Browsers",
-    titlePK: "براوزرز",
+    titlePK: "براؤزرز",
   },
   {
     id: 1,
@@ -118,7 +118,7 @@ const browsers = [
 const location = [
   {
     titleEN: "Hiding your location",
-    titlePK: "اپنے مقام کو چھپانا",
+    titlePK: "اپنی لوکیشن کو چھپانا",
   },
   {
     id: 1,
