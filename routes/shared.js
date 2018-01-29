@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { Linking } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { prefs } from '../routes/prefs.js';
 import { StackNavigator } from 'react-navigation';
 
@@ -43,4 +44,17 @@ function printLinks(array) {
   return linksListArr;
 };
 
-export {buttons, translatedText, translatedTitle, printLinks};
+function printGoals(array) {
+  var iconsArr = [];
+  for (let i = 0; i < array.length; i++){
+    iconsArr.push(
+      <View key={i}>
+        <Icon name={array[i].icon} size={15} color="#000000"/>
+      </View>
+    )
+  }
+  return iconsArr;
+};
+
+
+export {buttons, translatedText, translatedTitle, printLinks, printGoals};
