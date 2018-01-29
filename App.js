@@ -12,7 +12,7 @@ import ReportScreen from './components/report.js';
 import DidYouKnowScreen from './components/didyouknow.js';
 import HelplineScreen from './components/helpline.js';
 import SupportScreen from './components/support.js';
-import AboutScreen from './components/four/about.js';
+import AboutScreen from './components/about.js';
 import BackupsScreen from './components/four/backups.js';
 import ChatScreen from './components/four/chat.js';
 import CyberScreen from './components/four/cyber.js';
