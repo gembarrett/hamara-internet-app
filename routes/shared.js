@@ -4,6 +4,7 @@ import { Linking } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { prefs } from '../routes/prefs.js';
 import { StackNavigator } from 'react-navigation';
+import {globals} from '../styles/globals.js'
 
 function buttons(array) {
   var buttonsListArr = [];
@@ -49,7 +50,9 @@ function printGoals(array) {
   for (let i = 0; i < array.length; i++){
     iconsArr.push(
       <View key={i}>
-        <Icon name={array[i].icon} size={15} color="#000000"/>
+        <Icon name={array[i].icon} size={15} color="#ffffff" backgroundColor="#000000"/>
+        <Text style={globals.whiteText}>{translatedTitle(array, i)}</Text>
+        <Text style={globals.whiteText}>{translatedText(array, i)}</Text>
       </View>
     )
   }
