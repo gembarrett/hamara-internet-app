@@ -11,7 +11,7 @@ const globals = StyleSheet.create({
     flex: 1,
   },
   whiteText: {
-    color: '#fff'
+    color: '#FFFFFF'
   },
   menu: {
     alignItems: 'center'

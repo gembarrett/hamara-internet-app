@@ -4,6 +4,7 @@ import Accordion from '@ercpereda/react-native-accordion';
 import { reportTo } from '../content/report.js';
 import { prefs } from '../routes/prefs.js';
 import { translatedTitle, translatedText } from '../routes/shared.js';
+import { globals } from '../styles/globals.js';
 
 export default class ReportScreen extends React.Component {
   static navigationOptions = {
@@ -54,7 +55,7 @@ export default class ReportScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={[styles.container, globals.base, globals.green]}>
         {this.accordion}
       </View>
     );
@@ -63,9 +64,6 @@ export default class ReportScreen extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'flex-start',
     justifyContent: 'flex-start',
     width: '100%'
   }

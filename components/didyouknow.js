@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button, FlatList, ListItem, List } from 'react-
 import { StackNavigator } from 'react-navigation';
 import { didyouknow } from '../content/didyouknow.js';
 import { translatedText, translatedTitle } from '../routes/shared.js';
+import { globals } from '../styles/globals.js';
 
 export default class DidYouKnowScreen extends React.Component {
   static navigationOptions = {
@@ -21,11 +22,11 @@ export default class DidYouKnowScreen extends React.Component {
   }
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <FlatList
-        data={this.content}
-        renderItem={({item}) => <Text>{item.text}</Text>}
-      />
+      <View style={[globals.base, globals.green]}>
+        <FlatList
+          data={this.content}
+          renderItem={({item}) => <Text style={globals.whiteText}>{item.text}</Text>}
+        />
       </View>
     );
   }
