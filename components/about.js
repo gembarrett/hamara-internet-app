@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 import { about } from '../content/about.js';
 import { translatedText, translatedTitle, printLinks, printGoals } from '../routes/shared.js';
 import { globals } from '../styles/globals.js';
@@ -15,9 +15,9 @@ export default class AboutScreen extends React.Component {
         contentArr.push(printGoals(about[i].goals));
       } else {
         contentArr.push(
-          <View key = {i}>
+          <ScrollView key = {i}>
             <Text style={globals.whiteText}>{translatedText(about, i)}</Text>
-          </View>
+          </ScrollView>
         )
       }
     }
@@ -25,9 +25,9 @@ export default class AboutScreen extends React.Component {
   }
   render() {
     return (
-      <View style={[globals.base, globals.green]}>
+      <ScrollView style={[globals.base, globals.green]}>
         {this.content}
-      </View>
+      </ScrollView>
     );
   }
 };
