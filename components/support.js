@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Button, FlatList, Linking } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { translatedText, translatedTitle } from '../routes/shared.js';
 import { support } from '../content/support.js';
@@ -10,8 +10,11 @@ export default class SupportScreen extends React.Component {
   };
   get content() {
     var contentArr = [];
+    var canCall = false;
+    if (Linking.canOpenURL('tel:0800-39393')) {
+      canCall = true;
+    }
     for (let i = 1; i < support.length; i++) {
-        // change to print both
         var name = support[i].name;
         var number = support[i].number;
         contentArr.push({key: name, text: number });
