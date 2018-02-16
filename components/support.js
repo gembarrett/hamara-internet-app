@@ -19,19 +19,31 @@ export default class SupportScreen extends React.Component {
   }
   number(num) {
     var tel = 'tel:';
-    if (Linking.canOpenURL(num)) {
+    // if (Linking.canOpenURL(num)) {
       tel = tel + num;
       return tel;
-    } else {
-      return null;
-    }
+    // } else {
+    //   return null;
+    // }
   }
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <FlatList
         data={this.content}
-        renderItem={({item}) => <Text key={item.key} onPress={() => this.number(item.text)}>{item.key} - {item.text}</Text>}
+        renderItem={
+          ({item}) =>
+            <View>
+              <Text key={item.key}>
+                {item.key} - {item.text}
+              </Text>
+              <Text>
+              {this.number(item.text)}
+              </Text>
+              <Button title="call {item.key}" onPress={() => 'tel:+14379814406'}>
+              </Button>
+            </View>
+          }
       />
 
       </View>
