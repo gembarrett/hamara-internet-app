@@ -10,10 +10,6 @@ export default class SupportScreen extends React.Component {
   };
   get content() {
     var contentArr = [];
-    var canCall = false;
-    if (Linking.canOpenURL('tel:0800-39393')) {
-      canCall = true;
-    }
     for (let i = 1; i < support.length; i++) {
         var name = support[i].name;
         var number = support[i].number;
@@ -21,12 +17,21 @@ export default class SupportScreen extends React.Component {
     }
     return contentArr;
   }
+  number(num) {
+    var tel = 'tel:';
+    if (Linking.canOpenURL(num)) {
+      tel = tel + num;
+      return tel;
+    } else {
+      return null;
+    }
+  }
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <FlatList
         data={this.content}
-        renderItem={({item}) => <Text>{item.key} - {item.text}</Text>}
+        renderItem={({item}) => <Text key={item.key} onPress={() => this.number(item.text)}>{item.key} - {item.text}</Text>}
       />
 
       </View>
