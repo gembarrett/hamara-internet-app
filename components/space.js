@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button } from 'react-native';
+import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView } from 'react-native';
 import { space } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
@@ -35,11 +35,11 @@ export default class SpaceScreen extends React.Component {
 
   render() {
     return (
-      <View style={[globals.green, globals.base, globals.menu]}>
+      <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menu]}>
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }

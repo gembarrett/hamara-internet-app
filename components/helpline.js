@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 import { helpline } from '../content/helpline.js';
 import { translatedText, translatedTitle, printLinks } from '../routes/shared.js';
 
@@ -24,9 +24,9 @@ export default class HelplineScreen extends React.Component {
   }
   render() {
     return (
-      <View>
+      <ScrollView>
         {this.content}
-      </View>
+      </ScrollView>
     );
   }
 };

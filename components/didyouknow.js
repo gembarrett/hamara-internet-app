@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, FlatList, ListItem, List } from 'react-native';
+import { StyleSheet, Text, View, Button, FlatList, ListItem, List, ScrollView } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { didyouknow } from '../content/didyouknow.js';
 import { translatedText, translatedTitle } from '../routes/shared.js';
@@ -24,12 +24,12 @@ export default class DidYouKnowScreen extends React.Component {
   }
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <ScrollView contentContainerStyle={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <FlatList
         data={this.content}
         renderItem={({item}) => <Text>{item.text}</Text>}
       />
-      </View>
+      </ScrollView>
     );
   }
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, FlatList, Linking } from 'react-native';
+import { StyleSheet, Text, View, Button, FlatList, Linking, ScrollView } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { translatedText, translatedTitle } from '../routes/shared.js';
 import { support } from '../content/support.js';
@@ -19,18 +19,9 @@ export default class SupportScreen extends React.Component {
     }
     return contentArr;
   }
-  number(num) {
-    var tel = 'tel:';
-    // if (Linking.canOpenURL(num)) {
-      tel = tel + num;
-      return tel;
-    // } else {
-    //   return null;
-    // }
-  }
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <ScrollView contentContainerStyle={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <FlatList
         data={this.content}
         renderItem={
@@ -48,7 +39,7 @@ export default class SupportScreen extends React.Component {
           }
       />
 
-      </View>
+      </ScrollView>
     );
   }
 };

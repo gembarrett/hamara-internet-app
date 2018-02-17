@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
 import Accordion from '@ercpereda/react-native-accordion';
 import { reportTo } from '../content/report.js';
 import { prefs } from '../routes/prefs.js';
@@ -54,9 +54,9 @@ export default class ReportScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.container}>
         {this.accordion}
-      </View>
+      </ScrollView>
     );
   }
 }
