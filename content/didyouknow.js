@@ -63,7 +63,7 @@ const didyouknow = [
     notes: [
       {
         textEN: "* Cyber Harassment Helpline 6 months report",
-        textPK: "* Cyber Harassment Helpline 6 months report"
+        textPK: "سائبر ہراسمنٹ ہیلپ لائن کی ششماہی کارکردگی کی رپورٹ"
       },
       {
         textEN: "** Measuring Pakistani Women’s Experience of Online Violence",
