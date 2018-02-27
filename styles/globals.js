@@ -8,10 +8,13 @@ const globals = StyleSheet.create({
     backgroundColor: '#F69731',
   },
   base: {
-    flex: 1,
+    flex: 1
   },
   whiteText: {
     color: '#fff'
+  },
+  textStyle: {
+    fontSize: 18
   },
   menu: {
     alignItems: 'center'

@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Image, ImageBackground, TouchableOpacity, Linking, ScrollView } from 'react-native';
-import {lvl1Nav} from '../routes/lvl1.js';
+import { lvl1Nav } from '../routes/lvl1.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
 import { translatedText } from '../routes/shared.js';
 import { menuStyles } from '../styles/openingpages.js';
+import { submenuStyles } from '../styles/submenus.js';
 
 export default class MenuScreen extends React.Component {
   static navigationOptions = {
@@ -20,7 +21,8 @@ export default class MenuScreen extends React.Component {
   // TODO: keep fingers crossed that eventually React Native will support dynamic local images
   render() {
     return (
-      <ScrollView style={[globals.base, globals.green]}>
+      <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menu]}>
+        <View style={[menuStyles.base]}>
             <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
               {prefs.language === 'pk'
@@ -160,22 +162,18 @@ export default class MenuScreen extends React.Component {
                   style={menuStyles.button}><Text style={menuStyles.text}>{lvl1Nav[9].textEN}</Text></ImageBackground>}
               </TouchableOpacity>
             </View>
-
-            <View>
-              <TouchableOpacity onPress={() => {this.onPressImage(0)}}>
-                <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")} style={menuStyles.logo} />
-              </TouchableOpacity>
+            <View style={[menuStyles.container]}>
+                <TouchableOpacity onPress={() => {this.onPressImage(0)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")} style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => {this.onPressImage(1)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")} style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => {this.onPressImage(2)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")} style={menuStyles.logo} />
+                </TouchableOpacity>
             </View>
-            <View>
-              <TouchableOpacity onPress={() => {this.onPressImage(1)}}>
-                <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")} style={menuStyles.logo} />
-              </TouchableOpacity>
-            </View>
-            <View>
-              <TouchableOpacity onPress={() => {this.onPressImage(2)}}>
-                <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")} style={menuStyles.logo} />
-              </TouchableOpacity>
-            </View>
+          </View>
       </ScrollView>
     );
   }
