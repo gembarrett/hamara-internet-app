@@ -15,9 +15,9 @@ export default class AboutScreen extends React.Component {
         contentArr.push(printGoals(about[i].goals));
       } else {
         contentArr.push(
-          <ScrollView key = {i}>
-            <Text style={globals.whiteText}>{translatedText(about, i)}</Text>
-          </ScrollView>
+          <View key = {i}>
+            <Text style={[globals.whiteText, globals.textStyle]}>{translatedText(about, i)}</Text>
+          </View>
         )
       }
     }
