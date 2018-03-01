@@ -20,7 +20,7 @@ const splashStyles = StyleSheet.create({
     flexDirection: 'row',
     flexBasis: 'auto',
     paddingBottom: 50,
-    paddingTop: 15
+    paddingTop: 20
   },
   logo: {
     width:'50%',
@@ -46,7 +46,7 @@ const menuStyles = StyleSheet.create({
   text: {
     textAlign: 'center',
     paddingLeft: 40,
-    fontSize: 10,
+    fontSize: 14,
     color: '#fff'
   },
   container: {
