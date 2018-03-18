@@ -5,11 +5,11 @@ const about = [
   },
   {
     textEN: "Hamara Internet is all about YOU and your right to use the Internet free from harassment, surveillance, or other digital threats. A project of the Digital Rights Foundation, driven by Nighat Dad,  we aim to empower women and girls to thrive in digital space and learn to defend themselves in an increasingly Internet-connected world.",
-    textPK: "Hamara Internet is all about YOU and your right to use the Internet free from harassment, surveillance, or other digital threats. A project of the Digital Rights Foundation, driven by Nighat Dad,  we aim to empower women and girls to thrive in digital space and learn to defend themselves in an increasingly Internet-connected world."
+    textPK: "ہمارا انٹرنیٹ صرف آپ اور آپ کے اس حق سے تعلق رکھتا ہے جس حق کے تحت آپ ہراسانی، کڑی نگرانی یا دیگر ڈیجیٹل خطرات سے آزاد انٹرنیٹ کا استعمال کریں۔ نگہت داد کی زیرِ نگرانی ڈیجیٹل رائٹس فاؤنڈیشن کے اس پراجیکٹ کے تحت ہمارا مقصد خواتین کو آج کی اس بڑھتی ہوئی انٹرنیٹ سے منسلک دنیا سے روشناس کرا کر انہیں با اختیار بنانا ہے۔"
   },
   {
     textEN: "Our team of digital defenders routinely holds digital security training workshops throughout Pakistan. When we’re not venturing out into the virtual spaces, we’re busy building tools and resources for you to use to protect your safety online.",
-    textPK: "Our team of digital defenders routinely holds digital security training workshops throughout Pakistan. When we’re not venturing out into the virtual spaces, we’re busy building tools and resources for you to use to protect your safety online."
+    textPK: "ہماری ڈیجیٹل حفاظتی ٹیم معمول کے مطابق پاکستان بھر میں ڈیجیٹل حفاظتی تربیتی نشستیں منعقد کرواتی ہے۔ جب ہم بظاہر کچھ نہیں کر رہے ہوتے تو اس وقت بھی ہم آپ کی آن لائن حفاظت کو لیکر آپ کے لئے مختلف ذرائع اور ٹولز کی تعمیر میں مصروف ہوتے ہیں۔"
   },
   {
     goals: [
