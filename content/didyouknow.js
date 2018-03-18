@@ -67,7 +67,7 @@ const didyouknow = [
       },
       {
         textEN: "** Measuring Pakistani Women’s Experience of Online Violence",
-        textPK: "** Measuring Pakistani Women’s Experience of Online Violence"
+        textPK: "**پاکستانی خواتین پر آن لائن تشدد کے تجربات کی پیمائش**"
       }
     ]
   }
