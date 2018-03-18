@@ -46,7 +46,8 @@ const menuStyles = StyleSheet.create({
   text: {
     textAlign: 'center',
     paddingLeft: 40,
-    fontSize: 14,
+    paddingBottom: 4,
+    fontSize: 11,
     color: '#fff'
   },
   container: {

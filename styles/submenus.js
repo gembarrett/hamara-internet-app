@@ -10,7 +10,8 @@ const submenuStyles = StyleSheet.create({
   text: {
     textAlign: 'center',
     paddingLeft: 40,
-    fontSize: 10,
+    paddingBottom: 4,
+    fontSize: 11,
     color: '#fff'
   },
   base: {
