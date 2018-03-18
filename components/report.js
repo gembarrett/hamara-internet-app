@@ -22,9 +22,9 @@ export default class ReportScreen extends React.Component {
     }
     if (array.button2) {
       if (array.button2.startsWith('htt')) {
-        buttonsArr.push(<Button key='url2' title={'Make a report'} onPress={() => Linking.openURL(array.button2)}></Button>)
+        buttonsArr.push(<Button style={globals.twoButtons} key='url2' title={'Make a report'} onPress={() => Linking.openURL(array.button2)}></Button>)
       } else {
-        buttonsArr.push(<Button key='tel2' title={'Call ' + array.button2} onPress={() => Linking.openURL(array.button2)}></Button>)
+        buttonsArr.push(<Button style={globals.twoButtons} key='tel2' title={'Call ' + array.button2} onPress={() => Linking.openURL(array.button2)}></Button>)
       }
     }
     return buttonsArr;

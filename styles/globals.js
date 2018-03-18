@@ -27,6 +27,9 @@ const globals = StyleSheet.create({
   },
   tabStyles: {
     backgroundColor: '#7DC242'
+  },
+  twoButtons: {
+    flex: 2
   }
 })
 
