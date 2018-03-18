@@ -24,6 +24,9 @@ const globals = StyleSheet.create({
   },
   en: {
     direction: 'ltr'
+  },
+  tabStyles: {
+    backgroundColor: '#7DC242'
   }
 })
 
