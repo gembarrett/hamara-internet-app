@@ -14,7 +14,9 @@ const reportTo = [
     titleEN: "Reporting to PTA",
     titlePK: "پی۔ٹی۔اے کو رپورٹ کرنا",
     textEN: "Pakistan Telecommunication Authority is there to report harassment on text messages and calls. Their numbers are the following: 0800-55055 and 051-9225329-31",
-    textPK: "ہراسانی کی صورت میں پاکستان ٹیلی کمیونیکیشن اتھارٹی کو شکایت مندرجہ ذیل نمبروں پر بذریعہ کال یا پیغام کریں:0800-55055 051-9225329-31"
+    textPK: "ہراسانی کی صورت میں پاکستان ٹیلی کمیونیکیشن اتھارٹی کو شکایت مندرجہ ذیل نمبروں پر بذریعہ کال یا پیغام کریں",
+    button1: "0800-55055",
+    button2: "051-9225329-31"
   },
   {
     titleEN: "Cyber Harassment Helpline",

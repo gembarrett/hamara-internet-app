@@ -10,6 +10,18 @@ export default class ReportScreen extends React.Component {
   static navigationOptions = {
     title: translatedTitle(reportTo, 0)
   };
+  // TODO: refactor this
+  buttons(array) {
+    var buttonsArr = [];
+    if (array.button1) {
+      if (array.button1.startsWith('htt')) {
+        buttonsArr.push(<Button title={'More info at ' + array.button1} onPress={() => Linking.openURL(array.button1)}></Button>)
+      } else {
+        buttonsArr.push(<Button title={'call ' + array.button1} onPress={() => Linking.openURL(array.button1)}></Button>)        
+      }
+    }
+    return buttonsArr;
+  }
   get accordion() {
     var accordionArr = [];
     for (let i = 1; i < reportTo.length; i++){
@@ -27,7 +39,7 @@ export default class ReportScreen extends React.Component {
             <Text style={{color: 'white'}}>{`${isOpen ? '>' : '^'} ${title}`}</Text>
           </View>;
       const text = translatedText(reportTo, i);
-      const button1 = reportTo[i].button1;
+      const buttons = this.buttons(reportTo[i]);
       const Content = (
         <View style={{
             display: 'flex',
@@ -42,8 +54,7 @@ export default class ReportScreen extends React.Component {
             }}>
               {text}
             </Text>
-            <Button title={'call ' + button1} onPress={() => Linking.openURL(button1)}>
-            </Button>
+            {buttons}
           </View>);
       accordionArr.push(
           <Accordion key={i}
