@@ -37,9 +37,9 @@ function printLinks(array) {
   var linksListArr = [];
   for (let i = 0; i < array.length; i++){
     linksListArr.push(
-        <Text key={i} onPress={() => Linking.openURL(array[i].url)}>
+        <Text style={globals.whiteText} key={i} onPress={() => Linking.openURL(array[i].url)}>
           {translatedText(array, i)}
-           </Text>
+       </Text>
     )
   }
   return linksListArr;
