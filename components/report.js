@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView, Linking } from 'react-native';
+import BasicText from './sub/basicText.js';
 import Accordion from '@ercpereda/react-native-accordion';
 import { reportTo } from '../content/report.js';
 import { globals } from '../styles/globals.js';
@@ -43,7 +44,7 @@ export default class ReportScreen extends React.Component {
             borderBottomColor: '#a9a9a9',
             backgroundColor: '#ED1651'
           }}>
-            <Text style={{color: 'white'}}>{`${isOpen ? '>' : '^'} ${title}`}</Text>
+            <BasicText style={{color: 'white'}}>{`${isOpen ? '>' : '^'} ${title}`}</BasicText>
           </View>;
       const text = translatedText(reportTo, i);
       const buttons = this.buttons(reportTo[i]);
@@ -52,7 +53,7 @@ export default class ReportScreen extends React.Component {
             display: 'flex',
             backgroundColor: '#31363D'
           }}>
-            <Text style={{
+            <BasicText style={{
               paddingTop: 15,
               paddingRight: 15,
               paddingBottom: 15,
@@ -60,7 +61,7 @@ export default class ReportScreen extends React.Component {
               color: '#fff',
             }}>
               {text}
-            </Text>
+            </BasicText>
             {buttons}
           </View>);
       accordionArr.push(
@@ -76,7 +77,7 @@ export default class ReportScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView style={[globals.base, globals.green]}>
+      <ScrollView contentContainerStyle={[globals.base, globals.green]}>
           {this.accordion}
         </ScrollView>
     );

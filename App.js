@@ -37,7 +37,7 @@ class SplashScreen extends React.Component {
   }
   render() {
     return (
-      <View style={[globals.green, globals.base, splashStyles.base]}>
+      <View style={[globals.green, globals.base, globals.menuButtons, splashStyles.base]}>
         <Image resizeMode="contain" style={splashStyles.logo} source={require('./assets/splash-logo.png')} />
         <View style={splashStyles.buttons}>
           <Button accessibilityLabel="Button for English language content" style={splashStyles.button} onPress={() => this.goToMenu('en')} title="English" />

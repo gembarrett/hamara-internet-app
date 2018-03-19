@@ -43,13 +43,6 @@ const menuStyles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'center'
   },
-  text: {
-    textAlign: 'center',
-    paddingLeft: 40,
-    paddingBottom: 4,
-    fontSize: 11,
-    color: '#fff'
-  },
   container: {
     flexDirection: 'row',
     justifyContent: 'space-around',

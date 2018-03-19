@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView } from 'react-native';
+import BasicText from './sub/basicText.js';
 import { space } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
@@ -21,11 +22,11 @@ export default class SpaceScreen extends React.Component {
           ? <ImageBackground
             source={require('../assets/menu-button-4-pk.png')}
             resizeMode="contain"
-            style={submenuStyles.button}><Text style={submenuStyles.text}>{space[i].textPK}</Text></ImageBackground>
+            style={submenuStyles.button}><BasicText style={submenuStyles.text}>{space[i].textPK}</BasicText></ImageBackground>
           : <ImageBackground
             source={require('../assets/menu-button-4-en.png')}
             resizeMode="contain"
-            style={submenuStyles.button}><Text style={submenuStyles.text}>{space[i].textEN}</Text></ImageBackground>}
+            style={submenuStyles.button}><BasicText style={submenuStyles.text}>{space[i].textEN}</BasicText></ImageBackground>}
         </TouchableOpacity>
         </View>
       )
@@ -35,7 +36,7 @@ export default class SpaceScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menu]}>
+      <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>

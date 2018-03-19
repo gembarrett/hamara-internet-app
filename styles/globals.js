@@ -14,16 +14,25 @@ const globals = StyleSheet.create({
     color: '#fff'
   },
   textStyle: {
-    fontSize: 18
+    fontSize: 18,
+  },
+  pkFont: {
+    // fontFamily: 'NotoNastaliqUrdu-Regular',
+    fontFamily: 'NotoSans-Regular',
+    direction: 'rtl',
+  },
+  enFont: {
+    fontFamily: 'NotoSans-Regular',
+    direction: 'ltr'
   },
   menu: {
+    fontFamily: 'NotoSans-Bold',
+    alignItems: 'center',
+    color: '#fff',
+    paddingBottom: 4
+  },
+  menuButtons: {
     alignItems: 'center'
-  },
-  pk: {
-    direction: 'rtl'
-  },
-  en: {
-    direction: 'ltr'
   },
   tabStyles: {
     backgroundColor: '#7DC242'

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView } from 'react-native';
+import BasicText from './sub/basicText.js';
 import { devices } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
 import { translatedTitle, translatedText } from '../routes/shared.js';
@@ -24,11 +25,11 @@ export default class DevicesScreen extends React.Component {
               ? <ImageBackground
                 source={require('../assets/menu-button-1-pk.png')}
                 resizeMode="contain"
-                style={submenuStyles.button}><Text style={submenuStyles.text}>{devices[i].textPK}</Text></ImageBackground>
+                style={submenuStyles.button}><BasicText style={submenuStyles.text}>{devices[i].textPK}</BasicText></ImageBackground>
               : <ImageBackground
                 source={require('../assets/menu-button-1-en.png')}
                 resizeMode="contain"
-                style={submenuStyles.button}><Text style={submenuStyles.text}>{devices[i].textEN}</Text></ImageBackground>}
+                style={submenuStyles.button}><BasicText style={submenuStyles.text}>{devices[i].textEN}</BasicText></ImageBackground>}
             </TouchableOpacity>
 
         </View>
@@ -39,7 +40,7 @@ export default class DevicesScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menu]}>
+      <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>
