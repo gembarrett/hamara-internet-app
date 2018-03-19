@@ -25,12 +25,6 @@ const globals = StyleSheet.create({
     fontFamily: 'NotoSans-Regular',
     direction: 'ltr'
   },
-  menu: {
-    fontFamily: 'NotoSans-Bold',
-    alignItems: 'center',
-    color: '#fff',
-    paddingBottom: 4
-  },
   menuButtons: {
     alignItems: 'center'
   },

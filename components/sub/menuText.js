@@ -1,14 +1,15 @@
 import React from 'react';
 import { Text } from 'react-native';
-import BasicText from 'basicText.js';
-import { globals } from '../../styles/globals.js';
-import { prefs } from '../../routes/prefs.js';
+import BasicText from './basicText.js';
+import { menuStyles } from '../../styles/menus.js'
 
 export default class MenuText extends React.Component {
   render() {
     return (
-      <BasicText style={globals.menu}>
-        { this.props.children }
+      <BasicText style={menuStyles.text}>
+        <Text>
+          { this.props.children }
+        </Text>
       </BasicText>
     );
   }

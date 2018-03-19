@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView } from 'react-native';
-import BasicText from './sub/basicText.js';
+import MenuText from './sub/menuText.js';
 import { comms } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
@@ -23,11 +23,11 @@ export default class CommsScreen extends React.Component {
               ? <ImageBackground
                 source={require('../assets/menu-button-3-pk.png')}
                 resizeMode="contain"
-                style={submenuStyles.button}><BasicText style={submenuStyles.text}>{comms[i].textPK}</BasicText></ImageBackground>
+                style={submenuStyles.button}><MenuText>{comms[i].textPK}</MenuText></ImageBackground>
               : <ImageBackground
                 source={require('../assets/menu-button-3-en.png')}
                 resizeMode="contain"
-                style={submenuStyles.button}><BasicText style={submenuStyles.text}>{comms[i].textEN}</BasicText></ImageBackground>}
+                style={submenuStyles.button}><MenuText>{comms[i].textEN}</MenuText></ImageBackground>}
             </TouchableOpacity>
 
         </View>

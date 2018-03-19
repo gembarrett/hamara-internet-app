@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView } from 'react-native';
-import BasicText from './sub/basicText.js';
+import MenuText from './sub/menuText.js';
 import { online } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
+import { menuStyles } from '../styles/menus.js';
 import { submenuStyles } from '../styles/submenus.js';
 
 export default class OnlineScreen extends React.Component {
@@ -24,11 +25,11 @@ export default class OnlineScreen extends React.Component {
               ? <ImageBackground
                 source={require('../assets/menu-button-0-pk.png')}
                 resizeMode="contain"
-                style={submenuStyles.button}><BasicText style={submenuStyles.text}>{online[i].textPK}</BasicText></ImageBackground>
+                style={submenuStyles.button}><MenuText>{online[i].textPK}</MenuText></ImageBackground>
               : <ImageBackground
                 source={require('../assets/menu-button-0-en.png')}
                 resizeMode="contain"
-                style={submenuStyles.button}><BasicText style={submenuStyles.text}>{online[i].textEN}</BasicText></ImageBackground>}
+                style={submenuStyles.button}><MenuText>{online[i].textEN}</MenuText></ImageBackground>}
             </TouchableOpacity>
 
         </View>

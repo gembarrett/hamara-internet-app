@@ -6,7 +6,7 @@ import { prefs } from '../../routes/prefs.js';
 export default class BasicText extends React.Component {
   render() {
     return (
-      <Text style={prefs.language === 'pk' ? globals.pkFont : globals.enFont}>
+      <Text style={[prefs.language === 'pk' ? globals.pkFont : globals.enFont, this.props.style]}>
         { this.props.children }
       </Text>
     );

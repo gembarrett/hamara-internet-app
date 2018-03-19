@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Image, ImageBackground, TouchableOpacity, Linking, ScrollView } from 'react-native';
 import BasicText from './sub/basicText.js';
+import MenuText from './sub/menuText.js';
 import { lvl1Nav } from '../routes/lvl1.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
 import { translatedText } from '../routes/shared.js';
-import { menuStyles } from '../styles/openingpages.js';
+import { menuStyles } from '../styles/menus.js';
 import { submenuStyles } from '../styles/submenus.js';
 
 export default class MenuScreen extends React.Component {
@@ -29,11 +30,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-0-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[0].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[0].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-0-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[0].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[0].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -43,11 +44,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-1-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[1].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[1].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-1-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[1].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[1].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -57,11 +58,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-2-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[2].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[2].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-2-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[2].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[2].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -71,11 +72,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-3-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[3].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[3].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-3-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[3].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[3].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -85,11 +86,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-4-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[4].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[4].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-4-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[4].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[4].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -99,11 +100,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-5-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[5].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[5].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-5-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[5].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[5].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -113,11 +114,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-6-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[6].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[6].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-6-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[6].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[6].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -127,11 +128,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-7-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[7].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[7].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-7-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[7].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[7].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -141,11 +142,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-8-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[8].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[8].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-8-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[8].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[8].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
 
@@ -155,11 +156,11 @@ export default class MenuScreen extends React.Component {
                 ? <ImageBackground
                   source={require('../assets/menu-button-9-pk.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[9].textPK}</BasicText></ImageBackground>
+                  style={menuStyles.button}><MenuText>{lvl1Nav[9].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
                   source={require('../assets/menu-button-9-en.png')}
                   resizeMode="contain"
-                  style={menuStyles.button}><BasicText style={menuStyles.text}>{lvl1Nav[9].textEN}</BasicText></ImageBackground>}
+                  style={menuStyles.button}><MenuText>{lvl1Nav[9].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
             </View>
             <View style={[menuStyles.container]}>

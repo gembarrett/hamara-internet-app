@@ -29,28 +29,4 @@ const splashStyles = StyleSheet.create({
   }
 });
 
-const menuStyles = StyleSheet.create({
-  base: {
-    width:'75%',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'stretch',
-    marginVertical: 20
-  },
-  button: {
-    flexBasis:45,
-    width: '100%',
-    alignItems: 'flex-start',
-    justifyContent: 'center'
-  },
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginVertical: 20
-  },
-  logo: {
-    flexBasis: 50
-  }
-});
-
-export { splashStyles, menuStyles };
+export { splashStyles };

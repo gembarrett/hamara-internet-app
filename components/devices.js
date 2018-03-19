@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView } from 'react-native';
-import BasicText from './sub/basicText.js';
+import MenuText from './sub/menuText.js';
 import { devices } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
 import { translatedTitle, translatedText } from '../routes/shared.js';
 import { globals } from '../styles/globals.js';
 import { submenuStyles } from '../styles/submenus.js';
+import { menuStyles } from '../styles/menus.js';
 
 export default class DevicesScreen extends React.Component {
   static navigationOptions = {
@@ -25,11 +26,11 @@ export default class DevicesScreen extends React.Component {
               ? <ImageBackground
                 source={require('../assets/menu-button-1-pk.png')}
                 resizeMode="contain"
-                style={submenuStyles.button}><BasicText style={submenuStyles.text}>{devices[i].textPK}</BasicText></ImageBackground>
+                style={submenuStyles.button}><MenuText>{devices[i].textPK}</MenuText></ImageBackground>
               : <ImageBackground
                 source={require('../assets/menu-button-1-en.png')}
                 resizeMode="contain"
-                style={submenuStyles.button}><BasicText style={submenuStyles.text}>{devices[i].textEN}</BasicText></ImageBackground>}
+                style={submenuStyles.button}><MenuText>{devices[i].textEN}</MenuText></ImageBackground>}
             </TouchableOpacity>
 
         </View>
