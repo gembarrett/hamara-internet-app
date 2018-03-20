@@ -7,6 +7,12 @@ const globals = StyleSheet.create({
   orange: {
     backgroundColor: '#F69731',
   },
+  red: {
+    backgroundColor: '#ED1651',
+  },
+  yellow: {
+    backgroundColor: '#E6D228',
+  },
   base: {
     flex: 1
   },
