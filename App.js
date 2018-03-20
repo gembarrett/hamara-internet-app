@@ -27,6 +27,7 @@ import PasswordScreen from './components/four/passwords.js';
 import TwoFAScreen from './components/four/twofa.js';
 import { globals } from './styles/globals.js';
 import { splashStyles } from './styles/openingpages.js';
+import {lvl1Nav} from './routes/lvl1.js';
 
 class SplashScreen extends React.Component {
   goToMenu(lang) {

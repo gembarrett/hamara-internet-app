@@ -10,7 +10,7 @@ import { menuStyles } from '../styles/menus.js';
 
 export default class DevicesScreen extends React.Component {
   static navigationOptions = {
-    title: 'Protecting your devices',
+    title: prefs.language === "pk" ? devices[0].textPK : devices[0].textEN,
   }
 
   get buttons() {

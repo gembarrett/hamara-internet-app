@@ -1,4 +1,4 @@
-const prefs = {
+var prefs = {
   language: 'en'
 };
 export {prefs};

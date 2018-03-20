@@ -1,16 +1,18 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView } from 'react-native';
 import MenuText from './sub/menuText.js';
+import {lvl1Nav} from '../routes/lvl1.js';
 import { online } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
 import { menuStyles } from '../styles/menus.js';
 import { submenuStyles } from '../styles/submenus.js';
+import {translatedTitle} from '../routes/shared.js';
 
 export default class OnlineScreen extends React.Component {
   // TODO use translatedTitle here
   static navigationOptions = {
-    title: 'Protecting yourself online',
+    title: prefs.language ? prefs.language : null,
   }
   // TODO refactor into shared function
   get buttons() {
