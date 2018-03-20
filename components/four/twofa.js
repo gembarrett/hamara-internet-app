@@ -15,7 +15,7 @@ export default class TwoFAScreen extends React.Component {
         tab1={translatedText(twoFA, 1)}
         tab2={translatedText(twoFA, 2)}
         tab3={translatedText(twoFA, 3)}
-        tab4={twoFA[4].links ? printLinks(twoFA[4].links) : 'No resources to display'}
+        tab4={twoFA[4].links ? printLinks(twoFA[4].links) : null}
       />
     );
   }

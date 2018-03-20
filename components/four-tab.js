@@ -12,7 +12,7 @@ export default class FourTab extends React.Component {
         <BasicText tabLabel='Problem'>{this.props.tab1}</BasicText>
         <BasicText tabLabel='Solution'>{this.props.tab2}</BasicText>
         <BasicText tabLabel='Tips'>{this.props.tab3}</BasicText>
-        <BasicText tabLabel='Resources'>{this.props.tab4}</BasicText>
+        {this.props.tab4 ? <BasicText tabLabel='Resources'>{this.props.tab4}</BasicText> : null}
       </ScrollableTabView>
     );
   }
