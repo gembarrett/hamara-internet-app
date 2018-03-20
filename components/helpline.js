@@ -1,7 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
+import BasicText from './sub/basicText.js';
 import { helpline } from '../content/helpline.js';
 import { translatedText, translatedTitle, printLinks } from '../routes/shared.js';
+import { globals } from '../styles/globals.js';
 
 export default class HelplineScreen extends React.Component {
   static navigationOptions = {
@@ -15,7 +17,7 @@ export default class HelplineScreen extends React.Component {
       } else {
         contentArr.push(
           <View key = {i}>
-            <Text>{translatedText(helpline, i)}</Text>
+            <BasicText>{translatedText(helpline, i)}</BasicText>
           </View>
         )
       }
@@ -24,8 +26,8 @@ export default class HelplineScreen extends React.Component {
   }
   render() {
     return (
-      <ScrollView>
-        {this.content}
+      <ScrollView style={[globals.green, globals.base]}>
+          {this.content}
       </ScrollView>
     );
   }
