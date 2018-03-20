@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, FlatList, Linking, ScrollView } from 'react-native';
+import BasicText from './sub/basicText.js';
 import { StackNavigator } from 'react-navigation';
 import { translatedText, translatedTitle } from '../routes/shared.js';
 import { support } from '../content/support.js';
+import { globals } from '../styles/globals.js';
 
 export default class SupportScreen extends React.Component {
   static navigationOptions = {
@@ -21,18 +23,18 @@ export default class SupportScreen extends React.Component {
   }
   render() {
     return (
-      <ScrollView contentContainerStyle={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <ScrollView style={[globals.base, globals.green]}>
       <FlatList
         data={this.content}
         renderItem={
           ({item}) =>
             <View>
-              <Text key={item.key}>
+              <BasicText key={item.key}>
                 {item.key}
-              </Text>
-              <Text>
+              </BasicText>
+              <BasicText>
                 {item.text}
-              </Text>
+              </BasicText>
               <Button title={'call ' + item.key} onPress={() => Linking.openURL(item.tel)}>
               </Button>
             </View>
