@@ -5,10 +5,16 @@ import { StackNavigator } from 'react-navigation';
 import { translatedText, translatedTitle } from '../routes/shared.js';
 import { support } from '../content/support.js';
 import { globals } from '../styles/globals.js';
+import { prefs } from '../routes/prefs.js';
 
 export default class SupportScreen extends React.Component {
   static navigationOptions = {
-    title: translatedTitle(support, 0)
+    title: translatedTitle(support, 0),
+    headerTransparent: true,
+    headerStyle: {
+      backgroundColor: '#F69731'
+    },
+    headerTintColor: '#FFF'
   };
   get content() {
     var contentArr = [];
