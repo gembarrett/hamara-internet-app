@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, ScrollView } from 'react-native';
+import BasicText from './sub/basicText.js';
 import { about } from '../content/about.js';
 import { translatedText, translatedTitle, printLinks, printGoals } from '../routes/shared.js';
 import { globals } from '../styles/globals.js';
@@ -16,7 +17,7 @@ export default class AboutScreen extends React.Component {
       } else {
         contentArr.push(
           <View key = {i}>
-            <Text style={[globals.whiteText, globals.textStyle]}>{translatedText(about, i)}</Text>
+            <BasicText style={[globals.whiteText, globals.textStyle]}>{translatedText(about, i)}</BasicText>
           </View>
         )
       }
