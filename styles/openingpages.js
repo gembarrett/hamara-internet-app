@@ -12,10 +12,6 @@ const splashStyles = StyleSheet.create({
     alignSelf: 'flex-end',
     flexBasis: 250,
   },
-  button: {
-    marginLeft: 200,
-    // alignSelf: 'flex-end'
-  },
   buttons: {
     flexDirection: 'row',
     flexBasis: 'auto',
