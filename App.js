@@ -28,21 +28,26 @@ import TwoFAScreen from './components/four/twofa.js';
 import { globals } from './styles/globals.js';
 import { splashStyles } from './styles/openingpages.js';
 import {lvl1Nav} from './routes/lvl1.js';
+import BasicButton from './components/sub/basicButton.js';
 
 class SplashScreen extends React.Component {
   goToMenu(lang) {
     prefs.language = lang;
     this.props.navigation.navigate('Menu');
-    // is this needed?
-    // I18nManager.allowRTL(lang === 'pk' ? true : false);
   }
   render() {
     return (
       <View style={[globals.green, globals.base, globals.menuButtons, splashStyles.base]}>
         <Image resizeMode="contain" style={splashStyles.logo} source={require('./assets/splash-logo.png')} />
         <View style={splashStyles.buttons}>
-          <Button accessibilityLabel="Button for English language content" style={splashStyles.button} onPress={() => this.goToMenu('en')} title="English" />
-          <Button accessibilityLabel="Button for Urdu language content" style={splashStyles.button} onPress={() => this.goToMenu('pk')} title="Urdu" />
+          <BasicButton accessibilityLabel="Button for English language content"
+            style={splashStyles.button}
+            text="ENGLISH"
+            onPress={() => this.goToMenu('en')} title="English" />
+          <BasicButton accessibilityLabel="Button for Urdu language content"
+            style={splashStyles.button}
+            text="URDU"
+            onPress={() => this.goToMenu('pk')} title="Urdu" />
         </View>
         <Image resizeMode="contain" style={splashStyles.image} source={require('./assets/splash-lady.png')} />
       </View>
