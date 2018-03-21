@@ -45,6 +45,7 @@ export default class DevicesScreen extends React.Component {
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>
+        <ImageBackground source={require('../assets/devices-icon.png')} style={globals.screenBg}></ImageBackground>
       </ScrollView>
     );
   }

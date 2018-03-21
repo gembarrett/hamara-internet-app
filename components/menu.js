@@ -11,7 +11,7 @@ import { submenuStyles } from '../styles/submenus.js';
 
 export default class MenuScreen extends React.Component {
   static navigationOptions = {
-    title: 'Menu',
+    title: '',
   }
 
   onPressImage(num) {

@@ -42,6 +42,7 @@ export default class CommsScreen extends React.Component {
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>
+        <ImageBackground source={require('../assets/comms-icon.png')} style={globals.screenBg}></ImageBackground>
       </ScrollView>
     );
   }

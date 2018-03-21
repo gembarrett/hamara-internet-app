@@ -39,6 +39,11 @@ const globals = StyleSheet.create({
   },
   twoButtons: {
     flex: 2
+  },
+  screenBg: {
+    width:'100%',
+    flexBasis: 500,
+    opacity: 0.3
   }
 })
 
