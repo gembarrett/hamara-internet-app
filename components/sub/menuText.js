@@ -6,7 +6,7 @@ import { menuStyles } from '../../styles/menus.js'
 export default class MenuText extends React.Component {
   render() {
     return (
-      <BasicText style={menuStyles.text, this.props.style}>
+      <BasicText style={[menuStyles.text, {fontFamily: 'NotoSans-Bold',}, this.props.style]}>
         <Text>
           { this.props.children }
         </Text>

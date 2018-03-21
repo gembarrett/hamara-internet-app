@@ -14,9 +14,6 @@ const splashStyles = StyleSheet.create({
   },
   buttons: {
     flexDirection: 'row',
-    flexBasis: 'auto',
-    paddingBottom: 50,
-    paddingTop: 20
   },
   logo: {
     width:'50%',

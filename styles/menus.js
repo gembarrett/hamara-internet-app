@@ -3,13 +3,13 @@ import { prefs } from '../routes/prefs.js';
 
 const menuStyles = StyleSheet.create({
   text: {
-    paddingLeft: prefs.language === 'en' ? 40 : 0,
-    paddingRight: prefs.language === 'pk' ? 40 : 0,
-    paddingBottom: 4,
+    paddingLeft: 40,
+    paddingRight: 40,
+    paddingBottom: 2,
     fontSize: 11,
     fontFamily: 'NotoSans-Bold',
     color: '#fff',
-    textAlign: prefs.language === 'pk' ? 'right' : 'left'
+    textAlign: 'center'
   },
   base: {
     width:'75%',

@@ -42,11 +42,11 @@ class SplashScreen extends React.Component {
         <View style={splashStyles.buttons}>
           <BasicButton accessibilityLabel="Button for English language content"
             style={splashStyles.button}
-            text="ENGLISH"
+            text="English"
             onPress={() => this.goToMenu('en')} title="English" />
           <BasicButton accessibilityLabel="Button for Urdu language content"
             style={splashStyles.button}
-            text="URDU"
+            text="Urdu"
             onPress={() => this.goToMenu('pk')} title="Urdu" />
         </View>
         <Image resizeMode="contain" style={splashStyles.image} source={require('./assets/splash-lady.png')} />
