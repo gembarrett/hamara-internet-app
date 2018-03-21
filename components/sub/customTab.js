@@ -11,12 +11,7 @@ export default class CustomTab extends React.Component {
 		const { text, onPress} = this.props;
     return (
       <TouchableOpacity onPress={() => onPress()}>
-        <ImageBackground
-          source={require('../../assets/splash-button.png')}
-          resizeMode="contain"
-          style={{  }}>
             <MenuText style={{ fontSize: 14 }}>{text}</MenuText>
-        </ImageBackground>
       </TouchableOpacity>
     );
   }
