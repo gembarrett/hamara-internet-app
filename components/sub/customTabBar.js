@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomTab from './customTab.js';
 const { ViewPropTypes } = ReactNative = require('react-native');
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
@@ -41,10 +42,10 @@ const CustomTabBar = createReactClass({
     const textColor = isTabActive ? activeTextColor : inactiveTextColor;
     const fontWeight = isTabActive ? 'bold' : 'normal';
 
-    return <Button
-      style={{flex: 1, backgroundColor: 'red'}}
+    return <CustomTab
       key={name}
       title={name}
+      text={name}
       accessible={true}
       accessibilityLabel={name}
       accessibilityTraits='button'
@@ -55,7 +56,7 @@ const CustomTabBar = createReactClass({
           {name}
         </Text>
       </View>
-    </Button>;
+    </CustomTab>;
   },
 
   render() {
