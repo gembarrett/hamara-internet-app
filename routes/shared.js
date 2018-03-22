@@ -38,9 +38,11 @@ function printLinks(array) {
   var linksListArr = [];
   for (let i = 0; i < array.length; i++){
     linksListArr.push(
-        <BasicText style={globals.whiteText} key={i} onPress={() => Linking.openURL(array[i].url)}>
+      <View key={i}>
+        <BasicText style={globals.whiteText} onPress={() => Linking.openURL(array[i].url)}>
           {translatedText(array, i)}
        </BasicText>
+     </View>
     )
   }
   return linksListArr;
@@ -52,13 +54,16 @@ function printGoals(array) {
     iconsArr.push(
       <View key={i}>
         <Icon name={array[i].icon} size={15} color="#ffffff" backgroundColor="#000000"/>
-        <BasicText style={globals.whiteText}>{translatedTitle(array, i)}</BasicText>
-        <BasicText style={globals.whiteText}>{translatedText(array, i)}</BasicText>
+        <BasicText isParagraph style={globals.whiteText}>{translatedTitle(array, i)}</BasicText>
+        <BasicText isParagraph style={globals.whiteText}>{translatedText(array, i)}</BasicText>
       </View>
     )
   }
   return iconsArr;
 };
 
+function updateHeader(text) {
+    this.props.navigation.setParams({title: text});
+}
 
-export {buttons, translatedText, translatedTitle, printLinks, printGoals};
+export {buttons, translatedText, translatedTitle, printLinks, printGoals, updateHeader};

@@ -17,7 +17,7 @@ export default class AboutScreen extends React.Component {
       } else {
         contentArr.push(
           <View key = {i}>
-            <BasicText style={[globals.whiteText, globals.textStyle]}>{translatedText(about, i)}</BasicText>
+            <BasicText isParagraph style={[globals.whiteText]}>{translatedText(about, i)}</BasicText>
           </View>
         )
       }

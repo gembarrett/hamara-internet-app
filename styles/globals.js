@@ -22,6 +22,9 @@ const globals = StyleSheet.create({
   textStyle: {
     fontSize: 18,
   },
+  icon: {
+    opacity: 0.75,
+  },
   pkFont: {
     // fontFamily: 'NotoNastaliqUrdu-Regular',
     fontFamily: 'NotoSans-Regular',
@@ -51,7 +54,7 @@ const globals = StyleSheet.create({
   },
   notPara: {
     paddingHorizontal: 5,
-    paddingVertical: 5
+    paddingVertical: 2
   }
 })
 

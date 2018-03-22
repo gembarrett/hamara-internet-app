@@ -52,7 +52,7 @@ const CustomTabBar = createReactClass({
       onPress={() => onPressHandler(page)}
     >
       <View style={[styles.tab, this.props.tabStyle]}>
-        <Text style={[{color: textColor, fontWeight}, textStyle]}>
+        <Text style={[{color: textColor, fontWeight: fontWeight}, textStyle]}>
           {name}
         </Text>
       </View>
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingBottom: 10,
+    paddingHorizontal: 60,
   },
   tabs: {
     flexDirection: 'row',

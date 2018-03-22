@@ -11,7 +11,7 @@ export default class CustomTab extends React.Component {
 		const { text, onPress} = this.props;
     return (
       <TouchableOpacity onPress={() => onPress()}>
-            <MenuText style={{ fontSize: 14 }}>{text}</MenuText>
+          <MenuText style={{ fontSize: 14, paddingVertical: 30 }}>{text}</MenuText>
       </TouchableOpacity>
     );
   }
@@ -19,5 +19,5 @@ export default class CustomTab extends React.Component {
 
 CustomTab.propTypes = {
   text: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired
+  onPress: PropTypes.func.isRequired,
 };

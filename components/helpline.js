@@ -17,7 +17,7 @@ export default class HelplineScreen extends React.Component {
       } else {
         contentArr.push(
           <View key = {i}>
-            <BasicText>{translatedText(helpline, i)}</BasicText>
+            <BasicText isParagraph>{translatedText(helpline, i)}</BasicText>
           </View>
         )
       }
