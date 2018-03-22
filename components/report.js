@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, ScrollView, Linking } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView, Linking, ImageBackground } from 'react-native';
 import BasicText from './sub/basicText.js';
 import Accordion from '@ercpereda/react-native-accordion';
 import { reportTo } from '../content/report.js';
@@ -69,6 +69,7 @@ export default class ReportScreen extends React.Component {
             header={Header}
             content={Content}
             duration={300}
+            style={{ zIndex:100 }}
           />
       )
     }
@@ -79,7 +80,8 @@ export default class ReportScreen extends React.Component {
     return (
       <ScrollView contentContainerStyle={[globals.base, globals.green]}>
           {this.accordion}
-        </ScrollView>
+          <ImageBackground source={require('../assets/online-icon.png')} style={globals.screenBg}></ImageBackground>
+      </ScrollView>
     );
   }
 }

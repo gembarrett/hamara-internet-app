@@ -31,7 +31,7 @@ import {lvl1Nav} from './routes/lvl1.js';
 import BasicButton from './components/sub/basicButton.js';
 
 class SplashScreen extends React.Component {
-  goToMenu(lang) {
+  goToMenu = (lang) => {
     prefs.language = lang;
     this.props.navigation.navigate('Menu');
   }
@@ -66,7 +66,6 @@ const App = StackNavigator({
   Menu: {
     screen: MenuScreen,
     navigationOptions: {
-      headerTitle: '',
       headerTransparent: true,
       headerStyle: {
         backgroundColor: '#7DC242'

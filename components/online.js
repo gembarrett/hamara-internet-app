@@ -4,16 +4,18 @@ import MenuText from './sub/menuText.js';
 import {lvl1Nav} from '../routes/lvl1.js';
 import { online } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
+import { translatedTitle } from '../routes/shared.js';
 import { globals } from '../styles/globals.js';
 import { menuStyles } from '../styles/menus.js';
 import { submenuStyles } from '../styles/submenus.js';
-import {translatedTitle} from '../routes/shared.js';
 
 export default class OnlineScreen extends React.Component {
+
   // TODO use translatedTitle here
   static navigationOptions = {
-    title: prefs.language ? prefs.language : null,
+    title: prefs.language === "pk" ? lvl1Nav[0].textPK : lvl1Nav[0].textEN,
   }
+
   // TODO refactor into shared function
   get buttons() {
     var buttonsListArr = [];
