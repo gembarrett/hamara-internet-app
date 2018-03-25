@@ -16,7 +16,6 @@ const menuStyles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'stretch',
-    marginVertical: 20
   },
   button: {
     flexBasis:45,
