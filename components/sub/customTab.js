@@ -5,13 +5,15 @@ import MenuText from './menuText.js';
 import { globals } from '../../styles/globals.js';
 import { menuStyles } from '../../styles/menus.js'
 import PREFS from '../../routes/prefs.js';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class CustomTab extends React.Component {
   render() {
-		const { text, onPress} = this.props;
+		const { text, onPress, icon} = this.props;
     return (
       <TouchableOpacity onPress={() => onPress()}>
-          <MenuText style={{ fontSize: 14, paddingVertical: 30 }}>{text}</MenuText>
+        <Text>{icon}</Text>
+        <MenuText style={{ fontSize: 16, paddingVertical: 10 }}>{text}</MenuText>
       </TouchableOpacity>
     );
   }
@@ -20,4 +22,5 @@ export default class CustomTab extends React.Component {
 CustomTab.propTypes = {
   text: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
+  icon: PropTypes.any.isRequired
 };

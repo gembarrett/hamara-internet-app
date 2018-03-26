@@ -8,24 +8,22 @@ import { globals } from '../styles/globals.js';
 
 export default class FourTab extends React.Component {
   render() {
+    const iconArr = ["exclamation", "lightbulb-o", "list-ul", "book"];
+
     return (
       <ScrollableTabView style={[globals.green, globals.base]} initialPage={0}
         renderTabBar={() =>
           <CustomTabBar backgroundColor={this.props.backgroundColor} />} >
-            <View tabLabel='Problem'>
-              <Icon name='exclamation' color='#fff' size={50} style={globals.icon} />
+            <View tabIcon="exclamation" tabLabel='Problem'>
               <BasicText isParagraph>{this.props.tab1}</BasicText>
             </View>
-            <View tabLabel='Solution'>
-              <Icon name='lightbulb-o' color='#fff' size={50} style={globals.icon} />
+            <View tabIcon="lightbulb-o" tabLabel='Solution'>
               <BasicText BasicText isParagraph>{this.props.tab2}</BasicText>
             </View>
-            <View tabLabel='Tips'>
-              <Icon name='list-ul' color='#fff' size={50} style={globals.icon} />
+            <View tabIcon="list-ul" tabLabel='Tips'>
               <BasicText isParagraph>{this.props.tab3}</BasicText>
             </View>
-            {this.props.tab4 ? <View tabLabel='Resources'>
-              <Icon name='book' color='#fff' size={50} style={globals.icon} />
+            {this.props.tab4 ? <View tabIcon="book" tabLabel='Resources'>
               {this.props.tab4}
             </View> : null}
       </ScrollableTabView>

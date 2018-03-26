@@ -1,6 +1,7 @@
 import React from 'react';
 import CustomTab from './customTab.js';
 const { ViewPropTypes } = ReactNative = require('react-native');
+import { globals } from '../../styles/globals.js';
 const PropTypes = require('prop-types');
 const createReactClass = require('create-react-class');
 const {
@@ -23,7 +24,7 @@ const CustomTabBar = createReactClass({
     textStyle: Text.propTypes.style,
     tabStyle: ViewPropTypes.style,
     renderTab: PropTypes.func,
-    underlineStyle: ViewPropTypes.style,
+    underlineStyle: ViewPropTypes.style
   },
 
   getDefaultProps() {
@@ -34,15 +35,15 @@ const CustomTabBar = createReactClass({
     };
   },
 
-  renderTabOption(name, page) {
+  renderTabOption(name, page, icon) {
   },
 
-  renderTab(name, page, isTabActive, onPressHandler) {
-    const { activeTextColor, inactiveTextColor, textStyle, } = this.props;
+  renderTab(name, page, isTabActive, onPressHandler, icon) {
+    const { activeTextColor, inactiveTextColor, textStyle } = this.props;
     const textColor = isTabActive ? activeTextColor : inactiveTextColor;
     const fontWeight = isTabActive ? 'bold' : 'normal';
 
-    return <CustomTab
+    return <CustomTab icon={icon}
       key={name}
       title={name}
       text={name}
@@ -51,11 +52,6 @@ const CustomTabBar = createReactClass({
       accessibilityTraits='button'
       onPress={() => onPressHandler(page)}
     >
-      <View style={[styles.tab, this.props.tabStyle]}>
-        <Text style={[{color: textColor, fontWeight: fontWeight}, textStyle]}>
-          {name}
-        </Text>
-      </View>
     </CustomTab>;
   },
 
@@ -69,17 +65,16 @@ const CustomTabBar = createReactClass({
       backgroundColor: '#fff',
       bottom: 0,
     };
-
     const translateX = this.props.scrollValue.interpolate({
       inputRange: [0, 1],
       outputRange: [0,  containerWidth / numberOfTabs],
     });
     return (
       <View style={[styles.tabs, {backgroundColor: this.props.backgroundColor, }, this.props.style, ]}>
-        {this.props.tabs.map((name, page) => {
+        {this.props.tabs.map((name, page, icon) => {
           const isTabActive = this.props.activeTab === page;
           const renderTab = this.props.renderTab || this.renderTab;
-          return renderTab(name, page, isTabActive, this.props.goToPage);
+          return renderTab(name, page, isTabActive, this.props.goToPage, icon);
         })}
         <Animated.View
           style={[
