@@ -80,7 +80,6 @@ export default class ReportScreen extends React.Component {
     return (
       <ScrollView contentContainerStyle={[globals.base, globals.green]}>
           {this.accordion}
-          <ImageBackground source={require('../assets/online-icon.png')} style={globals.screenBg}></ImageBackground>
       </ScrollView>
     );
   }

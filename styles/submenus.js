@@ -19,7 +19,8 @@ const submenuStyles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'stretch',
-    marginVertical: 20
+    marginVertical: 40,
+    alignSelf: 'center'
   }
 });
 

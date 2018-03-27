@@ -45,8 +45,7 @@ const globals = StyleSheet.create({
   },
   screenBg: {
     width:'100%',
-    flexBasis: 500,
-    opacity: 0.3,
+    flexBasis: 500
   },
   para: {
     paddingHorizontal: 20,

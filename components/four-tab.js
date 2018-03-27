@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, ImageBackground } from 'react-native';
 import ScrollableTabView, { DefaultTabBar, } from 'react-native-scrollable-tab-view';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import BasicText from './sub/basicText.js';
@@ -8,9 +8,14 @@ import IconTabBar from './sub/iconTabBar.js'
 import { globals } from '../styles/globals.js';
 
 export default class FourTab extends React.Component {
+  backgroundImage(section) {
+    if (section === "online") {
+      return `source=${require('../assets/online-icon.png')}`;
+    } else {
+      return `source=${require('../assets/identity-icon.png')}`;
+    }
+  }
   render() {
-    const iconArr = ["exclamation", "lightbulb-o", "list-ul", "book"];
-
     return (
       <ScrollableTabView style={[globals.green, globals.base]} initialPage={0}
         renderTabBar={() =>

@@ -37,10 +37,11 @@ export default class SpaceScreen extends React.Component {
   render() {
     return (
       <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
+      <ImageBackground source={require('../assets/space-icon.png')} style={globals.screenBg} resizeMode="cover">
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>
-        <ImageBackground source={require('../assets/space-icon.png')} style={globals.screenBg}></ImageBackground>
+        </ImageBackground>
       </ScrollView>
     );
   }
