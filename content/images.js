@@ -21,4 +21,11 @@ const icons =  {
     },
 }
 
-export {icons};
+const menu = {
+    online: {
+      en: require('../assets/menu-button-0-en.png'),
+      pk: require('../assets/menu-button-0-pk.png')
+    }
+}
+
+export {icons, menu};

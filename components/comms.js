@@ -38,10 +38,9 @@ export default class CommsScreen extends React.Component {
   }
 
   render() {
-    let imgSource = icons.comms.uri;
     return (
       <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
-      <ImageBackground source={imgSource} style={globals.screenBg} resizeMode="cover">
+      <ImageBackground source={icons.comms.uri} style={globals.screenBg} resizeMode="cover">
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>

@@ -8,6 +8,7 @@ import { globals } from '../styles/globals.js';
 import { translatedText } from '../routes/shared.js';
 import { menuStyles } from '../styles/menus.js';
 import { submenuStyles } from '../styles/submenus.js';
+import { menu } from '../content/images.js';
 
 export default class MenuScreen extends React.Component {
   static navigationOptions = {
@@ -19,22 +20,28 @@ export default class MenuScreen extends React.Component {
     return Linking.openURL(links[num]);
   }
 
-  // TODO: keep fingers crossed that eventually React Native will support dynamic local images
+  // TODO: apply this to all buttons
+  get buttonPic() {
+    // let el = menu[section][prefs.language]
+    let imgSource = menu.online[prefs.language];
+    return imgSource;
+  }
+
   render() {
     return (
       <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
         <View style={[menuStyles.base]}>
             <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
-              {prefs.language === 'pk'
-                ? <ImageBackground
-                  source={require('../assets/menu-button-0-pk.png')}
+                <ImageBackground
+                  source={this.buttonPic}
                   resizeMode="contain"
-                  style={menuStyles.button}><MenuText>{lvl1Nav[0].textPK}</MenuText></ImageBackground>
-                : <ImageBackground
-                  source={require('../assets/menu-button-0-en.png')}
-                  resizeMode="contain"
-                  style={menuStyles.button}><MenuText>{lvl1Nav[0].textEN}</MenuText></ImageBackground>}
+                  style={menuStyles.button}>
+                  <MenuText>
+                    {prefs.language === "pk" ? lvl1Nav[0].textPK : lvl1Nav[0].textEN}
+                  </MenuText>
+                </ImageBackground>
+
               </TouchableOpacity>
             </View>
 

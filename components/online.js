@@ -44,10 +44,9 @@ export default class OnlineScreen extends React.Component {
   }
 
   render() {
-    let imgSource = icons.online.uri;
     return (
       <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
-      <ImageBackground source={imgSource} style={globals.screenBg} resizeMode="cover">
+      <ImageBackground source={icons.online.uri} style={globals.screenBg} resizeMode="cover">
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>

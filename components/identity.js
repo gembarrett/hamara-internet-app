@@ -39,10 +39,9 @@ export default class IdentityScreen extends React.Component {
   }
 
   render() {
-    let imgSource = icons.identity.uri;
     return (
       <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
-      <ImageBackground source={imgSource} style={globals.screenBg} resizeMode="cover">
+      <ImageBackground source={icons.identity.uri} style={globals.screenBg} resizeMode="cover">
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>
