@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView } from 'react-native';
+import { StyleSheet, ImageBackground, TouchableOpacity, Text, View, Button, ScrollView, Image } from 'react-native';
 import MenuText from './sub/menuText.js';
 import {lvl1Nav} from '../routes/lvl1.js';
 import { online } from '../routes/lvl2.js';
@@ -8,6 +8,7 @@ import { translatedTitle } from '../routes/shared.js';
 import { globals } from '../styles/globals.js';
 import { menuStyles } from '../styles/menus.js';
 import { submenuStyles } from '../styles/submenus.js';
+import { icons } from '../content/images.js';
 
 export default class OnlineScreen extends React.Component {
 
@@ -43,9 +44,10 @@ export default class OnlineScreen extends React.Component {
   }
 
   render() {
+    let imgSource = icons.online.uri;
     return (
       <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
-      <ImageBackground source={require('../assets/online-icon.png')} style={globals.screenBg} resizeMode="cover">
+      <ImageBackground source={imgSource} style={globals.screenBg} resizeMode="cover">
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>

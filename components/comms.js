@@ -5,6 +5,7 @@ import { comms } from '../routes/lvl2.js';
 import { prefs } from '../routes/prefs.js';
 import { globals } from '../styles/globals.js';
 import { submenuStyles } from '../styles/submenus.js';
+import { icons } from '../content/images.js';
 
 export default class CommsScreen extends React.Component {
   static navigationOptions = {
@@ -37,9 +38,10 @@ export default class CommsScreen extends React.Component {
   }
 
   render() {
+    let imgSource = icons.comms.uri;
     return (
       <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
-      <ImageBackground source={require('../assets/comms-icon.png')} style={globals.screenBg} resizeMode="cover">
+      <ImageBackground source={imgSource} style={globals.screenBg} resizeMode="cover">
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>

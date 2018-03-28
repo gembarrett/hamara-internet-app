@@ -7,6 +7,7 @@ import { translatedTitle, translatedText } from '../routes/shared.js';
 import { globals } from '../styles/globals.js';
 import { submenuStyles } from '../styles/submenus.js';
 import { menuStyles } from '../styles/menus.js';
+import { icons } from '../content/images.js';
 
 export default class DevicesScreen extends React.Component {
   static navigationOptions = {
@@ -40,9 +41,10 @@ export default class DevicesScreen extends React.Component {
   }
 
   render() {
+    let imgSource = icons.devices.uri;
     return (
       <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
-      <ImageBackground source={require('../assets/devices-icon.png')} style={globals.screenBg} resizeMode="cover">
+      <ImageBackground source={imgSource} style={globals.screenBg} resizeMode="cover">
         <View style={[submenuStyles.base]}>
           {this.buttons}
         </View>
