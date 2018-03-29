@@ -22,7 +22,7 @@ const lvl1Nav = [
   {
     id: 4,
     route: "Comms",
-    textEN: "Protecting your communications",
+    textEN: "Protecting your chats",
     textPK: "اپنے رابطوں کا تحفظ"
   },
   {

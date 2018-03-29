@@ -9,7 +9,7 @@ import { icons } from '../content/images.js';
 
 export default class CommsScreen extends React.Component {
   static navigationOptions = {
-    title: 'Protecting your communications',
+    title: 'Protecting your chats',
   }
 
   get buttons() {

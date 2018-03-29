@@ -16,7 +16,7 @@ const icons =  {
       uri: require('../assets/identity-icon.png')
     },
     comms: {
-      imgName: 'Protecting your communications',
+      imgName: 'Protecting your chats',
       uri: require('../assets/comms-icon.png')
     },
 }
