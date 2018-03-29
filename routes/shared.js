@@ -26,7 +26,8 @@ function buttons(array) {
 
 // TODO: combine these next two functions
 function translatedText(array, i) {
-  const text = prefs.language === 'pk' && array[i].textPK ? array[i].textPK : array[i].textEN;
+  let text = prefs.language === 'pk' && array[i].textPK ? array[i].textPK : array[i].textEN;
+  text = text.replace(/<br \/>/g, '\n');
   return text;
 };
 function translatedTitle(array, i) {
