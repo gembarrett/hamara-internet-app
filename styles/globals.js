@@ -49,11 +49,25 @@ const globals = StyleSheet.create({
   },
   para: {
     paddingHorizontal: 20,
-    paddingVertical: 20
+    paddingVertical: 10
   },
   notPara: {
     paddingHorizontal: 5,
     paddingVertical: 2
+  },
+  linkButton: {
+    fontFamily: 'NotoSans-Bold',
+    textAlign: 'center',
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+  },
+  linkView: {
+    marginHorizontal: 20,
+    marginVertical:10,
+    borderRadius: 40,
+    minHeight: 50,
+    justifyContent:  'center',
+    alignItems: 'center'
   }
 })
 

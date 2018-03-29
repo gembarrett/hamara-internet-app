@@ -3,16 +3,16 @@ import { prefs } from '../routes/prefs.js';
 
 const menuStyles = StyleSheet.create({
   text: {
-    paddingLeft: 40,
+    paddingLeft: 45,
     paddingRight: 40,
     paddingBottom: 2,
-    fontSize: 11,
+    fontSize: 12,
     fontFamily: 'NotoSans-Bold',
     color: '#fff',
     textAlign: 'center'
   },
   base: {
-    width:'75%',
+    width:'80%',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'stretch',

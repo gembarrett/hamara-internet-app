@@ -15,7 +15,7 @@ export default class CyberScreen extends React.Component {
         tab1={translatedText(cyber, 1)}
         tab2={translatedText(cyber, 2)}
         tab3={translatedText(cyber, 3)}
-        tab4={cyber[4].links ? printLinks(cyber[4].links) : null}
+        tab4={cyber[4].links ? printLinks(cyber[4].links, 'yellow') : null}
       />
     );
   }

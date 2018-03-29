@@ -15,7 +15,7 @@ export default class LocationScreen extends React.Component {
           tab1={translatedText(location, 1)}
           tab2={translatedText(location, 2)}
           tab3={translatedText(location, 3)}
-          tab4={printLinks(location[4].links)}
+          tab4={printLinks(location[4].links, 'orange')}
         />
     );
   }

@@ -15,7 +15,7 @@ export default class VirusScreen extends React.Component {
         tab1={translatedText(virus, 1)}
         tab2={translatedText(virus, 2)}
         tab3={translatedText(virus, 3)}
-        tab4={virus[4].links ? printLinks(virus[4].links) : null}
+        tab4={virus[4].links ? printLinks(virus[4].links, 'yellow') : null}
       />
     );
   }

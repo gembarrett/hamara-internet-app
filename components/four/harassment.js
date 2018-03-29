@@ -15,7 +15,7 @@ export default class HarassmentScreen extends React.Component {
         tab1={translatedText(harassment, 1)}
         tab2={translatedText(harassment, 2)}
         tab3={translatedText(harassment, 3)}
-        tab4={harassment[4].links ? printLinks(harassment[4].links) : null}
+        tab4={harassment[4].links ? printLinks(harassment[4].links, 'yellow') : null}
       />
     );
   }

@@ -13,7 +13,7 @@ export default class HelplineScreen extends React.Component {
     var contentArr = [];
     for (let i = 1; i < helpline.length; i++) {
       if (helpline[i].links) {
-        contentArr.push(printLinks(helpline[i].links));
+        contentArr.push(printLinks(helpline[i].links, 'yellow'));
       } else {
         contentArr.push(
           <View key = {i}>

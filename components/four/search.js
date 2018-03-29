@@ -15,7 +15,7 @@ export default class SearchScreen extends React.Component {
           tab1={translatedText(search, 1)}
           tab2={translatedText(search, 2)}
           tab3={translatedText(search, 3)}
-          tab4={printLinks(search[4].links)}
+          tab4={printLinks(search[4].links, 'orange')}
         />
     );
   }

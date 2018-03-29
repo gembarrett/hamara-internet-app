@@ -15,7 +15,7 @@ export default class USBScreen extends React.Component {
         tab1={translatedText(usbs, 1)}
         tab2={translatedText(usbs, 2)}
         tab3={translatedText(usbs, 3)}
-        tab4={usbs[4].links ? printLinks(usbs[4].links) : null}
+        tab4={usbs[4].links ? printLinks(usbs[4].links, 'yellow') : null}
       />
     );
   }

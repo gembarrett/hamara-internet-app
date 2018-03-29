@@ -34,14 +34,29 @@ function translatedTitle(array, i) {
   return title;
 };
 
-function printLinks(array) {
+
+function getBackground(color) {
+  if (color === 'yellow') {
+    return globals.yellow;
+  } else if (color === 'red') {
+    return globals.red;
+  } else if (color === 'green') {
+    return globals.green;
+  } else {
+    return globals.orange;
+  }
+}
+
+
+function printLinks(array, color) {
   var linksListArr = [];
   for (let i = 0; i < array.length; i++){
+    let url = array[i].url;
     linksListArr.push(
-      <View key={i}>
-        <BasicText style={globals.whiteText} onPress={() => Linking.openURL(array[i].url)}>
+      <View style={[getBackground(color), globals.linkView]} key={i}>
+        <Text style={[globals.whiteText, globals.linkButton]} onPress={() => Linking.openURL(url)}>
           {translatedText(array, i)}
-       </BasicText>
+       </Text>
      </View>
     )
   }

@@ -15,7 +15,7 @@ export default class SocialScreen extends React.Component {
         tab1={translatedText(social, 1)}
         tab2={translatedText(social, 2)}
         tab3={translatedText(social, 3)}
-        tab4={social[4].links ? printLinks(social[4].links) : null}
+        tab4={social[4].links ? printLinks(social[4].links, 'orange') : null}
       />
     );
   }
