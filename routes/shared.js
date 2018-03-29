@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import { Linking } from 'react-native';
 import BasicText from '../components/sub/basicText.js';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -48,16 +48,19 @@ function getBackground(color) {
 }
 
 
-function printLinks(array, color) {
+function printLinks(array, color, intent) {
   var linksListArr = [];
   for (let i = 0; i < array.length; i++){
     let url = array[i].url;
     linksListArr.push(
-      <View style={[getBackground(color), globals.linkView]} key={i}>
-        <Text style={[globals.whiteText, globals.linkButton]} onPress={() => Linking.openURL(url)}>
-          {translatedText(array, i)}
-       </Text>
-     </View>
+      <TouchableOpacity key={i} onPress={() => Linking.openURL(url)}>
+        <View style={[getBackground(color), globals.linkView]} >
+          <Text style={[globals.whiteText, globals.linkButton]} >
+            {translatedText(array, i)}
+         </Text>
+         <Icon name={intent === 'download' ? 'download' : 'external-link'} size={15} style={globals.linkIcon} />
+       </View>
+     </TouchableOpacity>
     )
   }
   return linksListArr;
@@ -68,7 +71,7 @@ function printGoals(array) {
   for (let i = 0; i < array.length; i++){
     iconsArr.push(
       <View key={i}>
-        <Icon name={array[i].icon} size={15} color="#ffffff" backgroundColor="#000000"/>
+        <Icon name={array[i].icon} size={15} color="#ffffff" backgroundColor="#000000" />
         <BasicText isParagraph style={globals.whiteText}>{translatedTitle(array, i)}</BasicText>
         <BasicText isParagraph style={globals.whiteText}>{translatedText(array, i)}</BasicText>
       </View>

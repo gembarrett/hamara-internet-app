@@ -13,7 +13,7 @@ const splashStyles = StyleSheet.create({
     flexBasis: 250,
   },
   buttons: {
-    flexDirection: 'row',
+    flexDirection: 'row'
   },
   logo: {
     width:'50%',
