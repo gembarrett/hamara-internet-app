@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Button, ImageBackground, ScrollView } from 'react-native';
 import ScrollableTabView, { DefaultTabBar, } from 'react-native-scrollable-tab-view';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import BasicText from './sub/basicText.js';
@@ -27,7 +27,7 @@ export default class FourTab extends React.Component {
               <BasicText isParagraph>{this.props.tab2}</BasicText>
             </View>
             <View tabLabel='list-ul'>
-              <BasicText isParagraph>{this.props.tab3}</BasicText>
+              <View>{this.props.tab3}</View>
             </View>
             {this.props.tab4 ? <View tabLabel='book'>
               {this.props.tab4}

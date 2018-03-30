@@ -27,6 +27,7 @@ function buttons(array) {
 // TODO: combine these next two functions
 function translatedText(array, i) {
   let text = prefs.language === 'pk' && array[i].textPK ? array[i].textPK : array[i].textEN;
+  // add line breaks
   text = text.replace(/<br \/>/g, '\n');
   return text;
 };
@@ -67,22 +68,24 @@ function printLinks(array, color, intent) {
   return linksListArr;
 };
 
-function printGoals(array) {
-  var iconsArr = [];
+function printSections(array, page) {
+  var textArr = [];
   for (let i = 0; i < array.length; i++){
-    iconsArr.push(
+    textArr.push(
       <View key={i}>
-        <Icon name={array[i].icon} size={15} color="#ffffff" backgroundColor="#000000" />
-        <BasicText isParagraph style={globals.whiteText}>{translatedTitle(array, i)}</BasicText>
+        {page === "about" ?
+        <View><Icon name={array[i].icon} size={15} color="#ffffff" backgroundColor="#000000" />
+        <BasicText isParagraph style={globals.whiteText}>{translatedTitle(array, i)}</BasicText></View>
+        : null}
         <BasicText isParagraph style={globals.whiteText}>{translatedText(array, i)}</BasicText>
       </View>
     )
   }
-  return iconsArr;
+  return textArr;
 };
 
 function updateHeader(text) {
     this.props.navigation.setParams({title: text});
 }
 
-export {buttons, translatedText, translatedTitle, printLinks, printGoals, updateHeader};
+export {buttons, translatedText, translatedTitle, printLinks, printSections, updateHeader};

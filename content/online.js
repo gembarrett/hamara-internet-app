@@ -6,7 +6,7 @@ const search = [
   {
     id: 1,
     route: "Problem",
-    textEN: "Digital shadows are made up of the information websites collect about us every time we go online. Other people can use those details maliciously. Doxing is when our private information, such as phone number or address, is made public online in order to harass us.",
+    textEN: "Digital shadows are made up of the information websites collect about us every time we go online. Other people can use those details maliciously. <br /> <br />Doxing is when our private information, such as phone number or address, is made public online in order to harass us.",
     textPK: "جب بھی ہم آن لائن ہوتے ہیں تو ویب سائٹس ہماری معلومات اکٹھی کر لیتی ہیں ان معلومات کو ڈیجیٹل شیڈوز کہتے ہیں۔ کوئی بھی دوسرا شخص ہماری ان تفصیلات کو برائی کی نیت سے استعمال کر سکتا ہے۔ کسی کی ذاتی معلومات جیسے فون نمبر یا کسی کا پتہ وغیرہ کی بری نیت سے تشہیر کے جائے تو اسے ڈاکسنگ کہتے ہیں۔"
   },
   {
@@ -18,8 +18,20 @@ const search = [
   {
     id: 3,
     route: "Tips",
-    textEN: "Self-dox regularly. Knowing what your digital shadow looks like can help you to make better decisions about the information you put online. Search for all information that could be used to identify or trace you, including:   all your usernames on active profiles as well as inactive/past online profiles  all email addresses to see where your email has been posted or possibly misused  your phone number(s) including landlines and mobile phones  your home and family addresses  Do a reverse image lookup, using a tool like Google Image Search or TinEye, on your public pictures, such as Facebook profile photos to see if they have been used anywhere else.",
-    textPK: "اپنی خود کی ڈاکسنگ با قاعدگی سے کریں، یہ جاننا کہ آپ کا ڈیجیٹل شیڈو کیسا دکھائی دیتا ہےآپ کو اپنی آن لائن دی گئی معلومات سے متعلق بہتر فیصلے کرنے میں مدد دے سکتا ہے۔ اپنی ان تمام معلومات کیلئے سرچ کیجئے جن کو آپکا تعاقب کرنے اور آپکی شناخت حاصل کرنے میں استعمال کیا جا سکتا ہے۔ ان معلومات میں شامل ہیں:  ۔ آپکی غیر فعال آن لاےن پروفائل کی طرح آپکی فعال ای پروفائلز پر آپکے تمام یوزر نیم۔  ۔ آپکے تمام ای میل ایڈریسز، یہ دیکھنے کیلئے کہ آپکی ای میلز کہاں پوسٹ ہوئی ہیں، یا ان کا ممکنہ ناجائز استعمال کیا گیا ہو۔  ۔ آپکا فون بشمول آپکے موبائل فون اور آپکا زمینی فون نمبر۔  ۔ آپکے گھر اور خاندان کے ایڈریسز۔   TinEyeیا Google Image Service فیس بک پروفائل تصاویر جیسی اپنی تشہیری تصاویر پر جیسا کوئی آلہ استعمال کرتے ہوئےریورس امیج لک اپ کریں تاکہ یہ دیکھا جائے کہ آیا ان کا کہیں استعمال کیا گیا ہے۔ "
+    tips: [
+      {
+        textEN: "Self-dox regularly. Knowing what your digital shadow looks like can help you to make better decisions about the information you put online.",
+        textPK: "اپنی خود کی ڈاکسنگ با قاعدگی سے کریں، یہ جاننا کہ آپ کا ڈیجیٹل شیڈو کیسا دکھائی دیتا ہےآپ کو اپنی آن لائن دی گئی معلومات سے متعلق بہتر فیصلے کرنے میں مدد دے سکتا ہے۔ "
+      },
+      {
+        textEN: "Search for all information that could be used to identify or trace you, including: <br />- all your usernames on active profiles as well as inactive/past online profiles <br />- all email addresses to see where your email has been posted or possibly misused <br />- your phone number(s) including landlines and mobile phones <br />- your home and family addresses",
+        textPK: "اپنی ان تمام معلومات کیلئے سرچ کیجئے جن کو آپکا تعاقب کرنے اور آپکی شناخت حاصل کرنے میں استعمال کیا جا سکتا ہے۔ ان معلومات میں شامل ہیں: <br />-  آپکی غیر فعال آن لاےن پروفائل کی طرح آپکی فعال ای پروفائلز پر آپکے تمام یوزر نیم۔ <br />- آپکے تمام ای میل ایڈریسز، یہ دیکھنے کیلئے کہ آپکی ای میلز کہاں پوسٹ ہوئی ہیں، یا ان کا ممکنہ ناجائز استعمال کیا گیا ہو۔ <br />- آپکا فون بشمول آپکے موبائل فون اور آپکا زمینی فون نمبر۔ <br />- آپکے گھر اور خاندان کے ایڈریسز۔"
+      },
+      {
+        textEN: "Do a reverse image lookup, using a tool like Google Image Search or TinEye, on your public pictures, such as Facebook profile photos to see if they have been used anywhere else.",
+        textPK: " TinEyeیا Google Image Service فیس بک پروفائل تصاویر جیسی اپنی تشہیری تصاویر پر جیسا کوئی آلہ استعمال کرتے ہوئےریورس امیج لک اپ کریں تاکہ یہ دیکھا جائے کہ آیا ان کا کہیں استعمال کیا گیا ہے۔ "
+      }
+    ]
   },
   {
     id: 4,
@@ -84,8 +96,16 @@ const browsers = [
   {
     id: 3,
     route: "Tips",
-    textEN: "Public WiFi can be helpful, but it is also an easy way for hackers to gain access to your computer. Before connecting, remember to turn on your computer’s firewall and turn off any sharing options to protect your computer against any unwanted access. There are add-ons which can help with securing your browser and internet activities: HTTPS Everywhere ensures that you are always connected securely to websites through “https”, which keeps your information private Privacy Badger helps to protect you from trackers that contribute to your digital shadow NoScript is a Firefox extension that helps protect you from security problems by stopping websites from running small programs without your permission.",
-    textPK: "عوامی وائی فائی استعمال کرنا مفید ہو سکتا ہے لیکن اس کے استعمال سے ہیکرز کو آپ کے کمپیوٹر تک آسان رسائی بھی مل جاتی ہے۔عوامی وائی فائی سے جڑنے سے پہلے یاد رکھیں اپنے کمپیوٹر پر کسی بھی قسم کی نا پسندیدہ رسائی سے بچنے کیلئے کمپیوٹر  کا فائر وال چلا دیں اور شیئرنگ اختیارات کو بند کردیں۔   ہوتے ہیں جو آپکے براؤزر اور انٹرنیٹ مصرف کو محفوظ رکھنے میں مدد دے سکتے ہیں:Add-onsیہاں چند  HTTPS Everywhere  کے ذریعے  ویب سائٹس سے محفوظ منسلک ہوئے “https”  یہ یقین دلاتا ہے کہ آپ  Privacy Badger  آپکو ان تعاقب کرنے والوں سے بچانے میں مدد دیتا ہے جوآپکے ڈیجیٹل شیڈو  NoScript میں شریک ہوتے ہیں ایک فائر فاکس ایکسٹینشن ہے جو آپ کی اجازت کے بغیر چھوٹے پروگرام چلانے سےویب سائٹس کو روکنے کے ذریعے آپ کو حفاظتی مسائل سے بچاتا ہے۔ "
+    tips: [
+      {
+        textEN: "Public WiFi can be helpful, but it is also an easy way for hackers to gain access to your computer. Before connecting, remember to turn on your computer’s firewall and turn off any sharing options to protect your computer against any unwanted access.",
+        textPK: "عوامی وائی فائی استعمال کرنا مفید ہو سکتا ہے لیکن اس کے استعمال سے ہیکرز کو آپ کے کمپیوٹر تک آسان رسائی بھی مل جاتی ہے۔عوامی وائی فائی سے جڑنے سے پہلے یاد رکھیں اپنے کمپیوٹر پر کسی بھی قسم کی نا پسندیدہ رسائی سے بچنے کیلئے کمپیوٹر  کا فائر وال چلا دیں اور شیئرنگ اختیارات کو بند کردیں۔ "
+      },
+      {
+        textEN: "There are add-ons which can help with securing your browser and internet activities: <br />- HTTPS Everywhere ensures that you are always connected securely to websites through “https”, which keeps your information private <br />- Privacy Badger helps to protect you from trackers that contribute to your digital shadow <br />- NoScript is a Firefox extension that helps protect you from security problems by stopping websites from running small programs without your permission.",
+        textPK: "ہوتے ہیں جو آپکے براؤزر اور انٹرنیٹ مصرف کو محفوظ رکھنے میں مدد دے سکتے ہیںAdd-onsیہاں چند : <br />-  کے ذریعے  ویب سائٹس سے محفوظ منسلک ہوئے “https”  یہ یقین دلاتا ہے کہ آپ  HTTPS Everywhereٗ  ہیں <br />-  آپکو ان تعاقب کرنے والوں سے بچانے میں مدد دیتا ہے جوآپکے ڈیجیٹل شیڈو Privacy Badgerٗ میں شریک ہوتے ہیں <br />-  ایک فائر فاکس ایکسٹینشن ہے جو آپ کی اجازت کے بغیر چھوٹے پروگرام چلانے سے NoScriptٗ ویب سائٹس کو روکنے کے ذریعے آپ کو حفاظتی مسائل سے بچاتا ہے۔"
+      }
+    ]
   },
   {
     id: 4,
@@ -135,8 +155,28 @@ const location = [
   {
     id: 3,
     route: "Tips",
-    textEN: "Even if you install a tool, do not become lazy! Always check that your location services are off unless you really need them.While it is fun to “check in” to locations on social media, telling people where you are (and even who you are with!) can be unsafe - even if you do it after leaving the area. It can help others build up a picture of where you hang out, when, and with whom.Be aware of other people tagging you at locations and in photos - change your Facebook settings so all tags have to be approved.Other people deserve anonymity too - ask permission before tagging them in places or photos.Not all VPN services offer the same levels of protection, but Disconnect, TunnelBear and ZenMate are just a few of the ones available to check out. You can also hide your location by accessing the internet using the Tor browser. It is completely free, but some websites block or even restrict the accounts of Tor users - so only use when it is safe to.",
-    textPK: "۔ جب کبھی بھی کوئی ٹول یا ایپ انسٹال کریں تو کسی قسم کی کوئی سستی نہ دکھائیں!  ہمیشہ چیک کریں کہ آپکی لوکیشن سروسز بند ہیں انہیں تب تک نہ کھولیں جب تک کہ آپ کو واقعی ان کی ضرورت نہ ہو کرنا ایک مذاق ہے کیونکہ آپ لوگوں کو یہ بتا رہے ہوتے ہیں کہ آپ کہاں پر  “check in”۔ سوشل میڈیا پہ لوکیشنز کو  موجود ہیں ( حتٰی کہ یہ بھی بتا رہے ہوتے ہیں کہ آپ کس کے ساتھ ہیں) چاہے آپ یہ سب اس علاقے کو چھوڑتے ہوئے بھی کر رہے ہوں۔ اس سے دوسروں کو یہ عندیہ مل جاتا ہے کہ آپ کس وقت، کہاں اور کس کے ساتھ ہیں۔۔ ہوشیار رہیں کہ دوسرے لوگ لوکیشنز اور تصاویر میں آپ کو ٹیگ کرنے سے باز رہیں۔ اپنی فیس بک ترتیبات کو تبدیل کر دیں تاکہ تمام ٹیگز کی تصدیق ہو ۔ دوسرے لوگ بھی اپنی شناخت ظاہر نہ کرنے کے مستحق ہوتے ہیں لہٰذا تصاویر اور مقامات پر انہیں ٹیگ کرنے سے پہلے ان سے اجازت لے لیں۔ چونکہ تمام وی پی این خدمات ایک ہی طرح کی حفاظتی خدمات پیش نہیں کرتیں لیکن چند ایسی وی پی این خدمات ZenMate اورDisconnect, TunnelBearدستیاب ہیں انہیں ایک نظر دیکھ لیجئے جن میں شامل ہیں   براؤزر استعمال کرتے ہوئے انٹرنیٹ تک رسائی حاصل کرتے ہوئے آپ اپنے مقامات Tor۔  براؤزر کے اکاؤنٹسTORبھی چھپا سکتے ہیں۔ یہ بالکل مفت ہے، لیکن کبھی کبھار کچھ ویب سائٹس کو نہ صرف بند کردیتی ہیں بلکہ ان پر ہر طرح سے پابندی لگا دیتی ہیں، لہٰذا اسے تب ہی استعمال کریں جب ایسا کرنا محفوظ تصور کریں"
+    tips: [
+      {
+        textEN: "Even if you install a tool, do not become lazy! Always check that your location services are off unless you really need them.",
+        textPK: "جب کبھی بھی کوئی ٹول یا ایپ انسٹال کریں تو کسی قسم کی کوئی سستی نہ دکھائیں!  ہمیشہ چیک کریں کہ آپکی لوکیشن سروسز بند ہیں انہیں تب تک نہ کھولیں جب تک کہ آپ کو واقعی ان کی ضرورت نہ ہو"
+      },
+      {
+        textEN: "While it is fun to 'check in' to locations on social media, telling people where you are (and even who you are with!) can be unsafe - even if you do it after leaving the area. It can help others build up a picture of where you hang out, when, and with whom.",
+        textPK: " کرنا ایک مذاق ہے کیونکہ آپ لوگوں کو یہ بتا رہے ہوتے ہیں کہ آپ کہاں پر  “check in”۔ سوشل میڈیا پہ لوکیشنز کو  موجود ہیں ( حتٰی کہ یہ بھی بتا رہے ہوتے ہیں کہ آپ کس کے ساتھ ہیں) چاہے آپ یہ سب اس علاقے کو چھوڑتے ہوئے بھی کر رہے ہوں۔ اس سے دوسروں کو یہ عندیہ مل جاتا ہے کہ آپ کس وقت، کہاں اور کس کے ساتھ ہیں۔"
+      },
+      {
+        textEN: "Be aware of other people tagging you at locations and in photos - change your Facebook settings so all tags have to be approved. Other people deserve anonymity too - ask permission before tagging them in places or photos.",
+        textPK: "ہوشیار رہیں کہ دوسرے لوگ لوکیشنز اور تصاویر میں آپ کو ٹیگ کرنے سے باز رہیں۔ اپنی فیس بک ترتیبات کو تبدیل کر دیں تاکہ تمام ٹیگز کی تصدیق ہو .دوسرے لوگ بھی اپنی شناخت ظاہر نہ کرنے کے مستحق ہوتے ہیں لہٰذا تصاویر اور مقامات پر انہیں ٹیگ کرنے سے پہلے ان سے اجازت لے لیں"
+      },
+      {
+        textEN: "Not all VPN services offer the same levels of protection, but Disconnect, Psiphon, TunnelBear and ZenMate are just a few of the ones available to check out.",
+        textPK: "چونکہ تمام وی پی این خدمات ایک ہی طرح کی حفاظتی خدمات پیش نہیں کرتیں لیکن چند ایسی وی پی این خدمات ZenMateاورDisconnect, Psiphon, TunnelBearدستیاب ہیں انہیں ایک نظر دیکھ لیجئے جن میں شامل ہیں"
+      },
+      {
+        textEN: "You can also hide your location by accessing the internet using the Tor browser. It is completely free, but some websites block or even restrict the accounts of Tor users - so only use when it is safe to.",
+        textPK: " براؤزر استعمال کرتے ہوئے انٹرنیٹ تک رسائی حاصل کرتے ہوئے آپ اپنے مقامات TOR۔ براؤزر کے اکاؤنٹسTORبھی چھپا سکتے ہیں۔ یہ بالکل مفت ہے، لیکن کبھی کبھار کچھ ویب سائٹس کو نہ صرف بند کردیتی ہیں بلکہ ان پر ہر طرح سے پابندی لگا دیتی ہیں، لہٰذا اسے تب ہی استعمال کریں جب ایسا کرنا محفوظ تصور کریں"
+      }
+    ]
   },
   {
     id: 4,
