@@ -15,7 +15,7 @@ export default class BrowsersScreen extends React.Component {
           tab1={translatedText(browsers, 1)}
           tab2={translatedText(browsers, 2)}
           tab3={printSections(browsers[3].tips)}
-          tab4={printLinks(browsers[4].links, 'orange')}
+          tab4={browsers[4].links ? printLinks(browsers[4].links, 'orange') : null}
         />
     );
   }

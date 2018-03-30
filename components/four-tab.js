@@ -20,18 +20,18 @@ export default class FourTab extends React.Component {
       <ScrollableTabView style={[globals.green, globals.base]} initialPage={0}
         renderTabBar={() =>
           <IconTabBar backgroundColor={this.props.backgroundColor} />} >
-            <View tabLabel='exclamation'>
+            <ScrollView tabLabel='exclamation'>
               <BasicText isParagraph>{this.props.tab1}</BasicText>
-            </View>
-            <View tabLabel='lightbulb-o'>
+            </ScrollView>
+            <ScrollView tabLabel='lightbulb-o'>
               <BasicText isParagraph>{this.props.tab2}</BasicText>
-            </View>
-            <View tabLabel='list-ul'>
+            </ScrollView>
+            <ScrollView tabLabel='list-ul'>
               <View>{this.props.tab3}</View>
-            </View>
-            {this.props.tab4 ? <View tabLabel='book'>
+            </ScrollView>
+            {this.props.tab4 ? <ScrollView tabLabel='book'>
               {this.props.tab4}
-            </View> : null}
+            </ScrollView> : null}
       </ScrollableTabView>
     );
   }

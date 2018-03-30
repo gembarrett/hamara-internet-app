@@ -18,8 +18,16 @@ const backups = [
   {
     id: 3,
     route: "Tips",
-    textEN: "If you choose a USB or external hard drive, make sure you password-protect it like you would any device, and always store it in one area of your house so you will worry less about losing it. Adding a password to your files is a good way to protect them, however they are stored. Cloud storage is convenient because it does not require any physical equipment, but even if it is on a Google server it can still be hacked into or stolen so be sure to protect your accounts.",
-    textPK: " یا ہارڈ ڈرائیو میں سے کسی کا بھی انتخاب کیا ہے تو اس بات کی تسلی کر لیں کہ جس طرح آپ USB ۔ اگر آپ  اپنی ڈیوائس کو پاس ورڈ لگا کر حفاظت دیتے ہیں اسی طرح ان پر بھی پاس ورڈ لگا کر اسے محفوظ بنائیں اور ہمیشہ  اسے اپنے گھر کے کسی ایک محفوظ مقام پہ رکھیں تاکہ اس کے گم ہونے کا خدشہ نہ ہو۔>۔ اپنی فائلوں کو پاس ورڈ لگانا بھی ایک اچھا اقدام ہے چاہے وہ آپکی ڈیوائس میں کسی محفوظ جگہ پر ہی کیوں نہ موجود ہوں   میں ذخیرہ کرنا کافی کارآمد ہے، کیونکہ اسے کسی مادی آلہ کی ضرورت نہیں ہوتی حالانکہ یہ گوگل سرور Cloud۔  پر ہوتا ہے پھر بھی اسے ہیک کیا یا چرایا جا سکتا ہےلہٰذا اس بات کی تسلی کر لیں کہ آپ کے اکاؤنٹس محفوظ ہیں"
+    tips: [
+      {
+        textEN: "If you choose a USB or external hard drive, make sure you password-protect it like you would any device, and always store it in one area of your house so you will worry less about losing it.",
+        textPK: " یا ہارڈ ڈرائیو میں سے کسی کا بھی انتخاب کیا ہے تو اس بات کی تسلی کر لیں کہ جس طرح آپ USB ۔ اگر آپاپنی ڈیوائس کو پاس ورڈ لگا کر حفاظت دیتے ہیں اسی طرح ان پر بھی پاس ورڈ لگا کر اسے محفوظ بنائیں اور ہمیشہ  اسے اپنے گھر کے کسی ایک محفوظ مقام پہ رکھیں تاکہ اس کے گم ہونے کا خدشہ نہ ہو۔"
+      },
+      {
+        textEN:"Adding a password to your files is a good way to protect them, however they are stored. Cloud storage is convenient because it does not require any physical equipment, but even if it is on a Google server it can still be hacked into or stolen so be sure to protect your accounts.",
+        textPK: "اپنی فائلوں کو پاس ورڈ لگانا بھی ایک اچھا اقدام ہے چاہے وہ آپکی ڈیوائس میں کسی محفوظ جگہ پر ہی کیوں نہ موجود ہوں میں ذخیرہ کرنا کافی کارآمد ہے، کیونکہ اسے کسی مادی آلہ کی ضرورت نہیں ہوتی حالانکہ یہ گوگل سرور Cloud۔  پر ہوتا ہے پھر بھی اسے ہیک کیا یا چرایا جا سکتا ہےلہٰذا اس بات کی تسلی کر لیں کہ آپ کے اکاؤنٹس محفوظ ہیں"
+      },
+    ]
   },
   {
     id: 4,
@@ -64,8 +72,24 @@ const virus = [
   {
     id: 3,
     route: "Tips",
-    textEN: "Only install known anti-virus software such as Norton, Avira and Avast. Also install anti-malware software and anti-spyware - the more protection you have, the better. We recommend Malwarebytes or Spybot especially because they also feature malware removalBe careful installing apps on your computer or phone when you can’t be sure of their legitimacy, it isn’t worth giving away your banking details just to get the latest game on your phone!Never open on links you aren’t sure of or download suspicious file attachments, viruses can be transmitted in photos, videos, audio and greeting cards, so always think twice before opening (or forwarding!) that funny mass emailAlways keep your phone and computer software up-to-date, vulnerabilities known as “exploits” are found and fixed regularly, so check that you are always protected",
-    textPK: " جیسے مشہور اینٹی وائرس سافٹ ویئر ہی انسٹال کریں Avast اور Norton, Avira ۔ صرف ۔ اینٹی مالویئر سافٹ ویئر اور اینٹی سپائے ویئر کی تنصیب بھی کریں یعنی جتنے زیادہ حفاظتی اقدام آپ کریں گے اتنے     تجویز کرتے ہیں کیونکہ  Spybot یا Malwarebytes ہی آپ محفوظ رہیں گے۔ اس زمرے میں ہم خصوصاً ان میں مالویئر کو ختم کرنے کی خصوصیت بھی ہوتی ہے۔جب تک آپ  کوایپس کی قانونی حیثیت کے متعلق تسلی نہ ہو اپنے کمپیوٹر یا فون پر  انہیں  انسٹال کرتے وقت ہوشیار رہیں۔ اپنے فون پر محض کوئی نیا گیم خریدتے وقت اپنے بنک کی تفصیلات دینا کوئی اچھا تاثر نہیں ہے۔ ایسے لنکس کبھی نہ کھولیں جن کے ساتھ مشتبہ فائل اٹیچ منٹس ڈاؤن لوڈ کرنی ہوں کیونکہ اکثر تصاویر، ویڈیوز، آڈیو اور گریٹنگ کارڈز کیساتھ وائرس منسلک ہوتے ہیں لہٰذا ایسی مزاح والی ای میلز کو کھولتے وقت یا آگے بھیجنے سے پہلے ہمیشہ دو بار ضرور سوچیں کہلائی جانے والی غیر محفوظ “exploits”۔ ہمیشہ اپنے فون اور کمپیوٹر کے سافٹ ویئر کو اپ ٹو ڈیٹ رکھیں کیونکہ  چیزیں جو دیکھنے میں آئیں انہیں روز مرہ کے تحت حل کرتے رہیں تاکہ آپ کو ہمیشہ پتہ چلتا رہے کہ آپ محفوظ ہیں"
+    tips: [
+      {
+        textEN: "Only install known anti-virus software such as Norton, Avira and Avast. Also install anti-malware software and anti-spyware - the more protection you have, the better. We recommend Malwarebytes or Spybot especially because they also feature malware removal",
+        textPK: " جیسے مشہور اینٹی وائرس سافٹ ویئر ہی انسٹال کریں Avast اورNorton, Avira۔ صرف اینٹی مالویئر سافٹ ویئر اور اینٹی سپائے ویئر کی تنصیب بھی کریں یعنی جتنے زیادہ حفاظتی اقدام آپ کریں گے اتنے تجویز کرتے ہیں کیونکہ  Spybot یاMalwarebytesہی آپ محفوظ رہیں گے۔ اس زمرے میں ہم خصوصاً ان میں مالویئر کو ختم کرنے کی خصوصیت بھی ہوتی ہے"
+      },
+      {
+        textEN: "Be careful installing apps on your computer or phone when you can’t be sure of their legitimacy, it isn’t worth giving away your banking details just to get the latest game on your phone!",
+        textPK: "۔جب تک آپ  کوایپس کی قانونی حیثیت کے متعلق تسلی نہ ہو اپنے کمپیوٹر یا فون پر  انہیں  انسٹال کرتے وقت ہوشیار رہیں۔ اپنے فون پر محض کوئی نیا گیم خریدتے وقت اپنے بنک کی تفصیلات دینا کوئی اچھا تاثر نہیں ہے"
+      },
+      {
+        textEN: "Never open on links you aren’t sure of or download suspicious file attachments, viruses can be transmitted in photos, videos, audio and greeting cards, so always think twice before opening (or forwarding!) that funny mass email",
+        textPK: "ایسے لنکس کبھی نہ کھولیں جن کے ساتھ مشتبہ فائل اٹیچ منٹس ڈاؤن لوڈ کرنی ہوں کیونکہ اکثر تصاویر، ویڈیوز، آڈیو اور گریٹنگ کارڈز کیساتھ وائرس منسلک ہوتے ہیں لہٰذا ایسی مزاح والی ای میلز کو کھولتے وقت یا آگے بھیجنے سے پہلے ہمیشہ دو بار ضرور سوچیں"
+      },
+      {
+        textEN: "Always keep your phone and computer software up-to-date, vulnerabilities known as “exploits” are found and fixed regularly, so check that you are always protected.",
+        textPK: " کہلائی جانے والی غیر محفوظ “exploits”۔ ہمیشہ اپنے فون اور کمپیوٹر کے سافٹ ویئر کو اپ ٹو ڈیٹ رکھیں کیونکہ  چیزیں جو دیکھنے میں آئیں انہیں روز مرہ کے تحت حل کرتے رہیں تاکہ آپ کو ہمیشہ پتہ چلتا رہے کہ آپ محفوظ ہیں"
+      }
+    ]
   },
   {
     id: 4,
@@ -105,8 +129,20 @@ const usbs = [
   {
     id: 3,
     route: "Tips",
-    textEN: "We do not recommend borrowing a USB drive or allowing someone to use yours, they can have spyware or malware on them which will infect your computer - cases of blackmail have arisen where women’s data was stolen after their computers were infected this way. While we caution against sharing USB drives, we realise it’s common practice to do so and sometimes there are no other alternatives, so we advise you run the USB through anti-virus and anti-malware software every single time you use it. If you must store sensitive data on your USB drive, look into buying a secure one with password protection.",
-    textPK: " ڈرائیو کسی کو دیں یا کسی سے اس کی ڈرائیوادھارUSB۔ ہم آپ کو اس بات کی تجویز ہر گز نہیں دیں گے کہ آپ اپنیلیں، کیونکہ ان میں سپائے ویئر یا مالویئر ہو سکتے ہیں جو آپ کے کمپیوٹر کو متاثر کر سکتے ہیں۔ بلیک میلنگ کے بہت سے کیسز سامنے آئے ہیں جہاں خواتین کے کمپیوٹروں کو اسی طرح نقصان پہنچانے کے بعد ان کا ڈیٹا چرا لیا گیا تھا لینے اور دینے کی احتیاط کے بارے میں بتاتے ہوئے ہم اس حقیقت سے بھی آگاہ ہوئے کہ ایسا کرنا USB۔ ایک عام عادت بن گئی ہے اور کبھی کبھار ایسا کرنا نا گزیر ہو جاتا ہے تو اس صورت میں ہم آپ کو یہ تجویز دیں گے کہ اگر کسی کی ڈرائیو استعمال کرنی پڑ جائے تو ہر بار اپنے کمپیوٹر پر اسے چلاتے ہوئے اینٹی وائرس اور اینٹی مالویئر سافٹ ویئر کیساتھ چلائیں۔ ڈرائیو پہ کوئی حساس ڈیٹا رکھنا ہو توخریدتے ہوئے یہ ضرور دیکھ لیں کہ وہ کافی محفوظ ہےUSB۔ اگر اپنی  اور اس کیساتھ پاس ورڈ حفاظت بھی میسر ہے۔"
+    tips: [
+      {
+        textEN: "We do not recommend borrowing a USB drive or allowing someone to use yours, they can have spyware or malware on them which will infect your computer - cases of blackmail have arisen where women’s data was stolen after their computers were infected this way.",
+        textPK: " ڈرائیو کسی کو دیں یا کسی سے اس کی ڈرائیوادھارUSB۔ ہم آپ کو اس بات کی تجویز ہر گز نہیں دیں گے کہ آپ اپنی لیں، کیونکہ ان میں سپائے ویئر یا مالویئر ہو سکتے ہیں جو آپ کے کمپیوٹر کو متاثر کر سکتے ہیں۔ بلیک میلنگ کے بہت سے کیسز سامنے آئے ہیں جہاں خواتین کے کمپیوٹروں کو اسی طرح نقصان پہنچانے کے بعد ان کا ڈیٹا چرا لیا گیا تھا"
+      },
+      {
+        textEN: "While we caution against sharing USB drives, we realise it’s common practice to do so and sometimes there are no other alternatives, so we advise you run the USB through anti-virus and anti-malware software every single time you use it.",
+        textPK: " لینے اور دینے کی احتیاط کے بارے میں بتاتے ہوئے ہم اس حقیقت سے بھی آگاہ ہوئے کہ ایسا کرنا USB۔ ایک عام عادت بن گئی ہے اور کبھی کبھار ایسا کرنا نا گزیر ہو جاتا ہے تو اس صورت میں ہم آپ کو یہ تجویز دیں گے کہ اگر کسی کی ڈرائیو استعمال کرنی پڑ جائے تو ہر بار اپنے کمپیوٹر پر اسے چلاتے ہوئے اینٹی وائرس اور اینٹی مالویئر سافٹ ویئر کیساتھ چلائیں۔"
+      },
+      {
+        textEN: "If you must store sensitive data on your USB drive, look into buying a secure one with password protection.",
+        textPK: " ڈرائیو پہ کوئی حساس ڈیٹا رکھنا ہو توخریدتے ہوئے یہ ضرور دیکھ لیں کہ وہ کافی محفوظ ہےUSB۔ اگر اپنی  اور اس کیساتھ پاس ورڈ حفاظت بھی میسر ہے۔"
+      }
+    ]
   },
   {
     id: 4,

@@ -11,12 +11,11 @@ export default class SearchScreen extends React.Component {
   };
   render() {
     return (
-        // this swaps the tabs around but errors out when trying to pass tab 3 or 4 as they're wrapped in Views
         <FourTab
-          tab1={prefs.language === "pk" ? printLinks(search[4].links, 'orange') : translatedText(search, 1)}
-          tab2={prefs.language === "pk" ? printSections(search[3].tips) : translatedText(search, 2)}
-          tab3={prefs.language === "pk" ? translatedText(search, 2) : printSections(search[3].tips)}
-          tab4={prefs.language === "pk" ? translatedText(search, 1) : printLinks(search[4].links, 'orange')}
+          tab1={translatedText(search, 1)}
+          tab2={translatedText(search, 2)}
+          tab3={printSections(search[3].tips)}
+          tab4={search[4].links ? printLinks(search[4].links, 'orange') : null}
         />
     );
   }
