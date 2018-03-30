@@ -6,6 +6,7 @@ import BasicText from './sub/basicText.js';
 import CustomTabBar from './sub/customTabBar.js'
 import IconTabBar from './sub/iconTabBar.js'
 import { globals } from '../styles/globals.js';
+import { prefs } from '../routes/prefs.js';
 
 export default class FourTab extends React.Component {
   backgroundImage(section) {
@@ -38,23 +39,31 @@ export default class FourTab extends React.Component {
         type: 'view',
         content: props.tab4
       }
-    ]
+    ];
     let tabsArray = [];
-    for (let i=0; i<props.length; i++) {
+    let numOfTabs = props.tab4 ? 3 : 2;
+    for (let i=0; i<=numOfTabs; i++) {
       tabsArray.push(
-        <ScrollView tabLabel={tabInfo[i].label}>
-          {tabInfo[i].type === 'text' ? <BasicText isParagraph>{tabInfo[i].content}</BasicText> : <View>{tabInfo[i].content}</View>}
+        <ScrollView tabLabel={tabInfo[i].label} key={i}>
+            {tabInfo[i].type === "text" ?
+              <BasicText isParagraph>{tabInfo[i].content}</BasicText> :
+              <View>{tabInfo[i].content}</View>
+            }
         </ScrollView>
       )
     }
-    return tabsArray;
+    if (prefs.language === "pk") {
+      return tabsArray.reverse();
+    } else {
+      return tabsArray;
+    }
   }
 
 
   render() {
-
+    let numOfTabs = this.props.tab4 ? 3 : 2;
     return (
-      <ScrollableTabView style={[globals.green, globals.base]} initialPage={0}
+      <ScrollableTabView style={[globals.green, globals.base]} initialPage={prefs.language === 'pk' ? numOfTabs : 0}
         renderTabBar={() =>
           <IconTabBar backgroundColor={this.props.backgroundColor} />} >
           {this.getTabs(this.props)}
