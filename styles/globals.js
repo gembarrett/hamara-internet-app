@@ -77,8 +77,9 @@ const globals = StyleSheet.create({
     flexDirection: 'row',
     minHeight: 40,
     justifyContent:  'center',
-    alignContent: 'center'
-  }
+    alignContent: 'center',
+    elevation: 3
+  },
 })
 
 export { globals };
