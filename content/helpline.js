@@ -8,7 +8,7 @@ const helpline = [
     textPK: "سائبر ہراسمنٹ ہیلپ لائن پاکستان کی پہلی ہیلپ لائن ہے جو آن لائن بد سلوکی، تشدد اور  ہراساں کرنے جیسے مسائل کو اجاگر کرنے اور ان مسائل سے نبرد آزما ہونے کیلئے مفت، محفوظ، صنفی حساسیت کو ملحوظ رکھتے ہوئے ایک رازدارانہ خدمت مہیا کرنے کیلئے وقف ہے کی گئی ہے۔ ہیلپ لائن کا امدادی سٹاف آن لائن ہراسانی کا شکار ہوئے لوگوں کو قانونی مشاورت، ڈیجیٹل حفاظتی امداد اور نفسیاتی رہنمائی فراہم کرتا ہے۔یہ ہیلپ لائن یکم دسمبر، ۲۰۱۶ میں قائم کی گئی۔"
   },
   {
-    textEN: "The toll free number [0800-39393] is available to people looking for help between 9am till 5pm, 7 days a week. The Support Staff can also be contacted via email at helpdesk@digitalrightsfoundation.pk and our Facebook page https://www.facebook.com/DigitalRightsFoundation/",
+    textEN: "The toll free number 0800-39393 is available to people looking for help between 9am till 5pm, 7 days a week. The Support Staff can also be contacted via email at helpdesk@digitalrightsfoundation.pk and our Facebook page https://www.facebook.com/DigitalRightsFoundation/",
     textPK: "، ہفتہ کے ۷ دن، صبح ۹ سے شام ۵ بجے تک ان لوگوں کیلئے دستیاب ہے جنہیں 0800-39393 اس ہیلپ لائن کا ٹال فری نمبر helpdesk@digitalrightsfoundation.pkمدد درکار ہو۔  اس کے علاوہ امدادی سٹاف سے بذریعہ ای میل  پر بھی رابطہ کیا https://www,facebook.com/DigitalRightsFoundation/فیس بک پیج  اور  جا سکتا ہے۔"
   },
   {
