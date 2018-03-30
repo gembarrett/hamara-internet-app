@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import FourTab from '../four-tab.js';
 import { harassment } from '../../content/space.js';
 import { prefs } from '../../routes/prefs.js';
-import { translatedText, translatedTitle, printLinks } from '../../routes/shared.js';
+import { translatedText, translatedTitle, printLinks, printSections } from '../../routes/shared.js';
 
 export default class HarassmentScreen extends React.Component {
   static navigationOptions = {
@@ -14,7 +14,7 @@ export default class HarassmentScreen extends React.Component {
       <FourTab
         tab1={translatedText(harassment, 1)}
         tab2={translatedText(harassment, 2)}
-        tab3={translatedText(harassment, 3)}
+        tab3={printSections(harassment[3].tips)}
         tab4={harassment[4].links ? printLinks(harassment[4].links, 'yellow') : null}
       />
     );

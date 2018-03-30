@@ -18,8 +18,20 @@ const harassment = [
   {
     id: 3,
     route: "Tips",
-    textEN: "Some comments should be ignored, but ignoring doesn’t solve problems and it can be necessary to stand up for your opinions - but remember to pick your battles; some aren’t worth your energy. Sometimes blocking trolls can work, but they can always make another profile so while we recommend blocking, we also caution that it’s not always a solution. If you deactivate your account, your bully has won. You have conceded your space and they are further empowered and emboldened to continue harassing you and others.",
-    textPK: "۔ بعض کمنٹس کو نظر انداز کر دینا چاہئے لیکن محض نظرانداز کردینے سے مسئلہ حل نہیں ہوتابلکہ اپنی آراء دینا بھی ضروری ہوتا ہے ۔ لیکن اس کیلئے خود کو تیار رکھیں کیونکہ بعض دفعہ ایسا کرنا آپ کو تھکا بھی سکتا ہے اور وہ آپ کے شایانِ شان بھی نہیں ہوتے کہ ان پہ بحث کی جائے۔بعض دفعہ تعاقب کر کے تنگ والوں کو بلاک کرنا کام آ سکتا ہے لیکن وہ ہمیشہ کوئی نیا پروفائل بنا سکتے ہیں اس لئے چاہے ہم آپ کو بلاک کرنے کی تجویز  بھی دیتے ہیں لیکن اس کےساتھ ہم آپ کو خبردار بھی کرتے ہیں کہ ہمیشہ ایسا کرنا ہی کوئی واحد حل نہیں ہوتا۔ اگر آپ اپنا اکاؤنٹ غیر فعال کر بھی دیں تو اس کا مطلب ہے کہ آپ کو ہراساں کرنے والا بازی لے گیا۔ آپ نے ایک طرح سے ہار مان کر انہیں یہ شہ دی ہے کہ وہ آپ کو اور دوسروں کو زیادہ ہراساں کریں۔"
+    tips: [
+      {
+        textEN: "Some comments should be ignored, but ignoring doesn’t solve problems and it can be necessary to stand up for your opinions - but remember to pick your battles; some aren’t worth your energy.",
+        textPK: " بعض کمنٹس کو نظر انداز کر دینا چاہئے لیکن محض نظرانداز کردینے سے مسئلہ حل نہیں ہوتابلکہ اپنی آراء دینا بھی ضروری ہوتا ہے ۔ لیکن اس کیلئے خود کو تیار رکھیں کیونکہ بعض دفعہ ایسا کرنا آپ کو تھکا بھی سکتا ہے اور وہ آپ کے شایانِ شان بھی نہیں ہوتے کہ ان پہ بحث کی جائے"
+      },
+      {
+        textEN: "Sometimes blocking trolls can work, but they can always make another profile so while we recommend blocking, we also caution that it’s not always a solution.",
+        textPK: "۔بعض دفعہ تعاقب کر کے تنگ والوں کو بلاک کرنا کام آ سکتا ہے لیکن وہ ہمیشہ کوئی نیا پروفائل بنا سکتے ہیں اس لئے چاہے ہم آپ کو بلاک کرنے کی تجویز  بھی دیتے ہیں لیکن اس کےساتھ ہم آپ کو خبردار بھی کرتے ہیں کہ ہمیشہ ایسا کرنا ہی کوئی واحد حل نہیں ہوتا"
+      },
+      {
+        textEN: "If you deactivate your account, your bully has won. You have conceded your space and they are further empowered and emboldened to continue harassing you and others.",
+        textPK: " اگر آپ اپنا اکاؤنٹ غیر فعال کر بھی دیں تو اس کا مطلب ہے کہ آپ کو ہراساں کرنے والا بازی لے گیا۔ آپ نے ایک طرح سے ہار مان کر انہیں یہ شہ دی ہے کہ وہ آپ کو اور دوسروں کو زیادہ ہراساں کریں۔"
+      }
+    ]
   },
   {
     id: 4,
@@ -59,8 +71,16 @@ const cyber = [
   {
     id: 3,
     route: "Tips",
-    textEN: "If you’re in college or university then you could demand they set up an anti-cyberbullying policy. It’s important to challenge bullying behaviour wherever you see it - online or offline; call it out whenever you can. If you know anyone who is being bullied, offer them support and help them save the evidence through photos of bullying comments and actions.",
-    textPK: "۔اگر آپ کالج یا یونیورسٹی میں موجود ہیں تو آپ اس ادارے کی انتظامیہ سے یہ مطالبہ کریں کہ وہ انسدادِ سائبر بلنگ کی حکمتِ عملی مرتب کریں۔ یہ بہت اہم ہے کہ جہاں کہیں بھی سائبر غنڈہ گردی کا سلوک ہوتا ہوا دیکھیں چاہے وہ آن لائن ہو یا آف لائن اسے جہاں تک ممکن ہو چیلنج کریں۔ اگر آپ کسی ایسے انسان کو جانتے ہوں جو اس غنڈہ گردی کا شکار ہوا ہو تو انہیں اپنی حمایت کا یقین دلائیں اور انہیں ان کیساتھ ایسی  ہونے والی کارروائیوں اور کمنٹس کی سکرین شاٹس یا تصاویر کیساتھ  ثبوت جمع کرنے میں مدد دیں"
+    tips: [
+      {
+        textEN: "If you’re in college or university then you could demand they set up an anti-cyberbullying policy. It’s important to challenge bullying behaviour wherever you see it - online or offline; call it out whenever you can.",
+        textPK: "۔اگر آپ کالج یا یونیورسٹی میں موجود ہیں تو آپ اس ادارے کی انتظامیہ سے یہ مطالبہ کریں کہ وہ انسدادِ سائبر بلنگ کی حکمتِ عملی مرتب کریں. یہ بہت اہم ہے کہ جہاں کہیں بھی سائبر غنڈہ گردی کا سلوک ہوتا ہوا دیکھیں چاہے وہ آن لائن ہو یا آف لائن اسے جہاں تک ممکن ہو چیلنج کریں"
+      },
+      {
+        textEN: "If you know anyone who is being bullied, offer them support and help them save the evidence through photos of bullying comments and actions.",
+        textPK: " اگر آپ کسی ایسے انسان کو جانتے ہوں جو اس غنڈہ گردی کا شکار ہوا ہو تو انہیں اپنی حمایت کا یقین دلائیں اور انہیں ان کیساتھ ایسی  ہونے والی کارروائیوں اور کمنٹس کی سکرین شاٹس یا تصاویر کیساتھ  ثبوت جمع کرنے میں مدد دیں"
+      }
+    ]
   },
   {
     id: 4,
