@@ -80,6 +80,11 @@ const globals = StyleSheet.create({
     alignContent: 'center',
     elevation: 3
   },
+  inlandLink: {
+    color: '#fff',
+    backgroundColor: 'rgb(41,149,220)',
+    fontFamily: 'NotoSans-Bold',
+  }
 })
 
 export { globals };
