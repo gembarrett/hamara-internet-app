@@ -15,23 +15,49 @@ export default class FourTab extends React.Component {
       return `source=${require('../assets/identity-icon.png')}`;
     }
   }
+
+  getTabs(props) {
+    tabInfo = [
+      {
+        label: 'exclamation',
+        type: 'text',
+        content: props.tab1
+      },
+      {
+        label: 'lightbulb-o',
+        type: 'text',
+        content: props.tab2
+      },
+      {
+        label: 'list-ul',
+        type: 'view',
+        content: props.tab3
+      },
+      {
+        label: 'book',
+        type: 'view',
+        content: props.tab4
+      }
+    ]
+    let tabsArray = [];
+    for (let i=0; i<props.length; i++) {
+      tabsArray.push(
+        <ScrollView tabLabel={tabInfo[i].label}>
+          {tabInfo[i].type === 'text' ? <BasicText isParagraph>{tabInfo[i].content}</BasicText> : <View>{tabInfo[i].content}</View>}
+        </ScrollView>
+      )
+    }
+    return tabsArray;
+  }
+
+
   render() {
+
     return (
       <ScrollableTabView style={[globals.green, globals.base]} initialPage={0}
         renderTabBar={() =>
           <IconTabBar backgroundColor={this.props.backgroundColor} />} >
-            <ScrollView tabLabel='exclamation'>
-              <BasicText isParagraph>{this.props.tab1}</BasicText>
-            </ScrollView>
-            <ScrollView tabLabel='lightbulb-o'>
-              <BasicText isParagraph>{this.props.tab2}</BasicText>
-            </ScrollView>
-            <ScrollView tabLabel='list-ul'>
-              <View>{this.props.tab3}</View>
-            </ScrollView>
-            {this.props.tab4 ? <ScrollView tabLabel='book'>
-              {this.props.tab4}
-            </ScrollView> : null}
+          {this.getTabs(this.props)}
       </ScrollableTabView>
     );
   }
