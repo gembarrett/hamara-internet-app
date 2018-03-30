@@ -16,11 +16,10 @@ export default class DidYouKnowScreen extends React.Component {
       if (didyouknow[i].notes) {
         // change to print both
         for (let j=0; j < didyouknow[i].notes.length; j++) {
-          var text = didyouknow[i].notes[0].textEN;
-          contentArr.push({key: {j}+10, text: translatedText(didyouknow[i].notes, j) });
+          contentArr.push({key: i+j, text: translatedText(didyouknow[i].notes, j) });
         }
       } else {
-        contentArr.push({key: {i}, text: translatedText(didyouknow, i)});
+        contentArr.push({key: i, text: translatedText(didyouknow, i)});
       }
     }
     return contentArr;
