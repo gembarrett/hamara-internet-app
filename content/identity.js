@@ -18,8 +18,24 @@ const passwords = [
   {
     id: 3,
     route: "Tips",
-    textEN: "Remember that it is never wise to share your passwords with anyone, whether the person is your trusted friend, sibling or significant other. Change your passwords on a regular basis and act quickly if you feel they may have been compromised. Use phrases instead of words to make the password longer and more secure. To keep track of lots of passwords you can use a system like KeepassX or Encryptr, which will also generate strong passwords for youIf you forget your password you may have to answer some security questions (e.g. the name of your first pet). When you are setting the answers to these, use incorrect information to make it harder for others to guess.",
-    textPK: "۔ یاد رہے، اپنے پاس ورڈ کا کسی سے تبادلہ کرنا کوئی عقلمندی نہیں ہوتی، چاہے وہ شخص آپکا بھروسہ مند دوست، بہن، بھائی، والدین، منگیتر یا شوہر ہی کیوں نہ ہو۔ باقاعدگی سے اپنے پاس ورڈ تبدیل کرتے رہا کریں اور جب آپ کو لگے کہ اس حصار کو کمزور کیا جاسکتا ہے تو فوری ایکشن لیں۔ پاس ورڈ طویل اور زیادہ محفوظ بنانے کیلئے الفاظ کی بجائے عبارت کا استعمال کریں جیسے کسی نظام کا استعمال  Encryptr KeepassX ۔ کافی تعداد میں پاس ورڈ جاننے اور مزید جاننے کیلئے آپکر سکتے ہیں جو آپ کیلئے مضبوط پاس ورڈ بھی بنا سکتے ہیں۔ اگر آپ اپنا پاس ورڈ بھول جائیں تو آپ سے چند حفاظتی سوالات بھی پوچھے جا سکتے ہیں (مثلاً: آپ کے پہلے پالتو جانور کا نام کیا ہے؟)۔ جب آپ جوابات ترتیب دے رہے ہوں تودوسروں کیلئے اسے مشکل بنانے کیلئے غلط معلومات فراہم کریں ۔"
+    tips: [
+      {
+        textEN: "Remember that it is never wise to share your passwords with anyone, whether the person is your trusted friend, sibling or significant other.",
+        textPK: " یاد رہے، اپنے پاس ورڈ کا کسی سے تبادلہ کرنا کوئی عقلمندی نہیں ہوتی، چاہے وہ شخص آپکا بھروسہ مند دوست، بہن، بھائی، والدین، منگیتر یا شوہر ہی کیوں نہ ہو"
+      },
+      {
+        textEN: "Change your passwords on a regular basis and act quickly if you feel they may have been compromised. Use phrases instead of words to make the password longer and more secure.",
+        textPK: "باقاعدگی سے اپنے پاس ورڈ تبدیل کرتے رہا کریں اور جب آپ کو لگے کہ اس حصار کو کمزور کیا جاسکتا ہے تو فوری ایکشن لیں"
+      },
+      {
+        textEN: "To keep track of lots of passwords you can use a system like KeepassX, 1Password or Encryptr, which will also generate strong passwords for you",
+        textPK: " پاس ورڈ طویل اور زیادہ محفوظ بنانے کیلئے الفاظ کی بجائے عبارت کا استعمال کریں. جیسے کسی نظام کا استعمال  Encryptr 1Password یا KeepassX ۔ کافی تعداد میں پاس ورڈ جاننے اور مزید جاننے کیلئے آپ"
+      },
+      {
+        textEN: "If you forget your password you may have to answer some security questions (e.g. the name of your first pet). When you are setting the answers to these, use incorrect information to make it harder for others to guess.",
+        textPK: "کر سکتے ہیں جو آپ کیلئے مضبوط پاس ورڈ بھی بنا سکتے ہیں۔ اگر آپ اپنا پاس ورڈ بھول جائیں تو آپ سے چند حفاظتی سوالات بھی پوچھے جا سکتے ہیں (مثلاً: آپ کے پہلے پالتو جانور کا نام کیا ہے؟)۔ جب آپ جوابات ترتیب دے رہے ہوں تودوسروں کیلئے اسے مشکل بنانے کیلئے غلط معلومات فراہم کریں."
+      }
+    ]
   },
   {
     id: 4,
@@ -59,8 +75,20 @@ const twoFA = [
   {
     id: 3,
     route: "Tips",
-    textEN: "Remember that two-factor authentication means that your phone becomes more valuable and you should keep it as secure as you can to help protect your accounts. Some services allow you to download backup codes for when you need to sign in urgently - handy if your phone gets lost, broken or stolen - but you should never save these on your phone, keep a physical copy somewhere secret and safe. The default method for two-factor authentication is for the service to send you a text message or an automated phone call, however, authenticator apps that generate codes are also available and are more secure. It is preferable to use an authenticator app on your phone so that you aren’t locked out of your account when cellphone signals are blocked or you go abroad. The Facebook app has a built-in code generator, but the app itself is very invasive and uses your camera, microphone, and a lot more information on your phone than you would think. Services like Google create their own authenticator apps, but it can be more efficient to use an option like DuoMobile which can manage multiple services (including Facebook and Google)",
-    textPK: "۔ یاد رکھیں دو طرفہ تصدیق کا مطلب ہوتا ہے کہ آپ کا فون اب آپ کیلئے بہت ضروری ہوگیا ہے اور اب آپ کو اسے زیادہ محفوظ رکھنا چاہئے تاکہ آپ کو اپنے اکاؤنٹس کو محفوظ رکھنے میں مدد ملے۔ چند ایک خدمات آپ کو یہ اجازت دیتی ہیں کہ آپ بیک اپ کوڈز ڈاؤن لوڈ کریں تاکہ اگر کبھی آپ کو عجلت میں سائن ان ہونے کی ضرورت پڑے اور اس وقت اگر آپ کا فون گم ہو گیا ہے یا خراب ہو گیا ہے یا چوری ہو گیا ہے تو ان کوڈز کا استعمال کیا جاسکے۔ لیکن ان بیک اپ کوڈز اپنے فون میں کبھی محفوظ نہ کریں بلکہ ان کو کسی جگہ تحریر کر کے محفوظ اور خفیہ مقام پہ رکھیں تاکہ بوقتِ ضرورت کام آسکیں۔ دو طرفہ تصدیق کیلئے ڈیفالٹ عمل، آپ کو ایک ٹیکسٹ پیغام بھیجنے یا خودکار فون کال بھیجنے کیلئے ہوتا ہے، تاہم کوڈز مرتب کرتی ہیں وہ بھی میسر ہیں  QRتصدیقی ایپس جو۔ آپکے فون پر ایک تصدیقی ایپ کو استعمال کرنے کو ترجیح دی جاتی ہے تاکہ جب کبھی آپ ملک سے باہر ہوں یا آپ کے موبائل کے سگنلز معینہ  یا غیر معینہ مدت کیلئے بند کر دیئے جائیں تو آپ کے اکاؤنٹس پر آپ کی دسترس ختم نہ ہو۔ فیس بک ایپ ایک پہلے سے موجود کوڈ کو ترتیب دینے کا عمل رکھتی ہے لیکن وہ ایپ ناگوار اس لئے ہے کہ وہ آپ کی سوچ سے بھی زیادہ آپ کے فون پر آپ کی کافی سے زیادہ معلومات ، مائیکروفون، اور آپ کے موبائل کیمرے کو استعمال کرتے ہوئے انہیں اپنی دسترس میں لے لیتی ہے۔ جیسے کسی اختیار کو چلانا زیادہ  DuoMobile۔ گوگل جیسی خدمات اپنی خود کی تصدیقی ایپ تخلیق کرتی ہیں لیکن  مؤثر ہوسکتا ہے کیونکہ ایسے اختیارات مختلف خدمات کے نظام کیساتھ کرتے ہیں (بشمول فیس بک اور گوگل)"
+    tips: [
+      {
+        textEN: "Remember that two-factor authentication means that your phone becomes more valuable and you should keep it as secure as you can to help protect your accounts. Some services allow you to download backup codes for when you need to sign in urgently - handy if your phone gets lost, broken or stolen - but you should never save these on your phone, keep a physical copy somewhere secret and safe.",
+        textPK: "یاد رکھیں دو طرفہ تصدیق کا مطلب ہوتا ہے کہ آپ کا فون اب آپ کیلئے بہت ضروری ہوگیا ہے اور اب آپ کو اسے زیادہ محفوظ رکھنا چاہئے تاکہ آپ کو اپنے اکاؤنٹس کو محفوظ رکھنے میں مدد ملے. چند ایک خدمات آپ کو یہ اجازت دیتی ہیں کہ آپ بیک اپ کوڈز ڈاؤن لوڈ کریں تاکہ اگر کبھی آپ کو عجلت میں سائن ان ہونے کی ضرورت پڑے اور اس وقت اگر آپ کا فون گم ہو گیا ہے یا خراب ہو گیا ہے یا چوری ہو گیا ہے تو ان کوڈز کا استعمال کیا جاسکے۔ لیکن ان بیک اپ کوڈز اپنے فون میں کبھی محفوظ نہ کریں بلکہ ان کو کسی جگہ تحریر کر کے محفوظ اور خفیہ مقام پہ رکھیں تاکہ بوقتِ ضرورت کام آسکیں"
+      },
+      {
+        textEN: "The default method for two-factor authentication is for the service to send you a text message or an automated phone call, however, authenticator apps that generate codes are also available and are more secure. It is preferable to use an authenticator app on your phone so that you aren’t locked out of your account when cellphone signals are blocked or you go abroad.",
+        textPK: " دو طرفہ تصدیق کیلئے ڈیفالٹ عمل، آپ کو ایک ٹیکسٹ پیغام بھیجنے یا خودکار فون کال بھیجنے کیلئے ہوتا ہے، تاہم. کوڈز مرتب کرتی ہیں وہ بھی میسر ہیں  QRتصدیقی ایپس جو۔ آپکے فون پر ایک تصدیقی ایپ کو استعمال کرنے کو ترجیح دی جاتی ہے تاکہ جب کبھی آپ ملک سے باہر ہوں یا آپ کے موبائل کے سگنلز معینہ  یا غیر معینہ مدت کیلئے بند کر دیئے جائیں تو آپ کے اکاؤنٹس پر آپ کی دسترس ختم نہ ہو"
+      },
+      {
+        textEN: "The Facebook app has a built-in code generator, but the app itself is very invasive and uses your camera, microphone, and a lot more information on your phone than you would think. Services like Google create their own authenticator apps, but it can be more efficient to use an option like DuoMobile which can manage multiple services (including Facebook and Google)",
+        textPK: "۔ فیس بک ایپ ایک پہلے سے موجود کوڈ کو ترتیب دینے کا عمل رکھتی ہے لیکن وہ ایپ ناگوار اس لئے ہے کہ وہ آپ کی سوچ سے بھی زیادہ آپ کے فون پر آپ کی کافی سے زیادہ معلومات ، مائیکروفون، اور آپ کے موبائل کیمرے کو استعمال کرتے ہوئے انہیں اپنی دسترس میں لے لیتی ہے۔ جیسے کسی اختیار کو چلانا زیادہ  DuoMobile۔ گوگل جیسی خدمات اپنی خود کی تصدیقی ایپ تخلیق کرتی ہیں لیکنمؤثر ہوسکتا ہے کیونکہ ایسے اختیارات مختلف خدمات کے نظام کیساتھ کرتے ہیں (بشمول فیس بک اور گوگل)"
+      }
+    ]
   },
   {
     id: 4,

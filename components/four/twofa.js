@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import FourTab from '../four-tab.js';
 import { twoFA } from '../../content/identity.js';
 import { prefs } from '../../routes/prefs.js';
-import { translatedText, translatedTitle, printLinks } from '../../routes/shared.js';
+import { translatedText, translatedTitle, printLinks, printSections } from '../../routes/shared.js';
 
 export default class TwoFAScreen extends React.Component {
   static navigationOptions = {
@@ -14,7 +14,7 @@ export default class TwoFAScreen extends React.Component {
       <FourTab
         tab1={translatedText(twoFA, 1)}
         tab2={translatedText(twoFA, 2)}
-        tab3={translatedText(twoFA, 3)}
+        tab3={printSections(twoFA[3].tips)}
         tab4={twoFA[4].links ? printLinks(twoFA[4].links, 'red') : null}
       />
     );
