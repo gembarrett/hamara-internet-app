@@ -27,14 +27,11 @@ const globals = StyleSheet.create({
   },
   pkFont: {
     // fontFamily: 'NotoNastaliqUrdu-Regular',
+    alignSelf: 'flex-end',
     fontFamily: 'NotoSans-Regular',
-    direction: 'rtl',
-    textAlign: 'right'
   },
   enFont: {
     fontFamily: 'NotoSans-Regular',
-    direction: 'ltr',
-    textAlign: 'left'
   },
   menuButtons: {
     alignItems: 'center'

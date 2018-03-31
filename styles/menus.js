@@ -4,12 +4,11 @@ import { prefs } from '../routes/prefs.js';
 const menuStyles = StyleSheet.create({
   text: {
     paddingLeft: 45,
-    paddingRight: 40,
+    paddingRight: 45,
     paddingBottom: 2,
     fontSize: 12,
     fontFamily: 'NotoSans-Bold',
     color: '#fff',
-    textAlign: 'right'
   },
   base: {
     width:'80%',

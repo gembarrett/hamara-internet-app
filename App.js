@@ -33,10 +33,19 @@ import BasicButton from './components/sub/basicButton.js';
 class SplashScreen extends React.Component {
   goToMenu = (lang) => {
     prefs.language = lang;
-    {lang === 'pk' ? I18nManager.forceRTL(true) : I18nManager.forceRTL(false)};
+    console.log(I18nManager.isRTL, lang);
+    if (lang === 'pk') {
+      I18nManager.isRTL = true;
+      console.log(I18nManager.isRTL);
+    } else {
+      I18nManager.isRTL = false;
+      console.log(I18nManager.isRTL);
+    };
     this.props.navigation.navigate('Menu');
   }
   render() {
+    I18nManager.isRTL = false;
+    prefs.language = 'en';
     return (
       <View style={[globals.green, globals.base, globals.menuButtons, splashStyles.base]}>
         <Image resizeMode="contain" style={splashStyles.logo} source={require('./assets/splash-logo.png')} />
