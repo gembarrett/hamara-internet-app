@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { prefs } from '../../routes/prefs.js';
 
 class IconTabBar extends React.Component {
   icons = [];
@@ -32,9 +33,9 @@ class IconTabBar extends React.Component {
 
   //color between rgb(59,89,152) and rgb(204,204,204)
   iconColor(progress) {
-    const red = 244 + (204 - 244) * progress;
-    const green = 244 + (204 - 244) * progress;
-    const blue = 244 + (204 - 244) * progress;
+    const red = 255 + (234 - 255) * progress;
+    const green = 255 + (0 - 255) * progress;
+    const blue = 255 + (63 - 255) * progress;
     return `rgb(${red}, ${green}, ${blue})`;
   }
 
@@ -45,7 +46,7 @@ class IconTabBar extends React.Component {
           <Icon
             name={tab}
             size={30}
-            color={'#fff'}
+            color={'#ED1651'}
             ref={(icon) => { this.icons[i] = icon; }}
           />
         </TouchableOpacity>;
