@@ -84,6 +84,36 @@ const globals = StyleSheet.create({
     color: '#fff',
     backgroundColor: 'rgb(41,149,220)',
     fontFamily: 'NotoSans-Bold',
+  },
+  listItemContainer: {
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    alignContent: 'stretch',
+  },
+  listIcon: {
+    alignSelf: 'flex-start',
+    color: '#fff',
+    borderTopColor: '#fff',
+    borderTopWidth: 2,
+    backgroundColor: 'rgba(243, 135, 29, 0.9)',
+    width: '100%',
+    flexShrink: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 20
+  },
+  listItem: {
+    paddingVertical: 10,
+    flexGrow: 5,
+  },
+  lineBreak: {
+    paddingBottom: 20,
+    borderBottomColor: '#fff',
+    borderBottomWidth: 1,
+  },
+  shortBreak: {
+    width: '100%',
+    backgroundColor: '#F69731',
   }
 })
 
