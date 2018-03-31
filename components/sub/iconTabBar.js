@@ -40,13 +40,13 @@ class IconTabBar extends React.Component {
   }
 
   render() {
-    return <View style={[styles.tabs, this.props.style, ]}>
+    return <View style={[styles.tabs, this.props.style, {backgroundColor: this.props.backgroundColor}]}>
       {this.props.tabs.map((tab, i) => {
         return <TouchableOpacity key={tab} onPress={() => this.props.goToPage(i)} style={styles.tab}>
           <Icon
             name={tab}
             size={30}
-            color={'#ED1651'}
+            color={'#fff'}
             ref={(icon) => { this.icons[i] = icon; }}
           />
         </TouchableOpacity>;
@@ -63,13 +63,14 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   tabs: {
-    height: 45,
+    height: 'auto',
     flexDirection: 'row',
     paddingTop: 10,
-    borderWidth: 2,
-    borderTopWidth: 0,
+    borderBottomWidth: 2,
+    borderTopWidth: 1,
     borderLeftWidth: 0,
     borderRightWidth: 0,
+    borderTopColor: '#fff',
     borderBottomColor: '#fff',
   },
 });

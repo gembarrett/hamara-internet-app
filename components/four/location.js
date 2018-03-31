@@ -11,7 +11,7 @@ export default class LocationScreen extends React.Component {
   };
   render() {
     return (
-        <FourTab
+        <FourTab backgroundColor='#F69731'
           tab1={translatedText(location, 1)}
           tab2={translatedText(location, 2)}
           tab3={printSections(location[3].tips)}

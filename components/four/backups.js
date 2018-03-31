@@ -11,7 +11,7 @@ export default class BackupsScreen extends React.Component {
   };
   render() {
     return (
-      <FourTab
+      <FourTab backgroundColor='#E6D228'
         tab1={translatedText(backups, 1)}
         tab2={translatedText(backups, 2)}
         tab3={printSections(backups[3].tips)}

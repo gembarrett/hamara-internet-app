@@ -82,7 +82,7 @@ const globals = StyleSheet.create({
   },
   inlandLink: {
     color: '#fff',
-    backgroundColor: 'rgb(231,0,63)',
+    backgroundColor: 'rgb(41,149,220)',
     fontFamily: 'NotoSans-Bold',
   },
   listItemContainer: {
@@ -93,8 +93,8 @@ const globals = StyleSheet.create({
   },
   listIcon: {
     alignSelf: 'flex-start',
-    color: 'rgb(231,0,63)',
-    borderTopColor: 'rgb(231,0,63)',
+    color: '#F69731',
+    borderTopColor: '#F69731',
     borderTopWidth: 2,
     backgroundColor: '#fff',
     width: '100%',
@@ -108,7 +108,7 @@ const globals = StyleSheet.create({
   },
   lineBreak: {
     paddingBottom: 20,
-    borderBottomColor: 'rgb(231,0,63)',
+    borderBottomColor: '#F69731',
     borderBottomWidth: 1,
   },
   shortBreak: {

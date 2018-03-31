@@ -11,7 +11,7 @@ export default class CyberScreen extends React.Component {
   };
   render() {
     return (
-      <FourTab
+      <FourTab backgroundColor='#E6D228'
         tab1={translatedText(cyber, 1)}
         tab2={translatedText(cyber, 2)}
         tab3={printSections(cyber[3].tips)}

@@ -11,7 +11,7 @@ export default class BrowsersScreen extends React.Component {
   };
   render() {
     return (
-        <FourTab
+        <FourTab backgroundColor='#F69731'
           tab1={translatedText(browsers, 1)}
           tab2={translatedText(browsers, 2)}
           tab3={printSections(browsers[3].tips)}

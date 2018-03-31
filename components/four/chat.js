@@ -11,7 +11,7 @@ export default class ChatScreen extends React.Component {
   };
   render() {
     return (
-      <FourTab
+      <FourTab backgroundColor='#F69731'
         tab1={translatedText(chat, 1)}
         tab2={translatedText(chat, 2)}
         tab3={printSections(chat[3].tips)}

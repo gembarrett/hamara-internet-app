@@ -11,7 +11,7 @@ export default class TwoFAScreen extends React.Component {
   };
   render() {
     return (
-      <FourTab
+      <FourTab backgroundColor='#ED1651'
         tab1={translatedText(twoFA, 1)}
         tab2={translatedText(twoFA, 2)}
         tab3={printSections(twoFA[3].tips)}

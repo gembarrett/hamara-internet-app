@@ -11,7 +11,7 @@ export default class HarassmentScreen extends React.Component {
   };
   render() {
     return (
-      <FourTab
+      <FourTab backgroundColor='#E6D228'
         tab1={translatedText(harassment, 1)}
         tab2={translatedText(harassment, 2)}
         tab3={printSections(harassment[3].tips)}

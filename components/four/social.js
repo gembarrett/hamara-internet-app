@@ -11,7 +11,7 @@ export default class SocialScreen extends React.Component {
   };
   render() {
     return (
-      <FourTab
+      <FourTab backgroundColor='#F69731'
         tab1={translatedText(social, 1)}
         tab2={translatedText(social, 2)}
         tab3={printSections(social[3].tips)}

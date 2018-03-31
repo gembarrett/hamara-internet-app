@@ -11,7 +11,7 @@ export default class PasswordScreen extends React.Component {
   };
   render() {
     return (
-      <FourTab
+      <FourTab backgroundColor='#ED1651'
         tab1={translatedText(passwords, 1)}
         tab2={translatedText(passwords, 2)}
         tab3={printSections(passwords[3].tips)}
