@@ -76,7 +76,7 @@ function printSections(array, page) {
         {page === "about" ?
         <View style={{flexDirection: 'row'}}>
         <Icon name={array[i].icon} size={20} style={[globals.listIcon, {color: '#ED1651', borderTopColor: '#ED1651'}]} />
-        <BasicText isParagraph style={[globals.whiteText, globals.bold, globals.red]}>{translatedTitle(array, i)}</BasicText></View>
+        <BasicText isParagraph style={[globals.whiteText, globals.bold, globals.red,{borderTopColor: '#ED1651', borderTopWidth: 2}]}>{translatedTitle(array, i)}</BasicText></View>
         : null}
         <BasicText isParagraph style={globals.whiteText}>{translatedText(array, i)}</BasicText>
       </View>
