@@ -1,11 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, FlatList, Linking, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Button, FlatList, Linking, ScrollView, TouchableOpacity } from 'react-native';
 import BasicText from './sub/basicText.js';
 import { StackNavigator } from 'react-navigation';
 import { translatedText, translatedTitle } from '../routes/shared.js';
 import { support } from '../content/support.js';
 import { globals } from '../styles/globals.js';
 import { prefs } from '../routes/prefs.js';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default class SupportScreen extends React.Component {
   static navigationOptions = {
@@ -34,15 +35,18 @@ export default class SupportScreen extends React.Component {
         data={this.content}
         renderItem={
           ({item}) =>
-            <View>
-              <BasicText key={item.key}>
-                {item.key}
-              </BasicText>
-              <BasicText>
-                {item.text}
-              </BasicText>
-              <Button title={'call ' + item.key} onPress={() => Linking.openURL(item.tel)}>
-              </Button>
+            <View style={[globals.lineBreak, globals.para, {flexDirection: 'row', justifyContent: 'space-between'}]}>
+              <View>
+                <BasicText style={[globals.bold, {alignSelf: 'flex-start'}]} key={item.key}>
+                  {item.key}
+                </BasicText>
+                <BasicText style={{alignSelf: 'flex-start'}}>
+                  {item.text}
+                </BasicText>
+              </View>
+              <TouchableOpacity>
+                <Icon.Button name='phone' style={[globals.orange]}  onPress={() => Linking.openURL(item.tel)} />
+              </TouchableOpacity>
             </View>
           }
       />
