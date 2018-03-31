@@ -33,6 +33,9 @@ const globals = StyleSheet.create({
   enFont: {
     fontFamily: 'NotoSans-Regular',
   },
+  bold: {
+    fontFamily: 'NotoSans-Bold',
+  },
   menuButtons: {
     alignItems: 'center'
   },
