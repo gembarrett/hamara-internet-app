@@ -9,7 +9,7 @@ const menuStyles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'NotoSans-Bold',
     color: '#fff',
-    textAlign: 'center'
+    textAlign: 'right'
   },
   base: {
     width:'80%',

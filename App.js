@@ -33,6 +33,7 @@ import BasicButton from './components/sub/basicButton.js';
 class SplashScreen extends React.Component {
   goToMenu = (lang) => {
     prefs.language = lang;
+    {lang === 'pk' ? I18nManager.forceRTL(true) : I18nManager.forceRTL(false)};
     this.props.navigation.navigate('Menu');
   }
   render() {

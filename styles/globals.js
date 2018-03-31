@@ -29,10 +29,12 @@ const globals = StyleSheet.create({
     // fontFamily: 'NotoNastaliqUrdu-Regular',
     fontFamily: 'NotoSans-Regular',
     direction: 'rtl',
+    textAlign: 'right'
   },
   enFont: {
     fontFamily: 'NotoSans-Regular',
-    direction: 'ltr'
+    direction: 'ltr',
+    textAlign: 'left'
   },
   menuButtons: {
     alignItems: 'center'
