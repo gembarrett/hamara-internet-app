@@ -26,11 +26,13 @@ export default class DidYouKnowScreen extends React.Component {
   }
   render() {
     return (
-      <ScrollView style={[globals.base, globals.green]} >
+      <ScrollView style={[globals.base, globals.green, globals.para]} >
       <FlatList
         data={this.content}
-        renderItem={({item}) => <BasicText>{item.text}</BasicText>}
-      />
+        renderItem={({item}) =>
+          <View>
+            <BasicText style={[globals.listItem]}>{item.text}</BasicText>
+          </View> } />
       </ScrollView>
     );
   }
