@@ -28,12 +28,12 @@ const social = [
         textPK: "۔ بہت سی سماجی نیٹ ورکنگ سائٹس صارفین کو معلومات ایک سماجی نیٹ ورک سے دوسرے نیٹ ورکس تک منتقل کرنے کی اجازت دیتے ہیں لیکن کسی  بھی مواد کو پوسٹ یا اپ لوڈ کرتے وقت محتاط رہیں کیونکہ ایسا ہو سکتا ہے کہ ایک ویب سائٹ کیلئےتو آپ گمنام ہوں لیکن وہیں دوسری سائٹ کیلئے آپ آشکار ہوجائیں، جس سے کافی مسائل کا آپ کو سامنا ہو سکتا ہے۔"
       },
       {
-        textEN: "Avoid providing your location. Every time you check in somewhere or upload a status with your current location, you are voluntarily telling people where to physically find you. Tap here for guidance on hiding your location.",
-        textPK: " اپنی لوکیشن ظاہر کرنے سے پرہیز کریں۔ کیونکہ جب بھی آپ اپنی موجودہ لوکیشن کیساتھ کوئی سٹیٹس اپ لوڈ کرتے ہیں یا کہیں چیک ان ہوتے ہیں تو آپ رضاکارانہ طور پر  انجان لوگوں کو بھی یہ بتا رہے ہوتے ہیں کہ آپ اس وقت کہاں موجود ہیں۔ اپنے مقام کو  چھپانے کیلئے اس رہنمائی کو دیکھیں "
+        textEN: "Avoid providing your location. Every time you check in somewhere or upload a status with your current location, you are voluntarily telling people where to physically find you.",
+        textPK: "اپنی لوکیشن ظاہر کرنے سے پرہیز کریں۔ کیونکہ جب بھی آپ اپنی موجودہ لوکیشن کیساتھ کوئی سٹیٹس اپ لوڈ کرتے ہیں یا کہیں چیک ان ہوتے ہیں تو آپ رضاکارانہ طور پر  انجان لوگوں کو بھی یہ بتا رہے ہوتے ہیں کہ آپ اس وقت کہاں موجود ہیں۔"
       },
       {
-        textEN: "You should always make sure to use secure passwords, and enable two-factor authentication on the social media websites that have it. Tap here for guidance on this.",
-        textPK: " ہمیشہ اس بات کی تسلی کرلیں آپ نے سوشل میڈیا ویب سائٹس پر  محفوظ پاس ورڈز لگائے ہیں اور دو طرفہ تصدیق کو چالو کردیا ہے۔ اس پر رہنمائی حاصل کرنے کیلئے یہاں دیکھئے "
+        textEN: "You should always make sure to use secure passwords, and enable two-factor authentication on the social media websites that have it.",
+        textPK: "ہمیشہ اس بات کی تسلی کرلیں آپ نے سوشل میڈیا ویب سائٹس پر  محفوظ پاس ورڈز لگائے ہیں اور دو طرفہ تصدیق کو چالو کردیا ہے۔"
       },
       {
         textEN: "Be very careful about the photos and videos you upload - they can be misused, shared and circulated. Even Snapchat photos can be saved easily before they disappear!",

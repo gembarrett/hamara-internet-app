@@ -78,7 +78,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#7DC242'
+        backgroundColor: '#7DC242',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -88,7 +89,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -98,7 +100,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#E6D228'
+        backgroundColor: '#E6D228',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -108,7 +111,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#ED1651'
+        backgroundColor: '#ED1651',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -118,7 +122,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -128,7 +133,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#E6D228'
+        backgroundColor: '#E6D228',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -138,7 +144,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#ED1651'
+        backgroundColor: '#ED1651',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -148,7 +155,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -158,7 +166,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#E6D228'
+        backgroundColor: '#E6D228',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -168,7 +177,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#ED1651'
+        backgroundColor: '#ED1651',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -178,7 +188,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -188,7 +199,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#E6D228'
+        backgroundColor: '#E6D228',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -198,7 +210,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#E6D228'
+        backgroundColor: '#E6D228',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -208,7 +221,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#E6D228'
+        backgroundColor: '#E6D228',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -218,7 +232,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#E6D228'
+        backgroundColor: '#E6D228',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -228,7 +243,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#E6D228'
+        backgroundColor: '#E6D228',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -238,7 +254,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -248,7 +265,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -258,7 +276,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -268,7 +287,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -278,7 +298,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#F69731'
+        backgroundColor: '#F69731',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -288,7 +309,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#ED1651'
+        backgroundColor: '#ED1651',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }
@@ -298,7 +320,8 @@ const App = StackNavigator({
     navigationOptions: {
       headerTransparent: true,
       headerStyle: {
-        backgroundColor: '#ED1651'
+        backgroundColor: '#ED1651',
+        elevation: 0
       },
       headerTintColor: '#FFF'
     }

@@ -18,28 +18,28 @@ const reportTo = [
     button1: "0800-55055",
     button2: "051-9225329-31"
   },
+  // {
+  //   titleEN: "Cyber Harassment Helpline",
+  //   titlePK: "رپورٹ کرنا",
+  //   textEN: "",
+  //   textPK: ""
+  // },
   {
-    titleEN: "Cyber Harassment Helpline",
-    titlePK: "رپورٹ کرنا",
-    textEN: "",
-    textPK: ""
-  },
-  {
-    titleEN: "Reporting Harassment on Facebook",
+    titleEN: "Reporting harassment on Facebook",
     titlePK: "فیس بک پہ رپورٹ کرنا",
     textEN: "Facebook has a report button for almost every element on the site: profiles, posts, photos, messages and groups. Therefore there isn’t one centralised report procedure. However they have a page of examples so you can find out how to report any type of harassment you experience on the site.",
     textPK: "پروفائلز، پوسٹس، فوٹوز، میسجز اور گروپس میں :فیس بک سائٹ پر ہر عنصر کیلئے ایک رپورٹ بٹن ہوتا ہے۔ اس لئے اس کا کوئی مرکزی رپورٹ کرنے کا طریقہ کار نہیں ہوتا۔ تاہم وہ نمونے کے طور پر ایک پیج رکھتے ہیں تاکہ سائٹ پر آپ کو کسی قسم کی ہراسانی کا سامنا کرنے پر آپ رپورٹ کر سکیں۔",
     button1: "https://m.facebook.com/help/1380418588640631?helpref=hc_fnav&refid=69",
   },
   {
-    titleEN: "Reporting Harassment on Twitter",
+    titleEN: "Reporting harassment on Twitter",
     titlePK: "ٹویٹر پر رپورٹ کرنا",
     textEN: "Twitter has a few reporting methods. Most, like Facebook, are buttons next to the content itself. But they also have separate report forms for things like impersonation accounts or doxing. They will usually then email you a response. Click the following link to report cyber harassment on Twitter:",
     textPK: "ٹویٹر پر رپورٹ کرنے کے چند ضوابط لاگو ہیں۔ فیس بک جیسے زیادہ تر سوشل میڈیا چینلز پر ان کے مواد کیساتھ ہی چند بٹن ہوتے ہیں۔ لیکن ان کے پاس الگ سے رپورٹ کرنے کی اقسام  بھی ہوتی ہیں جیسے دوہری شخصیتی اکاؤنٹ یا  ۔ پھر بعدازاں آپ کو ایک ای میل کے ذریعے جواب بھیج دیا جاتا ہے",
     button1: "https://help.twitter.com/forms/abusiveuser"
   },
   {
-    titleEN: "Reporting Harassment on Instagram",
+    titleEN: "Reporting harassment on Instagram",
     titlePK: "انسٹا گرام پہ رپورٹ کرنا",
     textEN: "Like other social media accounts, Instagram profiles can also be attacked and hate accounts have been set up to target women in the past. Instagram has processes for reporting accounts and posts, and they can accept reports whether you have an account of your own or not. To keep yourself safe on Instagram report it on the following link:",
     textPK: "ماضی میں خواتین کو نشانہ بنانے کیلئے دیگر سوشل میڈیا اکاؤنٹس کی طرح انسٹا گرام پروفائلز پر بھی نفرت انگیز اور حملہ آور اکاؤنٹس ترتیب دیئے جا سکتے ہیں۔ اس زمرے میں انسٹا گرام پہ اکاؤنٹس اور پوسٹس کی  رپورٹ کرنے کیلئے ایک طریقہ کار مرتب ہے اور وہ آپ کی درج کی گئی رپورٹ کو وصول کرسکتے ہیں چاہے آپ کا اپنا اکاؤنٹ موجود ہو یا نہ ہو۔",

@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, ScrollView, Linking, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Button, ScrollView, Linking, ImageBackground, I18nManager } from 'react-native';
 import BasicText from './sub/basicText.js';
 import Accordion from '@ercpereda/react-native-accordion';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { reportTo } from '../content/report.js';
 import { globals } from '../styles/globals.js';
 import { prefs } from '../routes/prefs.js';
@@ -42,9 +43,12 @@ export default class ReportScreen extends React.Component {
             paddingBottom: 15,
             borderBottomWidth: 1,
             borderBottomColor: '#a9a9a9',
-            backgroundColor: '#ED1651'
+            backgroundColor: '#ED1651',
+            flexDirection: 'row',
+            justifyContent: I18nManager.isRTL ? 'flex-end' : 'flex-start'
           }}>
-            <BasicText style={{color: 'white'}}>{`${isOpen ? '>' : '^'} ${title}`}</BasicText>
+            <Icon name={`${isOpen ? 'chevron-down' : 'chevron-up'}`} size={10} color='white' />
+            <BasicText style={{color: 'white'}}>{`${title}`}</BasicText>
           </View>;
       const text = translatedText(reportTo, i);
       const buttons = this.buttons(reportTo[i]);
@@ -86,13 +90,3 @@ export default class ReportScreen extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    width: '100%'
-  }
-});
