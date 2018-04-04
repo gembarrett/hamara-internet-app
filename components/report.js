@@ -49,7 +49,7 @@ export default class ReportScreen extends React.Component {
       const text = translatedText(reportTo, i);
       const buttons = this.buttons(reportTo[i]);
       const Content = (
-        <View style={{
+        <ScrollView contentContainerStyle={{
             display: 'flex',
             backgroundColor: '#31363D'
           }}>
@@ -63,7 +63,7 @@ export default class ReportScreen extends React.Component {
               {text}
             </BasicText>
             {buttons}
-          </View>);
+          </ScrollView>);
       accordionArr.push(
           <Accordion key={i}
             header={Header}
@@ -78,8 +78,10 @@ export default class ReportScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView contentContainerStyle={[globals.base, globals.green]}>
+      <ScrollView style={[globals.base, globals.green]}>
+      <View>
           {this.accordion}
+          </View>
       </ScrollView>
     );
   }
