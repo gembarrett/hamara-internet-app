@@ -105,7 +105,7 @@ const twoFA = [
         textPK: "گوگل حفاظتی چیک لسٹ"
       },
       {
-        url: "https://lifehacker.com/5805326/how-to-turn-your-computers-firewall-on-and-off",
+        url: "https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en",
         textEN: "Google Authenticator app",
         textPK: "Google Authenticator app"
       },

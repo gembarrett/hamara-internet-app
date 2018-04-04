@@ -63,12 +63,12 @@ const search = [
         textPK: "آپکا ای میل آپکے بارے میں کیا کہتا ہے؟"
       },
       {
-        url: "https://www.crashoverridenetwork.com/preventingdoxing.html",
+        url: "http://www.crashoverridenetwork.com/preventingdoxing.html",
         textEN: "Crash Override guide to preventing doxing",
         textPK: "کی رہنمائی Crash Overrideڈاکسنگ سے بچنے کیلئے"
       },
       {
-        url: "https://www.crashoverridenetwork.com/soyouvebeendoxed.html",
+        url: "http://www.crashoverridenetwork.com/soyouvebeendoxed.html",
         textEN: "Crash Override guide for the doxed",
         textPK: "کی رہنمائی  Crash Overrideڈاکس ہونے کیلئے"
       }
@@ -183,7 +183,7 @@ const location = [
     route: "Resources",
     links: [
       {
-        url: "https://www.app.teachingprivacy.com/",
+        url: "https://www.dailydot.com/debug/twitter-instagram-location-metadata-how-to/",
         textEN: "Check how much location information is on your Twitter and Instagram accounts",
         textPK: "یہ جاننے کیلئے کہ آپ کے ٹویٹر اور انسٹا گرام اکاؤنٹس پر آپکی لوکیشن کی بابت کتنی معلومات موجود ہیں چیک کریں "
       },
@@ -198,7 +198,7 @@ const location = [
         textPK: "پر لوکیشن خدمات کو کیسے بند کرنا ہے  iOSاور Android"
       },
       {
-        url: "https://www.www.makeuseof.com/tag/disable-fake-location-firefox-internet-explorer-chrome/",
+        url: "https://www.makeuseof.com/tag/disable-fake-location-firefox-internet-explorer-chrome/",
         textEN: "How to disable or hide your location in Chrome, Firefox and Internet Explorer",
         textPK: "لنک کریں  ]میں اپنی لوکیشن کو کیسے غیر فعال کریں  Internet Explorerاور Chrome, Firefox"
       }
