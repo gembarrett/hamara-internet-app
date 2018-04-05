@@ -6,14 +6,14 @@ const social = [
   {
     id: 1,
     route: "Problem",
-    textEN: "Social networking sites like Facebook, Twitter, Instagram and Snapchat can be dangerous places for women. Because of the huge amount of information we put in these places to share with others, our digital shadows can become quite significant and expose us to identity fraud, blackmail, stalking and harassment.",
-    textPK: "سماجی نیٹ ورکنگ سائٹس جیسے فیس بک، ٹویٹر، انسٹا گرام اور سنیپ چیٹ، خواتین کیلئے خطرناک مقامات تصور کئے جا سکتے ہیں۔ ان مقامات پر دوسروں کیساتھ ہم بہت سی معلومات کا تبادلہ کرتے ہیں لہٰذا ہمارے ڈیجیٹل شیڈوز ہمیں ہراساں کرنے، ہمارا تعاقب کرنے، ہمیں بلیک میل کرنے یا ہمارے ساتھ فراڈ کرنے کیلئے ہماری شناخت کو واضح کر سکتے ہیں"
+    textEN: "Social networking sites like Facebook, Twitter, Instagram and Snapchat can be dangerous places for women. <br /> <br /> Because of the huge amount of information we put in these places to share with others, our digital shadows can become quite significant and expose us to identity fraud, blackmail, stalking and harassment.",
+    textPK: "سماجی نیٹ ورکنگ سائٹس جیسے فیس بک، ٹویٹر، انسٹا گرام اور سنیپ چیٹ، خواتین کیلئے خطرناک مقامات تصور کئے جا سکتے ہیں۔ <br /> <br /> ان مقامات پر دوسروں کیساتھ ہم بہت سی معلومات کا تبادلہ کرتے ہیں لہٰذا ہمارے ڈیجیٹل شیڈوز ہمیں ہراساں کرنے، ہمارا تعاقب کرنے، ہمیں بلیک میل کرنے یا ہمارے ساتھ فراڈ کرنے کیلئے ہماری شناخت کو واضح کر سکتے ہیں"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Always be aware of who you’re sharing information with on social media. The privacy settings on these platforms can change over time too, so you should check them regularly. It is worth spending the time to make sure that the only people who can see your information are those you trust not to misuse it.",
-    textPK: "ہمیشہ سوشل میڈیا پہ اپنی معلومات کا تبادلہ کرتے وقت بہت محتاط رہیں۔ ان مقامات پر اپنی پرائیویسی ترتیبات کو وقت کیساتھ ساتھ تبدیل بھی کرتے رہا کریں اور انہیں باقاعدگی سے دیکھتے بھی رہیں۔ اس بات کی تسلی کرنا آپ کے لئے بہت ضروری ہے کہ جو بھروسہ مند لوگ آپ کی معلومات دیکھ رہے ہیں کہیں وہ اس کا غلط استعمال نہ کریں۔"
+    textEN: "Always be aware of who you’re sharing information with on social media. The privacy settings on these platforms can change over time too, so you should check them regularly. <br /> <br />It is worth spending the time to make sure that the only people who can see your information are those you trust not to misuse it.",
+    textPK: "ہمیشہ سوشل میڈیا پہ اپنی معلومات کا تبادلہ کرتے وقت بہت محتاط رہیں۔ ان مقامات پر اپنی پرائیویسی ترتیبات کو وقت کیساتھ ساتھ تبدیل بھی کرتے رہا کریں اور انہیں باقاعدگی سے دیکھتے بھی رہیں۔ <br /> <br />اس بات کی تسلی کرنا آپ کے لئے بہت ضروری ہے کہ جو بھروسہ مند لوگ آپ کی معلومات دیکھ رہے ہیں کہیں وہ اس کا غلط استعمال نہ کریں۔"
   },
   {
     id: 3,
@@ -82,14 +82,14 @@ const chat = [
   {
     id: 1,
     route: "Problem",
-    textEN: "We use chat apps when we want to avoid broadcasting our discussion to lots of people, such as private conversations with our friends or online meetings. But each have the risk of exposing our locations, the photos sent during conversations and even the messages, to strangers.",
-    textPK: "جب ہم اپنی بات چیت جیسے اپنے دوستوں کیساتھ ذاتی گفتگو یا آن لائن میٹنگز وغیرہ کو بہت سے لوگوں تک پہنچانے سے احتراز کرنا چاہتے ہیں تو ہم چیٹ ایپس کا استعمال کرتے ہیں۔ لیکن ایسی ایپس  استعمال کرنےمیں ایک واضح خدشہ یہ ہوتا ہے کہ یہ ہمارے مقامات، گفتگو کے دوران  بھیجی گئے تصاویر اور پیغامات تک اجنبی لوگوں تک ظاہر کردیتی ہیں۔"
+    textEN: "We use chat apps when we want to avoid broadcasting our discussion to lots of people, such as private conversations with our friends or online meetings. <br /> <br /> But each have the risk of exposing our locations, the photos sent during conversations and even the messages, to strangers.",
+    textPK: "جب ہم اپنی بات چیت جیسے اپنے دوستوں کیساتھ ذاتی گفتگو یا آن لائن میٹنگز وغیرہ کو بہت سے لوگوں تک پہنچانے سے احتراز کرنا چاہتے ہیں تو ہم چیٹ ایپس کا استعمال کرتے ہیں۔ <br /> <br /> لیکن ایسی ایپس  استعمال کرنےمیں ایک واضح خدشہ یہ ہوتا ہے کہ یہ ہمارے مقامات، گفتگو کے دوران  بھیجی گئے تصاویر اور پیغامات تک اجنبی لوگوں تک ظاہر کردیتی ہیں۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "The settings on chat apps are simpler than social media, and some offer encryption so no one can intercept your messages, which is a great start - but don’t be complacent! The default settings can still share more than you’re expecting. The main step common to all of the chat apps is to limit who is able to contact you so only people you know are able to send you messages and see your photo.",
-    textPK: "چیٹ ایپس پہ ترتیبات دینا سوشل میڈیا سے زیادہ آسان ہے اور بعض تو خفیہ کاری کی پیشکش بھی کرتے ہیں تاکہ کوئی بھی آپ کے پیغامات کیساتھ چھیڑ چھاڑ نہ کرے اور یہ ایک اچھی ابتدا ہوتی ہےلیکن زیادہ مطمئن ہونے کی ضرورت نہیں کیونکہ پہلے سے موجود ترتیبات آپ کی سوچ سے بھی زیادہ آپ کی معلومات شیئر کر سکتی ہیں۔ تمام چیٹ ایپس کیلئے ایک اہم قدم یہ ہوتا ہے کہ اسے صرف ان لوگوں تک محدود رکھیں جو آپ سے رابطہ کرنے کے اہل ہوں اس سے یہ ہوگا کہ آپ کی جان پہچان کے لوگ ہی آپ کیساتھ اپنے پیغامات یا تصاویر کا تبادلہ کر نے کے اہل ہونگے۔"
+    textEN: "The settings on chat apps are simpler than social media, and some offer encryption so no one can intercept your messages, which is a great start - but don’t be complacent! The default settings can still share more than you’re expecting. <br /> <br /> The main step common to all of the chat apps is to limit who is able to contact you so only people you know are able to send you messages and see your photo.",
+    textPK: "چیٹ ایپس پہ ترتیبات دینا سوشل میڈیا سے زیادہ آسان ہے اور بعض تو خفیہ کاری کی پیشکش بھی کرتے ہیں تاکہ کوئی بھی آپ کے پیغامات کیساتھ چھیڑ چھاڑ نہ کرے اور یہ ایک اچھی ابتدا ہوتی ہےلیکن زیادہ مطمئن ہونے کی ضرورت نہیں کیونکہ پہلے سے موجود ترتیبات آپ کی سوچ سے بھی زیادہ آپ کی معلومات شیئر کر سکتی ہیں۔ <br /> <br /> تمام چیٹ ایپس کیلئے ایک اہم قدم یہ ہوتا ہے کہ اسے صرف ان لوگوں تک محدود رکھیں جو آپ سے رابطہ کرنے کے اہل ہوں اس سے یہ ہوگا کہ آپ کی جان پہچان کے لوگ ہی آپ کیساتھ اپنے پیغامات یا تصاویر کا تبادلہ کر نے کے اہل ہونگے۔"
   },
   {
     id: 3,
