@@ -47,8 +47,8 @@ export default class ReportScreen extends React.Component {
             flexDirection: 'row',
             justifyContent: I18nManager.isRTL ? 'flex-end' : 'flex-start'
           }}>
-            <Icon name={`${isOpen ? 'chevron-down' : 'chevron-up'}`} size={10} color='white' />
-            <BasicText style={{color: 'white'}}>{`${title}`}</BasicText>
+            <Icon name={`${isOpen ? 'chevron-down' : 'chevron-up'}`} size={10} color='white' style={{textAlignVertical: 'baseline'}} />
+            <BasicText style={globals.whiteText, {fontFamily: 'NotoSans-Bold'}}>{`${title}`}</BasicText>
           </View>;
       const text = translatedText(reportTo, i);
       const buttons = this.buttons(reportTo[i]);
