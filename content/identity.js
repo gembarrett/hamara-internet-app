@@ -6,13 +6,13 @@ const passwords = [
   {
     id: 1,
     route: "Problem",
-    textEN: "Passwords may be the key to a wide range of resources and personal information, including email and financial details. But if our passwords can be guessed, discovered or otherwise bypassed then our security is severely damaged. The impact can be even worse if we share passwords across different services or devices.",
-    textPK: "پاس ورڈز ذاتی معلومات اور ذرائع بشمول ای میل اور مالی تفصیلات کی وسیع سلسلے کی چابی ہو سکتے ہیں۔ لیکن اگر کبھی ہمارے پاس ورڈز دریافت ہوجائیں، کسی کے ہاتھ لگ جائیں یا انہیں بائی پاس کر لیا جائے تو ہمارے دفاع کو شدید نقصان پہنچ سکتا ہے۔ اگر ہم اپنے پاس ورڈز مختلف خدمات یا ڈیوائسز تک پہنچا دیں تو اس کے نقصانات اور بھی شدت اختیار کر سکتے ہیں۔"
+    textEN: "Passwords may be the key to a wide range of resources and personal information, including email and financial details. But if our passwords can be guessed, discovered or otherwise bypassed then our security is severely damaged. <br /> <br />The impact can be even worse if we share passwords across different services or devices.",
+    textPK: "پاس ورڈز ذاتی معلومات اور ذرائع بشمول ای میل اور مالی تفصیلات کی وسیع سلسلے کی چابی ہو سکتے ہیں۔ لیکن اگر کبھی ہمارے پاس ورڈز دریافت ہوجائیں، کسی کے ہاتھ لگ جائیں یا انہیں بائی پاس کر لیا جائے تو ہمارے دفاع کو شدید نقصان پہنچ سکتا ہے۔ <br /> <br />اگر ہم اپنے پاس ورڈز مختلف خدمات یا ڈیوائسز تک پہنچا دیں تو اس کے نقصانات اور بھی شدت اختیار کر سکتے ہیں۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Having strong passwords is the best, and easiest, way to protect your information from unauthorised access. Make your passwords: unique - never share passwords across services long - ten or more characters is best varied - you can use numbers, capitals and punctuation difficult to guess - do not use obvious words like your name, 'password' or birthplace.",
+    textEN: "Having strong passwords is the best, and easiest, way to protect your information from unauthorised access. <br /> <br />Make your passwords: unique - never share passwords across services long - ten or more characters is best varied - you can use numbers, capitals and punctuation difficult to guess - do not use obvious words like your name, 'password' or birthplace.",
     textPK: "اپنی معلومات کو نا جائز رسائی سے بچانے کا آسان ترین اور اور بہترین حل مضبوط پاس ورڈز رکھنا ہے۔ اپنے پاس ورڈز بنائیں:۔ منفرد اور اچھوتے۔ انہیں بیرونی خدمات تک بھی نہ پہنچنے دیں۔ طویل۔ بہترین حل یہ ہے کہ آپ کا پاس ورڈ دس یا اس سے زائد کرداروں پر مشتمل ہو۔ مختلف۔ آپ اعراب، انگریزی کے بڑے حروف تہجی اور نمبروں کا استعمال کر سکتے ہیں۔اندازہ لگانا مشکل ہو۔ اپنے نام، جائے پیدائش، فون نمبریا  سالگرہ کے دن جیسے واضح الفاظ کا استعمال نہ کریں"
   },
   {
@@ -63,13 +63,13 @@ const twoFA = [
   {
     id: 1,
     route: "Problem",
-    textEN: "It might not be obvious to us when someone has used our passwords to get unauthorised access to our accounts. If others are spying by reading our emails or messages, then we might never be aware of it, and the service provider has no way of knowing either.",
-    textPK: "جب کوئی بغیر اجازت ہمارے اکاؤنٹس تک رسائی حاصل کرنے کیلئے ہمارے پاس ورڈز استعمال کرے تو شاید یہ ہم پر کبھی یہ بات نہ کھلے۔ اگر کوئی ہماری ای میلز یا پیغامات کو پڑھ کر ہم پہ جاسوسی کرے تو شاید ہمیں اس بات کا کبھی پتہ نہ چل سکے، اور نہ ہی خدمت مہیا کار کے پاس اس کی جانچ کا کوئی راستہ ہو۔"
+    textEN: "It might not be obvious to us when someone has used our passwords to get unauthorised access to our accounts. <br /> <br />If others are spying by reading our emails or messages, then we might never be aware of it, and the service provider has no way of knowing either.",
+    textPK: "جب کوئی بغیر اجازت ہمارے اکاؤنٹس تک رسائی حاصل کرنے کیلئے ہمارے پاس ورڈز استعمال کرے تو شاید یہ ہم پر کبھی یہ بات نہ کھلے۔ <br /> <br />اگر کوئی ہماری ای میلز یا پیغامات کو پڑھ کر ہم پہ جاسوسی کرے تو شاید ہمیں اس بات کا کبھی پتہ نہ چل سکے، اور نہ ہی خدمت مہیا کار کے پاس اس کی جانچ کا کوئی راستہ ہو۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Two-factor authentication is a good backup for strong passwords. It works by linking your phone number with your online account, so that when you sign in with your password, an additional check is done by using a verification method on your phone to check it is definitely you.",
+    textEN: "Two-factor authentication is a good backup for strong passwords. <br /> <br />It works by linking your phone number with your online account, so that when you sign in with your password, an additional check is done by using a verification method on your phone to check it is definitely you.",
     textPK: " ایک اچھا بیک اپ ہے۔ آپ کے آن Two-factor authenticationمضبوط پاس ورڈز کیلئے دو طرفہ تصدیق  یا لائن اکاؤنٹ کیساتھ آپ کے فون نمبر کو منسلک کرکے یہ کام کرتا ہے، تاکہ جب بھی آپ اپنے پاس ورڈ کیساتھ سائن ان ہوتے ہیں تو آپ کے فون پر ایک تصدیقی عمل کے استعمال سے ایک اضافی خانہ کھلتا ہےجس سے یہ پتہ چلتا ہے کہ یہ حقیقت میں آپ ہی ہیں یا کوئی اور۔"
   },
   {

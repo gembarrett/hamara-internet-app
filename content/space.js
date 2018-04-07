@@ -6,14 +6,14 @@ const harassment = [
   {
     id: 1,
     route: "Problem",
-    textEN: "We go online because we have a right to use the internet. However, women aged 18-24 are uniquely likely to experience stalking, sexual harassment and other cyber violence online. Others want us to be silenced, so they attack our words, which are our property. We are then blamed.",
-    textPK: "چونکہ ہم انٹرنیٹ استعمال کرنے کا حق رکھتے ہیں لہٰذا ہم آن لائن جاتے ہیں ۔ تاہم بسا اوقات 18 سے 24 سال کی خواتین کو تعاقب، جسمانی ہراسانی اور دیگر آن لائن سائبر تشدد کا سامنا ہوتا ہے۔ دوسرے لوگ ان کی زبان بند کروانے کیلئے وہ ان کے الفاظ پر حملہ کرتے ہیں حالانکہ وہ الفاظ ان کی اپنی ملکیت ہوتے ہیں اور پھر بعد میں انہیں ہی سارا الزام دیا جاتا ہے۔"
+    textEN: "We go online because we have a right to use the internet. However, women aged 18-24 are uniquely likely to experience stalking, sexual harassment and other cyber violence online. <br /> <br />Others want us to be silenced, so they attack our words, which are our property. We are then blamed.",
+    textPK: "چونکہ ہم انٹرنیٹ استعمال کرنے کا حق رکھتے ہیں لہٰذا ہم آن لائن جاتے ہیں ۔ تاہم بسا اوقات 18 سے 24 سال کی خواتین کو تعاقب، جسمانی ہراسانی اور دیگر آن لائن سائبر تشدد کا سامنا ہوتا ہے۔ <br /> <br />دوسرے لوگ ان کی زبان بند کروانے کیلئے وہ ان کے الفاظ پر حملہ کرتے ہیں حالانکہ وہ الفاظ ان کی اپنی ملکیت ہوتے ہیں اور پھر بعد میں انہیں ہی سارا الزام دیا جاتا ہے۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Ignoring, blocking and deactivating are options but, although they can help temporarily, they are not permanent solutions at all. The key thing to remember is that no one deserves abuse. You have the right to free speech and expression and if someone chose to get angry about your views then any abusive actions they take are their responsibility, not yours. Reporting harassment online can be difficult, and it may not help immediately or in every situation, but it should always be considered.",
-    textPK: "بلاک کرنا ، نظر انداز کرنا اورغیر فعال کرنا چند اختیارات تو ہو سکتے ہیں جو وقتی طور پر مدد دے سکتے ہیں لیکن وہ کوئی مستقل حل کے طور پر استعمال نہیں ہو سکتے۔سب سے اہم بات یاد رکھنے والی یہ ہے کہ گالیوں کا کوئی متحمل نہیں ہوتا۔ آزادئ تقریر اور آزادئ رائے آپ کا حق ہے اور اگر کوئی آپ کے نظریات پر آپ کو گالی دیتا ہے یا برا بھلا کہتا ہے تو اس کا ذمہ دار وہ ہوگا نا کہ آپ۔ ہراسانی کی آن لائن رپورٹ کرنا اگرچہ مشکل بھی ہے اور یہ شاید ہر حالات میں یا فوری طور پر آپ کیلئے مفید نہ ہو لیکن اسی کو مدِ نظر رکھنا چاہئے۔"
+    textEN: "Ignoring, blocking and deactivating are options but, although they can help temporarily, they are not permanent solutions at all. <br /> <br />The key thing to remember is that no one deserves abuse. You have the right to free speech and expression and if someone chose to get angry about your views then any abusive actions they take are their responsibility, not yours. <br /> <br />Reporting harassment online can be difficult, and it may not help immediately or in every situation, but it should always be considered.",
+    textPK: "بلاک کرنا ، نظر انداز کرنا اورغیر فعال کرنا چند اختیارات تو ہو سکتے ہیں جو وقتی طور پر مدد دے سکتے ہیں لیکن وہ کوئی مستقل حل کے طور پر استعمال نہیں ہو سکتے۔سب سے <br /> <br />اہم بات یاد رکھنے والی یہ ہے کہ گالیوں کا کوئی. متحمل نہیں ہوتا۔ آزادئ تقریر اور آزادئ رائے آپ کا حق ہے اور اگر کوئی آپ کے نظریات پر آپ کو گالی دیتا ہے یا برا بھلا کہتا ہے تو اس کا ذمہ دار وہ ہوگا نا کہ آپ۔ <br /> <br />ہراسانی کی آن لائن رپورٹ کرنا اگرچہ مشکل بھی ہے اور یہ شاید ہر حالات میں یا فوری طور پر آپ کیلئے مفید نہ ہو لیکن اسی کو مدِ نظر رکھنا چاہئے۔"
   },
   {
     id: 3,
@@ -59,14 +59,14 @@ const cyber = [
   {
     id: 1,
     route: "Problem",
-    textEN: "Cyberbullying is a type of bullying that takes place online, and young women are the most likely internet users to experience this. In particular, we face exclusion from social groups, mocking and threatening words and actions, and other behaviour intended to humiliate, intimidate and scare us.",
-    textPK: "آن لائن مقامات پر ہونے والی غنڈہ گردی کی ایک قسم کو سائبر بلنگ کہتے ہیں اور خصوصاً نوجوان خواتین اس غنڈہ گری کا شکار ہو جاتی ہیں۔اس زمرے میں ہمیں دوسروں س جن کی نیت ہماری توہین کرنے ہمیں  ڈرانے اور ہمیں خوفزدہ کرنے کی ہوتی ہے ان کی جانب سےہمیں دھمکی آمیز الفاظ اور بعدازاں ایسی ہی کسی کارروائی خاص طور پر سوشل میڈیا سے ہاتھ دھو بیٹھنے کا سامنا کرنا پڑتا ہے۔"
+    textEN: "Cyberbullying is a type of bullying that takes place online, and young women are the most likely internet users to experience this. <br /> <br />In particular, we face exclusion from social groups, mocking and threatening words and actions, and other behaviour intended to humiliate, intimidate and scare us.",
+    textPK: "آن لائن مقامات پر ہونے والی غنڈہ گردی کی ایک قسم کو سائبر بلنگ کہتے ہیں اور خصوصاً نوجوان خواتین اس غنڈہ گری کا شکار ہو جاتی ہیں۔اس <br /> <br />زمرے میں ہمیں دوسروں س جن کی نیت ہماری توہین کرنے ہمیں  ڈرانے اور ہمیں خوفزدہ کرنے کی ہوتی ہے ان کی جانب سےہمیں دھمکی آمیز الفاظ اور بعدازاں ایسی ہی کسی کارروائی خاص طور پر سوشل میڈیا سے ہاتھ دھو بیٹھنے کا سامنا کرنا پڑتا ہے۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Cyberbullying can leave you feeling very isolated, so you should make sure there is at least one trusted person in your life who you can talk to. You should also keep personal information online as private as possible, and make the most of the security measures that are available online. Documenting the cyberbullying will also help with reporting it to the platforms or authority figures.",
-    textPK: "سائبر بلنگ کی وجہ سہ آپ خود کو تنہا محسوس کرنے لگتے ہیں اس لئے آپ اس بات کو یقینی بنائیں کہ آپ کی زندگی میں کم از کم ایک ایسا بھروسہ مند دوست ہونا چاہئے جس سے آپ اس بارے میں بات کر سکتے ہوں۔ اس کے علاوہ جتنا ممکن ہوسکے اپنی آن لائن معلومات کو  ذاتی دائرہ اختیار میں رکھیں اور جتنے بھی آن لائن حفاظتی اقدامات دستیاب ہیں ان کو بروئے کار لائیں۔ سائبر بلنگ کی مسودہ سازی کرنا مجاز افسران یا اسی طرح کے دیگر پلیٹ فارمز کو رپورٹ کرنے میں مدد دے سکتا ہے۔"
+    textEN: "Cyberbullying can leave you feeling very isolated, so you should make sure there is at least one trusted person in your life who you can talk to. <br /> <br />You should also keep personal information online as private as possible, and make the most of the security measures that are available online. <br /> <br />Documenting the cyberbullying will also help with reporting it to the platforms or authority figures.",
+    textPK: "سائبر بلنگ کی وجہ سہ آپ خود کو تنہا محسوس کرنے لگتے ہیں اس لئے آپ اس بات کو یقینی بنائیں کہ آپ کی زندگی میں کم از کم ایک ایسا بھروسہ مند دوست ہونا چاہئے جس سے آپ اس بارے میں بات کر سکتے ہوں۔ <br /> <br />اس کے علاوہ جتنا ممکن ہوسکے اپنی آن لائن معلومات کو  ذاتی دائرہ اختیار میں رکھیں اور جتنے بھی آن لائن حفاظتی اقدامات دستیاب ہیں ان کو بروئے کار لائیں۔ <br /> <br />سائبر بلنگ کی مسودہ سازی کرنا مجاز افسران یا اسی طرح کے دیگر پلیٹ فارمز کو رپورٹ کرنے میں مدد دے سکتا ہے۔"
   },
   {
     id: 3,

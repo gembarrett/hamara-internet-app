@@ -6,8 +6,8 @@ const reportTo = [
   {
     titleEN: "Reporting to FIA",
     titlePK: "مختار کاروں کو رپورٹ کرنا",
-    textEN: "Do not stay quiet if you are being harassed online. Cyber Crimes must be reported to the FIA National Response Center for Cyber Crime. The FIA’s Cyber Crime Wing offices are located in Karachi, Lahore, Quetta, Peshawar, Rawalpindi, Islamabad. The FIA’s helpline is 9911 and they can also be contacted on the following online form",
-    textPK: "اگر آپ کو آن لائن ہراساں کیا گیا ہے تو چپ نہ بیٹھیں۔ ایف آئی اے کے ادارے کو ان کے آن لائن سائبر کمپلینٹ سروس پر سائبر ہراسانی کی رپورٹ کریں۔ وہاں آپ کو ایک مختصر سا فارم ملے گا جسے آپ کو پر کرنا ہے لیکن اس بات کی تسلی کرلیں کہ جس حد تک آپ کو ہراسانی کا سامنا ہوا ہے اس کے مطابق تفصیلات سے آگاہ کریں۔ آپ کی درج شکایت پر عمل پیرا ہونے میں انہیں 24 گھنٹے کا وقت درکار ہوگا۔",
+    textEN: "Do not stay quiet if you are being harassed online. Cyber Crimes must be reported to the FIA National Response Center for Cyber Crime. The FIA’s Cyber Crime Wing offices are located in Karachi, Lahore, Quetta, Peshawar, Rawalpindi, Islamabad. <br /> <br />The FIA’s helpline is 9911 and they can also be contacted on the following online form",
+    textPK: "اگر آپ کو آن لائن ہراساں کیا گیا ہے تو چپ نہ بیٹھیں۔ ایف آئی اے کے ادارے کو ان کے آن لائن سائبر کمپلینٹ سروس پر سائبر ہراسانی کی رپورٹ کریں۔ <br /> <br />وہاں آپ کو ایک مختصر سا فارم ملے گا جسے آپ کو پر کرنا ہے لیکن اس بات کی تسلی کرلیں کہ جس حد تک آپ کو ہراسانی کا سامنا ہوا ہے اس کے مطابق تفصیلات سے آگاہ کریں۔ آپ کی درج شکایت پر عمل پیرا ہونے میں انہیں 24 گھنٹے کا وقت درکار ہوگا۔",
     button1: "http://www.nr3c.gov.pk/creport.php"
   },
   {
@@ -27,8 +27,8 @@ const reportTo = [
   {
     titleEN: "Reporting harassment on Facebook",
     titlePK: "فیس بک پہ رپورٹ کرنا",
-    textEN: "Facebook has a report button for almost every element on the site: profiles, posts, photos, messages and groups. Therefore there isn’t one centralised report procedure. However they have a page of examples so you can find out how to report any type of harassment you experience on the site.",
-    textPK: "پروفائلز، پوسٹس، فوٹوز، میسجز اور گروپس میں :فیس بک سائٹ پر ہر عنصر کیلئے ایک رپورٹ بٹن ہوتا ہے۔ اس لئے اس کا کوئی مرکزی رپورٹ کرنے کا طریقہ کار نہیں ہوتا۔ تاہم وہ نمونے کے طور پر ایک پیج رکھتے ہیں تاکہ سائٹ پر آپ کو کسی قسم کی ہراسانی کا سامنا کرنے پر آپ رپورٹ کر سکیں۔",
+    textEN: "Facebook has a report button for almost every element on the site: profiles, posts, photos, messages and groups. Therefore there isn’t one centralised report procedure. <br /> <br />However they have a page of examples so you can find out how to report any type of harassment you experience on the site.",
+    textPK: "پروفائلز، پوسٹس، فوٹوز، میسجز اور گروپس میں :فیس بک سائٹ پر ہر عنصر کیلئے ایک رپورٹ بٹن ہوتا ہے۔ اس لئے اس کا کوئی مرکزی رپورٹ کرنے کا طریقہ کار نہیں ہوتا۔ <br /> <br />تاہم وہ نمونے کے طور پر ایک پیج رکھتے ہیں تاکہ سائٹ پر آپ کو کسی قسم کی ہراسانی کا سامنا کرنے پر آپ رپورٹ کر سکیں۔",
     button1: "https://m.facebook.com/help/1380418588640631?helpref=hc_fnav&refid=69",
   },
   {

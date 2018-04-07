@@ -6,14 +6,14 @@ const backups = [
   {
     id: 1,
     route: "Problem",
-    textEN: "When our devices break, or get lost or stolen, or even hacked, we can lose all the information held on them! Photos, messages, documents and contact information - all held on computers and phones and vulnerable to being used maliciously or destroyed by anyone with access to them.",
-    textPK: "جب کبھی ہماری ڈیوائسز ٹوٹ جائیں یا گم ہوجائیں یا چرا لی جائیں یا ہیک کرلئے جائیں  تو ہم اس تمام معلومات سے ہاتھ دھو بیٹھتے ہیں جن میں شامل ہوتی ہیں ہماری تصاویر، پیغامات، مسودات اور ہمارے رابطوں کی معلومات۔ تمام معلومات جو ہمارے کمپیوٹروں اور موبائل فونز میں پڑی ہوتی ہیں اگر وہ چوری ہوجائیں یا ہیک کرلئے جائیں تو انہیں  غیر محفوظ کر کے ان کا غلط استعمال کیا جاتا ہے یا انہیں تباہ کر دیا جاتا ہے ۔"
+    textEN: "When our devices break, or get lost or stolen, or even hacked, we can lose all the information held on them! <br /> <br />Photos, messages, documents and contact information - all held on computers and phones and vulnerable to being used maliciously or destroyed by anyone with access to them.",
+    textPK: "جب کبھی ہماری ڈیوائسز ٹوٹ جائیں یا گم ہوجائیں یا چرا لی جائیں یا ہیک کرلئے جائیں  تو ہم اس تمام معلومات سے ہاتھ دھو بیٹھتے ہیں جن میں شامل ہوتی ہیں ہماری تصاویر، پیغامات، مسودات اور ہمارے رابطوں کی معلومات۔ <br /> <br /> تمام معلومات جو ہمارے کمپیوٹروں اور موبائل فونز میں پڑی ہوتی ہیں اگر وہ چوری ہوجائیں یا ہیک کرلئے جائیں تو انہیں  غیر محفوظ کر کے ان کا غلط استعمال کیا جاتا ہے یا انہیں تباہ کر دیا جاتا ہے ۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Backing up your data is easy, and can even be done automatically. Some people prefer a physical device, like a USB or external hard drive. Others prefer online “cloud storage”. Both have their advantages, but are still vulnerable to attack so be sure to protect whichever one you choose!",
-    textPK: "USBاپنے ڈیٹا کو بیک اپ دینا نہ صرف بہت آسان ہے بلکہ یہ خودکار طریقے سے بھی ہو سکتا ہے۔ کچھ لوگ   کو ترجیح دیتے ہیں “cloud storage”یا باہر سے لگنے والی ہارڈ ڈرائیو کو ترجیح دیتے ہیں۔جب کہ بعض صارف آن لائن دونوں کے اپنی اپنی جگہ پر فوائد ہیں، لیکن ابھی تک یہ بھی حملوں سے محفوظ نہیں ہیں لہٰذا اس بات کو یقینی کرے کہ آپ جس کا بھی انتخاب کریں اسے محفوظ بنائیں۔"
+    textEN: "Backing up your data is easy, and can even be done automatically. Some people prefer a physical device, like a USB or external hard drive. Others prefer online “cloud storage”. <br /> <br />Both have their advantages, but are still vulnerable to attack so be sure to protect whichever one you choose!",
+    textPK: "USBاپنے ڈیٹا کو بیک اپ دینا نہ صرف بہت آسان ہے بلکہ یہ خودکار طریقے سے بھی ہو سکتا ہے۔ <br /> <br /> کچھ لوگ   کو ترجیح دیتے ہیں “cloud storage”یا باہر سے لگنے والی ہارڈ ڈرائیو کو ترجیح دیتے ہیں۔جب کہ بعض صارف آن لائن دونوں کے اپنی اپنی جگہ پر فوائد ہیں، لیکن ابھی تک یہ بھی حملوں سے محفوظ نہیں ہیں لہٰذا اس بات کو یقینی کرے کہ آپ جس کا بھی انتخاب کریں اسے محفوظ بنائیں۔"
   },
   {
     id: 3,
@@ -60,14 +60,14 @@ const virus = [
   {
     id: 1,
     route: "Problem",
-    textEN: "It is easy for our computers and phones to get infected by malicious programs called viruses. Just one virus hidden in an emailed picture can end in our data’s destruction or modification. Malware is one type of virus that can watch what you type in order to steal your information.",
-    textPK: "ہمارے کمپیوٹر اور فون آسانی سے وائرس کہلائے جانے والے نقصان دہ پروگراموں کی زد میں آجاتے ہیں۔ محض ایک ای میل میں چھپا ہوا کوئی بھی ایک وائرس ہمارے ڈیٹا کو تبدیل یا تباہ کر سکتا ہے۔ مالویئر ایک ایسی قسم کا وائرس ہوتا ہے جو آپ کی معلومات چرانے کیلئے آپ کی جانب سے ٹائپ کی گئی ہر بات پہ نظر رکھتا ہے۔"
+    textEN: "It is easy for our computers and phones to get infected by malicious programs called viruses. Just one virus hidden in an emailed picture can end in our data’s destruction or modification. <br /> <br />Malware is one type of virus that can watch what you type in order to steal your information.",
+    textPK: "ہمارے کمپیوٹر اور فون آسانی سے وائرس کہلائے جانے والے نقصان دہ پروگراموں کی زد میں آجاتے ہیں۔ محض ایک ای میل میں چھپا ہوا کوئی بھی ایک وائرس ہمارے ڈیٹا کو تبدیل یا تباہ کر سکتا ہے۔ <br / > <br />مالویئر ایک ایسی قسم کا وائرس ہوتا ہے جو آپ کی معلومات چرانے کیلئے آپ کی جانب سے ٹائپ کی گئی ہر بات پہ نظر رکھتا ہے۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Protecting your computer from viruses, malware, spyware and other malicious programs can be as simple at installing anti-virus and anti-malware software and running regular checks to ensure you’re safe. If your devices get infected you may have to reset them, so always have a backup of your data!",
-    textPK: "اینٹی وائرس اور اینٹی مالویئر انسٹال کرکے اپنے کمپیوٹر کو مالویئر، سپائے وایئر اور دیگر نقصان دہ پروگراموں سےآسانی سے محفوظ کیا جا سکتا ہےاور روزمرہ کی بنیاد پر چیک لگا کر ان سافٹ ویئرز کو چلانے سے یہ ہو گا کہ آپ کو تسلی ہوگی کہ آپ محفوظ ہیں۔ اگر آپ کی ڈیوائسز متاثر ہوگئی ہیں تو اپنے آلات کو ری سیٹ کر لیں تاکہ آپ کے ڈیٹا کا ہمیشہ بیک اپ رہے۔"
+    textEN: "Protecting your computer from viruses, malware, spyware and other malicious programs can be as simple at installing anti-virus and anti-malware software and running regular checks to ensure you’re safe. <br /> <br />If your devices get infected you may have to reset them, so always have a backup of your data!",
+    textPK: "اینٹی وائرس اور اینٹی مالویئر انسٹال کرکے اپنے کمپیوٹر کو مالویئر، سپائے وایئر اور دیگر نقصان دہ پروگراموں سےآسانی سے محفوظ کیا جا سکتا ہےاور روزمرہ کی بنیاد پر چیک لگا کر ان سافٹ ویئرز کو چلانے سے یہ ہو گا کہ آپ کو تسلی ہوگی کہ آپ محفوظ <br /> <br />ہیں۔اگر آپ کی ڈیوائسز متاثر ہوگئی ہیں تو اپنے آلات کو ری سیٹ کر لیں تاکہ آپ کے ڈیٹا کا ہمیشہ بیک اپ رہے۔"
   },
   {
     id: 3,
@@ -117,14 +117,14 @@ const usbs = [
   {
     id: 1,
     route: "Problem",
-    textEN: "We can use USB drives to backup our documents, photos and other precious data, or transfer them from one computer to another. They can be very useful portable storage devices. But even these can become compromised and we can end up losing our data or even accidentally infecting other computers.",
-    textPK: "ہم اپنے مسودات، فوٹوز اوردیگر قیمتی ڈیٹا کو بیک اپ دینے یا انہیں ایک کمپیوٹر سے دوسرے تک منتقل کرنے کیلئے  ڈرائیوز کا استعمال کر سکتے ہیں۔ یہ بہت مفید سفری سٹوریج ڈیوائسز ثابت ہو سکتی ہیں۔ لیکن انہیں بھی کمزور کیاUSBجا سکتا ہےجس کے نتیجے میں ہم اپنا ڈیٹا کھو بھی سکتے ہیں اور حادثاتی طور پر دوسروں کے کمپیوٹروں کو بھی متاثر کر سکتے ہیں۔"
+    textEN: "We can use USB drives to backup our documents, photos and other precious data, or transfer them from one computer to another. They can be very useful portable storage devices. <br /> <br />But even these can become compromised and we can end up losing our data or even accidentally infecting other computers.",
+    textPK: "ہم اپنے مسودات، فوٹوز اوردیگر قیمتی ڈیٹا کو بیک اپ دینے یا انہیں ایک کمپیوٹر سے دوسرے تک منتقل کرنے کیلئے  ڈرائیوز کا استعمال کر سکتے ہیں۔ یہ بہت مفید سفری سٹوریج ڈیوائسز ثابت ہو سکتی ہیں۔ <br /><br />لیکن انہیں بھی کمزور کیاUSBجا سکتا ہےجس کے نتیجے میں ہم اپنا ڈیٹا کھو بھی سکتے ہیں اور حادثاتی طور پر دوسروں کے کمپیوٹروں کو بھی متاثر کر سکتے ہیں۔"
   },
   {
     id: 2,
     route: "Solution",
-    textEN: "Just like you would with your computer or phone, it is important to check what you are copying to, or from, the USB drive. To protect the data on it, always remember to store the drive in a safe place and be sure to delete everything off it before disposal.",
-    textPK: " میں یا اس سے کیا کاپی کر رہے ہیں لہٰذا جس طرح آپ اپنے کمپیوٹر USBیہ جاننا بہت ضروری ہے کہ آپ اپنی یا فون کو محفوظ بناتے ہیں اس ڈرائیو کو بھی ایسے ہی محفوظ بنائیں۔ ان پہ اپنا ڈیٹا محفوظ کرنے کیلئے ہمیشہ یاد رکھیں کہ اپنی ڈرائیو کو ایک محفوظ مقام پہ رکھیں اور انہیں ضائع کرنے سے پہلے اس بات کی یقین دہانی کر لیں کہ آپ نے تمام ڈیٹا اس میں سے حذف کر دیا ہے۔"
+    textEN: "Just like you would with your computer or phone, it is important to check what you are copying to, or from, the USB drive. <br /><br />To protect the data on it, always remember to store the drive in a safe place and be sure to delete everything off it before disposal.",
+    textPK: "میں یا اس سے کیا کاپی کر رہے ہیں لہٰذا جس طرح آپ اپنے کمپیوٹر USBیہ جاننا بہت ضروری ہے کہ آپ اپنی یا فون کو محفوظ بناتے ہیں اس ڈرائیو کو بھی ایسے ہی محفوظ بنائیں۔ <br /><br />ان پہ اپنا ڈیٹا محفوظ کرنے کیلئے ہمیشہ یاد رکھیں کہ اپنی ڈرائیو کو ایک محفوظ مقام پہ رکھیں اور انہیں ضائع کرنے سے پہلے اس بات کی یقین دہانی کر لیں کہ آپ نے تمام ڈیٹا اس میں سے حذف کر دیا ہے۔"
   },
   {
     id: 3,
