@@ -24,11 +24,17 @@ const menuStyles = StyleSheet.create({
   },
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginVertical: 20
+    justifyContent: 'space-between',
   },
   logo: {
-    flexBasis: 50
+    marginHorizontal: 0,
+    paddingHorizontal: 0,
+    width:80,
+    height: 40
+  },
+  logoTouch: {
+    width: 'auto',
+    height: 'auto',
   }
 });
 

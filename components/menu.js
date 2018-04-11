@@ -171,14 +171,14 @@ export default class MenuScreen extends React.Component {
               </TouchableOpacity>
             </View>
             <View style={[menuStyles.container]}>
-                <TouchableOpacity onPress={() => {this.onPressImage(0)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")} style={menuStyles.logo} />
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => {this.onPressImage(1)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")} style={menuStyles.logo} />
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => {this.onPressImage(2)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")} style={menuStyles.logo} />
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
                 </TouchableOpacity>
             </View>
           </View>
