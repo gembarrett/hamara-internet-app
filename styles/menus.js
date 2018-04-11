@@ -25,6 +25,7 @@ const menuStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    paddingTop: 20
   },
   logo: {
     marginHorizontal: 0,
