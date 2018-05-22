@@ -29,6 +29,7 @@ const globals = StyleSheet.create({
     // fontFamily: 'NotoNastaliqUrdu-Regular',
     alignSelf: 'flex-end',
     fontFamily: 'NotoSans-Regular',
+    fontSize: 14,
   },
   enFont: {
     fontFamily: 'NotoSans-Regular',
