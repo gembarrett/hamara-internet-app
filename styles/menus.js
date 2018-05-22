@@ -20,7 +20,9 @@ const menuStyles = StyleSheet.create({
     flexBasis:45,
     width: '100%',
     alignItems: 'flex-start',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+    marginBottom: 10
   },
   container: {
     flexDirection: 'row',

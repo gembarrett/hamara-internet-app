@@ -29,9 +29,8 @@ export default class MenuScreen extends React.Component {
 
   render() {
     return (
-      <ScrollView contentContainerStyle={[globals.green, globals.base, globals.menuButtons]}>
-        <View style={[menuStyles.base]}>
-            <View>
+      <View style={[globals.green, globals.base, globals.menuButtons]}>
+      <ScrollView>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
                 <ImageBackground
                   source={this.buttonPic}
@@ -41,11 +40,7 @@ export default class MenuScreen extends React.Component {
                     {prefs.language === "pk" ? lvl1Nav[0].textPK : lvl1Nav[0].textEN}
                   </MenuText>
                 </ImageBackground>
-
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[1].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -57,9 +52,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[1].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[2].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -71,9 +63,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[2].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[3].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -85,9 +74,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[3].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[4].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -99,9 +85,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[4].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[5].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -113,9 +96,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[5].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[6].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -127,9 +107,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[6].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[7].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -141,9 +118,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[7].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[8].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -155,9 +129,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[8].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            </View>
-
-            <View>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[9].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
@@ -169,6 +140,16 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[9].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
+            <View style={[menuStyles.container]}>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
             </View>
             <View style={[menuStyles.container]}>
                 <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
@@ -181,8 +162,53 @@ export default class MenuScreen extends React.Component {
                   <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
                 </TouchableOpacity>
             </View>
-          </View>
+            <View style={[menuStyles.container]}>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+            </View>
+            <View style={[menuStyles.container]}>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+            </View>
+            <View style={[menuStyles.container]}>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+            </View>
+            <View style={[menuStyles.container]}>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
+                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
+                </TouchableOpacity>
+            </View>
+
       </ScrollView>
+      </View>
     );
   }
 }
