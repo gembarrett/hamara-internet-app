@@ -2,10 +2,11 @@ import { StyleSheet } from 'react-native';
 
 const submenuStyles = StyleSheet.create({
   button: {
-    flexBasis:45,
-    width: '100%',
+    width: '80%',
     alignItems: 'flex-start',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    padding: 20,
+    alignSelf: 'center',
   },
   text: {
     textAlign: 'center',
@@ -15,12 +16,11 @@ const submenuStyles = StyleSheet.create({
     color: '#fff'
   },
   base: {
-    width:'75%',
+    width:'100%',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'stretch',
-    marginVertical: 40,
-    alignSelf: 'center'
+    alignSelf: 'center',
+    paddingTop: 20,
   }
 });
 

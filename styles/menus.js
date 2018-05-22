@@ -6,28 +6,26 @@ const menuStyles = StyleSheet.create({
     paddingLeft: 45,
     paddingRight: 45,
     paddingBottom: 2,
-    fontSize: 12,
+    fontSize: 14,
     fontFamily: 'NotoSans-Bold',
     color: '#fff',
   },
   base: {
-    width:'80%',
+    width:'100%',
     flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'stretch',
+    justifyContent: 'space-around',
   },
   button: {
-    flexBasis:45,
     width: '100%',
     alignItems: 'flex-start',
     justifyContent: 'center',
-    paddingHorizontal: 10,
-    marginBottom: 10
+    paddingVertical: 20,
+    paddingHorizontal: 30,
   },
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingTop: 20
+    paddingVertical: 20,
   },
   logo: {
     marginHorizontal: 0,
