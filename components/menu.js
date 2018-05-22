@@ -30,7 +30,7 @@ export default class MenuScreen extends React.Component {
   render() {
     return (
       <View style={[globals.green, globals.base, globals.menuButtons]}>
-      <ScrollView>
+      <ScrollView contentContainerStyle={menuStyles.base}>
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[0].route)}>
                 <ImageBackground
                   source={this.buttonPic}
@@ -140,61 +140,6 @@ export default class MenuScreen extends React.Component {
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[9].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
-            <View style={[menuStyles.container]}>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-            </View>
-            <View style={[menuStyles.container]}>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-            </View>
-            <View style={[menuStyles.container]}>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-            </View>
-            <View style={[menuStyles.container]}>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-            </View>
-            <View style={[menuStyles.container]}>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(1)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-1.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-                <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(2)}}>
-                  <Image resizeMode="contain" source={require("../assets/menu-logo-2.png")}  style={menuStyles.logo} />
-                </TouchableOpacity>
-            </View>
             <View style={[menuStyles.container]}>
                 <TouchableOpacity style={menuStyles.logoTouch} onPress={() => {this.onPressImage(0)}}>
                   <Image resizeMode="contain" source={require("../assets/menu-logo-0.png")}  style={menuStyles.logo} />
