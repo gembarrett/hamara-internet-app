@@ -24,7 +24,8 @@ export default class SupportScreen extends React.Component {
         var name = support[i].name;
         var number = support[i].number;
         var tel = 'tel:' + support[i].number;
-        contentArr.push({key: name, text: number, tel: tel });
+        var desc = prefs.language === 'pk' ? support[i].descPK : support[i].descEN;
+        contentArr.push({key: name, text: number, tel: tel, desc: desc});
     }
     return contentArr;
   }
@@ -42,6 +43,9 @@ export default class SupportScreen extends React.Component {
                 </BasicText>
                 <BasicText style={{alignSelf: 'flex-start'}}>
                   {item.text}
+                </BasicText>
+                <BasicText>
+                  {item.desc}
                 </BasicText>
               </View>
               <TouchableOpacity>
