@@ -24,9 +24,9 @@ const helpline = [
         textPK: "سائبر ہراسمنٹ ہیلپ لائن کی ششماہی کارکردگی کی رپورٹ"
       },
       {
-        url: "http://digitalrightsfoundation.pk/wp-content/uploads/2017/05/Hamara-Internet-Online-Harassment-Report.pdf",
-        textEN: "Add gendered aspect to harassment report",
-        textPK: "ہراسمنٹ رپورٹ میں جنسی پہلو کا اضافہ"
+        url: "https://digitalrightsfoundation.pk/wp-content/uploads/2017/12/Helpline-Annual-Report.pdf",
+        textEN: "Cyber Harassment Helpline 1 year report",
+        textPK: "Cyber Harassment Helpline 1 year report"
       },
     ]
   },
