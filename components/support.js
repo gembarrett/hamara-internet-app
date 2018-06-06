@@ -36,21 +36,27 @@ export default class SupportScreen extends React.Component {
         data={this.content}
         renderItem={
           ({item}) =>
-            <View style={[globals.lineBreak, globals.para, {flexDirection: 'row', justifyContent: 'space-between'}]}>
-              <View>
-                <BasicText style={[globals.bold, {alignSelf: 'flex-start'}]} key={item.key}>
+            <View style={[globals.lineBreak, globals.para, {flexDirection: 'column', alignItems: 'flex-start'}]}>
+
+              <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                <BasicText style={[globals.bold, {flex: 1}]} key={item.key}>
                   {item.key}
                 </BasicText>
-                <BasicText style={{alignSelf: 'flex-start'}}>
-                  {item.text}
-                </BasicText>
+                <View style={[globals.orange, {alignSelf: 'flex-end', flex: 0, marginVertical: 10}]}>
+                  <TouchableOpacity>
+                    <Icon.Button style={[globals.orange]} name='phone' onPress={() => Linking.openURL(item.tel)}>
+                      {item.text}
+                    </Icon.Button>
+                  </TouchableOpacity>
+                </View>
+              </View>
+
+              <View>
                 <BasicText>
                   {item.desc}
                 </BasicText>
               </View>
-              <TouchableOpacity>
-                <Icon.Button name='phone' style={[globals.orange]}  onPress={() => Linking.openURL(item.tel)} />
-              </TouchableOpacity>
+
             </View>
           }
       />
