@@ -9,7 +9,7 @@ const helpline = [
   },
   {
     textEN: "The toll free number 0800-39393 is available to people looking for help between 9am till 5pm, 7 days a week. The Support Staff can also be contacted via email at helpdesk@digitalrightsfoundation.pk and our Facebook page https://www.facebook.com/DigitalRightsFoundation/",
-    textPK: "، ہفتہ کے ۷ دن، صبح ۹ سے شام ۵ بجے تک ان لوگوں کیلئے دستیاب ہے جنہیں 0800-39393 اس ہیلپ لائن کا ٹال فری نمبر helpdesk@digitalrightsfoundation.pkمدد درکار ہو۔  اس کے علاوہ امدادی سٹاف سے بذریعہ ای میل  پر بھی رابطہ کیا https://www,facebook.com/DigitalRightsFoundation/فیس بک پیج  اور  جا سکتا ہے۔"
+    textPK: "، ہفتہ کے ۷ دن، صبح ۹ سے شام ۵ بجے تک ان لوگوں کیلئے دستیاب ہے جنہیں 39393-0800 اس ہیلپ لائن کا ٹال فری نمبر helpdesk@digitalrightsfoundation.pk مدد درکار ہو۔  اس کے علاوہ امدادی سٹاف سے بذریعہ ای میل  پر بھی رابطہ کیا  https://www.facebook.com/DigitalRightsFoundation/ فیس بک پیج  اور  جا سکتا ہے۔"
   },
   {
     links: [
