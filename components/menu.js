@@ -143,11 +143,11 @@ export default class MenuScreen extends React.Component {
               <TouchableOpacity onPress={() => this.props.navigation.navigate(lvl1Nav[10].route)}>
               {prefs.language === 'pk'
                 ? <ImageBackground
-                  source={require('../assets/menu-button-5-pk.png')}
+                  source={require('../assets/menu-button-10-pk.png')}
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[10].textPK}</MenuText></ImageBackground>
                 : <ImageBackground
-                  source={require('../assets/menu-button-5-en.png')}
+                  source={require('../assets/menu-button-10-en.png')}
                   resizeMode="contain"
                   style={menuStyles.button}><MenuText>{lvl1Nav[10].textEN}</MenuText></ImageBackground>}
               </TouchableOpacity>
