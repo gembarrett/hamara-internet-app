@@ -10,9 +10,24 @@ const research = [
   {
     links: [
       {
-        url: "http://digitalrightsfoundation.pk/wp-content/uploads/2017/04/4-Month-Report.Final_.pdf",
-        textEN: "Cyber Harassment Helpline \n4 months report",
-        textPK: "سائبر ہراسمنٹ ہیلپ لائن کی چار ماہ کی کاردگی کی رپورٹ"
+        url: "https://digitalrightsfoundation.pk/wp-content/uploads/2018/01/Report-Digi-Insecurity-of-Journos.pdf",
+        textEN: "Digital (in)security of Journalists",
+        textPK: "Digital (in)security of Journalists"
+      },
+      {
+        url: "http://digitalrightsfoundation.pk/wp-content/uploads/2017/12/UNSR-Submission-by-DRF.pdf",
+        textEN: "Online Violence Against Women in Pakistan - Submission to UNSR on VAW",
+        textPK: "Online Violence Against Women in Pakistan - Submission to UNSR on VAW"
+      },
+      {
+        url: "http://digitalrightsfoundation.pk/wp-content/uploads/2017/05/Hamara-Internet-Online-Harassment-Report.pdf",
+        textEN: "Measuring Pakistani Women's Experience of Online Violence",
+        textPK: "Measuring Pakistani Women's Experience of Online Violence"
+      },
+      {
+        url: "http://digitalrightsfoundation.pk/wp-content/uploads/2017/02/Surveillance-of-Female-Journalists-in-Pakistan-1.pdf",
+        textEN: "Surveillance of Female Journalists in Pakistan",
+        textPK: "Surveillance of Female Journalists in Pakistan"
       }
     ]
   }
