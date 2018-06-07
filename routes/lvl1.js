@@ -60,6 +60,12 @@ const lvl1Nav = [
     route: "Support",
     textEN: "I need support",
     textPK: "مجھے مدد چاہئے"
+  },
+  {
+    id: 11,
+    route: "Research",
+    textEN: "Research",
+    textPK: "Research"    
   }
 ];
 

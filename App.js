@@ -18,6 +18,7 @@ import ChatScreen from './components/four/chat.js';
 import CyberScreen from './components/four/cyber.js';
 import HarassmentScreen from './components/four/harassment.js';
 import LocationScreen from './components/four/location.js';
+import ResearchScreen from './components/research.js';
 import SearchScreen from './components/four/search.js';
 import SocialScreen from './components/four/social.js';
 import USBScreen from './components/four/usbs.js';
@@ -189,6 +190,17 @@ const App = StackNavigator({
       headerTransparent: true,
       headerStyle: {
         backgroundColor: '#F69731',
+        elevation: 0
+      },
+      headerTintColor: '#FFF'
+    }
+  },
+  Research: {
+    screen: ResearchScreen,
+    navigationOptions: {
+      headerTransparent: true,
+      headerStyle: {
+        backgroundColor: '#E6D228',
         elevation: 0
       },
       headerTintColor: '#FFF'
