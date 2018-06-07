@@ -15,18 +15,18 @@ const helpline = [
     links: [
       {
         url: "http://digitalrightsfoundation.pk/wp-content/uploads/2017/04/4-Month-Report.Final_.pdf",
-        textEN: "Cyber Harassment Helpline 4 months report",
+        textEN: "Cyber Harassment Helpline \n4 months report",
         textPK: "سائبر ہراسمنٹ ہیلپ لائن کی چار ماہ کی کاردگی کی رپورٹ"
       },
       {
         url: "https://digitalrightsfoundation.pk/wp-content/uploads/2017/07/Cyber-Harassment-Helpline-Six-Month-Report.pdf",
-        textEN: "Cyber Harassment Helpline 6 months report",
+        textEN: "Cyber Harassment Helpline \n6 months report",
         textPK: "سائبر ہراسمنٹ ہیلپ لائن کی ششماہی کارکردگی کی رپورٹ"
       },
       {
         url: "https://digitalrightsfoundation.pk/wp-content/uploads/2017/12/Helpline-Annual-Report.pdf",
-        textEN: "Cyber Harassment Helpline 1 year report",
-        textPK: "Cyber Harassment Helpline 1 year report"
+        textEN: "Cyber Harassment Helpline \n1 year report",
+        textPK: "Cyber Harassment Helpline \n1 year report"
       },
     ]
   },
