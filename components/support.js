@@ -25,7 +25,7 @@ export default class SupportScreen extends React.Component {
         var number = support[i].number;
         var tel = 'tel:' + support[i].number;
         var desc = prefs.language === 'pk' ? support[i].descPK : support[i].descEN;
-        contentArr.push({key: i, text: number, tel: tel, desc: desc});
+        contentArr.push({key: i, name: name, text: number, tel: tel, desc: desc});
     }
     return contentArr;
   }
@@ -38,9 +38,9 @@ export default class SupportScreen extends React.Component {
           ({item}) =>
             <View style={[globals.lineBreak, globals.para, {flexDirection: 'column', alignItems: 'flex-start'}]}>
 
-              <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <View style={{flexDirection: prefs.language === 'pk' ? 'row-reverse' : 'row', alignItems: 'center'}}>
                 <BasicText style={[globals.bold, {flex: 1}]} key={item.key}>
-                  {item.key}
+                  {item.name}
                 </BasicText>
                 <View style={[globals.orange, {alignSelf: 'flex-end', flex: 0, marginVertical: 10}]}>
                   <TouchableOpacity>
