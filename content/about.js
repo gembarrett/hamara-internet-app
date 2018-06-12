@@ -44,14 +44,14 @@ const about = [
       {
         icon: "umbrella",
         titleEN: "Making Internet Governance Inclusive",
-        textPK: "انٹرنیٹ گورننس کا شامل ہونا",
+        titlePK: "انٹرنیٹ گورننس کا شامل ہونا",
         textEN: "To set up a new paradigm in Pakistan of Internet governance in Pakistan by making women engage in political discussions with regards to the development of Internet with the terms of fairness, inclusion and respect for women’s rights.",
         textPK: "انٹرنیٹ کے ارتقا کو لیکر خواتین کے حقوق کیلئے احترام اور ان کی منصفانہ شمولیت کی شرائط کیساتھ سیاسی مباحثوں میں خواتین کو مشغول کر کے پاکستانی انٹرنیٹ گورننس میں ایک نئی انقلابی فکر مرتب کرنا۔"
       },
       {
         icon: "bullhorn",
         titleEN: "Networking for Advocacy",
-        textPK: "حمایت کیلئے مربوط سلسلوں کا قیام",
+        titlePK: "حمایت کیلئے مربوط سلسلوں کا قیام",
         textEN: "To partner with media organizations in Pakistan in order to raise awareness around the digital rights of women and advocate for a more women-friendly Internet.",
         textPK: "پاکستان میں میڈیا اداروں کے ساتھ شراکت داری کرنا تاکہ خواتین کے حقوق سے متعلق آگاہی مہم کا آغاز ہو اور خواتین کو مزید دوستانہ انٹرنیٹ کی حمایت حاصل ہو۔"
       }
