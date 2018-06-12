@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Button, ImageBackground, ScrollView } from 'rea
 import ScrollableTabView, { DefaultTabBar, } from 'react-native-scrollable-tab-view';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import BasicText from './sub/basicText.js';
-import CustomTabBar from './sub/customTabBar.js'
 import IconTabBar from './sub/iconTabBar.js'
 import { globals } from '../styles/globals.js';
 import { prefs } from '../routes/prefs.js';

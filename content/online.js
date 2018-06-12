@@ -40,17 +40,20 @@ const search = [
       {
         url: "https://myshadow.org/",
         textEN: "Learn more about digital shadows",
-        textPK: "ڈیجیٹل شیڈوز کے بارے میں مزید جاننے کیلئے"
+        textPK: "ڈیجیٹل شیڈوز کے بارے میں مزید جاننے کیلئے",
+        credit: "https://myshadow.org/"
       },
       {
         url: "https://modelviewculture.com/pieces/investigation-online-gathering-information-to-assess-risk",
         textEN: "Tactics and techniques",
-        textPK: "اپنی ڈاکسنگ کرنےکی تکنیک اور مہارتوں کیلئے"
+        textPK: "اپنی ڈاکسنگ کرنےکی تکنیک اور مہارتوں کیلئے",
+        credit: "https://modelviewculture.com"
       },
       {
         url: "https://backgroundchecks.org/justdeleteme/",
         textEN: "How to close accounts that are leaking information",
-        textPK: "جن اکاؤنٹس سے آپکی معلومات دوسروں کو پتہ چل جاتی ہے انہیں بند کرنے کیلئے"
+        textPK: "جن اکاؤنٹس سے آپکی معلومات دوسروں کو پتہ چل جاتی ہے انہیں بند کرنے کیلئے",
+        credit: "https://backgroundchecks.org"
       },
       {
         url: "https://gendersec.tacticaltech.org/wiki/index.php/Self-dox",
