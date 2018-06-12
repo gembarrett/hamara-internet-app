@@ -21,11 +21,11 @@ export default class SupportScreen extends React.Component {
     var contentArr = [];
     // var canCall = Linking.canOpenURL(support[1].number) ? true : false;
     for (let i = 1; i < support.length; i++) {
-        var name = support[i].name;
+        var name = prefs.language === 'pk' ? support[i].namePK : support[i].nameEN;
         var number = support[i].number;
         var tel = 'tel:' + support[i].number;
         var desc = prefs.language === 'pk' ? support[i].descPK : support[i].descEN;
-        contentArr.push({key: name, text: number, tel: tel, desc: desc});
+        contentArr.push({key: i, text: number, tel: tel, desc: desc});
     }
     return contentArr;
   }
