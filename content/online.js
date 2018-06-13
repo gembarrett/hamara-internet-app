@@ -41,39 +41,43 @@ const search = [
         url: "https://myshadow.org/",
         textEN: "Learn more about digital shadows",
         textPK: "ڈیجیٹل شیڈوز کے بارے میں مزید جاننے کیلئے",
-        credit: "https://myshadow.org/"
+        src: "https://myshadow.org/"
       },
       {
         url: "https://modelviewculture.com/pieces/investigation-online-gathering-information-to-assess-risk",
         textEN: "Tactics and techniques",
         textPK: "اپنی ڈاکسنگ کرنےکی تکنیک اور مہارتوں کیلئے",
-        credit: "https://modelviewculture.com"
+        src: "https://modelviewculture.com"
       },
       {
         url: "https://backgroundchecks.org/justdeleteme/",
         textEN: "How to close accounts that are leaking information",
         textPK: "جن اکاؤنٹس سے آپکی معلومات دوسروں کو پتہ چل جاتی ہے انہیں بند کرنے کیلئے",
-        credit: "https://backgroundchecks.org"
+        src: "https://backgroundchecks.org"
       },
       {
         url: "https://gendersec.tacticaltech.org/wiki/index.php/Self-dox",
         textEN: "More information about self-doxing",
-        textPK: "اپنی ہی ڈاکسنگ کرنے کیلئے مزید معلومات جاننے کیلئے اس لنک کو کھولئے"
+        textPK: "اپنی ہی ڈاکسنگ کرنے کیلئے مزید معلومات جاننے کیلئے اس لنک کو کھولئے",
+        src: "https://tacticaltech.org"
       },
       {
         url: "https://immersion.media.mit.edu/",
         textEN: "What does your email say about you?",
-        textPK: "آپکا ای میل آپکے بارے میں کیا کہتا ہے؟"
+        textPK: "آپکا ای میل آپکے بارے میں کیا کہتا ہے؟",
+        src: "https://mit.edu/"
       },
       {
         url: "http://www.crashoverridenetwork.com/preventingdoxing.html",
         textEN: "Crash Override guide to preventing doxing",
-        textPK: "کی رہنمائی Crash Overrideڈاکسنگ سے بچنے کیلئے"
+        textPK: "کی رہنمائی Crash Overrideڈاکسنگ سے بچنے کیلئے",
+        src: "http://www.crashoverridenetwork.com"
       },
       {
         url: "http://www.crashoverridenetwork.com/soyouvebeendoxed.html",
         textEN: "Crash Override guide for the doxed",
-        textPK: "کی رہنمائی  Crash Overrideڈاکس ہونے کیلئے"
+        textPK: "کی رہنمائی  Crash Overrideڈاکس ہونے کیلئے",
+        src: "http://www.crashoverridenetwork.com"
       }
     ]
   }

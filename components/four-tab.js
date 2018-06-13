@@ -8,14 +8,7 @@ import { globals } from '../styles/globals.js';
 import { prefs } from '../routes/prefs.js';
 
 export default class FourTab extends React.Component {
-  backgroundImage(section) {
-    if (section === "online") {
-      return `source=${require('../assets/online-icon.png')}`;
-    } else {
-      return `source=${require('../assets/identity-icon.png')}`;
-    }
-  }
-
+  
   getTabs(props) {
     tabInfo = [
       {

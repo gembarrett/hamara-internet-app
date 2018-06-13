@@ -62,6 +62,7 @@ function printLinks(array, color, intent) {
          </Text>
          <Icon name={intent === 'download' ? 'download' : 'external-link'} size={15} style={globals.linkIcon} />
        </View>
+       <BasicText style={globals.credit}>{array[i].src ? 'Source: '+array[i].src : null}</BasicText>
      </TouchableOpacity>
     )
   }
