@@ -44,12 +44,14 @@ const passwords = [
       {
         url: "https://strongpasswordgenerator.com/",
         textEN: "Strong password generator and guidance",
-        textPK: "مضبوط پاس ورڈ مرتب کرنے والا اور اس کی رہنمائی"
+        textPK: "مضبوط پاس ورڈ مرتب کرنے والا اور اس کی رہنمائی",
+        src: "strongpasswordgenerator.com"
       },
       {
         url: "https://securityinabox.org/en/guide/keepassx/windows",
         textEN: "Guide to using KeepassX",
-        textPK: "استعمال کرنے میں رہنمائیKeepassX"
+        textPK: "استعمال کرنے میں رہنمائیKeepassX",
+        src: "securityinabox.org"
       },
     ]
   }
@@ -97,22 +99,26 @@ const twoFA = [
       {
         url: "https://twofactorauth.org/",
         textEN: "How to set up two-factor authentication on all your services",
-        textPK: "اپنی تمام سروسز پر دو طرفہ تصدیق کو کیسے مرتب کریں"
+        textPK: "اپنی تمام سروسز پر دو طرفہ تصدیق کو کیسے مرتب کریں",
+        src: "twofactorauth.org"
       },
       {
         url: "https://www.google.com/safetycenter/everyone/start/",
         textEN: "Google security checklist",
-        textPK: "گوگل حفاظتی چیک لسٹ"
+        textPK: "گوگل حفاظتی چیک لسٹ",
+        src: "google.com"
       },
       {
         url: "https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en",
         textEN: "Google Authenticator app",
-        textPK: "Google Authenticator app"
+        textPK: "Google Authenticator app",
+        src: "google.com"
       },
       {
         url: "https://duo.com/solutions/features/two-factor-authentication-methods/duo-mobile",
         textEN: "Duo Mobile app",
-        textPK: "Duo Mobile app"
+        textPK: "Duo Mobile app",
+        src: "duo.com"
       }
     ]
   }

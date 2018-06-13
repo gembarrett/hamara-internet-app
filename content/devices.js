@@ -36,17 +36,20 @@ const backups = [
       {
         url: "https://securityinabox.org//en/guide/secure-file-storage",
         textEN: "Guide to secure file storage",
-        textPK: "محفوظ فائل سٹوریج کیلئے رہنمائی"
+        textPK: "محفوظ فائل سٹوریج کیلئے رہنمائی",
+        src: "securityinabox.org"
       },
       {
         url: "https://www.howtogeek.com/124824/how-to-password-protect-pdf-files-in-word-2013/",
         textEN: "How to password-protect a Microsoft Office document",
-        textPK: "کسی مائیکرو سافٹ آفس ڈاکیومنٹ کو کیسے پاس ورڈ سے محفوظ کریں"
+        textPK: "کسی مائیکرو سافٹ آفس ڈاکیومنٹ کو کیسے پاس ورڈ سے محفوظ کریں",
+        src: "howtogeek.com"
       },
       {
         url: "https://www.pcworld.com/article/2308725/encryption/a-beginners-guide-to-bitlocker-windows-built-in-encryption-tool.html",
         textEN: "How to use Windows built-in encryption for removable drives",
-        textPK: "ریمووایبل ڈرائیوز کیلئے ونڈوز بِلٹ ان اینکرپشن کیسے استعمال کریں"
+        textPK: "ریمووایبل ڈرائیوز کیلئے ونڈوز بِلٹ ان اینکرپشن کیسے استعمال کریں",
+        src: "pcworld.com"
       }
     ]
   }
@@ -98,12 +101,14 @@ const virus = [
       {
         url: "https://securityinabox.org/en/guide/malware",
         textEN: "Learn about different types of virus and how to recognise them",
-        textPK: "مختلف اقسام کے وائرس کا علم رکھنے اور ان کی پہچان کیسے ہو یہ جاننے کیلئے"
+        textPK: "مختلف اقسام کے وائرس کا علم رکھنے اور ان کی پہچان کیسے ہو یہ جاننے کیلئے",
+        src: "securityinabox.org"
       },
       {
         url: "https://www.androidcentral.com/three-basic-steps-protecting-your-android-device-viruses",
         textEN: "Basic steps for protecting your Android phone from viruses",
-        textPK: "اپنے اینڈرائیڈ فون کو وائرس سے بچانے کیلئے بنیادی اقدامات"
+        textPK: "اپنے اینڈرائیڈ فون کو وائرس سے بچانے کیلئے بنیادی اقدامات",
+        src: "androidcentral.com"
       }
     ]
   }

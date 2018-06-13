@@ -22,6 +22,11 @@ const globals = StyleSheet.create({
   textStyle: {
     fontSize: 18,
   },
+  credit: {
+    fontSize: 12,
+    marginLeft: 14,
+    marginBottom: 10
+  },
   icon: {
     opacity: 0.75,
   },

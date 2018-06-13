@@ -40,12 +40,14 @@ const harassment = [
       {
         url: "http://nr3c.gov.uk",
         textEN: "You can also get advice from the National Response Centre for Cyber Crime",
-        textPK: "ہیں سائبر جرائم کیلئے نیشنل ریسپانس سنٹرسے آپ مشاورت بھی لے سکتے ہیں"
+        textPK: "ہیں سائبر جرائم کیلئے نیشنل ریسپانس سنٹرسے آپ مشاورت بھی لے سکتے ہیں",
+        src: "nr3c.gov.uk"
       },
       {
         url: "https://hamarainternet.org/resources/",
         textEN: "The Hamara Internet resource centre can help you understand your rights online",
-        textPK: "اس کے علاوہ ہمارا انٹرنیٹ کا وسائل مرکز بھی آپ کو آپ کے آن لائن حقوق کے بارے میں سمجھنے میں دے سکتا ہے، ذرائع کو جاننے کیلئے"
+        textPK: "اس کے علاوہ ہمارا انٹرنیٹ کا وسائل مرکز بھی آپ کو آپ کے آن لائن حقوق کے بارے میں سمجھنے میں دے سکتا ہے، ذرائع کو جاننے کیلئے",
+        src: "hamarainternet.org"
       }
     ]
   }

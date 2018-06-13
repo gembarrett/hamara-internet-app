@@ -41,43 +41,43 @@ const search = [
         url: "https://myshadow.org/",
         textEN: "Learn more about digital shadows",
         textPK: "ڈیجیٹل شیڈوز کے بارے میں مزید جاننے کیلئے",
-        src: "https://myshadow.org/"
+        src: "myshadow.org"
       },
       {
         url: "https://modelviewculture.com/pieces/investigation-online-gathering-information-to-assess-risk",
         textEN: "Tactics and techniques",
         textPK: "اپنی ڈاکسنگ کرنےکی تکنیک اور مہارتوں کیلئے",
-        src: "https://modelviewculture.com"
+        src: "modelviewculture.com"
       },
       {
         url: "https://backgroundchecks.org/justdeleteme/",
         textEN: "How to close accounts that are leaking information",
         textPK: "جن اکاؤنٹس سے آپکی معلومات دوسروں کو پتہ چل جاتی ہے انہیں بند کرنے کیلئے",
-        src: "https://backgroundchecks.org"
+        src: "backgroundchecks.org"
       },
       {
         url: "https://gendersec.tacticaltech.org/wiki/index.php/Self-dox",
         textEN: "More information about self-doxing",
         textPK: "اپنی ہی ڈاکسنگ کرنے کیلئے مزید معلومات جاننے کیلئے اس لنک کو کھولئے",
-        src: "https://tacticaltech.org"
+        src: "tacticaltech.org"
       },
       {
         url: "https://immersion.media.mit.edu/",
         textEN: "What does your email say about you?",
         textPK: "آپکا ای میل آپکے بارے میں کیا کہتا ہے؟",
-        src: "https://mit.edu/"
+        src: "mit.edu"
       },
       {
         url: "http://www.crashoverridenetwork.com/preventingdoxing.html",
         textEN: "Crash Override guide to preventing doxing",
         textPK: "کی رہنمائی Crash Overrideڈاکسنگ سے بچنے کیلئے",
-        src: "http://www.crashoverridenetwork.com"
+        src: "crashoverridenetwork.com"
       },
       {
         url: "http://www.crashoverridenetwork.com/soyouvebeendoxed.html",
         textEN: "Crash Override guide for the doxed",
         textPK: "کی رہنمائی  Crash Overrideڈاکس ہونے کیلئے",
-        src: "http://www.crashoverridenetwork.com"
+        src: "crashoverridenetwork.com"
       }
     ]
   }
@@ -121,22 +121,26 @@ const browsers = [
       {
         url: "https://enabledonottrack.com/faq/how_to_configure_do_no_track/",
         textEN: "How to configure Do Not Track",
-        textPK: "کو کیسے ترتیب دیں Do Not Track"
+        textPK: "کو کیسے ترتیب دیں Do Not Track",
+        src: "enabledonottrack.com"
       },
       {
         url: "https://www.wikihow.com/Activate-Incognito-Mode",
         textEN: "How to start private browsing modes",
-        textPK: "نجی براؤزنگ موڈ ز کو کیسے شروع کریں"
+        textPK: "نجی براؤزنگ موڈ ز کو کیسے شروع کریں",
+        src: "wikihow.com"
       },
       {
         url: "https://lifehacker.com/5805326/how-to-turn-your-computers-firewall-on-and-off",
         textEN: "Guide to firewall settings",
-        textPK: "ذاتی براؤزنگ موڈز کو کیسے شروع کریں"
+        textPK: "ذاتی براؤزنگ موڈز کو کیسے شروع کریں",
+        src: "lifehacker.com"
       },
       {
         url: "https://panopticlick.eff.org",
         textEN: "Check your browser’s protection against tracking",
-        textPK: "تعاقب کیخلاف اپنے پراؤزر کو بچانے کیلئے چیک کریں"
+        textPK: "تعاقب کیخلاف اپنے پراؤزر کو بچانے کیلئے چیک کریں",
+        src: "eff.org"
       }
     ]
   }
@@ -192,22 +196,26 @@ const location = [
       {
         url: "https://www.dailydot.com/debug/twitter-instagram-location-metadata-how-to/",
         textEN: "Check how much location information is on your Twitter and Instagram accounts",
-        textPK: "یہ جاننے کیلئے کہ آپ کے ٹویٹر اور انسٹا گرام اکاؤنٹس پر آپکی لوکیشن کی بابت کتنی معلومات موجود ہیں چیک کریں "
+        textPK: "یہ جاننے کیلئے کہ آپ کے ٹویٹر اور انسٹا گرام اکاؤنٹس پر آپکی لوکیشن کی بابت کتنی معلومات موجود ہیں چیک کریں ",
+        src: "dailydot.com"
       },
       {
         url: "https://www.google.com/locationhistory",
         textEN: "How to check what location history Google knows about you",
-        textPK: "آپ کی کون سی لوکیشن ہسٹری کے بارے میں گوگل جانتا ہے اس کیلئے چیک کریں"
+        textPK: "آپ کی کون سی لوکیشن ہسٹری کے بارے میں گوگل جانتا ہے اس کیلئے چیک کریں",
+        src: "google.com"
       },
       {
         url: "https://www.lifehacker.com/psa-your-phone-logs-everywhere-you-go-heres-how-to-t-1486085759",
         textEN: "How to turn off location services on Android and iOS",
-        textPK: "پر لوکیشن خدمات کو کیسے بند کرنا ہے  iOSاور Android"
+        textPK: "پر لوکیشن خدمات کو کیسے بند کرنا ہے  iOSاور Android",
+        src: "lifehacker.com"
       },
       {
         url: "https://www.makeuseof.com/tag/disable-fake-location-firefox-internet-explorer-chrome/",
         textEN: "How to disable or hide your location in Chrome, Firefox and Internet Explorer",
-        textPK: "لنک کریں  ]میں اپنی لوکیشن کو کیسے غیر فعال کریں  Internet Explorerاور Chrome, Firefox"
+        textPK: "لنک کریں  ]میں اپنی لوکیشن کو کیسے غیر فعال کریں  Internet Explorerاور Chrome, Firefox",
+        src: "makeuseof.com"
       }
     ]
   }

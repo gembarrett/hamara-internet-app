@@ -48,27 +48,32 @@ const social = [
       {
         url: "https://iheartmob.org/resources/safety_guides",
         textEN: "HeartMob’s guide to staying safe on social media",
-        textPK: "کی رہنمائیHeartMobسوشل میڈیا پر محفوظ رہنے کیلئے "
+        textPK: "کی رہنمائیHeartMobسوشل میڈیا پر محفوظ رہنے کیلئے ",
+        src: "iheartmob.org"
       },
       {
         url: "https://lifehacker.com/5813990/the-always-up-to-date-guide-to-managing-your-facebook-privacy",
         textEN: "Guide to Facebook privacy settings",
-        textPK: "فیس بک کی پرائیویسی ترتیبات کےلئے رہنمائی"
+        textPK: "فیس بک کی پرائیویسی ترتیبات کےلئے رہنمائی",
+        src: "lifehacker.com"
       },
       {
         url: "https://www.fightcyberstalking.org/privacy-settings-twitter/",
         textEN: "Guide to Twitter privacy settings",
-        textPK: "ٹویٹر کی پرائیویسی ترتیبات کیلئے رہنمائی"
+        textPK: "ٹویٹر کی پرائیویسی ترتیبات کیلئے رہنمائی",
+        src: "fightcyberstalking.org"
       },
       {
         url: "https://help.instagram.com/116024195217477/",
         textEN: "Protecting your posts on Instagram",
-        textPK: "اپنی پوسٹس کی انسٹا گرام پر حفاظت کیلئے"
+        textPK: "اپنی پوسٹس کی انسٹا گرام پر حفاظت کیلئے",
+        src: "instagram.com"
       },
       {
         url: "https://support.snapchat.com/en-US/a/privacy-settings",
         textEN: "Changing your Snapchat privacy settings",
-        textPK: "اپنی سنیپ چیٹ پرائیویسی تریتبات کو تبدیل کرنے کیلئے"
+        textPK: "اپنی سنیپ چیٹ پرائیویسی تریتبات کو تبدیل کرنے کیلئے",
+        src: "snapchat.com"
       }
     ]
   }
@@ -116,22 +121,26 @@ const chat = [
       {
         url: "https://www.whatsapp.com/faq/en/android/30031687",
         textEN: "How to stop WhatsApp saving all photos to your gallery",
-        textPK: "Hواٹس ایپ کو آپ کی گیلری میں تمام تصاویر کو محفوظ کرنے سے روکنے کیلئے"
+        textPK: "Hواٹس ایپ کو آپ کی گیلری میں تمام تصاویر کو محفوظ کرنے سے روکنے کیلئے",
+        src: "whatsapp.com"
       },
       {
         url: "https://www.whatsapp.com/faq/en/android/23225461",
         textEN: "Changing your WhatsApp privacy settings",
-        textPK: "اپنی واٹس ایپ پرائیویسی ترتیبات کو بدلنے کیلئے"
+        textPK: "اپنی واٹس ایپ پرائیویسی ترتیبات کو بدلنے کیلئے",
+        src: "whatsapp.com"
       },
       {
         url: "https://go.skype.com/support.privacysettings",
         textEN: "Guide to Skype privacy settings",
-        textPK: "سکائپ پر پرائیویسی ترتیبات کیلئے رہنمائی"
+        textPK: "سکائپ پر پرائیویسی ترتیبات کیلئے رہنمائی",
+        src: "skype.com"
       },
       {
         url: "https://telegram.org/blog/privacy-revolution",
         textEN: "Guide to Telegram’s privacy settings",
-        textPK: "ٹیلی گرام پرائیویسی ترتیبات کیلئے رہنمائی"
+        textPK: "ٹیلی گرام پرائیویسی ترتیبات کیلئے رہنمائی",
+        src: "telegram.org"
       }
     ]
   }
