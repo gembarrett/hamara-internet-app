@@ -5,7 +5,7 @@ import BasicText from '../components/sub/basicText.js';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { prefs } from '../routes/prefs.js';
 import { StackNavigator } from 'react-navigation';
-import {globals} from '../styles/globals.js'
+import {globals} from '../styles/globals.js';
 
 function buttons(array) {
   var buttonsListArr = [];

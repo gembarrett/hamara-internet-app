@@ -18,3 +18,32 @@ Solutions to common errors:
 - Ensure you have ANDROID_HOME env variable set correctly; it should point to your sdk directory (e.g. Users/computerName/Library/Android/sdk)
 - Ensure your PATH env variable is set correctly; should point to the tools and platform-tools folders within your sdk directory
 - Ensure your JAVA_HOME env variable is set and correctly reflects your Java version (e.g. $(usr/libexec/java_home -v 1.8))
+
+#### Phone override
+When a dash is in the middle of English numbers inside a block of text that is primarily in a right-to-left language, the numbers are swapped around. This can cause issues with text orientation and particularly with react-native-autolink. Therefore, add the following code to react-native-autolink/matchers.js and change the regex to suit your needs.
+
+``` javascript  
+{
+    id: 'phone',
+    regex: /[0-9]{4}[\.-][0-9]{5}/g,
+    Match: Autolinker.Util.extend(Autolinker.match.Match, {
+      constructor(cfg) {
+        Autolinker.match.Match.prototype.constructor.call(this, cfg);
+
+        this.phone = cfg.phone;
+      },
+      getType() {
+        return 'phone';
+      },
+      getPhone() {
+        return this.phone;
+      },
+      getAnchorHref() {
+        return this.phone;
+      },
+      getAnchorText() {
+        return this.phone;
+      },
+    }),
+  }
+```
