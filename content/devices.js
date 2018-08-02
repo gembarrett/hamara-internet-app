@@ -13,7 +13,7 @@ const backups = [
     id: 2,
     route: "Solution",
     textEN: "Backing up your data is easy, and can even be done automatically. Some people prefer a physical device, like a USB or external hard drive. Others prefer online “cloud storage”. <br /> <br />Both have their advantages, but are still vulnerable to attack so be sure to protect whichever one you choose!",
-    textPK: " یو۔ایس۔بی اپنے ڈیٹا کو بیک اپ دینا نہ صرف بہت آسان ہے بلکہ یہ خودکار طریقے سے بھی ہو سکتا ہے۔ <br /> <br /> کچھ لوگ   کو ترجیح دیتے ہیں “cloud storage”یا باہر سے لگنے والی ہارڈ ڈرائیو کو ترجیح دیتے ہیں۔جب کہ بعض صارف آن لائن دونوں کے اپنی اپنی جگہ پر فوائد ہیں، لیکن ابھی تک یہ بھی حملوں سے محفوظ نہیں ہیں لہٰذا اس بات کو یقینی کرے کہ آپ جس کا بھی انتخاب کریں اسے محفوظ بنائیں۔"
+    textPK: " یو۔ایس۔بی اپنے ڈیٹا کو بیک اپ دینا نہ صرف بہت آسان ہے بلکہ یہ خودکار طریقے سے بھی ہو سکتا ہے۔ <br /> <br /> کچھ لوگ   کو ترجیح دیتے ہیں “کلاؤڈ سٹوریج”یا باہر سے لگنے والی ہارڈ ڈرائیو کو ترجیح دیتے ہیں۔جب کہ بعض صارف آن لائن دونوں کے اپنی اپنی جگہ پر فوائد ہیں، لیکن ابھی تک یہ بھی حملوں سے محفوظ نہیں ہیں لہٰذا اس بات کو یقینی کرے کہ آپ جس کا بھی انتخاب کریں اسے محفوظ بنائیں۔"
   },
   {
     id: 3,
