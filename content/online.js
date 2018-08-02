@@ -29,7 +29,7 @@ const search = [
       },
       {
         textEN: "Do a reverse image lookup, using a tool like Google Image Search or TinEye, on your public pictures, such as Facebook profile photos to see if they have been used anywhere else.",
-        textPK: " ٹِن آئی یا Google Image Service فیس بک پروفائل تصاویر جیسی اپنی تشہیری تصاویر پر جیسا کوئی آلہ استعمال کرتے ہوئےریورس امیج لک اپ کریں تاکہ یہ دیکھا جائے کہ آیا ان کا کہیں استعمال کیا گیا ہے۔ "
+        textPK: " ٹِن آئی یا  گوگل امیج سروس  فیس بک پروفائل تصاویر جیسی اپنی تشہیری تصاویر پر جیسا کوئی آلہ استعمال کرتے ہوئےریورس امیج لک اپ کریں تاکہ یہ دیکھا جائے کہ آیا ان کا کہیں استعمال کیا گیا ہے۔ "
       }
     ]
   },
