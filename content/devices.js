@@ -13,7 +13,7 @@ const backups = [
     id: 2,
     route: "Solution",
     textEN: "Backing up your data is easy, and can even be done automatically. Some people prefer a physical device, like a USB or external hard drive. Others prefer online “cloud storage”. <br /> <br />Both have their advantages, but are still vulnerable to attack so be sure to protect whichever one you choose!",
-    textPK: "USBاپنے ڈیٹا کو بیک اپ دینا نہ صرف بہت آسان ہے بلکہ یہ خودکار طریقے سے بھی ہو سکتا ہے۔ <br /> <br /> کچھ لوگ   کو ترجیح دیتے ہیں “cloud storage”یا باہر سے لگنے والی ہارڈ ڈرائیو کو ترجیح دیتے ہیں۔جب کہ بعض صارف آن لائن دونوں کے اپنی اپنی جگہ پر فوائد ہیں، لیکن ابھی تک یہ بھی حملوں سے محفوظ نہیں ہیں لہٰذا اس بات کو یقینی کرے کہ آپ جس کا بھی انتخاب کریں اسے محفوظ بنائیں۔"
+    textPK: " یو۔ایس۔بی اپنے ڈیٹا کو بیک اپ دینا نہ صرف بہت آسان ہے بلکہ یہ خودکار طریقے سے بھی ہو سکتا ہے۔ <br /> <br /> کچھ لوگ   کو ترجیح دیتے ہیں “cloud storage”یا باہر سے لگنے والی ہارڈ ڈرائیو کو ترجیح دیتے ہیں۔جب کہ بعض صارف آن لائن دونوں کے اپنی اپنی جگہ پر فوائد ہیں، لیکن ابھی تک یہ بھی حملوں سے محفوظ نہیں ہیں لہٰذا اس بات کو یقینی کرے کہ آپ جس کا بھی انتخاب کریں اسے محفوظ بنائیں۔"
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const backups = [
     tips: [
       {
         textEN: "If you choose a USB or external hard drive, make sure you password-protect it like you would any device, and always store it in one area of your house so you will worry less about losing it.",
-        textPK: " یا ہارڈ ڈرائیو میں سے کسی کا بھی انتخاب کیا ہے تو اس بات کی تسلی کر لیں کہ جس طرح آپ USB ۔ اگر آپاپنی ڈیوائس کو پاس ورڈ لگا کر حفاظت دیتے ہیں اسی طرح ان پر بھی پاس ورڈ لگا کر اسے محفوظ بنائیں اور ہمیشہ  اسے اپنے گھر کے کسی ایک محفوظ مقام پہ رکھیں تاکہ اس کے گم ہونے کا خدشہ نہ ہو۔"
+        textPK: " یا ہارڈ ڈرائیو میں سے کسی کا بھی انتخاب کیا ہے تو اس بات کی تسلی کر لیں کہ جس طرح آپ  یو۔ایس۔بی  ۔ اگر آپاپنی ڈیوائس کو پاس ورڈ لگا کر حفاظت دیتے ہیں اسی طرح ان پر بھی پاس ورڈ لگا کر اسے محفوظ بنائیں اور ہمیشہ  اسے اپنے گھر کے کسی ایک محفوظ مقام پہ رکھیں تاکہ اس کے گم ہونے کا خدشہ نہ ہو۔"
       },
       {
         textEN:"Adding a password to your files is a good way to protect them, however they are stored. Cloud storage is convenient because it does not require any physical equipment, but even if it is on a Google server it can still be hacked into or stolen so be sure to protect your accounts.",
@@ -117,19 +117,19 @@ const virus = [
 const usbs = [
   {
     titleEN: "USB Devices",
-    titlePK: "ڈرائیوزUSB",
+    titlePK: "ڈرائیوز یو۔ایس۔بی ",
   },
   {
     id: 1,
     route: "Problem",
     textEN: "We can use USB drives to backup our documents, photos and other precious data, or transfer them from one computer to another. They can be very useful portable storage devices. <br /> <br />But even these can become compromised and we can end up losing our data or even accidentally infecting other computers.",
-    textPK: "ہم اپنے مسودات، فوٹوز اوردیگر قیمتی ڈیٹا کو بیک اپ دینے یا انہیں ایک کمپیوٹر سے دوسرے تک منتقل کرنے کیلئے  ڈرائیوز کا استعمال کر سکتے ہیں۔ یہ بہت مفید سفری سٹوریج ڈیوائسز ثابت ہو سکتی ہیں۔ <br /><br />لیکن انہیں بھی کمزور کیاUSBجا سکتا ہےجس کے نتیجے میں ہم اپنا ڈیٹا کھو بھی سکتے ہیں اور حادثاتی طور پر دوسروں کے کمپیوٹروں کو بھی متاثر کر سکتے ہیں۔"
+    textPK: "ہم اپنے مسودات، فوٹوز اوردیگر قیمتی ڈیٹا کو بیک اپ دینے یا انہیں ایک کمپیوٹر سے دوسرے تک منتقل کرنے کیلئے  ڈرائیوز کا استعمال کر سکتے ہیں۔ یہ بہت مفید سفری سٹوریج ڈیوائسز ثابت ہو سکتی ہیں۔ <br /><br />لیکن انہیں بھی کمزور کیا یو۔ایس۔بی جا سکتا ہےجس کے نتیجے میں ہم اپنا ڈیٹا کھو بھی سکتے ہیں اور حادثاتی طور پر دوسروں کے کمپیوٹروں کو بھی متاثر کر سکتے ہیں۔"
   },
   {
     id: 2,
     route: "Solution",
     textEN: "Just like you would with your computer or phone, it is important to check what you are copying to, or from, the USB drive. <br /><br />To protect the data on it, always remember to store the drive in a safe place and be sure to delete everything off it before disposal.",
-    textPK: "میں یا اس سے کیا کاپی کر رہے ہیں لہٰذا جس طرح آپ اپنے کمپیوٹر USBیہ جاننا بہت ضروری ہے کہ آپ اپنی یا فون کو محفوظ بناتے ہیں اس ڈرائیو کو بھی ایسے ہی محفوظ بنائیں۔ <br /><br />ان پہ اپنا ڈیٹا محفوظ کرنے کیلئے ہمیشہ یاد رکھیں کہ اپنی ڈرائیو کو ایک محفوظ مقام پہ رکھیں اور انہیں ضائع کرنے سے پہلے اس بات کی یقین دہانی کر لیں کہ آپ نے تمام ڈیٹا اس میں سے حذف کر دیا ہے۔"
+    textPK: "میں یا اس سے کیا کاپی کر رہے ہیں لہٰذا جس طرح آپ اپنے کمپیوٹر  یو۔ایس۔بی یہ جاننا بہت ضروری ہے کہ آپ اپنی یا فون کو محفوظ بناتے ہیں اس ڈرائیو کو بھی ایسے ہی محفوظ بنائیں۔ <br /><br />ان پہ اپنا ڈیٹا محفوظ کرنے کیلئے ہمیشہ یاد رکھیں کہ اپنی ڈرائیو کو ایک محفوظ مقام پہ رکھیں اور انہیں ضائع کرنے سے پہلے اس بات کی یقین دہانی کر لیں کہ آپ نے تمام ڈیٹا اس میں سے حذف کر دیا ہے۔"
   },
   {
     id: 3,
@@ -137,15 +137,15 @@ const usbs = [
     tips: [
       {
         textEN: "We do not recommend borrowing a USB drive or allowing someone to use yours, they can have spyware or malware on them which will infect your computer - cases of blackmail have arisen where women’s data was stolen after their computers were infected this way.",
-        textPK: " ڈرائیو کسی کو دیں یا کسی سے اس کی ڈرائیوادھارUSB۔ ہم آپ کو اس بات کی تجویز ہر گز نہیں دیں گے کہ آپ اپنی لیں، کیونکہ ان میں سپائے ویئر یا مالویئر ہو سکتے ہیں جو آپ کے کمپیوٹر کو متاثر کر سکتے ہیں۔ بلیک میلنگ کے بہت سے کیسز سامنے آئے ہیں جہاں خواتین کے کمپیوٹروں کو اسی طرح نقصان پہنچانے کے بعد ان کا ڈیٹا چرا لیا گیا تھا"
+        textPK: " ڈرائیو کسی کو دیں یا کسی سے اس کی ڈرائیوادھار یو۔ایس۔بی ۔ ہم آپ کو اس بات کی تجویز ہر گز نہیں دیں گے کہ آپ اپنی لیں، کیونکہ ان میں سپائے ویئر یا مالویئر ہو سکتے ہیں جو آپ کے کمپیوٹر کو متاثر کر سکتے ہیں۔ بلیک میلنگ کے بہت سے کیسز سامنے آئے ہیں جہاں خواتین کے کمپیوٹروں کو اسی طرح نقصان پہنچانے کے بعد ان کا ڈیٹا چرا لیا گیا تھا"
       },
       {
         textEN: "While we caution against sharing USB drives, we realise it’s common practice to do so and sometimes there are no other alternatives, so we advise you run the USB through anti-virus and anti-malware software every single time you use it.",
-        textPK: " لینے اور دینے کی احتیاط کے بارے میں بتاتے ہوئے ہم اس حقیقت سے بھی آگاہ ہوئے کہ ایسا کرنا USB۔ ایک عام عادت بن گئی ہے اور کبھی کبھار ایسا کرنا نا گزیر ہو جاتا ہے تو اس صورت میں ہم آپ کو یہ تجویز دیں گے کہ اگر کسی کی ڈرائیو استعمال کرنی پڑ جائے تو ہر بار اپنے کمپیوٹر پر اسے چلاتے ہوئے اینٹی وائرس اور اینٹی مالویئر سافٹ ویئر کیساتھ چلائیں۔"
+        textPK: " لینے اور دینے کی احتیاط کے بارے میں بتاتے ہوئے ہم اس حقیقت سے بھی آگاہ ہوئے کہ ایسا کرنا  یو۔ایس۔بی ۔ ایک عام عادت بن گئی ہے اور کبھی کبھار ایسا کرنا نا گزیر ہو جاتا ہے تو اس صورت میں ہم آپ کو یہ تجویز دیں گے کہ اگر کسی کی ڈرائیو استعمال کرنی پڑ جائے تو ہر بار اپنے کمپیوٹر پر اسے چلاتے ہوئے اینٹی وائرس اور اینٹی مالویئر سافٹ ویئر کیساتھ چلائیں۔"
       },
       {
         textEN: "If you must store sensitive data on your USB drive, look into buying a secure one with password protection.",
-        textPK: " ڈرائیو پہ کوئی حساس ڈیٹا رکھنا ہو توخریدتے ہوئے یہ ضرور دیکھ لیں کہ وہ کافی محفوظ ہےUSB۔ اگر اپنی  اور اس کیساتھ پاس ورڈ حفاظت بھی میسر ہے۔"
+        textPK: " ڈرائیو پہ کوئی حساس ڈیٹا رکھنا ہو توخریدتے ہوئے یہ ضرور دیکھ لیں کہ وہ کافی محفوظ ہے یو۔ایس۔بی ۔ اگر اپنی  اور اس کیساتھ پاس ورڈ حفاظت بھی میسر ہے۔"
       }
     ]
   },
