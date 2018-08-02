@@ -70,13 +70,13 @@ const search = [
       {
         url: "http://www.crashoverridenetwork.com/preventingdoxing.html",
         textEN: "Crash Override guide to preventing doxing",
-        textPK: "کی رہنمائی Crash Overrideڈاکسنگ سے بچنے کیلئے",
+        textPK: "کی رہنمائی  کریش اووررائیڈ ڈاکسنگ سے بچنے کیلئے",
         src: "crashoverridenetwork.com"
       },
       {
         url: "http://www.crashoverridenetwork.com/soyouvebeendoxed.html",
         textEN: "Crash Override guide for the doxed",
-        textPK: "کی رہنمائی  Crash Overrideڈاکس ہونے کیلئے",
+        textPK: "کی رہنمائی   کریش اووررائیڈ ڈاکس ہونے کیلئے",
         src: "crashoverridenetwork.com"
       }
     ]
