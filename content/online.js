@@ -13,7 +13,7 @@ const search = [
     id: 2,
     route: "Solution",
     textEN: "Find out what your digital shadow looks like so you know what can be used against you. To do this, try self-doxing; use a search engine like DuckDuckGo, which protects your privacy, to search for details like your usernames, phone number and email addresses.",
-    textPK: "یہ جاننے کی کوشش کریں کہ آپ ڈیجیٹل شیڈو کیسا دکھائی دیتا ہےتاکہ آپ کو پتہ چل سکے کہ آپ کی کن معلومات کا غلط استعمال کیا جاسکتا ہے۔ یہ جاننے کیلئے اپنی ہی ڈاکسنگ کرنے کی کوشش کریں۔ اپنے یوزر   جیسے کسی بھی سرچ انجنDuckDuckGoنیم، فون نمبر، اور ای میل ایڈریسز جیسی تفصیلات کو جاننے کیلئے کو استعمال کریں جو آپ کی نجی معلومات کی حفاظت کرتا ہو۔"
+    textPK: "یہ جاننے کی کوشش کریں کہ آپ ڈیجیٹل شیڈو کیسا دکھائی دیتا ہےتاکہ آپ کو پتہ چل سکے کہ آپ کی کن معلومات کا غلط استعمال کیا جاسکتا ہے۔ یہ جاننے کیلئے اپنی ہی ڈاکسنگ کرنے کی کوشش کریں۔ اپنے یوزر   جیسے کسی بھی سرچ انجن ڈَک ڈَک گو نیم، فون نمبر، اور ای میل ایڈریسز جیسی تفصیلات کو جاننے کیلئے کو استعمال کریں جو آپ کی نجی معلومات کی حفاظت کرتا ہو۔"
   },
   {
     id: 3,
