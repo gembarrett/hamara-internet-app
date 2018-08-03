@@ -181,7 +181,7 @@ const location = [
       },
       {
         textEN: "Not all VPN services offer the same levels of protection, but Disconnect, Psiphon, TunnelBear and ZenMate are just a few of the ones available to check out.",
-        textPK: "چونکہ تمام وی پی این خدمات ایک ہی طرح کی حفاظتی خدمات پیش نہیں کرتیں لیکن چند ایسی وی پی این خدمات ZenMateاور منقطع , Psiphon, TunnelBearدستیاب ہیں انہیں ایک نظر دیکھ لیجئے جن میں شامل ہیں"
+        textPK: "چونکہ تمام وی پی این خدمات ایک ہی طرح کی حفاظتی خدمات پیش نہیں کرتیں لیکن چند ایسی وی پی این خدمات ZenMateاور منقطع ,  سائفن , TunnelBearدستیاب ہیں انہیں ایک نظر دیکھ لیجئے جن میں شامل ہیں"
       },
       {
         textEN: "You can also hide your location by accessing the internet using the Tor browser. It is completely free, but some websites block or even restrict the accounts of Tor users - so only use when it is safe to.",
