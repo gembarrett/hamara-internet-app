@@ -110,7 +110,7 @@ const browsers = [
       },
       {
         textEN: "There are add-ons which can help with securing your browser and internet activities: <br />- HTTPS Everywhere ensures that you are always connected securely to websites through “https”, which keeps your information private <br />- Privacy Badger helps to protect you from trackers that contribute to your digital shadow <br />- NoScript is a Firefox extension that helps protect you from security problems by stopping websites from running small programs without your permission.",
-        textPK: "ہوتے ہیں جو آپکے براؤزر اور انٹرنیٹ مصرف کو محفوظ رکھنے میں مدد دے سکتے ہیں ایڈ۔آنز یہاں چند : <br />-  کے ذریعے  ویب سائٹس سے محفوظ منسلک ہوئے “ایچ ٹی ٹی پی ایس”  یہ یقین دلاتا ہے کہ آپ   ایچ ٹی ٹی پی ایس ایوری ویئر ٗ  ہیں <br />-  آپکو ان تعاقب کرنے والوں سے بچانے میں مدد دیتا ہے جوآپکے ڈیجیٹل شیڈو Privacy Badgerٗ میں شریک ہوتے ہیں <br />-  ایک فائر فاکس ایکسٹینشن ہے جو آپ کی اجازت کے بغیر چھوٹے پروگرام چلانے سے NoScriptٗ ویب سائٹس کو روکنے کے ذریعے آپ کو حفاظتی مسائل سے بچاتا ہے۔"
+        textPK: "ہوتے ہیں جو آپکے براؤزر اور انٹرنیٹ مصرف کو محفوظ رکھنے میں مدد دے سکتے ہیں ایڈ۔آنز یہاں چند : <br />-  کے ذریعے  ویب سائٹس سے محفوظ منسلک ہوئے “ایچ ٹی ٹی پی ایس”  یہ یقین دلاتا ہے کہ آپ   ایچ ٹی ٹی پی ایس ایوری ویئر ٗ  ہیں <br />-  آپکو ان تعاقب کرنے والوں سے بچانے میں مدد دیتا ہے جوآپکے ڈیجیٹل شیڈو  پرائیویسی بیجر ٗ میں شریک ہوتے ہیں <br />-  ایک فائر فاکس ایکسٹینشن ہے جو آپ کی اجازت کے بغیر چھوٹے پروگرام چلانے سے NoScriptٗ ویب سائٹس کو روکنے کے ذریعے آپ کو حفاظتی مسائل سے بچاتا ہے۔"
       }
     ]
   },
