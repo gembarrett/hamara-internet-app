@@ -26,10 +26,10 @@ const support = [
   },
   {
     nameEN: "PTA \n(Pakistan Telecommunication Authority)",
-    namePK: "(پاکستان ٹیلی کمیونیکیشن اتھارٹی)PTA",
+    namePK: "(پاکستان ٹیلی کمیونیکیشن اتھارٹی) پی ٹی اے ",
     number: "0800-55055",
     descEN: "Pakistan telecommunication authority (PTA) is Pakistani government agency responsible for the establishment, operations and maintenance of telecommunication in Pakistan. To report numbers for harassment, financial fraud and misrepresentation call their helpline.",
-    descPK: " (پاکستان ٹیلی کمیونیکیشن اتھارٹی) حکومتِ پاکستان کا ایک ادارہ ہے جو ملک میں مواصلات کے قیام، PTA کارروائیوں اور اس کی دیکھ بھال کیلئے ذمہ دار ہے۔ \n ہراسگی، مالی دھوکہ دہی اور غلط بیانی جیسے واقعات کی رپورٹ کرنے کیلئے ان کی ہیلپ لائن پہ کال کیجئے"
+    descPK: " (پاکستان ٹیلی کمیونیکیشن اتھارٹی) حکومتِ پاکستان کا ایک ادارہ ہے جو ملک میں مواصلات کے قیام،  پی ٹی اے  کارروائیوں اور اس کی دیکھ بھال کیلئے ذمہ دار ہے۔ \n ہراسگی، مالی دھوکہ دہی اور غلط بیانی جیسے واقعات کی رپورٹ کرنے کیلئے ان کی ہیلپ لائن پہ کال کیجئے"
   },
   {
     nameEN: "Rescue",
