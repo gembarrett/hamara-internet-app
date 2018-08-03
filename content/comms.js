@@ -110,7 +110,7 @@ const chat = [
       },
       {
         textEN: "Consider password-protecting your chat apps with one of the options in the app store, such as Messenger and Chat Lock. Protect your WhatsApp profile photo and status from strangers by changing your privacy settings.",
-        textPK: "جیسے اختیارات ایپ سٹور میں موجود ہوتے ہیں، اپنے چیٹ ایپس کو پاس ورڈ  Chat LockاورMessenger کیساتھ محفوظ کرنے پر غور کریں۔ واٹس ایپ پر اپنی پرائیویسی ترتیبات کو تبدیل کر کے اجنبی لوگوں سے اپنی واٹس ایپ پروفائل تصویر اور اپنے سٹیٹس کو بچائیں"
+        textPK: "جیسے اختیارات ایپ سٹور میں موجود ہوتے ہیں، اپنے چیٹ ایپس کو پاس ورڈ   چیٹ لاک اور میسنجر  کیساتھ محفوظ کرنے پر غور کریں۔ واٹس ایپ پر اپنی پرائیویسی ترتیبات کو تبدیل کر کے اجنبی لوگوں سے اپنی واٹس ایپ پروفائل تصویر اور اپنے سٹیٹس کو بچائیں"
       }
     ]
   },
