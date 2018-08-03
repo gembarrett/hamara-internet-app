@@ -78,7 +78,7 @@ const virus = [
     tips: [
       {
         textEN: "Only install known anti-virus software such as Norton, Avira and Avast. Also install anti-malware software and anti-spyware - the more protection you have, the better. We recommend Malwarebytes or Spybot especially because they also feature malware removal",
-        textPK: " جیسے مشہور اینٹی وائرس سافٹ ویئر ہی انسٹال کریں Avast اورNorton, Avira۔ صرف اینٹی مالویئر سافٹ ویئر اور اینٹی سپائے ویئر کی تنصیب بھی کریں یعنی جتنے زیادہ حفاظتی اقدام آپ کریں گے اتنے تجویز کرتے ہیں کیونکہ  Spybot یاMalwarebytesہی آپ محفوظ رہیں گے۔ اس زمرے میں ہم خصوصاً ان میں مالویئر کو ختم کرنے کی خصوصیت بھی ہوتی ہے"
+        textPK: " جیسے مشہور اینٹی وائرس سافٹ ویئر ہی انسٹال کریں  ایواسٹ  اورNorton, Avira۔ صرف اینٹی مالویئر سافٹ ویئر اور اینٹی سپائے ویئر کی تنصیب بھی کریں یعنی جتنے زیادہ حفاظتی اقدام آپ کریں گے اتنے تجویز کرتے ہیں کیونکہ  Spybot یاMalwarebytesہی آپ محفوظ رہیں گے۔ اس زمرے میں ہم خصوصاً ان میں مالویئر کو ختم کرنے کی خصوصیت بھی ہوتی ہے"
       },
       {
         textEN: "Be careful installing apps on your computer or phone when you can’t be sure of their legitimacy, it isn’t worth giving away your banking details just to get the latest game on your phone!",
