@@ -117,7 +117,7 @@ const twoFA = [
       {
         url: "https://duo.com/solutions/features/two-factor-authentication-methods/duo-mobile",
         textEN: "Duo Mobile app",
-        textPK: "Duo Mobile app",
+        textPK: "ڈؤو موبائل ایپ",
         src: "duo.com"
       }
     ]
