@@ -88,7 +88,7 @@ const twoFA = [
       },
       {
         textEN: "The Facebook app has a built-in code generator, but the app itself is very invasive and uses your camera, microphone, and a lot more information on your phone than you would think. Services like Google create their own authenticator apps, but it can be more efficient to use an option like DuoMobile which can manage multiple services (including Facebook and Google)",
-        textPK: "۔ فیس بک ایپ ایک پہلے سے موجود کوڈ کو ترتیب دینے کا عمل رکھتی ہے لیکن وہ ایپ ناگوار اس لئے ہے کہ وہ آپ کی سوچ سے بھی زیادہ آپ کے فون پر آپ کی کافی سے زیادہ معلومات ، مائیکروفون، اور آپ کے موبائل کیمرے کو استعمال کرتے ہوئے انہیں اپنی دسترس میں لے لیتی ہے۔ جیسے کسی اختیار کو چلانا زیادہ  DuoMobile۔ گوگل جیسی خدمات اپنی خود کی تصدیقی ایپ تخلیق کرتی ہیں لیکنمؤثر ہوسکتا ہے کیونکہ ایسے اختیارات مختلف خدمات کے نظام کیساتھ کرتے ہیں (بشمول فیس بک اور گوگل)"
+        textPK: "۔ فیس بک ایپ ایک پہلے سے موجود کوڈ کو ترتیب دینے کا عمل رکھتی ہے لیکن وہ ایپ ناگوار اس لئے ہے کہ وہ آپ کی سوچ سے بھی زیادہ آپ کے فون پر آپ کی کافی سے زیادہ معلومات ، مائیکروفون، اور آپ کے موبائل کیمرے کو استعمال کرتے ہوئے انہیں اپنی دسترس میں لے لیتی ہے۔ جیسے کسی اختیار کو چلانا زیادہ   ڈؤو موبائل ۔ گوگل جیسی خدمات اپنی خود کی تصدیقی ایپ تخلیق کرتی ہیں لیکنمؤثر ہوسکتا ہے کیونکہ ایسے اختیارات مختلف خدمات کے نظام کیساتھ کرتے ہیں (بشمول فیس بک اور گوگل)"
       }
     ]
   },
