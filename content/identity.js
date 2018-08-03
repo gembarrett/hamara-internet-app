@@ -84,7 +84,7 @@ const twoFA = [
       },
       {
         textEN: "The default method for two-factor authentication is for the service to send you a text message or an automated phone call, however, authenticator apps that generate codes are also available and are more secure. It is preferable to use an authenticator app on your phone so that you aren’t locked out of your account when cellphone signals are blocked or you go abroad.",
-        textPK: " دو طرفہ تصدیق کیلئے ڈیفالٹ عمل، آپ کو ایک ٹیکسٹ پیغام بھیجنے یا خودکار فون کال بھیجنے کیلئے ہوتا ہے، تاہم. کوڈز مرتب کرتی ہیں وہ بھی میسر ہیں  QRتصدیقی ایپس جو۔ آپکے فون پر ایک تصدیقی ایپ کو استعمال کرنے کو ترجیح دی جاتی ہے تاکہ جب کبھی آپ ملک سے باہر ہوں یا آپ کے موبائل کے سگنلز معینہ  یا غیر معینہ مدت کیلئے بند کر دیئے جائیں تو آپ کے اکاؤنٹس پر آپ کی دسترس ختم نہ ہو"
+        textPK: " دو طرفہ تصدیق کیلئے ڈیفالٹ عمل، آپ کو ایک ٹیکسٹ پیغام بھیجنے یا خودکار فون کال بھیجنے کیلئے ہوتا ہے، تاہم. کوڈز مرتب کرتی ہیں وہ بھی میسر ہیں   کیو آر تصدیقی ایپس جو۔ آپکے فون پر ایک تصدیقی ایپ کو استعمال کرنے کو ترجیح دی جاتی ہے تاکہ جب کبھی آپ ملک سے باہر ہوں یا آپ کے موبائل کے سگنلز معینہ  یا غیر معینہ مدت کیلئے بند کر دیئے جائیں تو آپ کے اکاؤنٹس پر آپ کی دسترس ختم نہ ہو"
       },
       {
         textEN: "The Facebook app has a built-in code generator, but the app itself is very invasive and uses your camera, microphone, and a lot more information on your phone than you would think. Services like Google create their own authenticator apps, but it can be more efficient to use an option like DuoMobile which can manage multiple services (including Facebook and Google)",
