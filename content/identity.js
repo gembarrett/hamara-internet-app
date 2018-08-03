@@ -28,8 +28,8 @@ const passwords = [
         textPK: "باقاعدگی سے اپنے پاس ورڈ تبدیل کرتے رہا کریں اور جب آپ کو لگے کہ اس حصار کو کمزور کیا جاسکتا ہے تو فوری ایکشن لیں"
       },
       {
-        textEN: "To keep track of lots of passwords you can use a system like KeepassX, 1Password or Encryptr, which will also generate strong passwords for you",
-        textPK: " پاس ورڈ طویل اور زیادہ محفوظ بنانے کیلئے الفاظ کی بجائے عبارت کا استعمال کریں. جیسے کسی نظام کا استعمال  Encryptr 1Password یا KeepassX ۔ کافی تعداد میں پاس ورڈ جاننے اور مزید جاننے کیلئے آپ"
+        textEN: "To keep track of lots of passwords you can use a system like KeePassX, 1Password or Encryptr, which will also generate strong passwords for you",
+        textPK: " پاس ورڈ طویل اور زیادہ محفوظ بنانے کیلئے الفاظ کی بجائے عبارت کا استعمال کریں. جیسے کسی نظام کا استعمال  Encryptr 1Password یا  کی پاس ایکس  ۔ کافی تعداد میں پاس ورڈ جاننے اور مزید جاننے کیلئے آپ"
       },
       {
         textEN: "If you forget your password you may have to answer some security questions (e.g. the name of your first pet). When you are setting the answers to these, use incorrect information to make it harder for others to guess.",
@@ -49,8 +49,8 @@ const passwords = [
       },
       {
         url: "https://securityinabox.org/en/guide/keepassx/windows",
-        textEN: "Guide to using KeepassX",
-        textPK: "استعمال کرنے میں رہنمائیKeepassX",
+        textEN: "Guide to using KeePassX",
+        textPK: "استعمال کرنے میں رہنمائی کی پاس ایکس ",
         src: "securityinabox.org"
       },
     ]
