@@ -72,7 +72,7 @@ const twoFA = [
     id: 2,
     route: "Solution",
     textEN: "Two-factor authentication is a good backup for strong passwords. <br /> <br />It works by linking your phone number with your online account, so that when you sign in with your password, an additional check is done by using a verification method on your phone to check it is definitely you.",
-    textPK: " ایک اچھا بیک اپ ہے۔ آپ کے آن Two-factor authenticationمضبوط پاس ورڈز کیلئے دو طرفہ تصدیق  یا لائن اکاؤنٹ کیساتھ آپ کے فون نمبر کو منسلک کرکے یہ کام کرتا ہے، تاکہ جب بھی آپ اپنے پاس ورڈ کیساتھ سائن ان ہوتے ہیں تو آپ کے فون پر ایک تصدیقی عمل کے استعمال سے ایک اضافی خانہ کھلتا ہےجس سے یہ پتہ چلتا ہے کہ یہ حقیقت میں آپ ہی ہیں یا کوئی اور۔"
+    textPK: " ایک اچھا بیک اپ ہے۔ آپ کے آن  ٹو فیکٹر اتھینٹی کیشن مضبوط پاس ورڈز کیلئے دو طرفہ تصدیق  یا لائن اکاؤنٹ کیساتھ آپ کے فون نمبر کو منسلک کرکے یہ کام کرتا ہے، تاکہ جب بھی آپ اپنے پاس ورڈ کیساتھ سائن ان ہوتے ہیں تو آپ کے فون پر ایک تصدیقی عمل کے استعمال سے ایک اضافی خانہ کھلتا ہےجس سے یہ پتہ چلتا ہے کہ یہ حقیقت میں آپ ہی ہیں یا کوئی اور۔"
   },
   {
     id: 3,
