@@ -30,7 +30,7 @@ const about = [
       {
         icon: "female",
         titleEN: "Equitable Access to ICTs",
-        titlePK: "تک رسائیICTsبرابری کی بنیاد پر",
+        titlePK: "تک رسائی آئی سی ٹیز برابری کی بنیاد پر",
         textEN: "To fight for equitable access to Information and Communication Technologies in Pakistan.",
         textPK: "پاکستان میں معلومات و مواصلات ٹیکنالوجیز تک جنسی برابری کی بنیاد پر رسائی حاصل کرنے کیلئے کوشاں رہنا۔"
       },
