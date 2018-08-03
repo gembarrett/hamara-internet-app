@@ -173,7 +173,7 @@ const location = [
       },
       {
         textEN: "While it is fun to 'check in' to locations on social media, telling people where you are (and even who you are with!) can be unsafe - even if you do it after leaving the area. It can help others build up a picture of where you hang out, when, and with whom.",
-        textPK: " کرنا ایک مذاق ہے کیونکہ آپ لوگوں کو یہ بتا رہے ہوتے ہیں کہ آپ کہاں پر  “check in”۔ سوشل میڈیا پہ لوکیشنز کو  موجود ہیں ( حتٰی کہ یہ بھی بتا رہے ہوتے ہیں کہ آپ کس کے ساتھ ہیں) چاہے آپ یہ سب اس علاقے کو چھوڑتے ہوئے بھی کر رہے ہوں۔ اس سے دوسروں کو یہ عندیہ مل جاتا ہے کہ آپ کس وقت، کہاں اور کس کے ساتھ ہیں۔"
+        textPK: " کرنا ایک مذاق ہے کیونکہ آپ لوگوں کو یہ بتا رہے ہوتے ہیں کہ آپ کہاں پر  “ چیک اِن ”۔ سوشل میڈیا پہ لوکیشنز کو  موجود ہیں ( حتٰی کہ یہ بھی بتا رہے ہوتے ہیں کہ آپ کس کے ساتھ ہیں) چاہے آپ یہ سب اس علاقے کو چھوڑتے ہوئے بھی کر رہے ہوں۔ اس سے دوسروں کو یہ عندیہ مل جاتا ہے کہ آپ کس وقت، کہاں اور کس کے ساتھ ہیں۔"
       },
       {
         textEN: "Be aware of other people tagging you at locations and in photos - change your Facebook settings so all tags have to be approved. Other people deserve anonymity too - ask permission before tagging them in places or photos.",
