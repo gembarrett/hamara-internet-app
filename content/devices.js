@@ -90,7 +90,7 @@ const virus = [
       },
       {
         textEN: "Always keep your phone and computer software up-to-date, vulnerabilities known as “exploits” are found and fixed regularly, so check that you are always protected.",
-        textPK: " کہلائی جانے والی غیر محفوظ “exploits”۔ ہمیشہ اپنے فون اور کمپیوٹر کے سافٹ ویئر کو اپ ٹو ڈیٹ رکھیں کیونکہ  چیزیں جو دیکھنے میں آئیں انہیں روز مرہ کے تحت حل کرتے رہیں تاکہ آپ کو ہمیشہ پتہ چلتا رہے کہ آپ محفوظ ہیں"
+        textPK: " کہلائی جانے والی غیر محفوظ “ استحصال ”۔ ہمیشہ اپنے فون اور کمپیوٹر کے سافٹ ویئر کو اپ ٹو ڈیٹ رکھیں کیونکہ  چیزیں جو دیکھنے میں آئیں انہیں روز مرہ کے تحت حل کرتے رہیں تاکہ آپ کو ہمیشہ پتہ چلتا رہے کہ آپ محفوظ ہیں"
       }
     ]
   },
