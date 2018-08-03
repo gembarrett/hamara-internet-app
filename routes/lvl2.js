@@ -3,7 +3,7 @@ const online = [
     id: 1,
     route: "Search",
     textEN: "Google yourself",
-    textPK: "Google yourself"
+    textPK: "خود کو گوگل کیجئے"
   },
   {
     id: 2,
