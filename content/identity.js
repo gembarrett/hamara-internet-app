@@ -111,7 +111,7 @@ const twoFA = [
       {
         url: "https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=en",
         textEN: "Google Authenticator app",
-        textPK: "Google Authenticator app",
+        textPK: " گوگل اَتھینٹی کیٹر ایپ ",
         src: "google.com"
       },
       {
