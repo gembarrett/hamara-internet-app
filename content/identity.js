@@ -29,7 +29,7 @@ const passwords = [
       },
       {
         textEN: "To keep track of lots of passwords you can use a system like KeePassX, 1Password or Encryptr, which will also generate strong passwords for you",
-        textPK: " پاس ورڈ طویل اور زیادہ محفوظ بنانے کیلئے الفاظ کی بجائے عبارت کا استعمال کریں. جیسے کسی نظام کا استعمال  Encryptr 1Password یا  کی پاس ایکس  ۔ کافی تعداد میں پاس ورڈ جاننے اور مزید جاننے کیلئے آپ"
+        textPK: " پاس ورڈ طویل اور زیادہ محفوظ بنانے کیلئے الفاظ کی بجائے عبارت کا استعمال کریں. جیسے کسی نظام کا استعمال   اینکرپٹز  1Password یا  کی پاس ایکس  ۔ کافی تعداد میں پاس ورڈ جاننے اور مزید جاننے کیلئے آپ"
       },
       {
         textEN: "If you forget your password you may have to answer some security questions (e.g. the name of your first pet). When you are setting the answers to these, use incorrect information to make it harder for others to guess.",
