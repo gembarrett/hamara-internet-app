@@ -24,8 +24,8 @@ const backups = [
         textPK: " یا ہارڈ ڈرائیو میں سے کسی کا بھی انتخاب کیا ہے تو اس بات کی تسلی کر لیں کہ جس طرح آپ  یو۔ایس۔بی  ۔ اگر آپاپنی ڈیوائس کو پاس ورڈ لگا کر حفاظت دیتے ہیں اسی طرح ان پر بھی پاس ورڈ لگا کر اسے محفوظ بنائیں اور ہمیشہ  اسے اپنے گھر کے کسی ایک محفوظ مقام پہ رکھیں تاکہ اس کے گم ہونے کا خدشہ نہ ہو۔"
       },
       {
-        textEN:"Adding a password to your files is a good way to protect them, however they are stored. Cloud storage is convenient because it does not require any physical equipment, but even if it is on a Google server it can still be hacked into or stolen so be sure to protect your accounts.",
-        textPK: "اپنی فائلوں کو پاس ورڈ لگانا بھی ایک اچھا اقدام ہے چاہے وہ آپکی ڈیوائس میں کسی محفوظ جگہ پر ہی کیوں نہ موجود ہوں میں ذخیرہ کرنا کافی کارآمد ہے، کیونکہ اسے کسی مادی آلہ کی ضرورت نہیں ہوتی حالانکہ یہ گوگل سرور Cloud۔  پر ہوتا ہے پھر بھی اسے ہیک کیا یا چرایا جا سکتا ہےلہٰذا اس بات کی تسلی کر لیں کہ آپ کے اکاؤنٹس محفوظ ہیں"
+        textEN:"Adding a password to your files is a good way to protect them, however they are stored.  storage is convenient because it does not require any physical equipment, but even if it is on a Google server it can still be hacked into or stolen so be sure to protect your accounts.",
+        textPK: "اپنی فائلوں کو پاس ورڈ لگانا بھی ایک اچھا اقدام ہے چاہے وہ آپکی ڈیوائس میں کسی محفوظ جگہ پر ہی کیوں نہ موجود ہوں میں ذخیرہ کرنا کافی کارآمد ہے، کیونکہ اسے کسی مادی آلہ کی ضرورت نہیں ہوتی حالانکہ یہ گوگل سرور  کلاؤڈ ۔  پر ہوتا ہے پھر بھی اسے ہیک کیا یا چرایا جا سکتا ہےلہٰذا اس بات کی تسلی کر لیں کہ آپ کے اکاؤنٹس محفوظ ہیں"
       },
     ]
   },
