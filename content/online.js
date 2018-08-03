@@ -214,7 +214,7 @@ const location = [
       {
         url: "https://www.makeuseof.com/tag/disable-fake-location-firefox-internet-explorer-chrome/",
         textEN: "How to disable or hide your location in Chrome, Firefox and Internet Explorer",
-        textPK: "لنک کریں  ]میں اپنی لوکیشن کو کیسے غیر فعال کریں  Internet Explorerاور  کروم ,  فائر فاکس ",
+        textPK: "لنک کریں  ]میں اپنی لوکیشن کو کیسے غیر فعال کریں   انٹرنیٹ ایکسپلورر اور  کروم ,  فائر فاکس ",
         src: "makeuseof.com"
       }
     ]
