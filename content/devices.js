@@ -64,7 +64,7 @@ const virus = [
     id: 1,
     route: "Problem",
     textEN: "It is easy for our computers and phones to get infected by malicious programs called viruses. Just one virus hidden in an emailed picture can end in our data’s destruction or modification. <br /> <br />Malware is one type of virus that can watch what you type in order to steal your information.",
-    textPK: "ہمارے کمپیوٹر اور فون آسانی سے وائرس کہلائے جانے والے نقصان دہ پروگراموں کی زد میں آجاتے ہیں۔ محض ایک ای میل میں چھپا ہوا کوئی بھی ایک وائرس ہمارے ڈیٹا کو تبدیل یا تباہ کر سکتا ہے۔ <br / > <br />مالویئر ایک ایسی قسم کا وائرس ہوتا ہے جو آپ کی معلومات چرانے کیلئے آپ کی جانب سے ٹائپ کی گئی ہر بات پہ نظر رکھتا ہے۔"
+    textPK: "ہمارے کمپیوٹر اور فون آسانی سے وائرس کہلائے جانے والے نقصان دہ پروگراموں کی زد میں آجاتے ہیں۔ محض ایک ای میل میں چھپا ہوا کوئی بھی ایک وائرس ہمارے ڈیٹا کو تبدیل یا تباہ کر سکتا ہے۔ <br /> <br />مالویئر ایک ایسی قسم کا وائرس ہوتا ہے جو آپ کی معلومات چرانے کیلئے آپ کی جانب سے ٹائپ کی گئی ہر بات پہ نظر رکھتا ہے۔"
   },
   {
     id: 2,
