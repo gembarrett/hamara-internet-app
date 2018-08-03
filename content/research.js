@@ -1,7 +1,7 @@
 const research = [
   {
     titleEN: "Research",
-    titlePK: "Research",
+    titlePK: "تحقیق",
   },
   {
     textEN: "The links provided here are some of the researches conducted and published by DRF, for your perusal and ease, which we hope you will benefit from.",
