@@ -50,7 +50,7 @@ const support = [
     namePK: "نیشنل ریسپانس سنٹر فار سائبر کرائم، ایف۔آئی۔اے (وفاقی تحقیقاتی ادارہ)",
     number: "9911",
     descEN: "The NR3C is part of the Federal Investigation Agency, which is a border control, counter-intelligence and security agency under the Ministry of Interior of Pakistan, tasked with investigative jurisdiction on undertaking operations against terrorism, federal crimes, smuggling, corruption and cyber crime among other things.",
-    descPK: "وزارتِ داخلہ پاکستان کے ما تحت کام کرنے والا وفاقی تحقیقاتی ادارہ، جو کہ اندرونی معاملات اور جاسوسی کا مقابلہ ۔ اس ادارے کا مقصد دہشت گردی کے خلاف NR3Cکرنے والا ایک دفاعی ادارہ ہے، اسی کا ایک ذیلی حصہ ہے جاری آپریشنز پر تحقیقاتی دائرہ کار کیساتھ ساتھ وفاقی طرز کے جرائم، سمگلنگ، رشوت ستانی اور سائبر جرائم جیسے دیگر مسائل سے نبرد آزما ہونا ہے۔"
+    descPK: "وزارتِ داخلہ پاکستان کے ما تحت کام کرنے والا وفاقی تحقیقاتی ادارہ، جو کہ اندرونی معاملات اور جاسوسی کا مقابلہ ۔ اس ادارے کا مقصد دہشت گردی کے خلاف  این آر تھری سی کرنے والا ایک دفاعی ادارہ ہے، اسی کا ایک ذیلی حصہ ہے جاری آپریشنز پر تحقیقاتی دائرہ کار کیساتھ ساتھ وفاقی طرز کے جرائم، سمگلنگ، رشوت ستانی اور سائبر جرائم جیسے دیگر مسائل سے نبرد آزما ہونا ہے۔"
   },
   {
     nameEN: "PSCA \n(Punjab Safe Cities Authority)",
