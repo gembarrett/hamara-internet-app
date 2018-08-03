@@ -26,7 +26,7 @@ const helpline = [
       {
         url: "https://digitalrightsfoundation.pk/wp-content/uploads/2017/12/Helpline-Annual-Report.pdf",
         textEN: "Cyber Harassment Helpline \n1 year report",
-        textPK: "Cyber Harassment Helpline \n1 year report"
+        textPK: "سائبر ہراسمنٹ ہیلپ لائن پہلی سالانہ رپورٹ"
       },
     ]
   },
