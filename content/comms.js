@@ -48,7 +48,7 @@ const social = [
       {
         url: "https://iheartmob.org/resources/safety_guides",
         textEN: "HeartMob’s guide to staying safe on social media",
-        textPK: "کی رہنمائیHeartMobسوشل میڈیا پر محفوظ رہنے کیلئے ",
+        textPK: "کی رہنمائی ہارٹ موب سوشل میڈیا پر محفوظ رہنے کیلئے ",
         src: "iheartmob.org"
       },
       {
