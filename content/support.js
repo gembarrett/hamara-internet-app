@@ -54,7 +54,7 @@ const support = [
   },
   {
     nameEN: "PSCA \n(Punjab Safe Cities Authority)",
-    namePK: "(پنجاب سیف سیٹیز اتھارٹی)PSCA",
+    namePK: "(پنجاب سیف سیٹیز اتھارٹی) پی ایس سی اے ",
     number: "+92-42-99051605",
     descEN: "The Punjab Safe Cities Authority (PSCA), established under the Punjab Safe Cities Ordinance 2015, will ensure establishment, development and maintenance of an integrated command, control and communication system (PPIC3) for Police in major cities of the province for public safety. The Safe City is a concept for returning security and quality of life to today’s complex cities through the use of technology, infrastructure, personnel and processes.",
     descPK: "یہ ادارہ پنجاب سیف سٹیز کا قانون مجریہ ۲۰۱۵ کے تحت قائم کیا گیا، جس کا مقصد عوام کو تحفظ فراہم کرنے کیلئے صوبہ پنجاب کے اہم شہروں میں ایک مکمل کمانڈ، کنٹرول اور مواصلاتی نظام کے قیام، ارتقا اور اس نظام کی دیکھ بھال کو پولیس کیلئے یقینی بنانا ہے۔ ٹیکنالوجی، بنیادی ڈھانچہ، انتظامیہ اور اس کی کارروائیوں کے استعمال سے اس دور کے پیچیدہ شہری زندگی کے جواب میں  معیارِ زندگی اور دفاع کو بہتر بنانا ہی سیف سٹی پروجیکٹ کے اغراض و مقاصد میں شامل ہے۔"
