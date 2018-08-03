@@ -8,7 +8,7 @@ const support = [
     namePK: "پنجاب کمیشن برائے حقوقِ خواتین (پی۔سی۔ایس۔ڈبلیو)",
     number: "1043",
     descEN: "The Punjab Commission on the Status of Women (PCSW) was created by the Punjab Government through the Punjab Commission on the Status of Women Act, 2014 as an oversight body to ensure compliance and implementation of laws, policies and programs of the Government of Punjab promote women’s empowerment; and that efforts are made for expansion of opportunities for socio-economic development of women; and discrimination against women in all forms is eliminated. PCSW started functioning in March, 2014.",
-    descPK: " پنجاب کمیشن برائے حقوقِ خواتین کا قانون 2014 کے تحت پنجاب حکومت کی جانب سے بنایا گیا کمیشن برائے حقوقِ خواتین ((PCSW ایک نگران ادارے کے طور پر خواتین کی خودمختاری کو پروان چڑھانے کیلئے حکومتِ پنجاب کے پروگراموں، پالیسیوں اور قوانین کے نفاذ اور ان کی تعمیل کی یقین دہانی کراتا ہے، اور ان کاوشوں کی بنیاد پر اس کمیشن کا مقصد خواتین کو سماجی و اقتصادی ترقی کیلئے مزید مواقع فراہم کرنا ہے تاکہ خواتین کے خلاف ہر قسم کے امتیازی و ناروا سلوک کو روکا جائے۔ مارچ 2014 سے اس کمیشن نے اپنے کام کا باقاعدہ آغاز کیا۔"
+    descPK: " پنجاب کمیشن برائے حقوقِ خواتین کا قانون 2014 کے تحت پنجاب حکومت کی جانب سے بنایا گیا کمیشن برائے حقوقِ خواتین (( پی سی ایس ڈبلیو  ایک نگران ادارے کے طور پر خواتین کی خودمختاری کو پروان چڑھانے کیلئے حکومتِ پنجاب کے پروگراموں، پالیسیوں اور قوانین کے نفاذ اور ان کی تعمیل کی یقین دہانی کراتا ہے، اور ان کاوشوں کی بنیاد پر اس کمیشن کا مقصد خواتین کو سماجی و اقتصادی ترقی کیلئے مزید مواقع فراہم کرنا ہے تاکہ خواتین کے خلاف ہر قسم کے امتیازی و ناروا سلوک کو روکا جائے۔ مارچ 2014 سے اس کمیشن نے اپنے کام کا باقاعدہ آغاز کیا۔"
   },
   {
     nameEN: "Rozan helpline",
