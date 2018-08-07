@@ -37,13 +37,21 @@ When a dash is in the middle of English numbers inside a block of text that is p
       },
       getPhone() {
         return this.phone;
-      },
-      getAnchorHref() {
-        return this.phone;
-      },
-      getAnchorText() {
-        return this.phone;
-      },
+      }
     }),
   }
+```
+
+Your index.js file in that folder should contain this:
+``` javascript
+case 'phone': {
+  const number = match.getPhone();
+  switch (this.props.phone) {
+    case 'sms':
+    case 'text':
+      return [`sms:${number}`];
+    default:
+      return [`tel:${number}`];
+  }
+}
 ```
